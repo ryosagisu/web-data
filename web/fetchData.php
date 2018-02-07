@@ -1,58 +1,45 @@
 <?php
-if (!empty($_POST['val'])) {
-	$data = array();
-    $result = array();
-    $connect = mysqli_connect('us-cdbr-iron-east-05.cleardb.net', 'b96437655ec530', 'd19e6630', 'heroku_696bdd3205855b4') or die(mysqli_error());
-    if (strpos($_POST['val'], ',')) {
-        $list = explode(',', $_POST['val']);
-        $sql="SELECT kd_kompetensi FROM peta_okupasi";
-        for($i = 0; $i < sizeof($list); $i++){
-            if ($i == 0) {
-                $sql.=" where kode_okupasi = '$list[$i]'";
-            }else{
-                $sql.=" or kode_okupasi = '$list[$i]'";
-            }
+
+$domain = "Pengoperasian Komputer"
+$level = "1"
+
+$kkni = file_get_contents("kkni.xml");
+$x = new DOMDocument();
+$x->loadXML($kkni);
+
+$skkni = file_get_contents("skkni.xml");
+$y = new DOMDocument();
+$y->loadXML($skkni);
+
+$peta_okupasi = file_get_contents("peta_okupasi.xml");
+$z = new DOMDocument();
+$z->loadXML($peta_okupasi); // Or load if filename required
+if ($x->schemaValidate("kkni.xsd") && $y->schemaValidate("skkni.xsd") && $z->schemaValidate("peta_okupasi.xsd")) {
+  echo "Valid";
+  // showDOMNode($x);
+
+  echo $x->getElementsByTagName("KKNI")->item(0)->nodeValue; 
+  $data = array();
+  // echo $x->getElementsByTagName("KKNI");
+  // echo $xmlText->Bidang->keterangan;
+  // echo {"Bidang"}->xpath("parent::*");
+  // $xmlText = simplexml_load_string($kkni);
+  // echo "Valid Schema <br>";
+  // echo $xmlText->Bidang->Jenjang->kodeJenjangKKNI . "<br/>";
+  // foreach($xmlText->Bidang as $v){
+  //   echo json_encode($v->get_parent_node());
+  // }
+  // echo json_encode($xmlText);
+  // echo $xmlText->Bidang->Jenjang->sikapKerja[0];
+}
+
+function showDOMNode(DOMNode $domNode) {
+    foreach ($domNode->childNodes as $node)
+    {
+        print $node->nodeName.':'.$node->nodeValue . "<br/>";
+        if($node->hasChildNodes()) {
+            showDOMNode($node);
         }
-        $query = mysqli_query($connect, $sql);
-        $i = 0;
-        while($row = mysqli_fetch_array($query, MYSQLI_ASSOC)){
-            $data[$i] = $row['kd_kompetensi'];
-            $i++;
-        }
-    }else{
-        $query = mysqli_query($connect, "SELECT kd_kompetensi FROM peta_okupasi where kode_okupasi = '".$_POST['val']."'");
-        $i = 0;
-        while($row = mysqli_fetch_array($query, MYSQLI_ASSOC)){
-            $data[$i] = $row['kd_kompetensi'];
-            $i++;
-        }
-    }
-    $data = array_unique($data);
-    $sql2="SELECT * FROM skkni";
-    if (sizeof($data) > 0) {
-        if (sizeof($data) > 1) {
-            for($i = 0; $i < sizeof($data); $i++){
-                if ($i == 0) {
-                    $sql2.=" where kode_unit = '$data[$i]'";
-                }else{
-                    $sql2.=" or kode_unit = '$data[$i]'";
-                }
-            }
-            $query2 = mysqli_query($connect, $sql2);
-            while($row = mysqli_fetch_array($query2, MYSQLI_ASSOC)){
-                $result[] = $row;
-            }
-        }else{
-            $query = mysqli_query($connect, "SELECT * FROM skkni where kode_unit = '".$data[0]."'");
-            while($row = mysqli_fetch_array($query, MYSQLI_ASSOC)){
-                $result[] = $row;
-            }       
-        }
-        echo json_encode($result);
-    }else{
-        echo json_encode('Gada data bro!');
-    }
-}else{
-	echo json_encode('Failed fetch');
+    }    
 }
 ?>
