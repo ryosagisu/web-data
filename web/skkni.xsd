@@ -42,7 +42,7 @@
 <xs:element name="SKKNI">
   <xs:complexType>
     <xs:sequence>
-      <xs:element name="TujuanUtama">
+      <xs:element name="TujuanUtama" maxOccurs="unbounded">
         <xs:complexType>
           <xs:sequence>
             <xs:element name="keterangan" type="xs:string"/>
