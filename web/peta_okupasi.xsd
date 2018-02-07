@@ -4,7 +4,7 @@
 <xs:element name="PetaOkupasi">
   <xs:complexType>
     <xs:sequence>
-      <xs:element name="KodeOkupasi">
+      <xs:element name="KodeOkupasi" maxOccurs="unbounded">
         <xs:complexType>
           <xs:sequence>
             <xs:element name="kode" type="xs:string"/>
