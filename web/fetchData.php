@@ -1,5 +1,6 @@
 <?php
 //load kkni data set
+
 $kkni = file_get_contents("kkni.xml");
 $x = new DOMDocument();
 $x->loadXML($kkni);
@@ -14,33 +15,37 @@ $peta_okupasi = file_get_contents("peta_okupasi.xml");
 $z = new DOMDocument();
 $z->loadXML($peta_okupasi);
 
+$listKompetensi = array();
 //compare data set with schema
 if ($x->schemaValidate("kkni.xsd") && $y->schemaValidate("skkni.xsd") && $z->schemaValidate("peta_okupasi.xsd")) {
 
-  //TODO: turn domain input into array, user can choose more than one domain
+  $domain = $_POST['domain'];
+  $level = $_POST['level'];
+  $dataKKNI = array();
+  $dataSKKNI = array();
+
   foreach ($x->getElementsByTagName("Bidang") as $node) {
-    if (validNode($node, "domain", "Pengoperasian Komputer")) {
-      $dataKKNI = shownode($node, "KKNI", "1");
+    if (validNode($node, "domain", $domain)) {
+      array_push($dataKKNI, shownode($node, "KKNI", $level));
     }
   }
-
-  //TODO: it is possible to have more than one Jenjang
-  $listKompetensi = array();
-  foreach ($dataKKNI["Jenjang"][0]["UnitKompetensi"] as $value) {
-    array_push($listKompetensi, $value["kodeUnitKompetensi"][0]);
-  }
+  $listKompetensi = array_unique($listKompetensi);
 
   //read skkni data set and only fetch used 'kodeUnit'
   foreach ($y->getElementsByTagName("TujuanUtama") as $node) {
     if (validNode($node, "kodeUnit", $listKompetensi)) {
-      $dataSKKNI = shownode($node, "SKKNI", $listKompetensi);
+      array_push($dataSKKNI, shownode($node, "SKKNI", $listKompetensi));
     }
   }
+  $data["KKNI"] = $dataKKNI;
+  $data["SKKNI"] = $dataSKKNI;
   // echo json_encode($listKompetensi);
+  // echo "<br/><br/><br/>";
   // print_r($dataKKNI);
-  echo json_encode($dataKKNI);
-  echo "<br/><br/><br/>";
-  echo json_encode($dataSKKNI);
+  // echo json_encode($dataKKNI);
+  // echo "<br/><br/><br/>";
+  // echo json_encode($dataSKKNI);
+  echo json_encode($data);
 
   //TODO: write logic for peta_okupasi
 }
@@ -50,6 +55,7 @@ function shownode($x, $root, $set="") {
   foreach ($x->childNodes as $p){
     if ($p->nodeType != XML_ELEMENT_NODE) continue;
     if(!isset($result[$p->nodeName])) $result[$p->nodeName] = array();
+    if ($root == "KKNI" && $p->nodeName == "kodeUnitKompetensi") array_push($GLOBALS['listKompetensi'], $p->nodeValue);
 
     if (hasChild($p)) {
       if ($root == "KKNI" && $p->nodeName == "Jenjang") {
