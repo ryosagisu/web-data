@@ -11,3 +11,10 @@ TODO:
 - Improve logic in fetchData.php
 - write logic for peta_okupasi
 - Readjust index.php
+
+Update 14 Feb 2018
+Task
+- menampilkan hasil data ke utama utama / ke row (indra)
+- fixing issue checkbox pada halaman utama (wawang)
+- issue kompetensi yang membutuhkan kompetensi lain (dimas)
+
