@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PetaOkupasi>
+  <KodeOkupasi>
+    <kode>040101</kode>
+    <!-- 
+    04 = Nama Domain
+    01 = Level
+    01 = Nama Okupasi?
+    -->
+    <deskripsi>Memiliki kemampuan</deskripsi>
+    <namaOkupasi>nama_okupasi</namaOkupasi>
+    <tugasUtama>tugas utama</tugasUtama>
+    <profil>profil</profil>
+    <persyaratan>persyaratan</persyaratan>
+    <sertifikasi>sertifikasi</sertifikasi>
+    <lingkupPekerjaan>lingkup pekerjaan</lingkupPekerjaan>
+    <verifikasi>verifikasi</verifikasi>
+    <wewenang>wewenang</wewenang>
+    <jenjangKarir>jenjang karir</jenjangKarir>
+  </KodeOkupasi>
+</PetaOkupasi>

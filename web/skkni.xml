@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SKKNI>
+  <TujuanUtama>
+    <keterangan>Menggunakan perangkat komputer dan aplikasinya sesuai dengan kebutuhan pengguna</keterangan>
+    <FungsiKunci>
+      <keterangan>Menggunakan perangkat komputer dan aplikasinya tingkat dasar</keterangan>
+      <FungsiUtama>
+        <keterangan>Mengoperasikan komputer</keterangan>
+        <UnitKompetensi>
+          <kodeUnit>J.63OPR00.001.2</kodeUnit>
+          <judulUnit>Menggunakan Perangkat Komputer</judulUnit>
+          <deskripsiUnit>Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk menggunakan perangkat komputer dalam kondisi normal</deskripsiUnit>
+          <UraianUnitKompetensi>
+            <ElemenKompetensi>
+              <keterangan>Menyalakan perangkat komputer dan mengamati proses aktifasi sistem (booting) hingga selesai</keterangan>
+              <kriteriaUnjukKerja>Indikator penyalaan perangkat komputer dapat dilihat sesuai dengan petunjuk penggunaan.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Proses proses aktivasi sistem operasi dapat dijalankan sesuai dengan petunjuk penggunaan.</kriteriaUnjukKerja>
+            </ElemenKompetensi>
+            <ElemenKompetensi>
+              <keterangan>Menjalankan perangkat komputer</keterangan>
+              <kriteriaUnjukKerja>Antar muka pengguna yang tersedia dapat dijalankan dengan Peripheral yang tersedia sesuai dengan petunjuk penggunaan komputer.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Program aplikasi dijalankan sesuai dengan petunjuk penggunaan komputer.</kriteriaUnjukKerja>
+            </ElemenKompetensi>
+            <ElemenKompetensi>
+              <keterangan>Mematikan perangkat komputer</keterangan>
+              <kriteriaUnjukKerja>Semua program aplikasi ditutup sesuai dengan petunjuk penggunaan komputer.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Antrian data dari atau menuju peripheral dipastikan sudah tidak ada lagi sesuai dengan petunjuk penggunaan komputer.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Tampilan yang muncul pada layar monitor diidentifikasi merupakan tampilan yang menandakan proses penghentian secara normal sesuai dengan petunjuk penggunaan komputer.</kriteriaUnjukKerja>
+            </ElemenKompetensi>
+          </UraianUnitKompetensi>
+          <BatasanVariabel>
+            <konteksVariabel>Perangkat Komputer adalah Komputer Personal, Laptop/Notebook, Tablet, Smartphone yang terhubung atau tidak dengan jaringan internet (jaringan komputer). Komputer yang dimaksud komputer dalam bentuk digunakan sehari-hari.</konteksVariabel>
+            <konteksVariabel>Aktivasi adalah proses untuk mendapatkan verifikasi atas account yang sah.</konteksVariabel>
+            <konteksVariabel>Antar Muka Pengguna (user Interface) adalah fasilitas yang dimanfaatkan berupa Graphical User Interface (GUI), seperti windows, menu pilihan, icon dan teks perintah (command entry).</konteksVariabel>
+            <konteksVariabel>Peripheral adalah peralatan tambahan (baik berupa peralatan masukan dan keluaran) yang dipasang pada komputer seperti alat cetak (printer) , alat pemindai (scanner), mouse, touch pad, layar sentuh ( touch screen), stylus pen dan light pen.</konteksVariabel>
+            <konteksVariabel>Program Aplikasi adalah perangkat lunak yang sudah terpasang/terinstal di perangkat komputer.</konteksVariabel>
+          </BatasanVariabel>
+          <PanduanPenilaian>
+            <KonteksPenilaian>
+              <keterangan>Unit kompetensi ini dinilai berdasarkan tingkat kemampuan menggunakan perangkat komputer dan menjalankan program aplikasi pada perangkat komputer dalam sebuah organisasi/perusahaan.</keterangan>
+              <penilaian>Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.</penilaian>
+              <penilaian>Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.</penilaian>
+              <penilaian>Metode-metode lain yang relevan.</penilaian>
+            </KonteksPenilaian>
+            <pengetahuan>Perangkat komputer</pengetahuan>
+            <pengetahuan>Jenis-jenis sistem operasi </pengetahuan>
+            <pengetahuan>Antar muka pengguna</pengetahuan>
+            <keterampilan>Mengetik pada keyboard</keterampilan>
+            <keterampilan>Menggunakan mouse/touch pad/layar sentuh (touch screen)/pen light/stylus pen</keterampilan>
+            <sikapKerja>Disiplin</sikapKerja>
+            <sikapKerja>Teliti</sikapKerja>
+            <sikapKerja>Tanggung jawab</sikapKerja>
+            <sikapKerja>Kerjasama dalam tim</sikapKerja>
+            <aspekKritis>Ketepatan dalam mengenali perintah sederhana</aspekKritis>
+          </PanduanPenilaian>
+        </UnitKompetensi>
+      </FungsiUtama>
+    </FungsiKunci>
+  </TujuanUtama>
+</SKKNI>
