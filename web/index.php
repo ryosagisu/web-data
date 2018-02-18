@@ -47,17 +47,17 @@
 
       <div class="p-2 custom-checkbox" id="jenjang7">
         <input type="radio" name="jenjang" value="7"/>
-        <span class="box">Strata-2</span>
+        <span class="box">Profesional</span>
       </div>
 
       <div class="p-2 custom-checkbox" id="jenjang8">
         <input type="radio" name="jenjang" value="8"/>
-        <span class="box">Strata-3</span>
+        <span class="box">Strata-2</span>
       </div>
 
       <div class="p-2 custom-checkbox" id="jenjang9">
         <input type="radio" name="jenjang" value="9"/>
-        <span class="box">Profesor</span>
+        <span class="box">Strata-3</span>
       </div>
     </div>
 
@@ -136,7 +136,21 @@
     </div>
     <br/><br/><br/>
     <h4 class="text-center">Hasil</h4>
-    <div id="hasilnya"></div>
+    <div class="container">
+      <h5 id="hasilJenjang">Jenjang</h5>
+      <h5 id="hasilDomain">Domain</h5>
+      <h5>Kemungkinan jabatan: </h5>
+      <ol id="hasilJabatan"></ol>
+      <h5>Unit kompetensi: </h5>
+      <ol id="hasilUK"></ol>
+      <h5>Pengetahuan: </h5>
+      <ol id="hasilPengetahuan"></ol>
+      <h5>Skill: </h5>
+      <ol id="hasilSkill"></ol>
+      <h5>Sikap Kerja: </h5>
+      <ol id="hasilSikap"></ol>
+    </div>
+    <!-- <div id="hasilnya"></div> -->
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -187,29 +201,51 @@ $("#cekPL").click(function(){
     },
     success: function(data){
       console.log(data);
-      $("#hasilnya").html('');
-      var tu = [], fk = [], fu = [], ku = [], ju = [], ek = [], du = [], pp = [], kp = [], kt = [], ak = [], sk = [], pn = [], bv = [], kv = [];
-      for(var i = 0; i < JSON.parse(data).length; i++){
-        tu.push(JSON.parse(data)[i].tujuan_utama);
-        fk.push(JSON.parse(data)[i].fungsi_kunci);
-        fu.push(JSON.parse(data)[i].fungsi_utama);
-        ku.push(JSON.parse(data)[i].kode_unit);
-        ju.push(JSON.parse(data)[i].judul_unit);
-        ek.push(JSON.parse(data)[i].elemen_kompetensi);
-        du.push(JSON.parse(data)[i].deskripsi_unit);
-        pp.push(JSON.parse(data)[i].panduan_penilaian);
-        kp.push(JSON.parse(data)[i].konteks_penilaian);
-        kt.push(JSON.parse(data)[i].ketrampilan);
-        ak.push(JSON.parse(data)[i].aspek_kunci);
-        sk.push(JSON.parse(data)[i].sikap_kerja);
-        pn.push(JSON.parse(data)[i].pengetahuan);
-        bv.push(JSON.parse(data)[i].batasan_variabel);
-        kv.push(JSON.parse(data)[i].konteks_variabel);
-      }
-      var result = 
-        "<div class='row'><p>Tujuan Utama: "+tu.toString()+"</p><br/><p>Fungsi Kunci: "+fk.toString()+"</p><br/><p>Fungsi Utama: "+fu.toString()+"</p><br/><p>Kode Unit: "+ku.toString()+"</p><br/><p>Judul Unit: "+ju.toString()+"</p><br/><p>Elemen Kompetensi: "+ek.toString()+"</p><br/><p>Deskripsi Unit: "+du.toString()+"</p><br/><p>Panduan Penilaian: "+pp.toString()+"</p><br/><p>Konteks Penilaian: "+kp.toString()+"</p><br/><p>Keterampilan: "+kt.toString()+"</p><br/><p>Aspek Kritis: "+ak.toString()+"</p><br/><p>Sikap Kerja: "+sk.toString()+"</p><br/><p>Pengetahuan: "+pn.toString()+"</p><br/><p>Batasan Variabel: "+bv.toString()+"</p><br/><p>Konteks Variabel: "+kv.toString()+"</p><br/></div>";
-      $("#hasilnya").html(data);
-      // $("#hasilnya").html(result);
+      var hasil = JSON.parse(data);
+      $("#hasilJenjang").html('');
+      $("#hasilDomain").html('');
+      $("#hasilJabatan").html('');
+      $("#hasilUK").html('');
+      $("#hasilPengetahuan").html('');
+      $("#hasilSkill").html('');
+      $("#hasilSikap").html('');
+      //Jenjang
+      $("#hasilJenjang").html('Level: '+ hasil.KKNI[0].Jenjang[0].level);
+      //Domain
+      $("#hasilDomain").html('Domain: '+ hasil.KKNI[0].domain);
+      //Kemungkinan jabatan
+      var kemungkinanJabatan = [];
+      $.each(hasil.KKNI[0].Jenjang[0].kemungkinanJabatan, function(i, item) {
+        kemungkinanJabatan.push('<li>' + item + '</li>');
+      });
+      $('#hasilJabatan').append( kemungkinanJabatan.join('') );
+      //Unit Kompetensi
+      var uk = [];
+      // $.each(hasil.KKNI[0].Jenjang[0].UnitKompetensi, function(i, item) {
+      //   uk.push('<li>' + item.judulUnitKompetensi[0] + '</li>');
+      // });
+      $.each(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi, function(i, item) {
+        uk.push('<li>' + item.judulUnit[0] + '<p>' + item.deskripsiUnit[0] + '</p></li>');
+      });
+      $('#hasilUK').append( uk.join('') );
+      //Pengetahuan
+      var pengetahuan = [];
+      $.each(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[0].PanduanPenilaian[0].pengetahuan, function(i, item) {
+        pengetahuan.push('<li>' + item + '</li>');
+      });
+      $('#hasilPengetahuan').append( pengetahuan.join('') );
+      //Skill
+      var skill = [];
+      $.each(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[0].PanduanPenilaian[0].keterampilan, function(i, item) {
+        skill.push('<li>' + item + '</li>');
+      });
+      $('#hasilSkill').append( skill.join('') );
+      //Sikap kerja
+      var sikapKerja = [];
+      $.each(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[0].PanduanPenilaian[0].sikapKerja, function(i, item) {
+        sikapKerja.push('<li>' + item + '</li>');
+      });
+      $('#hasilSikap').append( sikapKerja.join('') );
     }
   });
 });
