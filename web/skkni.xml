@@ -98,6 +98,58 @@
             <aspekKritis>Ketepatan dalam mengenali perintah sederhana</aspekKritis>
           </PanduanPenilaian>
         </UnitKompetensi>
+        <UnitKompetensi>
+          <kodeUnit>J.63OPR00.003.2</kodeUnit>
+          <judulUnit>Menggunakan Peralatan Peripheral</judulUnit>
+          <deskripsiUnit>Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam menggunakan peralatan peripheral.</deskripsiUnit>
+          <UraianUnitKompetensi>
+            <ElemenKompetensi>
+              <keterangan>Mempersiapkan peralatan peripheral</keterangan>
+              <kriteriaUnjukKerja>Peralatan sudah disambung ke perangkat komputer menggunakan jenis koneksi yang tersedia.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Peralatan peripheral dinyalakan sesuai petunjuk penggunaan.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Pengaturan peralatan dilakukan sesuai dengan petunjuk penggunaan.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Peralatan diaktifkan melalui perangkat lunak (peripheral driver) yang digunakan.</kriteriaUnjukKerja>
+            </ElemenKompetensi>
+            <ElemenKompetensi>
+              <keterangan>Menggunakan printer</keterangan>
+              <kriteriaUnjukKerja>Media cetak dipasang pada printer.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Fitur dasar pencetakan dipilih melalui aplikasi yang digunakan.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Proses pencetakan dilakukan dengan melalui aplikasi yang sesuai.</kriteriaUnjukKerja>
+            </ElemenKompetensi>
+            <ElemenKompetensi>
+              <keterangan>Menggunakan scanner</keterangan>
+              <kriteriaUnjukKerja>Dokumen diletakan di scanner sesuai dengan petunjuk penggunaan.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Fitur dasar pemindaian dipilih sesuai dengan kebutuhan.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Proses pemindaian dilakukan dengan melalui aplikasi yang sesuai.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Hasil pemindaian disimpan sesuai dengan kebutuhan.</kriteriaUnjukKerja>
+            </ElemenKompetensi>
+            <ElemenKompetensi>
+              <keterangan>Mematikan peralatan</keterangan>
+              <kriteriaUnjukKerja>Semua kondisi/setting peralatan sudah dikembalikan ke pengaturan awal (default) sesuai dengan petunjuk penggunaan.</kriteriaUnjukKerja>
+              <kriteriaUnjukKerja>Peralatan dimatikan dengan mengikuti petunjuk penggunaan.</kriteriaUnjukKerja>
+            </ElemenKompetensi>
+          </UraianUnitKompetensi>
+          <BatasanVariabel>
+            <konteksVariabel>Perintah-perintah sederhana dapat berupa menyalakan komputer, menyalin dan melihat berkas, menjalankan program,dan sebagainya.</konteksVariabel>
+            <konteksVariabel>Petunjuk penggunaan sistem operasi adalah petunjuk/pedoman langkah-langkah menggunakan perangkat lunak sistem operasi.</konteksVariabel>
+            <konteksVariabel>Obyek pengacu tersebut misalnya: windows, menu, ikon, kursor, kombinasi tombol dan sebagainya.</konteksVariabel>
+            <konteksVariabel>Pengaturan sederhana adalah fitur dari sistem operasi yang memungkinkan pengguna untuk mengubah pengaturan sistem dan control.</konteksVariabel>
+          </BatasanVariabel>
+          <PanduanPenilaian>
+            <KonteksPenilaian>
+              <keterangan>Kompetensi ini diujikan secara praktik di tempat kerja atau  laboratorim komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian.</keterangan>
+              <keterangan>Penilaian secara holistik dengan unit lain yang relevan dengan peran sektor industri, tempat kerja dan pekerjaan yang sesuai dianjurkan.</keterangan>
+              <keterangan>Proses penilaian dan teknik harus sesuai dengan budaya dan sesuai dengan tingkat keterampilan komunikasi, Bahasa, membaca dan menghitung kapasitas calon dan pekerjaan yang dilakukan.</keterangan>
+              <keterangan>Dalam kasus di mana penilaian praktis digunakan, harus dikombinasikan dengan pertanyaan yang ditargetkan untuk menilai pengetahuan yang diperlukan.</keterangan>
+              <penilaian></penilaian>
+            </KonteksPenilaian>
+            <pengetahuan>Penggunaan perangkat komputer</pengetahuan>
+            <keterampilan></keterampilan>
+            <sikapKerja>Disiplin</sikapKerja>
+            <sikapKerja>Teliti</sikapKerja>
+            <aspekKritis>Ketepatan dalam menghubungkan peralatan ke perangkat komputer meggunakan jenis koneksi yang tersedia</aspekKritis>
+          </PanduanPenilaian>
+        </UnitKompetensi>
       </FungsiUtama>
     </FungsiKunci>
   </TujuanUtama>
