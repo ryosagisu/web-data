@@ -145,10 +145,11 @@
       <ol id="hasilUK"></ol>
       <h5>Pengetahuan: </h5>
       <ol id="hasilPengetahuan"></ol>
-      <h5>Skill: </h5>
+      <h5>Keterampilan: </h5>
       <ol id="hasilSkill"></ol>
       <h5>Sikap Kerja: </h5>
       <ol id="hasilSikap"></ol>
+      <div id="hasilnya"></div>
     </div>
     <!-- <div id="hasilnya"></div> -->
 </body>
@@ -209,49 +210,65 @@ $("#cekPL").click(function(){
       $("#hasilPengetahuan").html('');
       $("#hasilSkill").html('');
       $("#hasilSikap").html('');
+      // $("#hasilnya").html('');
       //Jenjang
       $("#hasilJenjang").html('Level: '+ hasil.KKNI[0].Jenjang[0].level);
       //Domain
-      $("#hasilDomain").html('Domain: '+ hasil.KKNI[0].domain);
-      //Kemungkinan jabatan
-      var kemungkinanJabatan = [];
-      $.each(hasil.KKNI[0].Jenjang[0].kemungkinanJabatan, function(i, item) {
-        kemungkinanJabatan.push('<li>' + item + '</li>');
-      });
-      $('#hasilJabatan').append( kemungkinanJabatan.join('') );
+      if(hasil.KKNI.length > 1){
+        var domain = '', kmngknnJbtn, pngthn, ktrmpln, skpkrj;
+        for (var i = 0; i < hasil.KKNI.length; i++) {
+          if(i !== hasil.KKNI.length - 1) domain += hasil.KKNI[i].domain+', ';
+          else domain += 'dan '+hasil.KKNI[i].domain;
+          if(i !== hasil.KKNI.length - 1){
+            kmngknnJbtn = hasil.KKNI[i].Jenjang[0].kemungkinanJabatan.concat(hasil.KKNI[i+1].Jenjang[0].kemungkinanJabatan);
+          }
+        }
+        for(var i = 0; i < hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi.length; i++){
+          if(i !== hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi.length - 1){
+            pngthn = hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[i].PanduanPenilaian[0].pengetahuan.concat(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[i+1].PanduanPenilaian[0].pengetahuan);
+            ktrmpln = hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[i].PanduanPenilaian[0].keterampilan.concat(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[i+1].PanduanPenilaian[0].keterampilan);
+            skpkrj = hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[i].PanduanPenilaian[0].sikapKerja.concat(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[i+1].PanduanPenilaian[0].sikapKerja);
+          }
+        }
+        $("#hasilDomain").html('Domain: '+ domain);
+        //Kemungkinan jabatan
+        parse(kmngknnJbtn, 'hasilJabatan');
+        //Pengetahuan
+        parse(pngthn, 'hasilPengetahuan');
+        //Keterampilan
+        parse(ktrmpln, 'hasilSkill');
+        //Sikap Kerja
+        parse(skpkrj, 'hasilSikap');
+      }else {
+        $("#hasilDomain").html('Domain: '+ hasil.KKNI[0].domain);
+        //Kemungkinan jabatan
+        parse(hasil.KKNI[0].Jenjang[0].kemungkinanJabatan, 'hasilJabatan');
+        //Pengetahuan
+        parse(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[0].PanduanPenilaian[0].pengetahuan, 'hasilPengetahuan');
+        //Keterampilan
+        parse(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[0].PanduanPenilaian[0].keterampilan, 'hasilSkill');
+        // //Sikap Kerja
+        parse(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[0].PanduanPenilaian[0].sikapKerja, 'hasilSikap');
+      }
       //Unit Kompetensi
       var uk = [];
-      // $.each(hasil.KKNI[0].Jenjang[0].UnitKompetensi, function(i, item) {
-      //   uk.push('<li>' + item.judulUnitKompetensi[0] + '</li>');
-      // });
       $.each(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi, function(i, item) {
         uk.push('<li>' + item.judulUnit[0] + '<p>' + item.deskripsiUnit[0] + '</p></li>');
       });
       $('#hasilUK').append( uk.join('') );
-      //Pengetahuan
-      var pengetahuan = [];
-      $.each(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[0].PanduanPenilaian[0].pengetahuan, function(i, item) {
-        pengetahuan.push('<li>' + item + '</li>');
-      });
-      $('#hasilPengetahuan').append( pengetahuan.join('') );
-      //Skill
-      var skill = [];
-      $.each(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[0].PanduanPenilaian[0].keterampilan, function(i, item) {
-        skill.push('<li>' + item + '</li>');
-      });
-      $('#hasilSkill').append( skill.join('') );
-      //Sikap kerja
-      var sikapKerja = [];
-      $.each(hasil.SKKNI[0].FungsiKunci[0].FungsiUtama[0].UnitKompetensi[0].PanduanPenilaian[0].sikapKerja, function(i, item) {
-        sikapKerja.push('<li>' + item + '</li>');
-      });
-      $('#hasilSikap').append( sikapKerja.join('') );
+      // $('#hasilnya').html(data);
     }
   });
 });
+function parse(data, id){
+    var arr = [];
+    $.each(data, function(i, item) {
+      if(arr.indexOf('<li>' + item + '</li>') === -1 && item.length !== 0){
+        arr.push('<li>' + item + '</li>');
+      }
+    });
+    $('#'+id).append( arr.join('') );
+}
 });
-
-
 </script>
-
 </html>

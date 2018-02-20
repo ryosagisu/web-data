@@ -61,18 +61,18 @@
       <sikapKerja>B</sikapKerja>
       <sikapKerja>C</sikapKerja>
       <peranKerja>Kualifikasi ini</peranKerja>
-      <kemungkinanJabatan>Print Operator</kemungkinanJabatan>
-      <kemungkinanJabatan>Asisten Operator Komputer</kemungkinanJabatan>
-      <kemungkinanJabatan>Computer Technician Clerk</kemungkinanJabatan>
-      <kemungkinanJabatan>Basic Office Operator</kemungkinanJabatan>
-      <kemungkinanJabatan>Junior Office Operator</kemungkinanJabatan>
+      <kemungkinanJabatan>Print Operator 1</kemungkinanJabatan>
+      <kemungkinanJabatan>Asisten Operator Komputer 1</kemungkinanJabatan>
+      <kemungkinanJabatan>Computer Technician Clerk 1</kemungkinanJabatan>
+      <kemungkinanJabatan>Basic Office Operator 1</kemungkinanJabatan>
+      <kemungkinanJabatan>Junior Office Operator 1</kemungkinanJabatan>
       <UnitKompetensi>
         <kodeUnitKompetensi>J.63OPR00.001.2</kodeUnitKompetensi>
         <judulUnitKompetensi>Menggunakan Perangkat Komputer</judulUnitKompetensi>
       </UnitKompetensi>
       <UnitKompetensi>
         <kodeUnitKompetensi>J.63OPR00.003.2</kodeUnitKompetensi>
-        <judulUnitKompetensi>Menggunakan Sistem Operasi</judulUnitKompetensi>
+        <judulUnitKompetensi>Menggunakan Peralatan Peripheral</judulUnitKompetensi>
       </UnitKompetensi>
     </Jenjang>
   </Bidang>

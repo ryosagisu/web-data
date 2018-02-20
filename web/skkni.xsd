@@ -34,7 +34,7 @@
 
 <xs:complexType name="konteksPenilaian">
   <xs:sequence>
-    <xs:element name="keterangan" type="xs:string"/>
+    <xs:element name="keterangan" type="xs:string" maxOccurs="unbounded"/>
     <xs:element name="penilaian" type="xs:string" maxOccurs="unbounded"/>
   </xs:sequence>
 </xs:complexType>
