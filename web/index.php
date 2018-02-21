@@ -103,31 +103,31 @@
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="10">
-        <span class="box"">IT SECURITY AND COMPLIANCE</span>
+        <span class="box">IT SECURITY AND COMPLIANCE</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="11">
-        <span class="box"">IT SERVICES MANAGEMENT SYSTEM</span>
+        <span class="box">IT SERVICES MANAGEMENT SYSTEM</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="12">
-        <span class="box"">IT AND COMPUTING FACILITIES MANAGEMENT</span>
+        <span class="box">IT AND COMPUTING FACILITIES MANAGEMENT</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="13">
-        <span class="box"">IT MULTEMEDIA</span>
+        <span class="box">IT MULTEMEDIA</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="14">
-        <span class="box"">IT MOBILITY AND INTERNET OF THINGS</span>
+        <span class="box">IT MOBILITY AND INTERNET OF THINGS</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="15">
-        <span class="box"">INTEGRATION APPLICATION SYSTEM</span>
+        <span class="box">INTEGRATION APPLICATION SYSTEM</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="16">
-        <span class="box"">IT CONSULTANCY AND ADVISORY</span>
+        <span class="box">IT CONSULTANCY AND ADVISORY</span>
       </div>
     </div>
 
