@@ -55,11 +55,11 @@ def fetchData():
 
 		#Get data SKKNI
 		root2 = ET.parse(full_file_second)
-		tujuanUtama = root.findall('TujuanUtama')
-		#Belum kelar
+		tujuanUtama = root2.findall('TujuanUtama')
 		for node2 in tujuanUtama:
-			dataSKKNI.append(showNode(node2, "SKKNI", listKompetensi))
-		return json.dumps({'dataKKNI': dataKKNI})
+			# dataSKKNI.append(showNode(node2, "SKKNI", listKompetensi))
+			dataSKKNI = showNode(node2, "SKKNI", listKompetensi)
+		return json.dumps({'KKNI': dataKKNI, 'SKKNI': dataSKKNI})
 	else:
 		return json.dumps({'status':'XML not validate'})
 

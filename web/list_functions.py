@@ -32,8 +32,7 @@ def showNode(x, root, param):
 	elif root == 'SKKNI':
 		listUK = x.find('FungsiKunci').find('FungsiUtama').findall('UnitKompetensi')
 		listKomp = []
-		#Belum bener
 		for uk in listUK:
 			if uk.find('kodeUnit').text in param:
-				listKomp.append(uk)
-		return xmltodict.parse(ET.tostring(listKomp, 'us-ascii', 'xml'))
+				listKomp.append(xmltodict.parse(ET.tostring(uk, 'us-ascii', 'xml')))
+		return listKomp
