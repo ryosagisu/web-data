@@ -15,12 +15,15 @@ def validate(xml_path, xsd_path):
     
 
 def validNode(domNode, tagName, value):
+	nodeVal = domNode.find(tagName).text
 	if isinstance(value, list):
-		if domNode.find(tagName).text in value:
+		if nodeVal in value or nodeVal[:4] in value:
+			print nodeVal, value
 			return True
 	else:
-		if domNode.find(tagName).text == value:
+		if nodeVal == value:
 			return True
+	return False
 
 
 def showNode(x, root, param):
@@ -35,4 +38,10 @@ def showNode(x, root, param):
 		for uk in listUK:
 			if uk.find('kodeUnit').text in param:
 				listKomp.append(xmltodict.parse(ET.tostring(uk, 'us-ascii', 'xml')))
+		return listKomp
+	elif root == 'PetaOkupasi':
+		listK = x.findall('Kompetensi')
+		listKomp = []
+		for k in listK:
+			listKomp.append(xmltodict.parse(ET.tostring(k, 'us-ascii', 'xml')))
 		return listKomp

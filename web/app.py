@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, json
 import os
 import json
+import xmltodict
 from xml.etree import ElementTree as ET
 from list_functions import validate, validNode, showNode
 
@@ -12,12 +13,13 @@ def index():
 
 @app.route('/fetchData', methods=['POST'])
 def fetchData():
-	
+
 	#Get data from post ajax
-	level =  request.form['level']
+	level =  '0' + request.form['level']
 	domain = request.form.getlist('domain[]')
-
-
+	domainList = ['DATA MANAGEMENT SYSTEM',	'PROGRAMMING AND SOFTWARE DEVELOPMENT',	'HARDWARE AND DIGITAL PERIPHERALS',	'NETWORK AND INFRASTRUCTURE', 'OPERATION AND SYSTEM TOOLS', 'INFORMATION SYSTEM AND TECHNOLOGY DEVELOPMENT', 'IT GOVERNANCE AND MANAGEMENT', 'IT PROJECT MANAGEMENT', 'IT ENTERPRISE ARCHITECTURE', 'IT SECURITY AND COMPLIANCE', 'IT SERVICES MANAGEMENT SYSTEM', 'IT AND COMPUTING FACILITIES MANAGEMENT', 'IT MULTEMEDIA', 'IT MOBILITY AND INTERNET OF THINGS', 'INTEGRATION APPLICATION SYSTEM', 'IT CONSULTANCY AND ADVISORY']
+	selDomList = [str(domainList.index(x) + 1).zfill(2) + level for x in domain]
+	
 	#Get dataset
 	first_data = 'kkni.xml'
 	second_data = 'skkni.xml'
@@ -40,26 +42,28 @@ def fetchData():
 		listKompetensi = []
 		dataKKNI = []
 		dataSKKNI = []
+		dataPO = []
+		dataJab = []
 
-		#Get data KKNI
-		root = ET.parse(full_file_first)
-		bidang = root.findall('Bidang')
-		for node in bidang:
-			if (validNode(node, 'domain', domain)):
-				dataKKNI.append(showNode(node, "KKNI", level))
-		for data1 in dataKKNI:
-			list1 = data1['Jenjang']['UnitKompetensi']
-			for data2 in list1:
-				if data2['kodeUnitKompetensi'] not in listKompetensi:
-					listKompetensi.append(data2['kodeUnitKompetensi'])
-
+		po = ET.parse(full_file_third)
+		okupasi = po.findall('Okupasi')
+		for node in okupasi:
+			if (validNode(node, 'kodeOkupasi', selDomList)):
+				dataJab.append(xmltodict.parse(ET.tostring(node.find('namaOkupasi'), 'us-ascii', 'xml')))
+				dataPO.append(showNode(node, "PetaOkupasi", ""))
+		flatPO = [item for sub in dataPO for item in sub]
+		print dataJab
+		print flatPO
+		for data1 in flatPO:
+			if data1['Kompetensi']['kodeUnitKompetensi'] not in listKompetensi:
+				listKompetensi.append(data1['Kompetensi']['kodeUnitKompetensi'])		
 		#Get data SKKNI
 		root2 = ET.parse(full_file_second)
 		tujuanUtama = root2.findall('TujuanUtama')
 		for node2 in tujuanUtama:
 			# dataSKKNI.append(showNode(node2, "SKKNI", listKompetensi))
 			dataSKKNI = showNode(node2, "SKKNI", listKompetensi)
-		return json.dumps({'KKNI': dataKKNI, 'SKKNI': dataSKKNI})
+		return json.dumps({'KKNI': dataKKNI, 'SKKNI': dataSKKNI, 'KodeUnitKompetensi': listKompetensi, 'Jabatan': dataJab})
 	else:
 		return json.dumps({'status':'XML not validate'})
 

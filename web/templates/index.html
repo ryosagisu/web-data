@@ -139,7 +139,7 @@
     <div class="container">
       <h5 id="hasilJenjang">Jenjang</h5>
       <h5 id="hasilDomain">Domain</h5>
-      <h5>Kemungkinan jabatan: </h5>
+      <h5>Jabatan: </h5>
       <ol id="hasilJabatan"></ol>
       <h5>Unit kompetensi: </h5>
       <ol id="hasilUK"></ol>
@@ -238,7 +238,7 @@ $("#cekPL").click(function(){
       }else{
         $("#hasilDomain").html('Domain: '+ selected[0]);
         //Kemungkinan jabatan
-        parse(hasil.KKNI[0].Jenjang.kemungkinanJabatan, 'hasilJabatan');
+        // parse(hasil.KKNI[0].Jenjang.kemungkinanJabatan, 'hasilJabatan');
       }
 		var pngthn, ktrmpln, skpkrj;
 		for(var i = 0; i < hasil.SKKNI.length; i++){
@@ -254,6 +254,16 @@ $("#cekPL").click(function(){
 			uk.push('<li>' + hasil.SKKNI[i].UnitKompetensi.judulUnit + '<p>' + hasil.SKKNI[i].UnitKompetensi.deskripsiUnit + '</p></li>');
 		}
 		$('#hasilUK').append( uk.join('') );
+
+    for(var i = 0; i < hasil.Jabatan.length; i++){
+      uk.push('<li>' + hasil.Jabatan[i].namaOkupasi + '<p></p></li>');
+    }
+    $('#hasilJabatan').append( uk.join('') );
+
+    for(var i = 0; i < hasil.KodeUnitKompetensi.length; i++){
+      uk.push('<li>' + hasil.KodeUnitKompetensi[i] + '<p></p></li>');
+    }
+    $('#hasilUK').append( uk.join('') );
 		//Pengetahuan
 		parse(pngthn, 'hasilPengetahuan');
 		//Keterampilan

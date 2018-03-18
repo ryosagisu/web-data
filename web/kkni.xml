@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <KKNI>
   <Bidang>
-    <domain>OPERATION AND SYSTEM TOOLS</domain>
+    <domainName>OPERATION AND SYSTEM TOOLS</domainName>
+    <domainNumber>05</domainNumber>
 
     <Jenjang>
-      <level>1</level>
+      <level>01</level>
       <deskripsi>Memiliki kemampuan</deskripsi>
       <kodeJenjangKKNI>J.63OPR00</kodeJenjangKKNI>
       <sikapKerja>A</sikapKerja>
@@ -27,7 +28,7 @@
     </Jenjang>
 
     <Jenjang>
-      <level>2</level>
+      <level>02</level>
       <deskripsi>Memiliki kemampuan</deskripsi>
       <kodeJenjangKKNI>J.63OPR00</kodeJenjangKKNI>
       <sikapKerja>A</sikapKerja>
@@ -51,10 +52,11 @@
   </Bidang>
 
   <Bidang>
-    <domain>DATA MANAGEMENT SYSTEM</domain>
+    <domainName>DATA MANAGEMENT SYSTEM</domainName>
+    <domainNumber>01</domainNumber>
 
     <Jenjang>
-      <level>1</level>
+      <level>01</level>
       <deskripsi>Memiliki kemampuan</deskripsi>
       <kodeJenjangKKNI>J.63OPR00</kodeJenjangKKNI>
       <sikapKerja>A</sikapKerja>

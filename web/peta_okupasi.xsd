@@ -4,20 +4,19 @@
 <xs:element name="PetaOkupasi">
   <xs:complexType>
     <xs:sequence>
-      <xs:element name="KodeOkupasi" maxOccurs="unbounded">
+      <xs:element name="Okupasi" maxOccurs="unbounded">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="kode" type="xs:string"/>
-            <xs:element name="deskripsi" type="xs:string"/>
+            <xs:element name="kodeOkupasi" type="xs:string"/>
             <xs:element name="namaOkupasi" type="xs:string"/>
-            <xs:element name="tugasUtama" type="xs:string"/>
-            <xs:element name="profil" type="xs:string"/>
-            <xs:element name="persyaratan" type="xs:string"/>
-            <xs:element name="sertifikasi" type="xs:string"/>
-            <xs:element name="lingkupPekerjaan" type="xs:string"/>
-            <xs:element name="verifikasi" type="xs:string"/>
-            <xs:element name="wewenang" type="xs:string"/>
-            <xs:element name="jenjangKarir" type="xs:string"/>
+            <xs:element name="Kompetensi" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="kodeUnitKompetensi" type="xs:string"/>
+                  <xs:element name="namaUnitKompetensi" type="xs:string"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
           </xs:sequence>
         </xs:complexType>
       </xs:element>
