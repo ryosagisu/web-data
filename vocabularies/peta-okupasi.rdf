@@ -2,37 +2,37 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-  <rdfs:Class rdf:about="http://tenbit.id/schemas/peta-okupasi.rdf#Okupasi">
+  <rdfs:Class rdf:about="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#Okupasi">
     <rdfs:label>peta-okupasi</rdfs:label>
     <rdfs:comment>peta-okupasi</rdfs:comment>
   </rdfs:Class>
 
-  <rdfs:Datatype rdf:about="http://tenbit.id/schemas/peta-okupasi.rdf#kodeOkupasi">
-    <rdfs:subClassOf rdf:resource="http://tenbit.id/schemas/peta-okupasi.rdf#Okupasi"/>
+  <rdfs:Datatype rdf:about="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#kodeOkupasi">
+    <rdfs:subClassOf rdf:resource="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#Okupasi"/>
     <rdfs:label>kodeOkupasi</rdfs:label>
     <rdfs:comment>kodeOkupasi</rdfs:comment>
   </rdfs:Datatype>
 
-  <rdfs:Datatype rdf:about="http://tenbit.id/schemas/peta-okupasi.rdf#namaOkupasi">
-    <rdfs:subClassOf rdf:resource="http://tenbit.id/schemas/peta-okupasi.rdf#Okupasi"/>
+  <rdfs:Datatype rdf:about="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#namaOkupasi">
+    <rdfs:subClassOf rdf:resource="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#Okupasi"/>
     <rdfs:label>namaOkupasi</rdfs:label>
     <rdfs:comment>namaOkupasi</rdfs:comment>
   </rdfs:Datatype>
 
-  <rdfs:Class rdf:about="http://tenbit.id/schemas/peta-okupasi.rdf#Kompetensi">
-    <rdfs:subClassOf rdf:resource="http://tenbit.id/schemas/peta-okupasi.rdf#Okupasi"/>
+  <rdfs:Class rdf:about="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#Kompetensi">
+    <rdfs:subClassOf rdf:resource="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#Okupasi"/>
     <rdfs:label>Kompetensi</rdfs:label>
     <rdfs:comment>Kompetensi</rdfs:comment>
   </rdfs:Class>
 
-  <rdfs:Datatype rdf:about="http://tenbit.id/schemas/peta-okupasi.rdf#kodeUnitKompetensi">
-    <rdfs:subClassOf rdf:resource="http://tenbit.id/schemas/peta-okupasi.rdf#Kompetensi"/>
+  <rdfs:Datatype rdf:about="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#kodeUnitKompetensi">
+    <rdfs:subClassOf rdf:resource="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#Kompetensi"/>
     <rdfs:label>kodeUnitKompetensi</rdfs:label>
     <rdfs:comment>kodeUnitKompetensi</rdfs:comment>
   </rdfs:Datatype>
 
-  <rdfs:Datatype rdf:about="http://tenbit.id/schemas/peta-okupasi.rdf#namaUnitKompetensi">
-    <rdfs:subClassOf rdf:resource="http://tenbit.id/schemas/peta-okupasi.rdf#Kompetensi"/>
+  <rdfs:Datatype rdf:about="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#namaUnitKompetensi">
+    <rdfs:subClassOf rdf:resource="https://rawgit.com/ryosagisu/web-data/rdf/vocabularies/peta-okupasi.rdf#Kompetensi"/>
     <rdfs:label>namaUnitKompetensi</rdfs:label>
     <rdfs:comment>namaUnitKompetensi</rdfs:comment>
   </rdfs:Datatype>
