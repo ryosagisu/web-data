@@ -4,8 +4,22 @@ import json
 import xmltodict
 from xml.etree import ElementTree as ET
 from list_functions import validate, validNode, showNode
+from eulexistdb import db
 
 app = Flask(__name__)
+
+class TestExist:
+    def __init__(self):
+        self.db = db.ExistDB("http://localhost:8080/exist/")
+
+    def get_res(self,query):
+        result = list()
+        res = self.db.executeQuery(query)
+        hits = self.db.getHits(res)
+        for i in range(hits):
+            result.append(str(self.db.retrieve(res,i)))
+        return result
+
 
 @app.route('/')
 def index():
@@ -66,6 +80,28 @@ def fetchData():
 		return json.dumps({'KKNI': dataKKNI, 'SKKNI': dataSKKNI, 'KodeUnitKompetensi': listKompetensi, 'Jabatan': dataJab})
 	else:
 		return json.dumps({'status':'XML not validate'})
+
+@app.route('/fetchJob', methods=['POST'])
+def fetchJob():
+	#Get data from post ajax
+	level =  '0' + request.form['level']
+	domain = request.form.getlist('domain[]')
+	domainList = ['DATA MANAGEMENT SYSTEM',	'PROGRAMMING AND SOFTWARE DEVELOPMENT',	'HARDWARE AND DIGITAL PERIPHERALS',	'NETWORK AND INFRASTRUCTURE', 'OPERATION AND SYSTEM TOOLS', 'INFORMATION SYSTEM AND TECHNOLOGY DEVELOPMENT', 'IT GOVERNANCE AND MANAGEMENT', 'IT PROJECT MANAGEMENT', 'IT ENTERPRISE ARCHITECTURE', 'IT SECURITY AND COMPLIANCE', 'IT SERVICES MANAGEMENT SYSTEM', 'IT AND COMPUTING FACILITIES MANAGEMENT', 'IT MULTEMEDIA', 'IT MOBILITY AND INTERNET OF THINGS', 'INTEGRATION APPLICATION SYSTEM', 'IT CONSULTANCY AND ADVISORY']
+	selDomList = [str(str(domainList.index(x) + 1).zfill(2) + level) for x in domain]
+	# for $x in distinct-values(doc("/db/dataset/peta_okupasi.xml")/PetaOkupasi/Okupasi/Kompetensi/kodeUnitKompetensi/text())
+	xquery = """
+	declare variable $kode := {arr};
+	for $x in doc("/db/dataset/peta_okupasi.xml")/PetaOkupasi/Okupasi
+	   where contains($kode, substring($x/kodeOkupasi, 1, 4))
+	   return $x/namaOkupasi/text()
+
+	""".format(arr=selDomList)
+	a = TestExist()
+	job = a.get_res(xquery)
+
+	print job
+	print selDomList
+	return json.dumps({'Okupasi': job})
 
 
 if __name__ == '__main__':

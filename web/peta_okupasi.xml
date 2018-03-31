@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PetaOkupasi>
+<PetaOkupasi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="peta_okupasi.xsd">
   <Okupasi>
     <kodeOkupasi>010301</kodeOkupasi>
     <namaOkupasi>DATA MANAGEMENT STAFF</namaOkupasi>
@@ -430,7 +431,7 @@
   </Okupasi>
   <Okupasi>
     <kodeOkupasi>120301</kodeOkupasi>
-    <namaOkupasi>STAF OPERASI PUSAT DATA 
+    <namaOkupasi>STAF OPERASI PUSAT DATA
 (DATA CENTER  OPERATIONS STAFF)</namaOkupasi>
     <Kompetensi>
       <kodeUnitKompetensi>J.631100.009.01</kodeUnitKompetensi>
@@ -812,7 +813,7 @@
   </Okupasi>
   <Okupasi>
     <kodeOkupasi>130301</kodeOkupasi>
-    <namaOkupasi>DIGITAL ARTIST JUNIOR 
+    <namaOkupasi>DIGITAL ARTIST JUNIOR
 (JUNIOR DIGITAL ARTIST)</namaOkupasi>
     <Kompetensi>
       <kodeUnitKompetensi>M.74100.001.02</kodeUnitKompetensi>

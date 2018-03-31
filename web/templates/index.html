@@ -103,36 +103,44 @@
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="10">
-        <span class="box"">IT SECURITY AND COMPLIANCE</span>
+        <span class="box">IT SECURITY AND COMPLIANCE</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="11">
-        <span class="box"">IT SERVICES MANAGEMENT SYSTEM</span>
+        <span class="box">IT SERVICES MANAGEMENT SYSTEM</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="12">
-        <span class="box"">IT AND COMPUTING FACILITIES MANAGEMENT</span>
+        <span class="box">IT AND COMPUTING FACILITIES MANAGEMENT</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="13">
-        <span class="box"">IT MULTEMEDIA</span>
+        <span class="box">IT MULTEMEDIA</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="14">
-        <span class="box"">IT MOBILITY AND INTERNET OF THINGS</span>
+        <span class="box">IT MOBILITY AND INTERNET OF THINGS</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="15">
-        <span class="box"">INTEGRATION APPLICATION SYSTEM</span>
+        <span class="box">INTEGRATION APPLICATION SYSTEM</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="16">
-        <span class="box"">IT CONSULTANCY AND ADVISORY</span>
+        <span class="box">IT CONSULTANCY AND ADVISORY</span>
       </div>
     </div>
 
+    <br/><br/><br/>
+
+    <h4 class="text-center">Pilih Okupasi</h4>
+    <div class="d-flex justify-content-between flex-wrap" id="okupasi">
+      
+    </div>
+
   </div>
-      <button type="button" class="btn btn-primary" style="margin-top: 30px;" id="cekPL">Cek</button>
+      <button type="button" class="btn btn-primary" style="margin-top: 30px;" id="cekOK">List Okupasi</button>
+      <button type="button" class="btn btn-primary" style="margin-top: 30px;" id="cekPL">List Info</button>
     </div>
     <br/><br/><br/>
     <h4 class="text-center">Hasil</h4>
@@ -155,7 +163,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-  $(".custom-checkbox").click(function() {
+  $("#jenjang, #domain, #okupasi").on('click', '.custom-checkbox', function() {
     // GET THE INPUT
     var activeInput = $(this).children("input");
     
@@ -173,6 +181,45 @@ $(document).ready(function(){
       $(nonActiveInput).prop("checked", false);
     }
   });
+
+$("#cekOK").click(function(){
+  var selected = [], level;
+
+  $("#jenjang div").each(function(){
+    if ($(this).find("input").prop("checked")) {
+      level = $(this).find("input").attr('value');
+    }
+  });
+
+  $("#domain div").each(function(){
+    if ($(this).find("input").prop("checked")) {
+      selected.push($(this).find("span").text());
+      // console.log($(this).find("span").text());
+    }
+  });
+
+  $.ajax({
+    type: 'POST',
+    url: '/fetchJob',
+    data:{
+      'domain': selected,
+      'level': level,
+      'ajax': true
+    },
+    success: function(data){
+      console.log(data);
+      $( "#okupasi" ).html('');
+      var hasil = JSON.parse(data);
+      for (var i = 0; i < hasil.Okupasi.length; i++) {
+        $( "#okupasi" ).append( 
+          '<div class="p-2 custom-checkbox">' + 
+          '<input type="checkbox" name="domain" value="' + (i+1) + '">' + 
+          '<span class="box">' + hasil.Okupasi[i] + '</span>' + 
+          '</div>' );
+      }
+    }
+  });
+});
 
 $("#cekPL").click(function(){
   var selected = [], level;

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RDF [
+    <!ENTITY po "http://tenbit.id/schemas/peta-okupasi.rdf#">
+]>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:po="&po;"
+         xml:base="&po;">
+
+<rdf:Description rdf:about="&po;010301">
+    <po:namaOkupasi>DATA MANAGEMENT STAFF</po:namaOkupasi>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP01.001.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP01.002.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP01.003.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP01.004.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP01.005.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP02.006.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP02.007.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP02.011.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP02.012.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP02.013.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP02.014.01"/>
+    <po:unitKompetensi rdf:resource="&po;TIK.OP02.015.01"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&po;TIK.OP01.001.01">
+    <po:namaKompetensi>Mengetik pada papan ketik (keyboard) standar</po:namaKompetensi>
+</rdf:Description>
+
+<rdf:Description rdf:about="&po;TIK.OP01.002.01">
+    <po:namaKompetensi>Mengidentifikasi aspek kode etik dan HAKI dibidang TIK</po:namaKompetensi>
+</rdf:Description>
+<rdf:Description rdf:about="&po;TIK.OP01.003.01">
+    <po:namaKompetensi>Mendeskripsikan kewaspasdaan terhadap keamanan informasi</po:namaKompetensi>
+</rdf:Description>
+<rdf:Description rdf:about="&po;TIK.OP01.004.01">
+    <po:namaKompetensi>Mengidentifikasi sistem dan prosedur pengelolaan infrastruktur komputer</po:namaKompetensi>
+</rdf:Description>
+<rdf:Description rdf:about="&po;TIK.OP01.005.01">
+    <po:namaKompetensi>Mengimplementasikan sistem keamanan dan keselamatan pada pengoperasian komputer</po:namaKompetensi>
+</rdf:Description>
+<rdf:Description rdf:about="&po;TIK.OP02.006.01">
+    <po:namaKompetensi>Mengoperasikan Penelusur Web (Web Browser)</po:namaKompetensi>
+</rdf:Description>
+<rdf:Description rdf:about="&po;TIK.OP02.007.01">
+    <po:namaKompetensi>Mengoperasikan piranti lunak klien e-mail (e-mail client)</po:namaKompetensi>
+</rdf:Description>
+<rdf:Description rdf:about="&po;TIK.OP02.011.01">
+    <po:namaKompetensi>Mengoperasikan piranti lunak presentasi</po:namaKompetensi>
+</rdf:Description>
+<rdf:Description rdf:about="&po;TIK.OP02.012.01">
+    <po:namaKompetensi>Mengoperasikan piranti lunak pengolah kata - tingkat maju</po:namaKompetensi>
+</rdf:Description>
+<rdf:Description rdf:about="&po;TIK.OP02.013.01">
+    <po:namaKompetensi>Mengoperasikan piranti lunak lembar sebar - tingkat maju</po:namaKompetensi>
+</rdf:Description>
+<rdf:Description rdf:about="&po;TIK.OP02.014.01">
+    <po:namaKompetensi>Mempergunakan Piranti Lunak Anti virus</po:namaKompetensi>
+</rdf:Description>
+<rdf:Description rdf:about="&po;TIK.OP02.015.01">
+    <po:namaKompetensi>Mempergunakan perangkat keras dan piranti lunak untuk memindai dokumen gambar</po:namaKompetensi>
+</rdf:Description>
+</rdf:RDF>
