@@ -1,0 +1,29 @@
+# SPARQL QUERY LIST
+
+# fetch all data for id in array
+PREFIX ok: <http://example.org/element/okupasi/>
+PREFIX kom: <http://example.org/element/kompetensi/>
+SELECT ?id ?name ?komID ?komName
+WHERE
+{
+  ?okupasi ok:id ?id ;
+           ok:name ?name ;
+           ok:hasCompetencies ?competencies .
+  FILTER(SUBSTR(?id, 1, 4) IN("0103")) .
+
+  ?competencies kom:id ?komID ;
+                kom:name ?komName .
+}
+
+# list competency
+PREFIX ok: <http://example.org/element/okupasi/>
+PREFIX kom: <http://example.org/element/kompetensi/>
+select ?id ?name ?competencies
+where
+{
+  ?okupasi ok:id ?id ;
+           ok:name ?name ;
+           ok:hasCompetencies ?competencies .
+
+
+}

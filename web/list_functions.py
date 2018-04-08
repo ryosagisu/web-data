@@ -2,6 +2,8 @@ from lxml import etree
 from xml.etree import ElementTree as ET
 import xmltodict
 import json
+import rdflib
+from SPARQLWrapper import SPARQLWrapper, JSON
 
 def validate(xml_path, xsd_path):
 
@@ -12,13 +14,12 @@ def validate(xml_path, xsd_path):
     result = xmlschema.validate(xml_doc)
 
     return result
-    
+
 
 def validNode(domNode, tagName, value):
 	nodeVal = domNode.find(tagName).text
 	if isinstance(value, list):
 		if nodeVal in value or nodeVal[:4] in value:
-			print nodeVal, value
 			return True
 	else:
 		if nodeVal == value:
@@ -45,3 +46,27 @@ def showNode(x, root, param):
 		for k in listK:
 			listKomp.append(xmltodict.parse(ET.tostring(k, 'us-ascii', 'xml')))
 		return listKomp
+
+def getJob(codes):
+	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/test")
+	query = """
+		PREFIX po: <http://tenbit.id/element/peta-okupasi/>
+		PREFIX ok: <http://example.org/element/okupasi/>
+		SELECT ?name
+		WHERE
+		{{
+			?okupasi ok:id ?id ;
+				ok:name ?name .
+
+			FILTER(SUBSTR(?id, 1, 4) IN({c})) .
+		}}""".format(c=codes[1:-1])
+	print query
+	sparql.setQuery(query)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+	keys = results['head']['vars']
+	r = results['results']['bindings']
+
+	for x in r:
+		for key in keys:
+			print x[key]['value']
