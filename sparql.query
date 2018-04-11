@@ -1,8 +1,8 @@
 # SPARQL QUERY LIST
 
 # fetch all data for id in array
-PREFIX ok: <http://example.org/element/okupasi/>
-PREFIX kom: <http://example.org/element/kompetensi/>
+PREFIX ok: <http://example.org/okupasi/>
+PREFIX kom: <http://example.org/kompetensi/>
 SELECT ?id ?name ?komID ?komName
 WHERE
 {
@@ -16,14 +16,36 @@ WHERE
 }
 
 # list competency
-PREFIX ok: <http://example.org/element/okupasi/>
-PREFIX kom: <http://example.org/element/kompetensi/>
-select ?id ?name ?competencies
+PREFIX ok: <http://example.org/okupasi/>
+PREFIX kom: <http://example.org/kompetensi/>
+select distinct ?competency
 where
 {
   ?okupasi ok:id ?id ;
            ok:name ?name ;
            ok:hasCompetencies ?competencies .
+  filter(?name in("DATA ENTRY CLERK"))
+
+ {
+    select ?competency where{
+      ?competencies kom:hasComReq+ ?x
+      bind(?competencies as ?competency)
+    }
+  } union {
+    select ?competency where {
+      ?competencies kom:hasComReq+ ?y
+      bind(?y as ?competency)
+    }
+  }
+}
 
 
+#list full child
+PREFIX ok: <http://example.org/okupasi/>
+PREFIX kom: <http://example.org/kompetensi/>
+
+construct { ?s ?p ?o }
+where {
+  kom:TIK.OP02.001.01 (kom:|!kom:)* ?s .
+  ?s ?p ?o .
 }

@@ -67,7 +67,7 @@
     <div class="d-flex justify-content-between flex-wrap" id="domain">
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="1">
-        <span class="box">DATA MANAGEMENT SYSTEM</span> 
+        <span class="box">DATA MANAGEMENT SYSTEM</span>
       </div>
       <div class="p-2 custom-checkbox">
         <input type="checkbox" name="domain" value="2">
@@ -135,11 +135,11 @@
 
     <h4 class="text-center">Pilih Okupasi</h4>
     <div class="d-flex justify-content-between flex-wrap" id="okupasi">
-      
+
     </div>
 
   </div>
-      <button type="button" class="btn btn-primary" style="margin-top: 30px;" id="cekOK">List Okupasi</button>
+      <button type="button" class="btn btn-primary" style="margin-top: 30px;" id="list-ok">List Okupasi</button>
       <button type="button" class="btn btn-primary" style="margin-top: 30px;" id="cekPL">List Info</button>
     </div>
     <br/><br/><br/>
@@ -166,7 +166,7 @@ $(document).ready(function(){
   $("#jenjang, #domain, #okupasi").on('click', '.custom-checkbox', function() {
     // GET THE INPUT
     var activeInput = $(this).children("input");
-    
+
     if(activeInput.is(':checked')) {
       // DESELECT IF ALREADY CHECKED
       $(activeInput).prop("checked", false);
@@ -174,7 +174,7 @@ $(document).ready(function(){
       // SELECT IF NOT CHECKED
       $(activeInput).prop("checked", true);
     }
-    
+
     // IF RADIO REMOVE SELECTION FROM OTHER OPTIONS
     if(activeInput.is('[type=radio]')){
       var nonActiveInput = $(this).siblings().children("input");
@@ -182,158 +182,67 @@ $(document).ready(function(){
     }
   });
 
-$("#cekOK").click(function(){
-  var selected = [], level;
+  $("#list-ok").click(function(){
+    var selected = [], level;
 
-  $("#jenjang div").each(function(){
-    if ($(this).find("input").prop("checked")) {
-      level = $(this).find("input").attr('value');
-    }
-  });
-
-  $("#domain div").each(function(){
-    if ($(this).find("input").prop("checked")) {
-      selected.push($(this).find("span").text());
-      // console.log($(this).find("span").text());
-    }
-  });
-
-  $.ajax({
-    type: 'POST',
-    url: '/fetchJob',
-    data:{
-      'domain': selected,
-      'level': level,
-      'ajax': true
-    },
-    success: function(data){
-      console.log(data);
-      $( "#okupasi" ).html('');
-      var hasil = JSON.parse(data);
-      for (var i = 0; i < hasil.Okupasi.length; i++) {
-        $( "#okupasi" ).append( 
-          '<div class="p-2 custom-checkbox">' + 
-          '<input type="checkbox" name="domain" value="' + (i+1) + '">' + 
-          '<span class="box">' + hasil.Okupasi[i] + '</span>' + 
-          '</div>' );
+    $("#jenjang div").each(function(){
+      if ($(this).find("input").prop("checked")) {
+        level = $(this).find("input").attr('value');
       }
-    }
-  });
-});
+    });
 
-$("#cekPL").click(function(){
-  var selected = [], level;
+    $("#domain div").each(function(){
+      if ($(this).find("input").prop("checked")) {
+        selected.push($(this).find("span").text());
+        // console.log($(this).find("span").text());
+      }
+    });
 
-  $("#jenjang div").each(function(){
-    if ($(this).find("input").prop("checked")) {
-      level = $(this).find("input").attr('value');
-    }
-  });
-
-  $("#domain div").each(function(){
-    if ($(this).find("input").prop("checked")) {
-      selected.push($(this).find("span").text());
-      // console.log($(this).find("span").text());
-    }
-  });
-
-  // var data = {
-  //   'domain': selected,
-  //   'level': level,
-  //   'ajax': true
-  // }
-  // console.log(data);
-  $.ajax({
-    type: 'POST',
-    url: '/fetchData',
-    data:{
-      'domain': selected,
-      'level': level,
-      'ajax': true
-    },
-    success: function(data){
-      console.log(data);
-      var hasil = JSON.parse(data);
-      $("#hasilJenjang").html('');
-      $("#hasilDomain").html('');
-      $("#hasilJabatan").html('');
-      $("#hasilUK").html('');
-      $("#hasilPengetahuan").html('');
-      $("#hasilSkill").html('');
-      $("#hasilSikap").html('');
-      //Jenjang
-      $("#hasilJenjang").html('Level: '+ level);
-      //Domain
-      if(hasil.KKNI.length > 1){
-        var domain = '', kmngknnJbtn;
-        for (var i = 0; i < hasil.KKNI.length; i++) {
-          if (hasil.KKNI.length > 2) {
-            if (i < hasil.KKNI.length - 2) domain += selected[i]+ ', ';
-            else if (i === hasil.KKNI.length -2) domain += selected[i]+ ' ';
-            else domain += 'dan '+selected[i];
-          }else{
-            if (i === hasil.KKNI.length -2) domain += selected[i]+ ' ';
-            else domain += 'dan '+selected[i];
-          }
-          if(i < hasil.KKNI.length - 1){
-            kmngknnJbtn = hasil.KKNI[i].Jenjang.kemungkinanJabatan.concat(hasil.KKNI[i+1].Jenjang.kemungkinanJabatan);
-          }
+    $.ajax({
+      type: 'POST',
+      url: '/fetchJob',
+      data:{
+        'domain': selected,
+        'level': level,
+        'ajax': true
+      },
+      success: function(data){
+        console.log(data);
+        $( "#okupasi" ).html('');
+        var hasil = JSON.parse(data);
+        for (var i = 0; i < hasil.Okupasi.length; i++) {
+          $( "#okupasi" ).append(
+            '<div class="p-2 custom-checkbox">' +
+            '<input type="checkbox" name="domain" value="' + (i+1) + '">' +
+            '<span class="box">' + hasil.Okupasi[i] + '</span>' +
+            '</div>' );
         }
-        $("#hasilDomain").html('Domain: '+ domain);
-        //Kemungkinan jabatan
-        parse(kmngknnJbtn, 'hasilJabatan');
-      }else{
-        $("#hasilDomain").html('Domain: '+ selected[0]);
-        //Kemungkinan jabatan
-        // parse(hasil.KKNI[0].Jenjang.kemungkinanJabatan, 'hasilJabatan');
       }
-		var pngthn, ktrmpln, skpkrj;
-		for(var i = 0; i < hasil.SKKNI.length; i++){
-			if (i < hasil.SKKNI.length - 1) {
-				pngthn = hasil.SKKNI[i].UnitKompetensi.PanduanPenilaian.pengetahuan.concat(hasil.SKKNI[i+1].UnitKompetensi.PanduanPenilaian.pengetahuan);
-				ktrmpln = hasil.SKKNI[i].UnitKompetensi.PanduanPenilaian.keterampilan.concat(hasil.SKKNI[i+1].UnitKompetensi.PanduanPenilaian.keterampilan);
-				skpkrj = hasil.SKKNI[i].UnitKompetensi.PanduanPenilaian.sikapKerja.concat(hasil.SKKNI[i+1].UnitKompetensi.PanduanPenilaian.sikapKerja);
-			}
-		}
-		//Unit Kompetensi
-		var uk = [];
-		for(var i = 0; i < hasil.SKKNI.length; i++){
-			uk.push('<li>' + hasil.SKKNI[i].UnitKompetensi.judulUnit + '<p>' + hasil.SKKNI[i].UnitKompetensi.deskripsiUnit + '</p></li>');
-		}
-		$('#hasilUK').append( uk.join('') );
-
-    for(var i = 0; i < hasil.Jabatan.length; i++){
-      uk.push('<li>' + hasil.Jabatan[i].namaOkupasi + '<p></p></li>');
-    }
-    $('#hasilJabatan').append( uk.join('') );
-
-    for(var i = 0; i < hasil.KodeUnitKompetensi.length; i++){
-      uk.push('<li>' + hasil.KodeUnitKompetensi[i] + '<p></p></li>');
-    }
-    $('#hasilUK').append( uk.join('') );
-		//Pengetahuan
-		parse(pngthn, 'hasilPengetahuan');
-		//Keterampilan
-		parse(ktrmpln, 'hasilSkill');
-		//Sikap Kerja
-		parse(skpkrj, 'hasilSikap');
-    }
+    });
   });
-});
-function parse(data, id){
-    var arr = [];
-    // console.log(data);
-    if (data !== null) {
-	    $.each(data, function(i, item) {
-	    	if (item !== null) {
-		      if(arr.indexOf('<li>' + item + '</li>') === -1 && item.length !== 0){
-		        arr.push('<li>' + item + '</li>');
-		      }
-	    	}
-	    });
-    }
-    $('#'+id).append( arr.join('') );
-}
+
+  $("#cekPL").click(function(){
+    var selected = [], level;
+
+    $("#okupasi div").each(function(){
+      if ($(this).find("input").prop("checked")) {
+        selected.push($(this).find("span").text());
+        // console.log($(this).find("span").text());
+      }
+    });
+
+    $.ajax({
+      type: 'POST',
+      url: '/fetchCom',
+      data:{
+        'jobs': selected,
+        'ajax': true
+      },
+      success: function(data){
+        console.log(data);
+      }
+    });
+  });
 });
 </script>
 </html>

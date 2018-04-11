@@ -1,0 +1,2407 @@
+{
+  "@context": {
+    "ok": "http://example.org/okupasi/",
+    "id": "ok:id",
+    "name": "ok:name",
+    "hasCompetencies": {
+      "@id": "ok:hasCompetencies",
+      "@container": "@set"
+    },
+    "kom": "http://example.org/kompetensi/"
+  },
+  "@graph": [
+    {
+      "@id": "ok:K010301",
+      "id": "010301",
+      "name": "DATA MANAGEMENT STAFF",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.OP01.001.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.004.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.006.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.011.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.012.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.013.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.014.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.015.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010201",
+      "id": "010201",
+      "name": "DATA ENTRY OPERATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.OP01.001.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.004.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.006.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.011.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.012.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.013.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010101",
+      "id": "010101",
+      "name": "DATA ENTRY CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.OP01.001.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.004.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.001.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.004.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.008.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K030301",
+      "id": "030301",
+      "name": "COMPUTER MAINTENANCE STAFF",
+      "hasCompetencies": [
+        {
+          "@id": "kom:CUADIG201"
+        },
+        {
+          "@id": "kom:ICTCBL236"
+        },
+        {
+          "@id": "kom:ICTSAS201"
+        },
+        {
+          "@id": "kom:ICTSAS205"
+        },
+        {
+          "@id": "kom:ICTSAS208"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K030302",
+      "id": "030302",
+      "name": "NETWORK CONTROL ANALYST ASSISTANT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTCBL215"
+        },
+        {
+          "@id": "kom:ICTSAS209"
+        },
+        {
+          "@id": "kom:ICTTCR201"
+        },
+        {
+          "@id": "kom:ICTTEN203"
+        },
+        {
+          "@id": "kom:ICTTEN204"
+        },
+        {
+          "@id": "kom:ICTTEN205"
+        },
+        {
+          "@id": "kom:ICTTEN207"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K030201",
+      "id": "030201",
+      "name": "BYOD SUPPORT SPECIALIST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:BSBSUS201A"
+        },
+        {
+          "@id": "kom:ICAICT103A"
+        },
+        {
+          "@id": "kom:ICAICT201A"
+        },
+        {
+          "@id": "kom:ICAICT207A"
+        },
+        {
+          "@id": "kom:ICASAS201A"
+        },
+        {
+          "@id": "kom:ICASAS202A"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K030202",
+      "id": "030202",
+      "name": "PERSONAL COMPUTER SPECIALIST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:BSBWOR301B"
+        },
+        {
+          "@id": "kom:ICADBS401A"
+        },
+        {
+          "@id": "kom:ICADBS404A"
+        },
+        {
+          "@id": "kom:ICADBS407A"
+        },
+        {
+          "@id": "kom:ICAPRG512A"
+        },
+        {
+          "@id": "kom:ICAPRG513A"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K030101",
+      "id": "030101",
+      "name": "COMPUTER MAINTENANCE CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:HLTAID002"
+        },
+        {
+          "@id": "kom:HLTAID003"
+        },
+        {
+          "@id": "kom:ICTSS00082"
+        },
+        {
+          "@id": "kom:ICTSS00083"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K060301",
+      "id": "060301",
+      "name": "INFORMATION MANAGEMENT STAFF",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO423"
+        },
+        {
+          "@id": "kom:JANCO425"
+        },
+        {
+          "@id": "kom:JANCO426"
+        },
+        {
+          "@id": "kom:JANCO448"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K060201",
+      "id": "060201",
+      "name": "INFORMATION SYSTEM AND TECHNOLOGY ADMINISTRATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO402"
+        },
+        {
+          "@id": "kom:JANCO431"
+        },
+        {
+          "@id": "kom:JANCO436"
+        },
+        {
+          "@id": "kom:JANCO480"
+        },
+        {
+          "@id": "kom:JANCO485"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K060101",
+      "id": "060101",
+      "name": "INFORMATION MANAGEMENT CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO360"
+        },
+        {
+          "@id": "kom:JANCO365"
+        },
+        {
+          "@id": "kom:JANCO403"
+        },
+        {
+          "@id": "kom:JANCO422"
+        },
+        {
+          "@id": "kom:JANCO456"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K120303",
+      "id": "120303",
+      "name": "IT ADMINISTRATIVE ASSISTANT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.OP01.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.001.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.004.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.017.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K120302",
+      "id": "120302",
+      "name": "JUNIOR TECHNICAL SUPPORT PUSAT DATA (DATA CENTER TECHNICAL SUPPORT JUNIOR)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620900.001.02"
+        },
+        {
+          "@id": "kom:J.620900.006.01"
+        },
+        {
+          "@id": "kom:J.620900.007.02"
+        },
+        {
+          "@id": "kom:J.620900.017.02"
+        },
+        {
+          "@id": "kom:J.620900.024.02"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        },
+        {
+          "@id": "kom:J.620900.031.02"
+        },
+        {
+          "@id": "kom:J.620900.032.02"
+        },
+        {
+          "@id": "kom:J.620900.033.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K120301",
+      "id": "120301",
+      "name": "STAF OPERASI PUSAT DATA (DATA CENTER  OPERATIONS STAFF)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.631100.009.01"
+        },
+        {
+          "@id": "kom:J.631100.010.01"
+        },
+        {
+          "@id": "kom:J.631100.011.01"
+        },
+        {
+          "@id": "kom:J.631100.012.01"
+        },
+        {
+          "@id": "kom:J.631100.013.01"
+        },
+        {
+          "@id": "kom:J.631100.014.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K120201",
+      "id": "120201",
+      "name": "IT FACILITIES MANAGEMENT ADMINISTRATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.2017.004"
+        },
+        {
+          "@id": "kom:TIK.2017.007"
+        },
+        {
+          "@id": "kom:TIK.2017.051"
+        },
+        {
+          "@id": "kom:TIK.CS01.010.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K120101",
+      "id": "120101",
+      "name": "IT FACILITIES MANAGEMENT CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.62090.024"
+        },
+        {
+          "@id": "kom:J.620900.006.01"
+        },
+        {
+          "@id": "kom:J.620900.007.02"
+        },
+        {
+          "@id": "kom:TIK.CS01.004.01"
+        },
+        {
+          "@id": "kom:TIK.JK05.002.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160301",
+      "id": "160301",
+      "name": "IT CONSULTANCY STAFF",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTICT202"
+        },
+        {
+          "@id": "kom:ICTICT204"
+        },
+        {
+          "@id": "kom:ICTICT205"
+        },
+        {
+          "@id": "kom:ICTICT209"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160201",
+      "id": "160201",
+      "name": "IT ADMINISTRATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTICT101"
+        },
+        {
+          "@id": "kom:ICTICT102"
+        },
+        {
+          "@id": "kom:ICTICT103"
+        },
+        {
+          "@id": "kom:ICTICT104"
+        },
+        {
+          "@id": "kom:ICTICT105"
+        },
+        {
+          "@id": "kom:ICTICT106"
+        },
+        {
+          "@id": "kom:ICTICT107"
+        },
+        {
+          "@id": "kom:ICTICT108"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160101",
+      "id": "160101",
+      "name": "IT CONSULTANCY CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTICT101"
+        },
+        {
+          "@id": "kom:ICTICT104"
+        },
+        {
+          "@id": "kom:ICTSS00083"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K090301",
+      "id": "090301",
+      "name": "IT ARCHITECTURE STAFF",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO399"
+        },
+        {
+          "@id": "kom:JANCO449"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K090201",
+      "id": "090201",
+      "name": "IT ENTERPRISE ARCHITECTURE ADMINISTRATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO419"
+        },
+        {
+          "@id": "kom:JANCO427"
+        },
+        {
+          "@id": "kom:JANCO463"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K090101",
+      "id": "090101",
+      "name": "IT ENTERPRISE MANAGEMENT CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO396"
+        },
+        {
+          "@id": "kom:JANCO453"
+        },
+        {
+          "@id": "kom:JANCO473"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K070301",
+      "id": "070301",
+      "name": "IT MANAGEMENT STAFF",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO003"
+        },
+        {
+          "@id": "kom:JANCO395"
+        },
+        {
+          "@id": "kom:JANCO404"
+        },
+        {
+          "@id": "kom:JANCO406"
+        },
+        {
+          "@id": "kom:JANCO407"
+        },
+        {
+          "@id": "kom:JANCO408"
+        },
+        {
+          "@id": "kom:JANCO409"
+        },
+        {
+          "@id": "kom:JANCO420"
+        },
+        {
+          "@id": "kom:JANCO447"
+        },
+        {
+          "@id": "kom:JANCO450"
+        },
+        {
+          "@id": "kom:JANCO451"
+        },
+        {
+          "@id": "kom:JANCO469"
+        },
+        {
+          "@id": "kom:JANCO470"
+        },
+        {
+          "@id": "kom:JANCO479"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K070101",
+      "id": "070101",
+      "name": "IT MANAGEMENT CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO003"
+        },
+        {
+          "@id": "kom:JANCO395"
+        },
+        {
+          "@id": "kom:JANCO404"
+        },
+        {
+          "@id": "kom:JANCO405"
+        },
+        {
+          "@id": "kom:JANCO407"
+        },
+        {
+          "@id": "kom:JANCO408"
+        },
+        {
+          "@id": "kom:JANCO409"
+        },
+        {
+          "@id": "kom:JANCO420"
+        },
+        {
+          "@id": "kom:JANCO446"
+        },
+        {
+          "@id": "kom:JANCO450"
+        },
+        {
+          "@id": "kom:JANCO451"
+        },
+        {
+          "@id": "kom:JANCO470"
+        },
+        {
+          "@id": "kom:JANCO479"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K140301",
+      "id": "140301",
+      "name": "JUNIOR MOBILE COMPUTING (MOBILE COMPUTING JUNIOR)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.612000.001"
+        },
+        {
+          "@id": "kom:J.612000.003"
+        },
+        {
+          "@id": "kom:J.612000.006"
+        },
+        {
+          "@id": "kom:J.612000.007"
+        },
+        {
+          "@id": "kom:J.612000.008"
+        },
+        {
+          "@id": "kom:J.612000.022"
+        },
+        {
+          "@id": "kom:J.612000.025"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K140101",
+      "id": "140101",
+      "name": "MOBILE PROGRAMMING CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.612000.001"
+        },
+        {
+          "@id": "kom:J.612000.002"
+        },
+        {
+          "@id": "kom:J.612000.003"
+        },
+        {
+          "@id": "kom:J.612000.004"
+        },
+        {
+          "@id": "kom:J.612000.007"
+        },
+        {
+          "@id": "kom:J.612000.015"
+        },
+        {
+          "@id": "kom:J.612000.017"
+        },
+        {
+          "@id": "kom:J.612000.018"
+        },
+        {
+          "@id": "kom:J.612000.023"
+        },
+        {
+          "@id": "kom:J.612000.024"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K130301",
+      "id": "130301",
+      "name": "DIGITAL ARTIST JUNIOR (JUNIOR DIGITAL ARTIST)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:M.74100.001.02"
+        },
+        {
+          "@id": "kom:M.74100.002.02"
+        },
+        {
+          "@id": "kom:M.74100.010.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.005.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.007.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.008.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.053.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.019.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K130302",
+      "id": "130302",
+      "name": "DIGITAL IMAGING",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.LSPK.MM003.01"
+        },
+        {
+          "@id": "kom:M.74100.002.02"
+        },
+        {
+          "@id": "kom:M.74100.010.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.008.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.010.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.053.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.015.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.019.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K130303",
+      "id": "130303",
+      "name": "TEKNISI AUDIOVISUAL (AUDIOVISUAL TECHNICIAN)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:M.74100.002.02"
+        },
+        {
+          "@id": "kom:TIK.AVT1.01.2016"
+        },
+        {
+          "@id": "kom:TIK.AVT2.01.2016"
+        },
+        {
+          "@id": "kom:TIK.AVT3.01.2016"
+        },
+        {
+          "@id": "kom:TIK.MM01.004.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.005.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.010.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.017.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.039.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.058.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.001.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K130202",
+      "id": "130202",
+      "name": "ANIMATOR MUDA (JUNIOR ANIMATOR)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:M.74100.002.02"
+        },
+        {
+          "@id": "kom:TIK.MM01.008.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.009.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.011.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.012.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.032.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.054.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K130201",
+      "id": "130201",
+      "name": "DESAINER MULTIMEDIA MUDA (JUNIOR MULTIMEDIA DESIGNER)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:M.74100.002.02"
+        },
+        {
+          "@id": "kom:TIK.MM01.004.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.005.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.007.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.008.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.009.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.027.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.069.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.070.01"
+        },
+        {
+          "@id": "kom:TIK.MM02.072.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K080301",
+      "id": "080301",
+      "name": "IT PROJECT MANAGEMENT STAFF",
+      "hasCompetencies": [
+        {
+          "@id": "kom:M.702090.007.01"
+        },
+        {
+          "@id": "kom:TIK.2017.011"
+        },
+        {
+          "@id": "kom:TIK.2017.030"
+        },
+        {
+          "@id": "kom:TIK.2017.031"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K080201",
+      "id": "080201",
+      "name": "IT PROJECT MANAGEMENT ADMINISTRATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:M.702090.005.01"
+        },
+        {
+          "@id": "kom:TIK.2017.006"
+        },
+        {
+          "@id": "kom:TIK.2017.008"
+        },
+        {
+          "@id": "kom:TIK.2017.026"
+        },
+        {
+          "@id": "kom:TIK.2017.044"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K080101",
+      "id": "080101",
+      "name": "IT PROJECT CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.2017.024"
+        },
+        {
+          "@id": "kom:TIK.2017.040"
+        },
+        {
+          "@id": "kom:TIK.2017.041"
+        },
+        {
+          "@id": "kom:TIK.2017.050"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K110301",
+      "id": "110301",
+      "name": "STAF OPERASI LAYANAN IT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.SM01.001.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.003.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.004.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.005.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.007.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.008.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.009.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.010.01"
+        },
+        {
+          "@id": "kom:TIK.SM02.004.01"
+        },
+        {
+          "@id": "kom:TIK.SM02.009.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K040301",
+      "id": "040301",
+      "name": "NETWORK TECHNICIAN",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT101A"
+        },
+        {
+          "@id": "kom:ICAICT107A"
+        },
+        {
+          "@id": "kom:ICANWK404A"
+        },
+        {
+          "@id": "kom:ICANWK505A"
+        },
+        {
+          "@id": "kom:ICANWK507A"
+        },
+        {
+          "@id": "kom:ICAPRG512A"
+        },
+        {
+          "@id": "kom:J.611000.008.02"
+        },
+        {
+          "@id": "kom:J.611000.009.02"
+        },
+        {
+          "@id": "kom:J.611000.010.02"
+        },
+        {
+          "@id": "kom:J.611000.012.02"
+        },
+        {
+          "@id": "kom:J.611000.013.02"
+        },
+        {
+          "@id": "kom:J.611000.013.02"
+        },
+        {
+          "@id": "kom:J.611000.014.02"
+        },
+        {
+          "@id": "kom:J.611000.014.02"
+        },
+        {
+          "@id": "kom:J.611000.019.01"
+        },
+        {
+          "@id": "kom:J.61200.001.01"
+        },
+        {
+          "@id": "kom:J.620100.005.02"
+        },
+        {
+          "@id": "kom:J.620100.011.01"
+        },
+        {
+          "@id": "kom:J.620100.012.01"
+        },
+        {
+          "@id": "kom:J.620100.018.02"
+        },
+        {
+          "@id": "kom:J.620100.023.02"
+        },
+        {
+          "@id": "kom:J.620100.026.01"
+        },
+        {
+          "@id": "kom:J.620100.033.02"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        },
+        {
+          "@id": "kom:TIK.MM01.005.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.007.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K040302",
+      "id": "040302",
+      "name": "TELECOMMUNICATIONS TECHNICIAN",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTTEN201"
+        },
+        {
+          "@id": "kom:ICTTEN202"
+        },
+        {
+          "@id": "kom:ICTWHS203"
+        },
+        {
+          "@id": "kom:ICTWHS204"
+        },
+        {
+          "@id": "kom:ICTWOR201"
+        },
+        {
+          "@id": "kom:J.591200.006.01"
+        },
+        {
+          "@id": "kom:J.612000.037.01"
+        },
+        {
+          "@id": "kom:J.612000.041.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K040201",
+      "id": "040201",
+      "name": "TECHNICAL SUPPORT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620900.001.02"
+        },
+        {
+          "@id": "kom:J.620900.002.02"
+        },
+        {
+          "@id": "kom:J.620900.003.02"
+        },
+        {
+          "@id": "kom:J.620900.004.02"
+        },
+        {
+          "@id": "kom:J.620900.005.02"
+        },
+        {
+          "@id": "kom:J.620900.006.01"
+        },
+        {
+          "@id": "kom:J.620900.007.02"
+        },
+        {
+          "@id": "kom:J.620900.008.02"
+        },
+        {
+          "@id": "kom:J.620900.009.02"
+        },
+        {
+          "@id": "kom:J.620900.010.02"
+        },
+        {
+          "@id": "kom:J.620900.011.02"
+        },
+        {
+          "@id": "kom:J.620900.012.02"
+        },
+        {
+          "@id": "kom:J.620900.013.02"
+        },
+        {
+          "@id": "kom:J.620900.014.02"
+        },
+        {
+          "@id": "kom:J.620900.015.02"
+        },
+        {
+          "@id": "kom:J.620900.016.02"
+        },
+        {
+          "@id": "kom:J.620900.017.02"
+        },
+        {
+          "@id": "kom:J.620900.018.02"
+        },
+        {
+          "@id": "kom:J.620900.019.02"
+        },
+        {
+          "@id": "kom:J.620900.020.02"
+        },
+        {
+          "@id": "kom:J.620900.021.02"
+        },
+        {
+          "@id": "kom:J.620900.022.01"
+        },
+        {
+          "@id": "kom:J.620900.023.01"
+        },
+        {
+          "@id": "kom:J.620900.024.02"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        },
+        {
+          "@id": "kom:J.620900.027.02"
+        },
+        {
+          "@id": "kom:J.620900.028.02"
+        },
+        {
+          "@id": "kom:J.620900.029.02"
+        },
+        {
+          "@id": "kom:J.620900.030.02"
+        },
+        {
+          "@id": "kom:J.620900.031.02"
+        },
+        {
+          "@id": "kom:J.620900.032.02"
+        },
+        {
+          "@id": "kom:J.620900.033.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K040202",
+      "id": "040202",
+      "name": "TEKNISI PENDUKUNG JARINGAN (NETWORK SUPPORT TECHNICIAN)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620100.004.02"
+        },
+        {
+          "@id": "kom:J.620100.005.02"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:J.620100.010.01"
+        },
+        {
+          "@id": "kom:J.620100.011.01"
+        },
+        {
+          "@id": "kom:J.620100.012.01"
+        },
+        {
+          "@id": "kom:J.620100.016.01"
+        },
+        {
+          "@id": "kom:J.620100.017.02"
+        },
+        {
+          "@id": "kom:J.620100.023.02"
+        },
+        {
+          "@id": "kom:J.620100.025.02"
+        },
+        {
+          "@id": "kom:J.620100.033.02"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K040203",
+      "id": "040203",
+      "name": "TEKNISI PENDUKUNG OPERASIONAL JARINGAN (OPERATIONAL SUPPORT TECHNICIAN)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620100.004.02"
+        },
+        {
+          "@id": "kom:J.620100.005.02"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:J.620100.010.01"
+        },
+        {
+          "@id": "kom:J.620100.011.01"
+        },
+        {
+          "@id": "kom:J.620100.012.01"
+        },
+        {
+          "@id": "kom:J.620100.016.01"
+        },
+        {
+          "@id": "kom:J.620100.017.02"
+        },
+        {
+          "@id": "kom:J.620100.023.02"
+        },
+        {
+          "@id": "kom:J.620100.025.02"
+        },
+        {
+          "@id": "kom:J.620100.033.02"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K040101",
+      "id": "040101",
+      "name": "JUNIOR TECHNICAL SUPPORT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.611000.002.01"
+        },
+        {
+          "@id": "kom:J.611000.003.02"
+        },
+        {
+          "@id": "kom:J.611000.004.01"
+        },
+        {
+          "@id": "kom:J.611000.005.02"
+        },
+        {
+          "@id": "kom:J.611000.009.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K040102",
+      "id": "040102",
+      "name": "TECHNICAL SUPPORT CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAPRG511A"
+        },
+        {
+          "@id": "kom:ICASAS411A"
+        },
+        {
+          "@id": "kom:ICASAS420A"
+        },
+        {
+          "@id": "kom:ICASAS509A"
+        },
+        {
+          "@id": "kom:ICTSAS204"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050307",
+      "id": "050307",
+      "name": "ADVANCE OFFICE OPERATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.011.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.012.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.013.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.016.01"
+        },
+        {
+          "@id": "kom:TIK.OP03.002.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050311",
+      "id": "050311",
+      "name": "COMPUTER REPAIR TECHNICIAN",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT303A"
+        },
+        {
+          "@id": "kom:ICASAS202A"
+        },
+        {
+          "@id": "kom:ICASAS419A"
+        },
+        {
+          "@id": "kom:ICASAS421A"
+        },
+        {
+          "@id": "kom:J.620900.001.02"
+        },
+        {
+          "@id": "kom:J.620900.006.01"
+        },
+        {
+          "@id": "kom:J.620900.007.02"
+        },
+        {
+          "@id": "kom:J.620900.009.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050309",
+      "id": "050309",
+      "name": "DESKTOP SPECIALIST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT203A"
+        },
+        {
+          "@id": "kom:ICAICT204A"
+        },
+        {
+          "@id": "kom:JANCO024"
+        },
+        {
+          "@id": "kom:JANCO107"
+        },
+        {
+          "@id": "kom:JANCO134"
+        },
+        {
+          "@id": "kom:JANCO154"
+        },
+        {
+          "@id": "kom:TIK.MM02.043.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.017.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.019.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050312",
+      "id": "050312",
+      "name": "DESKTOP TECHNICIAN",
+      "hasCompetencies": [
+        {
+          "@id": "kom:BSBWOR301B"
+        },
+        {
+          "@id": "kom:ICAICT101A"
+        },
+        {
+          "@id": "kom:ICAICT107A"
+        },
+        {
+          "@id": "kom:ICAICT203A"
+        },
+        {
+          "@id": "kom:ICANWK505A"
+        },
+        {
+          "@id": "kom:ICAPRG505A"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        },
+        {
+          "@id": "kom:PAR.UJ03.025.01"
+        },
+        {
+          "@id": "kom:TIK.DG01.004.01"
+        },
+        {
+          "@id": "kom:TIK.JK02.016.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.008.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.009.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.009.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050308",
+      "id": "050308",
+      "name": "HELP DESK SPECIALIST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT303A"
+        },
+        {
+          "@id": "kom:ICASAS202A"
+        },
+        {
+          "@id": "kom:ICASAS206A"
+        },
+        {
+          "@id": "kom:ICASAS420A"
+        },
+        {
+          "@id": "kom:ICASAS421A"
+        },
+        {
+          "@id": "kom:J.620900.001.02"
+        },
+        {
+          "@id": "kom:J.620900.006.01"
+        },
+        {
+          "@id": "kom:J.620900.007.02"
+        },
+        {
+          "@id": "kom:J.620900.008.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050305",
+      "id": "050305",
+      "name": "OPERATOR KOMPUTER KEPENDUDUKAN",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT101A"
+        },
+        {
+          "@id": "kom:ICAICT201A"
+        },
+        {
+          "@id": "kom:LSPK.OPDS03.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.006.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.008.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.012.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.013.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.014.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.015.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050301",
+      "id": "050301",
+      "name": "OPERATOR KOMPUTER MADYA",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.006.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.011.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.012.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.013.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.014.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.016.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050306",
+      "id": "050306",
+      "name": "OPERATOR KOMPUTER OLAH DATA STATISTIK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:LSPK.OPDS01.01"
+        },
+        {
+          "@id": "kom:LSPK.OPDS02.01"
+        },
+        {
+          "@id": "kom:LSPK.OPDS03.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.001.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.013.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050302",
+      "id": "050302",
+      "name": "OPERATOR KOMPUTER PENJAMINAN MUTU",
+      "hasCompetencies": [
+        {
+          "@id": "kom:C.120000.041.01"
+        },
+        {
+          "@id": "kom:ICAICT101A"
+        },
+        {
+          "@id": "kom:ICAICT201A"
+        },
+        {
+          "@id": "kom:ICAICT203A"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.006.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.008.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.012.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.013.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.014.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.015.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050304",
+      "id": "050304",
+      "name": "OPERATOR KOMPUTER QUANTITY SURVEYOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT101A"
+        },
+        {
+          "@id": "kom:ICAICT201A"
+        },
+        {
+          "@id": "kom:LSPK.OPDS01.01"
+        },
+        {
+          "@id": "kom:LSPK.OPDS02.01"
+        },
+        {
+          "@id": "kom:LSPK.OPDS03.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.006.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.008.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.012.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.013.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.014.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.015.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050303",
+      "id": "050303",
+      "name": "OPERATOR KOMPUTER RANCANG BANGUN",
+      "hasCompetencies": [
+        {
+          "@id": "kom:LSPK.OPDRB01.01"
+        },
+        {
+          "@id": "kom:LSPK.OPDRB02.01"
+        },
+        {
+          "@id": "kom:LSPK.OPDRB03.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.001.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.003.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050310",
+      "id": "050310",
+      "name": "WORD PROCESSING LEAD OPERATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO095"
+        },
+        {
+          "@id": "kom:JANCO096"
+        },
+        {
+          "@id": "kom:TIK.OP02.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.005.01"
+        },
+        {
+          "@id": "kom:TIK.TS03.027.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050205",
+      "id": "050205",
+      "name": "COMPUTER OPERATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO093"
+        },
+        {
+          "@id": "kom:TIK.FO02.012.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.015.01"
+        },
+        {
+          "@id": "kom:TIK.TS03.002.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050203",
+      "id": "050203",
+      "name": "HELPDESK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT303A"
+        },
+        {
+          "@id": "kom:ICASAS202A"
+        },
+        {
+          "@id": "kom:ICASAS421A"
+        },
+        {
+          "@id": "kom:J.620900.001.02"
+        },
+        {
+          "@id": "kom:J.620900.006.01"
+        },
+        {
+          "@id": "kom:J.620900.007.02"
+        },
+        {
+          "@id": "kom:J.620900.008.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050201",
+      "id": "050201",
+      "name": "OPERATOR KOMPUTER MUDA",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.OP01.001.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.001.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.004.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.011.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050202",
+      "id": "050202",
+      "name": "SENIOR OFFICE OPERATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.OP01.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.004.01"
+        },
+        {
+          "@id": "kom:TIK.OP01.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.006.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.008.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.009.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.010.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.011.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.012.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.013.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.014.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.015.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050204",
+      "id": "050204",
+      "name": "WORD PROCESSING OPERATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO044"
+        },
+        {
+          "@id": "kom:JANCO147"
+        },
+        {
+          "@id": "kom:TIK.OP02.003.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.015.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050102",
+      "id": "050102",
+      "name": "BASIC OFFICE OPERATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.OP02.004.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.011.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050103",
+      "id": "050103",
+      "name": "COMPUTER TECHNICIAN CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT101A"
+        },
+        {
+          "@id": "kom:ICAICT201A"
+        },
+        {
+          "@id": "kom:J.620900.002.02"
+        },
+        {
+          "@id": "kom:J.620900.006.01"
+        },
+        {
+          "@id": "kom:J.620900.007.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050101",
+      "id": "050101",
+      "name": "JUNIOR OFFICE OPERATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.004.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.006.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.007.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.011.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.014.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.015.01"
+        },
+        {
+          "@id": "kom:TIK.OP03.002.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K050105",
+      "id": "050105",
+      "name": "PRINT OPERATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:C.102210.049.02"
+        },
+        {
+          "@id": "kom:ICAICT101A"
+        },
+        {
+          "@id": "kom:ICAICT201A"
+        },
+        {
+          "@id": "kom:J.620900.016.02"
+        },
+        {
+          "@id": "kom:TIK.CS02.019.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020301",
+      "id": "020301",
+      "name": "ASISTEN PEMROGRAM (PROGGRAMMER ASSISTANT)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.61200.001.01"
+        },
+        {
+          "@id": "kom:J.620100.005.02"
+        },
+        {
+          "@id": "kom:J.620100.011.01"
+        },
+        {
+          "@id": "kom:J.620100.012.01"
+        },
+        {
+          "@id": "kom:J.620100.018.02"
+        },
+        {
+          "@id": "kom:J.620100.023.02"
+        },
+        {
+          "@id": "kom:J.620100.026.01"
+        },
+        {
+          "@id": "kom:J.620100.033.02"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        },
+        {
+          "@id": "kom:TIK.MM01.005.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.007.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020303",
+      "id": "020303",
+      "name": "ASISTEN PEMROGRAM ANTARMUKA (INTERFACE PROGRAMMER ASSISTANT)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.61200.001.01"
+        },
+        {
+          "@id": "kom:J.620100.005.02"
+        },
+        {
+          "@id": "kom:J.620100.011.01"
+        },
+        {
+          "@id": "kom:J.620100.012.01"
+        },
+        {
+          "@id": "kom:J.620100.018.02"
+        },
+        {
+          "@id": "kom:J.620100.023.02"
+        },
+        {
+          "@id": "kom:J.620100.026.01"
+        },
+        {
+          "@id": "kom:J.620100.033.02"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        },
+        {
+          "@id": "kom:TIK.MM01.005.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.007.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020302",
+      "id": "020302",
+      "name": "ASSISTANT DOCUMENTER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.61200.001.01"
+        },
+        {
+          "@id": "kom:J.620100.005.02"
+        },
+        {
+          "@id": "kom:J.620100.011.01"
+        },
+        {
+          "@id": "kom:J.620100.012.01"
+        },
+        {
+          "@id": "kom:J.620100.018.02"
+        },
+        {
+          "@id": "kom:J.620100.023.02"
+        },
+        {
+          "@id": "kom:J.620100.026.01"
+        },
+        {
+          "@id": "kom:J.620100.033.02"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        },
+        {
+          "@id": "kom:TIK.MM01.005.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.007.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020304",
+      "id": "020304",
+      "name": "PENERJEMAH KODE (CODER)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.61200.001.01"
+        },
+        {
+          "@id": "kom:J.620100.005.02"
+        },
+        {
+          "@id": "kom:J.620100.011.01"
+        },
+        {
+          "@id": "kom:J.620100.012.01"
+        },
+        {
+          "@id": "kom:J.620100.018.02"
+        },
+        {
+          "@id": "kom:J.620100.023.02"
+        },
+        {
+          "@id": "kom:J.620100.026.01"
+        },
+        {
+          "@id": "kom:J.620100.033.02"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        },
+        {
+          "@id": "kom:TIK.MM01.005.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.007.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020305",
+      "id": "020305",
+      "name": "PROGRAM DOCUMENTER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.61200.001.01"
+        },
+        {
+          "@id": "kom:J.620100.004.02"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:J.620100.010.01"
+        },
+        {
+          "@id": "kom:J.620100.016.01"
+        },
+        {
+          "@id": "kom:J.620100.017.02"
+        },
+        {
+          "@id": "kom:J.620100.023.02"
+        },
+        {
+          "@id": "kom:J.620100.025.02"
+        },
+        {
+          "@id": "kom:J.620100.026.01"
+        },
+        {
+          "@id": "kom:J.620100.033.02"
+        },
+        {
+          "@id": "kom:TIK.MM01.005.01"
+        },
+        {
+          "@id": "kom:TIK.MM01.007.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020203",
+      "id": "020203",
+      "name": "ASISTEN PEMROGRAM JUNIOR (JUNIOR ASSISTANT PROGRAMMER)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620100.004.02"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:J.620100.010.01"
+        },
+        {
+          "@id": "kom:J.620100.011.01"
+        },
+        {
+          "@id": "kom:J.620100.012.01"
+        },
+        {
+          "@id": "kom:J.620100.016.01"
+        },
+        {
+          "@id": "kom:J.620100.017.02"
+        },
+        {
+          "@id": "kom:J.620100.025.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020201",
+      "id": "020201",
+      "name": "ASSISTANT PROGRAMMER TRAINEE",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620100.004.02"
+        },
+        {
+          "@id": "kom:J.620100.005.02"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:J.620100.010.01"
+        },
+        {
+          "@id": "kom:J.620100.016.01"
+        },
+        {
+          "@id": "kom:J.620100.017.02"
+        },
+        {
+          "@id": "kom:J.620100.025.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020202",
+      "id": "020202",
+      "name": "CODER TRAINEE",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620100.004.02"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:J.620100.010.02"
+        },
+        {
+          "@id": "kom:J.620100.016.01"
+        },
+        {
+          "@id": "kom:J.620100.017.02"
+        },
+        {
+          "@id": "kom:J.620100.023.02"
+        },
+        {
+          "@id": "kom:J.620100.025.02"
+        },
+        {
+          "@id": "kom:J.620100.033.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020204",
+      "id": "020204",
+      "name": "PEMROGRAM JUNIOR (JUNIOR CODER)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620100.004.02"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:J.620100.010.01"
+        },
+        {
+          "@id": "kom:J.620100.016.01"
+        },
+        {
+          "@id": "kom:J.620100.017.02"
+        },
+        {
+          "@id": "kom:J.620100.023.02"
+        },
+        {
+          "@id": "kom:J.620100.025.02"
+        },
+        {
+          "@id": "kom:J.620100.033.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020205",
+      "id": "020205",
+      "name": "PEMROGRAM PEMULA (NOVICE PROGRAMMER)",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620100.004.02"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:J.620100.010.01"
+        },
+        {
+          "@id": "kom:J.620100.016.01"
+        },
+        {
+          "@id": "kom:J.620100.017.02"
+        },
+        {
+          "@id": "kom:J.620100.025.02"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K020101",
+      "id": "020101",
+      "name": "SOFTWARE DEVELOPMENT CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620100.011.01"
+        },
+        {
+          "@id": "kom:J.620100.012.01"
+        },
+        {
+          "@id": "kom:J.620900.025.02"
+        },
+        {
+          "@id": "kom:J.620900.026.02"
+        }
+      ]
+    }
+  ]
+}
