@@ -50,7 +50,6 @@ def showNode(x, root, param):
 def getJob(codes):
 	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/test")
 	query = """
-		PREFIX po: <http://tenbit.id/element/peta-okupasi/>
 		PREFIX ok: <http://example.org/element/okupasi/>
 		SELECT ?name
 		WHERE
@@ -67,6 +66,77 @@ def getJob(codes):
 	keys = results['head']['vars']
 	r = results['results']['bindings']
 
+	jobs = []
 	for x in r:
 		for key in keys:
 			print x[key]['value']
+			jobs.append(x[key]['value'])
+
+	return jobs
+
+def getJob(codes):
+	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/test")
+	query = """
+		PREFIX ok: <http://example.org/element/okupasi/>
+		SELECT ?name
+		WHERE
+		{{
+			?okupasi ok:id ?id ;
+				ok:name ?name .
+
+			FILTER(SUBSTR(?id, 1, 4) IN({c})) .
+		}}""".format(c=codes[1:-1])
+	print query
+	sparql.setQuery(query)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+	keys = results['head']['vars']
+	r = results['results']['bindings']
+
+	jobs = []
+	for x in r:
+		for key in keys:
+			print x[key]['value']
+			jobs.append(x[key]['value'])
+
+	return jobs
+
+def getCompetencies(codes):
+	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/test")
+	query = """
+	PREFIX ok: <http://example.org/element/okupasi/>
+	PREFIX kom: <http://example.org/element/kompetensi/>
+	select distinct ?competency
+	where
+	{{
+	  ?okupasi ok:id ?id ;
+	           ok:name ?name ;
+	           ok:hasCompetencies ?competencies .
+	  filter(?name in({c}))
+
+	 {{
+	    select ?competency where{{
+	      ?competencies kom:hasComReq+ ?x
+	      bind(?competencies as ?competency)
+	    }}
+	  }} union {{
+	    select ?competency where {{
+	      ?competencies kom:hasComReq+ ?y
+	      bind(?y as ?competency)
+	    }}
+	  }}
+	}}""".format(c=codes[1:-1])
+
+	sparql.setQuery(query)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+	keys = results['head']['vars']
+	r = results['results']['bindings']
+
+	comps = []
+	for x in r:
+		for key in keys:
+			print x[key]['value']
+			comps.append(x[key]['value'])
+
+	return comps

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RDF [
+    <!ENTITY kom "http://tenbit.id/Kompetensi#">
+    <!ENTITY ok "http://tenbit.id/Okupasi#">
+    <!ENTITY skkni "http://tenbit.id/SKKNI">
+]>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:kom="&kom;"
+         xmlns:ok="&ok;"
+         xmlns:skkni="&skkni;#"
+         xml:base="&skkni;">
+
+<rdf:Description rdf:about="&skkni;#TIK.OP01.001.01">
+    <skkni:judul>Menggunakan Perangkat Komputer</skkni:judul>
+    <ok:persyaratanKompetensi rdf:resource="&skkni;#TIK.OP01.002.01"/>
+
+</rdf:Description>
+
+<rdf:Description rdf:about="&skkni;#TIK.OP01.002.01">
+    <skkni:judul>TEST</skkni:judul>
+    <ok:persyaratanKompetensi rdf:resource="&skkni;#TIK.OP01.003.01"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&skkni;#TIK.OP01.003.01">
+    <skkni:judul>TEST2</skkni:judul>
+    <ok:persyaratanKompetensi rdf:resource="&skkni;#TIK.OP01.001.01"/>
+</rdf:Description>
+
+<rdfs:Class rdf:ID="Kompetensi"/>
+<rdfs:Class rdf:ID="Persyaratan"/>
+
+<rdf:Property rdf:ID="persyaratanKompetensi">
+    <rdfs:domain rdf:resource="#Okupasi"/>
+    <rdfs:range rdf:resource="#Persyaratan"/>
+</rdf:Property>
+
+</rdf:RDF>

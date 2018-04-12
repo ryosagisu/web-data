@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema/"
+  },
+  "@graph": [
+    {
+      "@id": "http://tenbit.id/element/peta-okupasi/KodeOkupasi",
+      "@type": "rdfs:Datatype",
+      "rdfs:comment": "KodeOkupasi",
+      "rdfs:label": "KodeOkupasi",
+      "rdfs:subClassOf": {
+        "@id": "http://tenbit.id/element/peta-okupasi/Okupasi"
+      }
+    },
+    {
+      "@id": "http://tenbit.id/element/peta-okupasi/",
+      "@type": "owl:Ontology",
+      "dc:description": "po",
+      "dc:title": "po"
+    },
+    {
+      "@id": "http://tenbit.id/element/peta-okupasi/Kompetensi",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Kompetensi",
+      "rdfs:label": "Kompetensi",
+      "rdfs:subClassOf": {
+        "@id": "http://tenbit.id/element/peta-okupasi/Okupasi"
+      }
+    },
+    {
+      "@id": "http://tenbit.id/element/peta-okupasi/KodeUnitKompetensi",
+      "@type": "rdfs:Datatype",
+      "rdfs:comment": "KodeUnitKompetensi",
+      "rdfs:label": "KodeUnitKompetensi",
+      "rdfs:subClassOf": {
+        "@id": "http://tenbit.id/element/peta-okupasi/Kompetensi"
+      }
+    },
+    {
+      "@id": "http://tenbit.id/element/peta-okupasi/Okupasi",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "peta-Okupasi",
+      "rdfs:label": "peta-Okupasi"
+    },
+    {
+      "@id": "http://tenbit.id/element/peta-okupasi/NamaUnitKompetensi",
+      "@type": "rdfs:Datatype",
+      "rdfs:comment": "NamaUnitKompetensi",
+      "rdfs:label": "NamaUnitKompetensi",
+      "rdfs:subClassOf": {
+        "@id": "http://tenbit.id/element/peta-okupasi/Kompetensi"
+      }
+    }
+  ]
+}

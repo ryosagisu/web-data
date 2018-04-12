@@ -1,0 +1,12 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:feature="http://localhost:8080/clothing-features#">
+
+	<rdf:Description rdf:about="http://localhost:8080/clothes#t-shirt">
+
+		<feature:size>12</feature:size>
+		<feature:color rdf:resource="http://localhost:8080/colors#white"/>
+
+	</rdf:Description>
+
+</rdf:RDF>
