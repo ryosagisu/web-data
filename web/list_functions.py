@@ -50,7 +50,7 @@ def showNode(x, root, param):
 def getJob(codes):
 	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/test")
 	query = """
-		PREFIX ok: <http://example.org/element/okupasi/>
+		PREFIX ok: <http://localhost:5000/okupasi/>
 		SELECT ?name
 		WHERE
 		{{
@@ -59,7 +59,7 @@ def getJob(codes):
 
 			FILTER(SUBSTR(?id, 1, 4) IN({c})) .
 		}}""".format(c=codes[1:-1])
-	print query
+
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
@@ -69,7 +69,6 @@ def getJob(codes):
 	jobs = []
 	for x in r:
 		for key in keys:
-			print x[key]['value']
 			jobs.append(x[key]['value'])
 
 	return jobs
@@ -77,7 +76,7 @@ def getJob(codes):
 def getJob(codes):
 	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/test")
 	query = """
-		PREFIX ok: <http://example.org/element/okupasi/>
+		PREFIX ok: <http://localhost:5000/okupasi/>
 		SELECT ?name
 		WHERE
 		{{
@@ -86,7 +85,7 @@ def getJob(codes):
 
 			FILTER(SUBSTR(?id, 1, 4) IN({c})) .
 		}}""".format(c=codes[1:-1])
-	print query
+
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
@@ -96,7 +95,6 @@ def getJob(codes):
 	jobs = []
 	for x in r:
 		for key in keys:
-			print x[key]['value']
 			jobs.append(x[key]['value'])
 
 	return jobs
@@ -104,8 +102,8 @@ def getJob(codes):
 def getCompetencies(codes):
 	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/test")
 	query = """
-	PREFIX ok: <http://example.org/element/okupasi/>
-	PREFIX kom: <http://example.org/element/kompetensi/>
+	PREFIX ok: <http://localhost:5000/okupasi/>
+	PREFIX kom: <http://localhost:5000/kompetensi/>
 	select distinct ?competency
 	where
 	{{
@@ -126,17 +124,45 @@ def getCompetencies(codes):
 	    }}
 	  }}
 	}}""".format(c=codes[1:-1])
+	print query
 
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
 	keys = results['head']['vars']
-	r = results['results']['bindings']
-
+	bind = results['results']['bindings']
 	comps = []
-	for x in r:
+	print results
+	for x in bind:
 		for key in keys:
-			print x[key]['value']
 			comps.append(x[key]['value'])
 
-	return comps
+	query = """
+	PREFIX ok: <http://localhost:5000/okupasi/>
+	PREFIX kom: <http://localhost:5000/kompetensi/>
+	select ?key ?content
+	where {{
+	  ?s ?key ?content ;
+	    (kom:hasKnowledge|kom:hasSkill|kom:hasAspect) ?content .
+	    filter(?s in({c}))
+	}}""".format(c=json.dumps(comps).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1]).replace('"', '')
+	print query
+	sparql.setQuery(query)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+
+	bind = results['results']['bindings']
+	com = {}
+	for x in bind:
+		currKey = x["key"]["value"]
+		if currKey not in com:
+			com[currKey] = []
+
+		com[currKey].append(x["content"]["value"])
+
+	for key in com:
+		new_key = key.rsplit('/', 1)[-1]
+		com[new_key] = com.pop(key)
+	com["Kompetensi"] = comps
+
+	return com

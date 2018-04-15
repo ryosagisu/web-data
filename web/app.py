@@ -5,6 +5,7 @@ import xmltodict
 from xml.etree import ElementTree as ET
 from list_functions import validate, validNode, showNode, getJob, getCompetencies
 from eulexistdb import db
+import simplejson
 
 app = Flask(__name__)
 
@@ -20,10 +21,9 @@ def fetchCom():
 	jobs = request.form.getlist('jobs[]')
 	# domainList = ['DATA MANAGEMENT SYSTEM',	'PROGRAMMING AND SOFTWARE DEVELOPMENT',	'HARDWARE AND DIGITAL PERIPHERALS',	'NETWORK AND INFRASTRUCTURE', 'OPERATION AND SYSTEM TOOLS', 'INFORMATION SYSTEM AND TECHNOLOGY DEVELOPMENT', 'IT GOVERNANCE AND MANAGEMENT', 'IT PROJECT MANAGEMENT', 'IT ENTERPRISE ARCHITECTURE', 'IT SECURITY AND COMPLIANCE', 'IT SERVICES MANAGEMENT SYSTEM', 'IT AND COMPUTING FACILITIES MANAGEMENT', 'IT MULTEMEDIA', 'IT MOBILITY AND INTERNET OF THINGS', 'INTEGRATION APPLICATION SYSTEM', 'IT CONSULTANCY AND ADVISORY']
 	selDomList = [x for x in jobs]
-	x = getCompetencies(json.dumps(jobs))
-	print jobs
+	comps = getCompetencies(json.dumps(jobs))
 
-	return json.dumps({"job": x})
+	return simplejson.dumps({"Kompetensi": comps["Kompetensi"], "hasKnowledge": comps["hasKnowledge"], "hasAspect": comps["hasAspect"], "hasSkill": comps["hasSkill"], })
 
 @app.route('/fetchJob', methods=['POST'])
 def fetchJob():

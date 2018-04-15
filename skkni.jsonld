@@ -1,6 +1,6 @@
 {
   "@context": {
-    "kom": "http://example.org/kompetensi/",
+    "kom": "http://localhost:5000/kompetensi/",
     "title": "kom:title",
     "description": "kom:description",
     "hasElement": "kom:hasElement",
@@ -33,6 +33,18 @@
       "@id": "kom:hasComReq",
       "@container": "@set",
       "@type": "@id"
+    },
+    "hasKnowledge": {
+      "@id": "kom:hasKnowledge",
+      "@container": "@set"
+    },
+    "hasSkill": {
+      "@id": "kom:hasSkill",
+      "@container": "@set"
+    },
+    "hasAspect": {
+      "@id": "kom:hasAspect",
+      "@container": "@set"
     }
   },
 
@@ -56,8 +68,11 @@
       "hasPRP": ["TIK.OP01.001.01 PRP 1", "TIK.OP01.001.01 PRP 2"],
       "hasRule": ["TIK.OP01.001.01 rule 1", "TIK.OP01.001.01 rule 2"],
       "hasNS": ["TIK.OP01.001.01 NS 1", "TIK.OP01.001.01 NS 2"],
-      "hasContextVal": ["TIK.OP01.001.01 contextVal 1", "contextVal 2"],
-      "hasComReq": []
+      "hasContextEval": ["TIK.OP01.001.01 contextVal 1", "TIK.OP01.001.01 contextVal 2"],
+      "hasComReq": [],
+      "hasKnowledge": ["TIK.OP01.001.01 knowledge 1", "TIK.OP01.001.01 knowledge 2"],
+      "hasSkill": ["TIK.OP01.001.01 skill 1", "TIK.OP01.001.01 skill 2"],
+      "hasAspect": ["TIK.OP01.001.01 aspect 1", "TIK.OP01.001.01 aspect 2"]
     },
     {
       "@id": "kom:TIK.OP01.002.01",
@@ -78,8 +93,11 @@
       "hasPRP": ["TIK.OP01.002.01 PRP 1", "TIK.OP01.002.01 PRP 2"],
       "hasRule": ["TIK.OP01.002.01 rule 1", "TIK.OP01.002.01 rule 2"],
       "hasNS": ["TIK.OP01.002.01 NS 1", "TIK.OP01.002.01 NS 2"],
-      "hasContextVal": ["TIK.OP01.002.01 contextVal 1", "contextVal 2"],
-      "hasComReq": []
+      "hasContextEval": ["TIK.OP01.002.01 contextVal 1", "TIK.OP01.002.01 contextVal 2"],
+      "hasComReq": [],
+      "hasKnowledge": ["TIK.OP01.002.01 knowledge 1", "TIK.OP01.002.01 knowledge 2"],
+      "hasSkill": ["TIK.OP01.002.01 skill 1", "TIK.OP01.002.01 skill 2"],
+      "hasAspect": ["TIK.OP01.002.01 aspect 1", "TIK.OP01.002.01 aspect 2"]
     },
     {
       "@id": "kom:TIK.OP01.003.01",
@@ -100,8 +118,11 @@
       "hasPRP": ["TIK.OP01.003.01 PRP 1", "TIK.OP01.003.01 PRP 2"],
       "hasRule": ["TIK.OP01.003.01 rule 1", "TIK.OP01.003.01 rule 2"],
       "hasNS": ["TIK.OP01.003.01 NS 1", "TIK.OP01.003.01 NS 2"],
-      "hasContextVal": ["TIK.OP01.003.01 contextVal 1", "contextVal 2"],
-      "hasComReq": []
+      "hasContextEval": ["TIK.OP01.003.01 contextVal 1", "TIK.OP01.003.01 contextVal 2"],
+      "hasComReq": [],
+      "hasKnowledge": ["TIK.OP01.003.01 knowledge 1", "TIK.OP01.003.01 knowledge 2"],
+      "hasSkill": ["TIK.OP01.003.01 skill 1", "TIK.OP01.003.01 skill 2"],
+      "hasAspect": ["TIK.OP01.003.01 aspect 1", "TIK.OP01.003.01 aspect 2"]
     },
     {
       "@id": "kom:TIK.OP01.004.01",
@@ -122,8 +143,11 @@
       "hasPRP": ["TIK.OP01.004.01 PRP 1", "TIK.OP01.004.01 PRP 2"],
       "hasRule": ["TIK.OP01.004.01 rule 1", "TIK.OP01.004.01 rule 2"],
       "hasNS": ["TIK.OP01.004.01 NS 1", "TIK.OP01.004.01 NS 2"],
-      "hasContextVal": ["TIK.OP01.004.01 contextVal 1", "contextVal 2"],
-      "hasComReq": []
+      "hasContextEval": ["TIK.OP01.004.01 contextVal 1", "TIK.OP01.004.01 contextVal 2"],
+      "hasComReq": [],
+      "hasKnowledge": ["TIK.OP01.004.01 knowledge 1", "TIK.OP01.004.01 knowledge 2"],
+      "hasSkill": ["TIK.OP01.004.01 skill 1", "TIK.OP01.004.01 skill 2"],
+      "hasAspect": ["TIK.OP01.004.01 aspect 1", "TIK.OP01.004.01 aspect 2"]
     },
     {
       "@id": "kom:TIK.OP01.005.01",
@@ -144,8 +168,11 @@
       "hasPRP": ["TIK.OP01.005.01 PRP 1", "TIK.OP01.005.01 PRP 2"],
       "hasRule": ["TIK.OP01.005.01 rule 1", "TIK.OP01.005.01 rule 2"],
       "hasNS": ["TIK.OP01.005.01 NS 1", "TIK.OP01.005.01 NS 2"],
-      "hasContextVal": ["TIK.OP01.005.01 contextVal 1", "contextVal 2"],
-      "hasComReq": []
+      "hasContextEval": ["TIK.OP01.005.01 contextVal 1", "TIK.OP01.005.01 contextVal 2"],
+      "hasComReq": [],
+      "hasKnowledge": ["TIK.OP01.005.01 knowledge 1", "TIK.OP01.005.01 knowledge 2"],
+      "hasSkill": ["TIK.OP01.005.01 skill 1", "TIK.OP01.005.01 skill 2"],
+      "hasAspect": ["TIK.OP01.005.01 aspect 1", "TIK.OP01.005.01 aspect 2"]
     },
     {
       "@id": "kom:TIK.OP02.001.01",
@@ -166,8 +193,11 @@
       "hasPRP": ["TIK.OP02.001.01 PRP 1", "TIK.OP02.001.01 PRP 2"],
       "hasRule": ["TIK.OP02.001.01 rule 1", "TIK.OP02.001.01 rule 2"],
       "hasNS": ["TIK.OP02.001.01 NS 1", "TIK.OP02.001.01 NS 2"],
-      "hasContextVal": ["TIK.OP02.001.01 contextVal 1", "contextVal 2"],
-      "hasComReq": ["kom:TIK.OP01.001.01"]
+      "hasContextEval": ["TIK.OP02.001.01 contextVal 1", "TIK.OP02.001.01 contextVal 2"],
+      "hasComReq": ["kom:TIK.OP01.001.01"],
+      "hasKnowledge": ["TIK.OP02.001.01 knowledge 1", "TIK.OP02.001.01 knowledge 2"],
+      "hasSkill": ["TIK.OP02.001.01 skill 1", "TIK.OP02.001.01 skill 2"],
+      "hasAspect": ["TIK.OP02.001.01 aspect 1", "TIK.OP02.001.01 aspect 2"]
     },
     {
       "@id": "kom:TIK.OP02.002.01",
