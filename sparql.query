@@ -46,6 +46,6 @@ PREFIX kom: <http://example.org/kompetensi/>
 
 construct { ?s ?p ?o }
 where {
-  kom:TIK.OP02.001.01 (kom:|!kom:)* ?s .
+  ?x (kom:|!kom:)* ?s .
   ?s ?p ?o .
 }
