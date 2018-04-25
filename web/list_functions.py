@@ -48,7 +48,7 @@ def showNode(x, root, param):
 		return listKomp
 
 def getJob(codes):
-	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/test")
+	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server/repositories/skripsi")
 	query = """
 		PREFIX ok: <http://localhost:5000/okupasi/>
 		SELECT ?name
@@ -73,34 +73,34 @@ def getJob(codes):
 
 	return jobs
 
-def getJob(codes):
-	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/test")
-	query = """
-		PREFIX ok: <http://localhost:5000/okupasi/>
-		SELECT ?name
-		WHERE
-		{{
-			?okupasi ok:id ?id ;
-				ok:name ?name .
+# def getJob(codes):
+# 	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server/repositories/skripsi")
+# 	query = """
+# 		PREFIX ok: <http://localhost:5000/okupasi/>
+# 		SELECT ?name
+# 		WHERE
+# 		{{
+# 			?okupasi ok:id ?id ;
+# 				ok:name ?name .
 
-			FILTER(SUBSTR(?id, 1, 4) IN({c})) .
-		}}""".format(c=codes[1:-1])
+# 			FILTER(SUBSTR(?id, 1, 4) IN({c})) .
+# 		}}""".format(c=codes[1:-1])
 
-	sparql.setQuery(query)
-	sparql.setReturnFormat(JSON)
-	results = sparql.query().convert()
-	keys = results['head']['vars']
-	r = results['results']['bindings']
+# 	sparql.setQuery(query)
+# 	sparql.setReturnFormat(JSON)
+# 	results = sparql.query().convert()
+# 	keys = results['head']['vars']
+# 	r = results['results']['bindings']
 
-	jobs = []
-	for x in r:
-		for key in keys:
-			jobs.append(x[key]['value'])
+# 	jobs = []
+# 	for x in r:
+# 		for key in keys:
+# 			jobs.append(x[key]['value'])
 
-	return jobs
+# 	return jobs
 
 def getCompetencies(codes):
-	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/test")
+	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server/repositories/skripsi")
 	query = """
 	PREFIX ok: <http://localhost:5000/okupasi/>
 	PREFIX kom: <http://localhost:5000/kompetensi/>
