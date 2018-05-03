@@ -15414,95 +15414,1102 @@
       ]
     },
     {
-      "@id": "ok:K150701",
-      "id": "150701",
-      "name": "ERP SPECIALIST",
+      "@id": "ok:K150702",
+      "id": "150702",
+      "name": "PROJECT MANAGER ENTERPRISE RESOURCE PLANNING (ERP)",
       "hasCompetencies": [
         {
-          "@id": "kom:J.6202000.019.0"
+          "@id": "kom:ICAPMG608A"
         },
         {
-          "@id": "kom:J.6202000.030.0"
+          "@id": "kom:M.702090.001.0"
         },
         {
-          "@id": "kom:J.6202000.013.0"
+          "@id": "kom:M.702090.010.0"
         },
         {
-          "@id": "kom:J.6202000.003.0"
+          "@id": "kom:ICAPMG601A"
         },
         {
-          "@id": "kom:J.6202000.008.0"
+          "@id": "kom:ICAPMG604A"
         },
         {
-          "@id": "kom:J.6202000.019.0"
+          "@id": "kom:ICAPMG602A"
         },
         {
-          "@id": "kom:J.6202000.012.0"
+          "@id": "kom:ICAPMG606A"
         },
         {
-          "@id": "kom:J.6202000.020.0"
+          "@id": "kom:ICAPRG502A"
         },
         {
-          "@id": "kom:J.6202000.018.0"
+          "@id": "kom:ICAPMG603A"
         },
         {
-          "@id": "kom:J.6202000.013.0"
+          "@id": "kom:ICAPMG607A"
         },
         {
-          "@id": "kom:J.6202000.018.0"
+          "@id": "kom:ICAPMG605A"
         },
         {
-          "@id": "kom:J.6202000.011.0"
+          "@id": "kom:M.702090.010.0"
         },
         {
-          "@id": "kom:J.6202000.009.0"
+          "@id": "kom:M.702090.009.0"
         },
         {
-          "@id": "kom:J.6202000.004.0"
+          "@id": "kom:M.702090.008.0"
         },
         {
-          "@id": "kom:J.6202000.009.0"
+          "@id": "kom:ICAPMG501A"
         },
         {
-          "@id": "kom:J.6202000.005.0"
+          "@id": "kom:M.702090.004.0"
         },
         {
-          "@id": "kom:J.6202000.030.0"
+          "@id": "kom:M.702090.007.0"
         },
         {
-          "@id": "kom:J.6202000.006.0"
+          "@id": "kom:M.702090.003.0"
         },
         {
-          "@id": "kom:J.6202000.008.0"
+          "@id": "kom:M.702090.002.0"
         },
         {
-          "@id": "kom:J.6202000.006.0"
+          "@id": "kom:M.702090.006.0"
         },
         {
-          "@id": "kom:J.6202000.005.0"
+          "@id": "kom:M.702090.007.0"
         },
         {
-          "@id": "kom:J.6202000.003.0"
+          "@id": "kom:M.702090.005.0"
         },
         {
-          "@id": "kom:J.6202000.001.0"
+          "@id": "kom:ICAPMG603A"
         },
         {
-          "@id": "kom:J.6202000.011.0"
+          "@id": "kom:ICAPRG502A"
         },
         {
-          "@id": "kom:J.6202000.012.0"
+          "@id": "kom:ICAPMG609A"
         },
         {
-          "@id": "kom:J.6202000.020.0"
+          "@id": "kom:M.702090.004.0"
         },
         {
-          "@id": "kom:J.6202000.004.0"
+          "@id": "kom:ICAPMG608A"
         },
         {
-          "@id": "kom:J.6202000.001.0"
+          "@id": "kom:ICAPMG607A"
+        },
+        {
+          "@id": "kom:ICAPMG606A"
+        },
+        {
+          "@id": "kom:ICAPMG604A"
+        },
+        {
+          "@id": "kom:ICAPMG602A"
+        },
+        {
+          "@id": "kom:M.702090.006.0"
+        },
+        {
+          "@id": "kom:M.702090.003.0"
+        },
+        {
+          "@id": "kom:ICAPMG601A"
+        },
+        {
+          "@id": "kom:M.702090.005.0"
+        },
+        {
+          "@id": "kom:M.702090.002.0"
+        },
+        {
+          "@id": "kom:ICAPMG609A"
+        },
+        {
+          "@id": "kom:M.702090.009.0"
+        },
+        {
+          "@id": "kom:M.702090.008.0"
+        },
+        {
+          "@id": "kom:ICAPMG605A"
+        },
+        {
+          "@id": "kom:ICAPMG501A"
+        },
+        {
+          "@id": "kom:M.702090.001.0"
         }
       ]
     },
+    {
+      "@id": "ok:K150601",
+      "id": "150601",
+      "name": "ERP ANALYST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.6202000.009.0"
+        },
+        {
+          "@id": "kom:J.6202000.010.0"
+        },
+        {
+          "@id": "kom:J.6202000.013.0"
+        },
+        {
+          "@id": "kom:J.6202000.012.0"
+        },
+        {
+          "@id": "kom:J.6202000.011.0"
+        },
+        {
+          "@id": "kom:J.6202000.020.0"
+        },
+        {
+          "@id": "kom:J.6202000.008.0"
+        },
+        {
+          "@id": "kom:J.6202000.007.0"
+        },
+        {
+          "@id": "kom:J.6202000.006.0"
+        },
+        {
+          "@id": "kom:J.6202000.002.0"
+        },
+        {
+          "@id": "kom:J.6202000.006.0"
+        },
+        {
+          "@id": "kom:J.6202000.019.0"
+        },
+        {
+          "@id": "kom:J.6202000.007.0"
+        },
+        {
+          "@id": "kom:J.6202000.018.0"
+        },
+        {
+          "@id": "kom:J.6202000.019.0"
+        },
+        {
+          "@id": "kom:J.6202000.020.0"
+        },
+        {
+          "@id": "kom:J.6202000.009.0"
+        },
+        {
+          "@id": "kom:J.6202000.010.0"
+        },
+        {
+          "@id": "kom:J.6202000.013.0"
+        },
+        {
+          "@id": "kom:J.6202000.018.0"
+        },
+        {
+          "@id": "kom:J.6202000.002.0"
+        },
+        {
+          "@id": "kom:J.6202000.008.0"
+        },
+        {
+          "@id": "kom:J.6202000.011.0"
+        },
+        {
+          "@id": "kom:J.6202000.012.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150602",
+      "id": "150602",
+      "name": "ENTERPRISE RESOURCE PLANNING SECURITY ANALYST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.62090.011"
+        },
+        {
+          "@id": "kom:J.6202000.029.0"
+        },
+        {
+          "@id": "kom:J.62090.004"
+        },
+        {
+          "@id": "kom:J.62090.003"
+        },
+        {
+          "@id": "kom:J.62090.009"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150603",
+      "id": "150603",
+      "name": "ENTERPRISE RESOURCE MANAGEMENT SUBJECT MATTER EXPERT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.6202000.003.0"
+        },
+        {
+          "@id": "kom:J.6202000.008.0"
+        },
+        {
+          "@id": "kom:J.6202000.001.0"
+        },
+        {
+          "@id": "kom:J.6202000.013.0"
+        },
+        {
+          "@id": "kom:J.6202000.012.0"
+        },
+        {
+          "@id": "kom:J.6202000.010.0"
+        },
+        {
+          "@id": "kom:J.6202000.020.0"
+        },
+        {
+          "@id": "kom:J.6202000.018.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150604",
+      "id": "150604",
+      "name": "ENTERPRISE RESOURCE PLANNING DATA ARCHITECT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.6202000.028.0"
+        },
+        {
+          "@id": "kom:J.6202000.021.0"
+        },
+        {
+          "@id": "kom:J.6202000.017.0"
+        },
+        {
+          "@id": "kom:J.6202000.019.0"
+        },
+        {
+          "@id": "kom:J.6202000.009.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150605",
+      "id": "150605",
+      "name": "ENTERPRISE RESOURCE PLANNING DATA ARCHITECT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.6202000.014.0"
+        },
+        {
+          "@id": "kom:J.6202000.015.0"
+        },
+        {
+          "@id": "kom:J.6202000.027.0"
+        },
+        {
+          "@id": "kom:J.6202000.029.0"
+        },
+        {
+          "@id": "kom:J.6202000.016.0"
+        },
+        {
+          "@id": "kom:J.6202000.026.0"
+        },
+        {
+          "@id": "kom:J.6202000.030.0"
+        },
+        {
+          "@id": "kom:J.6202000.023.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150606",
+      "id": "150606",
+      "name": "LEAD ENTERPRISE RESOURCE PLANNING (ERP) FUNCTIONAL",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT209A"
+        },
+        {
+          "@id": "kom:J.620900.004.02"
+        },
+        {
+          "@id": "kom:ICASAS204A"
+        },
+        {
+          "@id": "kom:ICAICT205A"
+        },
+        {
+          "@id": "kom:ICAICT211A"
+        },
+        {
+          "@id": "kom:ICAICT212A"
+        },
+        {
+          "@id": "kom:TIK.CS02.001.01"
+        },
+        {
+          "@id": "kom:ICAICT202A"
+        },
+        {
+          "@id": "kom:TIK.FO01.009.01"
+        },
+        {
+          "@id": "kom:ICAICT205A"
+        },
+        {
+          "@id": "kom:ICAICT211A"
+        },
+        {
+          "@id": "kom:ICAICT209A"
+        },
+        {
+          "@id": "kom:ICAICT202A"
+        },
+        {
+          "@id": "kom:TIK.FO01.009.01"
+        },
+        {
+          "@id": "kom:J.620900.004.02"
+        },
+        {
+          "@id": "kom:TIK.CS02.001.01"
+        },
+        {
+          "@id": "kom:ICASAS204A"
+        },
+        {
+          "@id": "kom:ICAICT212A"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150607",
+      "id": "150607",
+      "name": "ENTERPRISE RESOURCE MANAGEMENT (ERP) DECISION SUPPORT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT608A"
+        },
+        {
+          "@id": "kom:ICAICT509A"
+        },
+        {
+          "@id": "kom:JANCO069"
+        },
+        {
+          "@id": "kom:ICAICT712A"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150608",
+      "id": "150608",
+      "name": "ENTERPRISE RESOURCE PLANNING MASTER DATA ANALYST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.6202000.024.0"
+        },
+        {
+          "@id": "kom:J.6202000.030.0"
+        },
+        {
+          "@id": "kom:J.6202000.021.0"
+        },
+        {
+          "@id": "kom:J.6202000.017.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150609",
+      "id": "150609",
+      "name": "ENTERPRISE RESOURCE PLANNING ARCHITECT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT401A"
+        },
+        {
+          "@id": "kom:J.6202000.011.0"
+        },
+        {
+          "@id": "kom:ICASUS702A"
+        },
+        {
+          "@id": "kom:J.6202000.010.0"
+        },
+        {
+          "@id": "kom:J.6202000.012.0"
+        },
+        {
+          "@id": "kom:J.6202000.013.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150501",
+      "id": "150501",
+      "name": "ENTERPRISE RESOURCE PLANNING (ERP) TRAINER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:JANCO023"
+        },
+        {
+          "@id": "kom:JANCO041"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150502",
+      "id": "150502",
+      "name": "ENTERPRISE RESOURCE PLANNING (ERP) - DEVELOPER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.CS02.031.01"
+        },
+        {
+          "@id": "kom:TIK.OP03.003.01"
+        },
+        {
+          "@id": "kom:J.620100.019.02"
+        },
+        {
+          "@id": "kom:ICAICT308A"
+        },
+        {
+          "@id": "kom:ICASAS301A"
+        },
+        {
+          "@id": "kom:TIK.PR02.012.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.001.01"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:TIK.PR02.004.01"
+        },
+        {
+          "@id": "kom:TIK.PR03.005.01"
+        },
+        {
+          "@id": "kom:TIK.TS01.001.01"
+        },
+        {
+          "@id": "kom:TIK.PR04.005.01"
+        },
+        {
+          "@id": "kom:TIK.PR03.002.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.004.01"
+        },
+        {
+          "@id": "kom:TIK.PR06.003.01"
+        },
+        {
+          "@id": "kom:TIK.DG01.005.01"
+        },
+        {
+          "@id": "kom:TIK.PR01.009.01"
+        },
+        {
+          "@id": "kom:TIK.PR06.005.01"
+        },
+        {
+          "@id": "kom:ICAWEB302A"
+        },
+        {
+          "@id": "kom:ICASAS304A"
+        },
+        {
+          "@id": "kom:ICAICT304A"
+        },
+        {
+          "@id": "kom:BSBWOR301B"
+        },
+        {
+          "@id": "kom:ICASAS305A"
+        },
+        {
+          "@id": "kom:ICAICT307A"
+        },
+        {
+          "@id": "kom:ICAICT306A"
+        },
+        {
+          "@id": "kom:ICAICT301A"
+        },
+        {
+          "@id": "kom:TIK.PR04.006.01"
+        },
+        {
+          "@id": "kom:ICAGAM301A"
+        },
+        {
+          "@id": "kom:TIK.PR02.005.01"
+        },
+        {
+          "@id": "kom:ICAPRG301A"
+        },
+        {
+          "@id": "kom:ICAICT306A"
+        },
+        {
+          "@id": "kom:TIK.CS02.030.01"
+        },
+        {
+          "@id": "kom:TIK.PR04.004.01"
+        },
+        {
+          "@id": "kom:TIK.CS02.030.01"
+        },
+        {
+          "@id": "kom:ICASAS304A"
+        },
+        {
+          "@id": "kom:ICASAS301A"
+        },
+        {
+          "@id": "kom:TIK.PR02.004.01"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:TIK.PR06.004.01"
+        },
+        {
+          "@id": "kom:ICASAS305A"
+        },
+        {
+          "@id": "kom:ICAWEB302A"
+        },
+        {
+          "@id": "kom:ICAPRG301A"
+        },
+        {
+          "@id": "kom:BSBWOR301B"
+        },
+        {
+          "@id": "kom:TIK.CS02.031.01"
+        },
+        {
+          "@id": "kom:TIK.DG01.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP03.003.01"
+        },
+        {
+          "@id": "kom:TIK.PR01.009.01"
+        },
+        {
+          "@id": "kom:ICAICT304A"
+        },
+        {
+          "@id": "kom:TIK.PR06.004.01"
+        },
+        {
+          "@id": "kom:ICAICT301A"
+        },
+        {
+          "@id": "kom:TIK.PR03.005.01"
+        },
+        {
+          "@id": "kom:ICAGAM301A"
+        },
+        {
+          "@id": "kom:TIK.PR02.005.01"
+        },
+        {
+          "@id": "kom:TIK.PR02.012.01"
+        },
+        {
+          "@id": "kom:TIK.PR03.002.01"
+        },
+        {
+          "@id": "kom:TIK.PR04.004.01"
+        },
+        {
+          "@id": "kom:TIK.PR04.005.01"
+        },
+        {
+          "@id": "kom:ICAICT307A"
+        },
+        {
+          "@id": "kom:TIK.PR06.003.01"
+        },
+        {
+          "@id": "kom:TIK.PR06.005.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.001.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.004.01"
+        },
+        {
+          "@id": "kom:TIK.TS01.001.01"
+        },
+        {
+          "@id": "kom:TIK.PR04.006.01"
+        },
+        {
+          "@id": "kom:ICAICT308A"
+        },
+        {
+          "@id": "kom:J.620100.019.02"
+        },
+        {
+          "@id": "kom:TIK.SM01.007.01"
+        },
+        {
+          "@id": "kom:TIK.SM01.007.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150503",
+      "id": "150503",
+      "name": "ENTERPRISE RESOURCE PLANNING PROCESS OWNER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.6202000.018.0"
+        },
+        {
+          "@id": "kom:J.6202000.003.0"
+        },
+        {
+          "@id": "kom:J.6202000.013.0"
+        },
+        {
+          "@id": "kom:J.6202000.008.0"
+        },
+        {
+          "@id": "kom:J.6202000.012.0"
+        },
+        {
+          "@id": "kom:J.6202000.001.0"
+        },
+        {
+          "@id": "kom:J.6202000.020.0"
+        },
+        {
+          "@id": "kom:J.6202000.010.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150504",
+      "id": "150504",
+      "name": "LEAD ENTERPRISE RESOURCE PLANNING TEAM",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.6202000.012.0"
+        },
+        {
+          "@id": "kom:J.6202000.008.0"
+        },
+        {
+          "@id": "kom:J.6202000.018.0"
+        },
+        {
+          "@id": "kom:J.6202000.002.0"
+        },
+        {
+          "@id": "kom:J.6202000.010.0"
+        },
+        {
+          "@id": "kom:J.6202000.013.0"
+        },
+        {
+          "@id": "kom:J.6202000.003.0"
+        },
+        {
+          "@id": "kom:J.6202000.001.0"
+        },
+        {
+          "@id": "kom:J.6202000.020.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K150505",
+      "id": "150505",
+      "name": "LEAD ENTERPRISE RESOURCE PLANNING TECHNICAL",
+      "hasCompetencies": []
+    },
+    {
+      "@id": "ok:K150506",
+      "id": "150506",
+      "name": "APPLICATION MANAGEMENT SUPERVISOR",
+      "hasCompetencies": []
+    },
+    {
+      "@id": "ok:K150401",
+      "id": "150401",
+      "name": "APPLICATION MANAGEMENT COORDINATOR",
+      "hasCompetencies": []
+    },
+    {
+      "@id": "ok:K150301",
+      "id": "150301",
+      "name": "APPLICATION MANAGEMENT STAFF",
+      "hasCompetencies": []
+    },
+    {
+      "@id": "ok:K150201",
+      "id": "150201",
+      "name": "APPLICATION MANAGEMENT CLERK",
+      "hasCompetencies": []
+    },
+    {
+      "@id": "ok:K150101",
+      "id": "150101",
+      "name": "SYSTEM INTEGRATION CLERK",
+      "hasCompetencies": []
+    },
+    {
+      "@id": "ok:K160901",
+      "id": "160901",
+      "name": "PRINCIPAL IT ADVISOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTICT811"
+        },
+        {
+          "@id": "kom:ICTICT812"
+        },
+        {
+          "@id": "kom:ICTICT813"
+        },
+        {
+          "@id": "kom:ICTICT815"
+        },
+        {
+          "@id": "kom:ICTSUS805"
+        },
+        {
+          "@id": "kom:ICTSUS806"
+        },
+        {
+          "@id": "kom:ICTICT802"
+        },
+        {
+          "@id": "kom:ICTICT810"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160801",
+      "id": "160801",
+      "name": "SENIOR IT ADVISOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT706A"
+        },
+        {
+          "@id": "kom:ICAICT704A"
+        },
+        {
+          "@id": "kom:ICAICT705A"
+        },
+        {
+          "@id": "kom:ICAICT702A"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160802",
+      "id": "160802",
+      "name": "SENIOR IT CONSULTANT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICAICT709A"
+        },
+        {
+          "@id": "kom:ICAICT703A"
+        },
+        {
+          "@id": "kom:ICAICT708A"
+        },
+        {
+          "@id": "kom:ICAICT707A"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160701",
+      "id": "160701",
+      "name": "DIGITAL ENTERPRENEUR MANAGER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:M.741000.026.0"
+        },
+        {
+          "@id": "kom:TIK.OP02.004.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.011.01"
+        },
+        {
+          "@id": "kom:M.741000.016.0"
+        },
+        {
+          "@id": "kom:ICTDBS602"
+        },
+        {
+          "@id": "kom:M.741000.005.0"
+        },
+        {
+          "@id": "kom:M.741000.008.0"
+        },
+        {
+          "@id": "kom:M.741000.007.0"
+        },
+        {
+          "@id": "kom:M.741000.015.0"
+        },
+        {
+          "@id": "kom:M.741000.006.0"
+        },
+        {
+          "@id": "kom:TIK.OP02.001.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.005.01"
+        },
+        {
+          "@id": "kom:TIK.OP02.002.01"
+        },
+        {
+          "@id": "kom:M.741000.011.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160702",
+      "id": "160702",
+      "name": "IT CONSULTANT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTICT603"
+        },
+        {
+          "@id": "kom:ICTICT604"
+        },
+        {
+          "@id": "kom:ICTICT601"
+        },
+        {
+          "@id": "kom:ICTICT610"
+        },
+        {
+          "@id": "kom:ICTICT603"
+        },
+        {
+          "@id": "kom:ICTICT602"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160601",
+      "id": "160601",
+      "name": "DIGITAL ENTERPRENEUR DEPUTY MANAGER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTPMG501"
+        },
+        {
+          "@id": "kom:ICTICT511"
+        },
+        {
+          "@id": "kom:ICTPMG502"
+        },
+        {
+          "@id": "kom:ICTICT510"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160602",
+      "id": "160602",
+      "name": "JUNIOR IT CONSULTANT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTPRG511"
+        },
+        {
+          "@id": "kom:ICTPRG513"
+        },
+        {
+          "@id": "kom:ICTPRG516"
+        },
+        {
+          "@id": "kom:ICTPMG503"
+        },
+        {
+          "@id": "kom:ICTPMG504"
+        },
+        {
+          "@id": "kom:ICTPRG512"
+        },
+        {
+          "@id": "kom:TIK.OP02.017.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160501",
+      "id": "160501",
+      "name": "DIGITAL ENTERPRENEUR SUPERVISOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTSAS409"
+        },
+        {
+          "@id": "kom:BSBDES403"
+        },
+        {
+          "@id": "kom:BSBSMB405"
+        },
+        {
+          "@id": "kom:ICTICT413"
+        },
+        {
+          "@id": "kom:ICTICT412"
+        },
+        {
+          "@id": "kom:ICTSAS410"
+        },
+        {
+          "@id": "kom:BSBSMB407"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160502",
+      "id": "160502",
+      "name": "IT CONSULTANCY SUPERVISOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTPRG426"
+        },
+        {
+          "@id": "kom:ICTPRG415"
+        },
+        {
+          "@id": "kom:ICTPRG416"
+        },
+        {
+          "@id": "kom:ICTPMG401"
+        },
+        {
+          "@id": "kom:ICTWEB416"
+        },
+        {
+          "@id": "kom:J.612000.033"
+        },
+        {
+          "@id": "kom:ICTPRG419"
+        },
+        {
+          "@id": "kom:ICTTEN426"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160401",
+      "id": "160401",
+      "name": "IT CONSULTANCY COORDINATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTICT301"
+        },
+        {
+          "@id": "kom:ICTSAS305"
+        },
+        {
+          "@id": "kom:ICTSAS306"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160301",
+      "id": "160301",
+      "name": "IT CONSULTANCY STAFF",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTICT205"
+        },
+        {
+          "@id": "kom:ICTICT209"
+        },
+        {
+          "@id": "kom:ICTICT202"
+        },
+        {
+          "@id": "kom:ICTICT204"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160201",
+      "id": "160201",
+      "name": "IT CONSULTANCY STAFF",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTICT103"
+        },
+        {
+          "@id": "kom:ICTICT105"
+        },
+        {
+          "@id": "kom:ICTICT102"
+        },
+        {
+          "@id": "kom:ICTICT104"
+        },
+        {
+          "@id": "kom:ICTICT108"
+        },
+        {
+          "@id": "kom:ICTICT107"
+        },
+        {
+          "@id": "kom:ICTICT101"
+        },
+        {
+          "@id": "kom:ICTICT106"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K160101",
+      "id": "160101",
+      "name": "IT CONSULTANCY CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTICT104"
+        },
+        {
+          "@id": "kom:ICTSS00083"
+        },
+        {
+          "@id": "kom:ICTICT101"
+        }
+      ]
+    }
   ]
 }
