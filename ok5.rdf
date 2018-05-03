@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://localhost:5000/okupasi/">
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050901">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050901</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHIEF OPERATION OFFICER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050801">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050801</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATION AND TECHNOLOGY DIRECTOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050701">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050701</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MANAJER OPERASIONAL KOMPUTER (COMPUTER OPERATION</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050702">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO490"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO131"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO417"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO052"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO461"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO471"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO487"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO175"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO475"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO104"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO392"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO465"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050702</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATION SYSTEM ENGINEER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050703">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050703</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATING SYSTEMS PRODUCTION MANAGER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050704">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050704</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT OPERATIONS SUPPORT MANAGER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050705">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050705</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT OUTSOURCING MANAGER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050706">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050706</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACCOUNTING INFORMATION SYSTEM MANAGER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050707">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050707</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STORE INFORMATION SYSTEM MANAGER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050708">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050708</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRANSACTION PROCESSING MANAGER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050709">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM02.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO067"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/BSBINN601B"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO087"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM02.009.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.DG02.011.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM03.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO146"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO052"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO157"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO017"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/KOM.PR01.008.0"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM02.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO010"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO027"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO037"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO059"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO041"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO042"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO064"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAD602A"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050709</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADMINISTRATION AND FACILITIES MANAGER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050710">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050710</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TECHNICAL OPERATIONS MANAGER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050711">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO051"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM03.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO004"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO109"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/BSBMGT608C"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICANWK615A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO112"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO081"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO148"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.DG02.011.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO150"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO058"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO002"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM02.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO078"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK05.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO105"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM02.008.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT609A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK03.009.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM03.003.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050711</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DESKTOP/COMPUTER SUPPORT MANAGER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050712">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM02.011.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM02.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO106"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICANWK612A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM03.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM03.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT609A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO135"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO137"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM02.008.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICANWK613A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO153"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO023"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO033"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM03.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK05.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO061"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO129"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.DG02.011.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO014"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050712</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HELP DESK MANAGER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050713">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050713</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATION SYSTEM DEVELOPMENT EXPERT</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050601">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.026.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.028.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.007.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.027.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.031.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.016.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.015.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.033.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.005.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.029.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.032.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.017.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.030.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.014.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.004.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.003.02"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050601</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEKNISI KOMPUTER SPESIALIS SENIOR (SENIOR COMPUTER TEC</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050602">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANO137"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.016.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS403A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT416A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO115"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT415A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO090"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAWEB424A"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050602</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">METRICS MEASUREMENT ANALYST</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050603">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS307A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS306A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/BSBIPR301A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS411A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT410A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT401A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT402A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM01.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.591200.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK01.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.CS02.016.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/KOM.PR02.031.0"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.591200.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK02.023.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050603</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENIOR PRODUCTION CONTROL ANALYST</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050501">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.017.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.004.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.018.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.027.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.026.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.009.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.011.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.010.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.025.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.012.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.024.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.007.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.013.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.014.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.008.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.032.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.020.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.019.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.028.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.029.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.002.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.015.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.016.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.031.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.005.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.003.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.033.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.001.02"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050501</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUPERVISOR TEKNISI KOMPUTER (COMPUTER TECHNICIAN SUPE</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050502">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO063"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO143"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM01.008.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO003"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO080"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT511A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK05.010.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK02.020.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO113"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO145"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICADBS501A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO104"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050502</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WORD PROCESSING SUPERVISOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050503">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAWEB419A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT416A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICANWK406A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICANWK403A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.016.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050503</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPUTER OPERATIONS SUPERVISOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050504">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP03.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.016.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/BSBEBU401A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO103"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS410A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT411A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO053"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO020"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS418A"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050504</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HELP DESK SUPERVISOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050401">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.007.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.011.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.009.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.008.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT303A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.001.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.026.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.017.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS421A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.020.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.014.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.013.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.019.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS420A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.024.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS202A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS206A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.010.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.012.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.018.02"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050401</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPESIALIS TEKNISI KOMPUTER</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050402">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.009.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.001.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.026.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS206A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS420A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.011.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS421A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.012.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.010.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.013.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT303A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS202A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.007.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.008.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.014.02"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050402</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JUNIOR COMPUTER TECHNICIAN</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050403">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAAS512A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.016.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS506A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICANWK506A"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050403</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DESKTOP/COMPUTER SUPPORT COORDINATOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050404">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK02.020.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO079"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM01.008.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO140"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK03.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM02.012.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM02.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT508A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO099"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK05.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO149"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO142"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO094"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS517A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO034"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICTTEN5024A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO141"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK01.007.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICANWK506A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO028"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS512A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO131"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO052"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO060"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICANWK532A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS518A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO073"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO077"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO030"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050404</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HELP DESK COORDINATOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050405">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT208A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.018.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT210A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT203A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP03.001.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO139"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO021"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT204A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO019"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050405</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEAD COMPUTER OPERATOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050406">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT307A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS209A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP01.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.CS02.052.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.010.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.CS02.001.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/BSBSUS201A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT306A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT103A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT108A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.PR01.010.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT209A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/PAR.UJ03.025.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050406</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TECHNICAL SERVICES SPECIALIST</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050407">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.CS02.050.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS201A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT302A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT205A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT207A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.591200.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT202A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.DG01.001.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.CS02.028.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/BSBSUS201A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT201A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.CS03.001.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.DG01.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.026.02"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050407</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TECHNICAL SPECIALIST</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050408">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS418A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT411A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT405A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT404A"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050408</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPUTER OPERATIONS SPECIALIST</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050409">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT411A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT405A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS418A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT404A"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050409</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DESKTOP/COMPUTER SUPPORT SPECIALIST</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050301">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.007.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.011.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.012.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.013.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.014.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.016.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050301</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATOR KOMPUTER MADYA</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050302">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/C.120000.041.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT101A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT201A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT203A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.007.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.008.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.012.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.013.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.014.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.015.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050302</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATOR KOMPUTER PENJAMINAN MUTU</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050303">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/LSPK.OPDRB01.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/LSPK.OPDRB02.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/LSPK.OPDRB03.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.001.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.003.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050303</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATOR KOMPUTER RANCANG BANGUN</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050304">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT101A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT201A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/LSPK.OPDS01.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/LSPK.OPDS02.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/LSPK.OPDS03.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.007.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.008.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.012.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.013.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.014.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.015.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050304</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATOR KOMPUTER QUANTITY SURVEYOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050305">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT101A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT201A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/LSPK.OPDS03.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.007.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.008.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.012.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.013.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.014.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.015.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050305</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATOR KOMPUTER KEPENDUDUKAN</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050306">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/LSPK.OPDS01.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/LSPK.OPDS02.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/LSPK.OPDS03.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.001.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.013.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050306</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATOR KOMPUTER OLAH DATA STATISTIK</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050307">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.007.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.011.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.012.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.013.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.016.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP03.002.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050307</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADVANCE OFFICE OPERATOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050308">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT303A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS202A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS206A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS420A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS421A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.001.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.007.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.008.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.026.02"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050308</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HELP DESK SPECIALIST</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050309">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT203A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT204A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO024"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO107"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO134"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO154"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.MM02.043.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.017.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.019.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050309</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DESKTOP SPECIALIST</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050310">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO095"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO096"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.TS03.027.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050310</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WORD PROCESSING LEAD OPERATOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050311">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT303A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS202A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS419A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS421A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.001.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.007.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.009.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.026.02"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050311</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPUTER REPAIR TECHNICIAN</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050312">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/BSBWOR301B"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT101A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT107A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT203A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICANWK505A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAPRG505A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.026.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/PAR.UJ03.025.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.DG01.004.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.JK02.016.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.008.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.009.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.SM01.009.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050312</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DESKTOP TECHNICIAN</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050201">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP01.001.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.001.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.004.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.011.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050201</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPERATOR KOMPUTER MUDA</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050202">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP01.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP01.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP01.004.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP01.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.007.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.008.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.009.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.010.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.011.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.012.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.013.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.014.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.015.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050202</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENIOR OFFICE OPERATOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050203">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT303A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS202A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICASAS421A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.001.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.007.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.008.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.026.02"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050203</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HELPDESK</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050204">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO044"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO147"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.015.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050204</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WORD PROCESSING OPERATOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050205">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/JANCO093"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.FO02.012.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.003.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.007.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.015.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.TS03.002.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050205</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPUTER OPERATOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050101">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.002.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.004.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.007.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.011.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.014.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.015.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP03.002.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050101</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JUNIOR OFFICE OPERATOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050102">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.004.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.005.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.011.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050102</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BASIC OFFICE OPERATOR</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050103">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT101A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT201A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.002.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.006.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.007.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.026.02"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050103</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPUTER TECHNICIAN CLERK</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050104">
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050104</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ASISTEN OPERATOR KOMPUTER (COMPUTER OPERATOR ASSIST</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://localhost:5000/okupasi/K050105">
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/C.102210.049.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT101A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/ICAICT201A"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/J.620900.016.02"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.CS02.019.01"/>
+    <ns0:hasCompetencies rdf:resource="http://localhost:5000/kompetensi/TIK.OP02.002.01"/>
+    <ns0:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">050105</ns0:id>
+    <ns0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRINT OPERATOR</ns0:name>
+  </rdf:Description>
+
+</rdf:RDF>

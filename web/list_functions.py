@@ -4,6 +4,7 @@ import xmltodict
 import json
 import rdflib
 from SPARQLWrapper import SPARQLWrapper, JSON
+import pprint
 
 def validate(xml_path, xsd_path):
 
@@ -60,12 +61,13 @@ def getJob(codes):
 			FILTER(SUBSTR(?id, 1, 4) IN({c})) .
 		}}""".format(c=codes[1:-1])
 
+	# pprint.pprint(query)
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
+	# pprint.pprint(results)
 	keys = results['head']['vars']
 	r = results['results']['bindings']
-
 	jobs = []
 	for x in r:
 		for key in keys:
@@ -124,7 +126,6 @@ def getCompetencies(codes):
 	    }}
 	  }}
 	}}""".format(c=codes[1:-1])
-	print query
 
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
@@ -132,7 +133,7 @@ def getCompetencies(codes):
 	keys = results['head']['vars']
 	bind = results['results']['bindings']
 	comps = []
-	print results
+	# print results
 	for x in bind:
 		for key in keys:
 			comps.append(x[key]['value'])
@@ -146,7 +147,8 @@ def getCompetencies(codes):
 	    (kom:hasKnowledge|kom:hasSkill|kom:hasAspect) ?content .
 	    filter(?s in({c}))
 	}}""".format(c=json.dumps(comps).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1]).replace('"', '')
-	print query
+	# print query
+	pprint.pprint(query)
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
@@ -164,5 +166,6 @@ def getCompetencies(codes):
 		new_key = key.rsplit('/', 1)[-1]
 		com[new_key] = com.pop(key)
 	com["Kompetensi"] = comps
+	pprint.pprint(com)
 
 	return com
