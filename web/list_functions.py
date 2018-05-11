@@ -61,7 +61,7 @@ def getJob(codes):
 			FILTER(SUBSTR(?id, 1, 4) IN({c})) .
 		}}""".format(c=codes[1:-1])
 
-	# pprint.pprint(query)
+	pprint.pprint(query)
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
