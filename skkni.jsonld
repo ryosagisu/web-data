@@ -9,1433 +9,592 @@
       "@id": "kom:hasKUK",
       "@container": "@set"
     },
-    "hasContextVar": {
-      "@id": "kom:hasContextVar",
+    "hasPKP": {
+      "@id": "kom:hasPKP",
       "@container": "@set"
     },
-    "hasPRP": {
-      "@id": "kom:hasPRP",
+    "hasAPP": {
+      "@id": "kom:hasAPP",
       "@container": "@set"
     },
-    "hasRule": {
-      "@id": "kom:hasRule",
-      "@container": "@set"
-    },
-    "hasNS": {
-      "@id": "kom:hasNS",
-      "@container": "@set"
-    },
-    "hasContextEval": {
-      "@id": "kom:hasContextEval",
-      "@container": "@set"
-    },
-    "hasComReq": {
-      "@id": "kom:hasComReq",
-      "@container": "@set",
-      "@type": "@id"
-    },
-    "hasKnowledge": {
-      "@id": "kom:hasKnowledge",
-      "@container": "@set"
-    },
-    "hasSkill": {
-      "@id": "kom:hasSkill",
-      "@container": "@set"
-    },
-    "hasAtittude": {
-      "@id": "kom:hasAtittude",
-      "@container": "@set"
-    },
-    "hasAspect": {
-      "@id": "kom:hasAspect",
+    "hasReq": {
+      "@id": "kom:hasReq",
       "@container": "@set"
     }
   },
-
   "@graph": [
     {
-      "@id": "kom:J.63OPR00.001.2",
-      "title": "Menggunakan  Perangkat  Komputer",
-      "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk menggunakan perangkat komputer dalam kondisi normal.",
+      "@id": "kom:TIK.OP01.001.01",
+      "title": "Mengetik pada papan ketik (keyboard) komputer standar",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian pengetikan pada papan ketik (keyboard) komputer standar untuk fungsi pembuatan dokumen dan pemasukan data.",
       "hasElement":[
         {
-          "element": "Menyalakan perangkat komputer dan mengamati proses aktifasi sistem (booting) hingga selesai.",
-          "hasKUK": ["Indikator penyalaan perangkat komputer dapat dilihat sesuai dengan petunjuk penggunaan.", "Proses proses aktivasi sistem operasi dapat dijalankan sesuai dengan petunjuk penggunaan."]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Menjalankan perangkat komputer",
-          "hasKUK": ["Antar muka pengguna yang tersedia dapat dijalankan dengan Peripheral yang tersedia sesuai dengan petunjuk penggunaan komputer.", "Program aplikasi dijalankan sesuai dengan petunjuk penggunaan komputer."]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Mematikan perangkat komputer",
-          "hasKUK": ["Semua program aplikasi ditutup sesuai dengan petunjuk penggunaan komputer.", "Antrian data dari atau menuju peripheral dipastikan sudah tidak ada lagi sesuai dengan petunjuk penggunaan komputer.", "Tampilan yang muncul pada layar monitor diidentifikasi  merupakan tampilan yang menandakan proses penghentian secara normal sesuai dengan petunjuk penggunaan komputer."]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": ["Perangkat Komputer adalah Komputer Personal, Laptop/Notebook, Tablet, Smartphone yang terhubung atau tidak dengan jaringan internet (jaringan komputer). Komputer yang dimaksud komputer dalam bentuk digunakan sehari-hari.", "Aktivasi adalah proses untuk mendapatkan verifikasi atas account yang sah.", "Antar Muka Pengguna (user Interface) adalah fasilitas yang dimanfaatkan berupa Graphical User Interface (GUI), seperti windows, menu pilihan, icon dan teks perintah (command entry).", "Peripheral adalah peralatan tambahan (baik berupa peralatan masukan dan keluaran) yang dipasang pada komputer  seperti alat cetak (printer) , alat pemindai (scanner), mouse, touch pad, layar sentuh ( touch screen), stylus pen dan light pen.", "Program Aplikasi adalah perangkat lunak yang sudah terpasang/terinstal di perangkat komputer."],
-      "hasPRP": ["ATK", "Perangkat Komputer", "Petunjuk penggunaan perangkat komputer"],
-      "hasRule": [],
-      "hasNS": ["Legalitas dan etika yang terkait dengan profesi bidang teknologi informasi", "Standard Operating Procedure (SOP)", "Kebijakan Organisasi", "Kebijakan penggunaan komputer"],
-      "hasContextEval": ["Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.", "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.", "Metode-metode lain yang relevan."],
-      "hasComReq": [],
-      "hasKnowledge": ["Perangkat komputer", "Petunjuk Penggunaan komputer", "Antar muka pengguna", "Peripheral", "Program aplikasi"],
-      "hasSkill": ["Mengetik pada keyboard", "Menggunakan mouse/touch pad/layar sentuh (touch screen)/pen light/stylus pen"],
-      "hasAtittude": ["Disiplin", "Teliti", "Tanggung jawab", "Kerjasama dalam tim"],
-      "hasAspect": ["Ketelitian dalam melihat indikator penyalaan komputer sesuai dengan petunjuk penggunaan"]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan mengetik pada keyboard komputer standard"],
+      "hasReq": []
     },
     {
-      "@id": "kom:J.63OPR00.002.2",
-      "title": "Menggunakan Sistem Operasi",
-      "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan untuk menggunakan sistem operasi pada perangkat komputer dalam kondisi normal.",
+      "@id": "kom:TIK.OP02.001.01",
+      "title": "Mengoperasikan komputer (personal computer – PC) yang berdiri sendiri (stand alone)",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian PC stand alone seperti persiapan penyalaan, penyalaan PC, penggunaan perintah sistem operasi dasar, dan pematian (power-off) PC.",
       "hasElement":[
         {
-          "element": "Mengenali perintah dan GUI windows/ menu/ ikon (icon)/  kursor yang berasosiasi dengannya.",
-          "hasKUK": [
-            "Perintah-perintah sederhana diidentifikasi sesuai dengan petunjuk penggunaan sistem operasi.",
-            "Obyek pengacu yang bersesuaian dengan perintah-perintah sistem dikenali sesuai dengan petunjuk penggunaan sistem operasi.",
-            "Fungsi-fungsi tombol-tombol minimize, maximize, restore dan close, digunakan pada perangkat komputer untuk mengelola aplikasi yang sedang berjalan sesuai dengan petunjuk penggunaan sistem operasi."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Mengelola folder, file dan control panel.",
-          "hasKUK": [
-            "Folder dan file dikelola sesuai dengan petunjuk penggunaan sistem operasi.",
-            "Informasi dan atribut tentang folder seperti nama, ukuran, hak akses ditampilkan sesuai dengan petunjuk penggunaan sistem operasi.",
-            "Atribut suatu folder/file diubah sesuai dengan petunjuk penggunaan sistem operasi.",
-            "Pengaturan sederhana dilakukan sesuai dengan petunjuk penggunaan sistem operasi."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
+        },
+        {
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Perintah-perintah sederhana dapat berupa menyalakan komputer, menyalin dan melihat berkas, menjalankan program,dan sebagainya.",
-        "Petunjuk penggunaan sistem operasi adalah petunjuk/pedoman langkah-langkah menggunakan perangkat lunak sistem operasi.",
-        "Obyek pengacu tersebut misalnya: windows, menu, ikon, kursor, kombinasi tombol dan sebagainya.",
-        "Pengaturan sederhana adalah fitur dari sistem operasi yang memungkinkan pengguna untuk mengubah pengaturan sistem dan control."
-      ],
-      "hasPRP": [
-        "ATK",
-        "Perangkat Komputer",
-        "Perangkat lunak sistem operasi"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "Legalitas dan etika yang terkait dengan profesi bidang teknologi informasi",
-        "Standard Operating Procedure (SOP)",
-        "Kebijakan Organisasi",
-        "Kebijakan penggunaan komputer"
-      ],
-      "hasContextEval": [
-        "Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.",
-        "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.",
-        "Metode-metode lain yang relevan."
-      ],
-      "hasComReq": [],
-      "hasKnowledge": [
-        "Perangkat komputer",
-        "Jenis-jenis sistem operasi",
-        "Antar muka pengguna"
-      ],
-      "hasSkill": [
-        "Mengetik pada keyboard",
-        "Menggunakan mouse/touch pad/layar sentuh (touch screen)/pen light/stylus pen"
-      ],
-      "hasAtittude": [
-        "Disiplin",
-        "Teliti",
-        "Tanggung jawab",
-        "Kerjasama dalam tim"
-      ],
-      "hasAspect": [
-        "Ketepatan dalam mengenali perintah sederhana"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan mengetik pada keyboard komputer standard"],
+      "hasReq": ["kom:TIK.OP01.001.01"]
     },
     {
-      "@id": "kom:J.63OPR00.003.2",
-      "title": "Menggunakan Peralatan Peripheral",
-      "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam menggunakan peralatan peripheral.",
+      "@id": "kom:TIK.OP02.002.01",
+      "title": "Mengoperasikan printer",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian PC stand alone seperti persiapan penyalaan, penyalaan PC, penggunaan perintah sistem operasi dasar, dan pematian (power-off) PC.",
       "hasElement":[
         {
-          "element": "Mempersiapkan peralatan peripheral.",
-          "hasKUK": [
-            "Peralatan sudah disambung ke perangkat komputer menggunakan jenis koneksi yang tersedia.",
-            "Peralatan peripheral dinyalakan sesuai petunjuk penggunaan.",
-            "Pengaturan peralatan dilakukan sesuai dengan petunjuk penggunaan.",
-            "Peralatan diaktifkan melalui perangkat lunak (peripheral driver) yang digunakan."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Menggunakan printer",
-          "hasKUK": [
-            "Media cetak dipasang pada printer.",
-            "Fitur dasar pencetakan dipilih melalui aplikasi yang digunakan.",
-            "Proses pencetakan dilakukan dengan melalui aplikasi yang sesuai."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Menggunakan scanner",
-          "hasKUK": [
-            "Dokumen diletakan di scanner sesuai dengan petunjuk penggunaan.",
-            "Fitur dasar pemindaian dipilih sesuai dengan kebutuhan.",
-            "Proses pemindaian dilakukan dengan melalui aplikasi yang sesuai.",
-            "Hasil pemindaian disimpan sesuai dengan kebutuhan."
-          ]
-        },
-        {
-          "element": "Mematikan peralatan",
-          "hasKUK": [
-            "Semua kondisi/setting peralatan sudah dikembalikan ke pengaturan awal (default) sesuai dengan petunjuk penggunaan.",
-            "Peralatan dimatikan dengan mengikuti petunjuk penggunaan."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Jenis koneksi antara komputer dan alat peripheral antara lain koneksi dengan kabel ataupun koneksi tanpa kabel (wireless).",
-        "Peralatan peripheral bagi komputer  adalah peralatan tambahan yang dipasang pada komputer pribadi seperti alat cetak (printer) dan alat pindai (scanner).",
-        "Media cetak dapat berupa kertas, kertas foto, kwitansi, form cetakan, dan lain-lain.",
-        "Fitur dasar pencetakan meliputi page setup (pemilihan format, orientasi), bagian dokumen yang akan dicetak, jumlah cetakan, dan lain-lain.",
-        "Fitur dasar pemindaian meliputi resolusi, pilihan bidang scan, pengaturan OCR."
-      ],
-      "hasPRP": [
-        "Perangkat keras komputer",
-        "Perangkat lunak utilitas untuk peralatan yang dipilih untuk digunakan",
-        "Petunjuk penggunaan peralatan peripheral"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "Legalitas dan etika yang terkait dengan profesi bidang teknologi informasi",
-        "Standard Operating Procedure (SOP)",
-        "Kebijakan Organisasi",
-        "Kebijakan penggunaan komputer"
-      ],
-      "hasContextEval": [
-        "Kompetensi ini diujikan secara praktik di tempat kerja atau  laboratorim komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian.",
-        "Penilaian secara holistik dengan unit lain yang relevan dengan peran sektor industri, tempat kerja dan pekerjaan yang sesuai dianjurkan.",
-        "Proses penilaian dan teknik harus sesuai dengan budaya dan sesuai dengan tingkat keterampilan komunikasi, Bahasa, membaca dan menghitung kapasitas calon dan pekerjaan yang dilakukan.",
-        "Dalam kasus di mana penilaian praktis digunakan, harus dikombinasikan dengan pertanyaan yang ditargetkan untuk menilai pengetahuan yang diperlukan."
-      ],
-      "hasComReq": [],
-      "hasKnowledge": [
-        "Penggunaan perangkat komputer"
-      ],
-      "hasSkill": [],
-      "hasAtittude": [
-        "Disiplin",
-        "Teliti"
-      ],
-      "hasAspect": [
-        "Ketepatan dalam menghubungkan peralatan ke perangkat komputer meggunakan jenis koneksi yang tersedia"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01"]
     },
     {
-      "@id": "kom:J.63OPR00.004.2",
-      "title": "Menggunakan Perangkat Lunak Pengolah Kata tingkat dasar",
-      "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam penggunaan perangkat lunak pengolah kata tingkat dasar untuk perangkat komputer pada kondisi normal sesuai dengan petunjuk penggunaan.",
+      "@id": "kom:TIK.OP02.003.01",
+      "title": "Mengoperasikan Sistem Operasi",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian PC stand alone seperti persiapan penyalaan, penyalaan PC, penggunaan perintah sistem operasi dasar, dan pematian (power-off) PC.",
       "hasElement":[
         {
-          "element": "Membuat Dokumen",
-          "hasKUK": [
-            "Aplikasi pengolah kata dibuka.",
-            "Dokumen dibuat sesuai dengan kebutuhan pengguna.",
-            "Dokumen disimpan ke direktori.",
-            "Dokumen yang tersimpan dibuka."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Menyesuaikan Pengaturan dasar untuk memenuhi tata letak dokumen.",
-          "hasKUK": [
-            "Tata letak halaman konvensi diatur untuk memenuhi kebutuhan.",
-            "Format Font disesuaikan dengan tujuan dokumen.",
-            "Keselarasan dan jarak baris diubah sesuai persyaratan informasi dokumen.",
-            "Margin disesuaikan dengan tujuan dokumen."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Mengatur Dokumen",
-          "hasKUK": [
-            "Fitur pemformatan dan gaya sesuai kebutuhan pengguna digunakan.",
-            "Teks dari area lain disalin ke dalam dokumen atau dari dokumen lain yang aktif.",
-            "Halaman dokumen disisipkan sesuai kebutuhan pengguna.",
-            "Header dan footer dibuat sesuai kebutuhan dokumen.",
-            "Dokumen disimpan dalam berbagai tipe berkas."
-          ]
-        },
-        {
-          "element": "Membuat Tabel",
-          "hasKUK": [
-            "Tabel standar disisipkan ke dalam dokumen.",
-            "Sel untuk memenuhi persyaratan informasi diubah.",
-            "Kolom dan baris dimodifikasi.",
-            "Menu pemformatan digunakan sesuai dengan persyaratan kebutuhan pengguna."
-          ]
-        },
-        {
-          "element": "Menambahkan Gambar",
-          "hasKUK": [
-            "Gambar yang sesuai dimasukan ke dalam dokumen.",
-            "Ukuran dan posisi gambar diubah untuk memenuhi kebutuhan pengguna."
-          ]
-        },
-        {
-          "element": "Mencetak Dokumen",
-          "hasKUK": [
-            "Dokumen dalam modus pratinjau cetak ditampilkan.",
-            "Pengaturan  cetak dasar dipilih.",
-            "Dokumen atau bagian dokumen di cetak dari printer."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Aplikasi pengolah kata adalah suatu aplikasi komputer yang digunakan untuk produksi (termasuk penyusunan, penyuntingan, pemformatan, dan kadang pencetakan) segala jenis bahan yang dapat dicetak. Contoh perangkat lunak pengolah kata adalah google doc, Microsoft Word, Libre Office dan Open Office.",
-        "Format font format huruf komputer yang digunakan pada lembar kerja.",
-        "Tipe berkas seperti doc, pdf."
-      ],
-      "hasPRP": [
-        "Satu set perangkat keras komputer",
-        "Perangkat lunak pengolah kata",
-        "Dokumen untuk ujicoba"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "SNI open dokumen format no ISO/IEC 26300:2011"
-      ],
-      "hasContextEval": [
-        "Kompetensi ini diujikan secara praktik di tempat kerja atau laboratorim komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian.",
-        "Penilaian secara holistic dengan unit lain yang relevan dengan peran sektor industri, tempat kerja dan pekerjaan yang sesuai dianjurkan.",
-        "Proses penilaian dan teknik harus sesuai dengan budaya dan sesuai dengan tingkat keterampilan komunikasi, dan bahasa, kapasitas calon dan pekerjaan yang dilakukan.",
-        "Dalam kasus di mana penilaian praktis digunakan, harus dikombinasikan dengan pertanyaan yang ditargetkan untuk menilai pengetahuan yang diperlukan."
-      ],
-      "hasComReq": [],
-      "hasKnowledge": [
-        "Memahami Pengolah kata"
-      ],
-      "hasSkill": [
-        "Menyiapkan korespondensi sederhana yang menggabungkan informasi penting dalam format dan gaya yang sesuai dengan",
-        "Dapat mengoperasikan komputer"
-      ],
-      "hasAtittude": [
-        "Problem solving",
-        "Dokumentation skills",
-        "Verbal communication"
-      ],
-      "hasAspect": [
-        "Ketepatan membuat dokumen sesuai dengan kebutuhan"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01"]
     },
     {
-      "@id": "kom:J.63OPR00.005.2",
-      "title": "Menggunakan Perangkat Lunak Lembar Sebar (Spreadsheet) – Tingkat Dasar",
-      "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam penggunaan perangkat lunak lembar sebar tingkat dasar pada perangkat komputer pada kondisi normal sesuai dengan Petunjuk penggunaan (user manual).",
+      "@id": "kom:TIK.OP02.004.01",
+      "title": "Mengoperasikan piranti lunak Pengolah Kata – tingkat dasar",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian PC stand alone seperti persiapan penyalaan, penyalaan PC, penggunaan perintah sistem operasi dasar, dan pematian (power-off) PC.",
       "hasElement":[
         {
-          "element": "Membuat Dokumen",
-          "hasKUK": [
-            "Aplikasi spreadsheet dibuka.",
-            "Dokumen dibuat sesuai dengan kebutuhan pengguna.",
-            "Dokumen ditambahan data sesuai kebutuhan informasi.",
-            "Menu-menu yang disediakan beserta shortcut-nya digunakan sesuai dengan  formatnya.",
-            "Fitur-fitur pengelolaan file/spreadsheet digunakan sesuai dengan Kriteria.",
-            "Berbagai format standar penyimpanan format file digunakan sesuai dengan formatnya."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Melakukan editing sederhana atas kolom dan baris.",
-          "hasKUK": [
-            "Fitur-fitur pengubahan (editing) sederhana diidentifikasi sesuai dengan fungsi yang ada.",
-            "Fitur-fitur kolom dan baris diaplikasikan sesuai kebutuhan pengguna.",
-            "Fitur-fitur copy, cut dan paste diaplikasikan dengan berbagai pilihan sesuai dengan kebutuhan pengguna.",
-            "Formula sederhana diimplementasikan sesuai dengan kebutuhan pengguna."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Mencetak dokumen",
-          "hasKUK": [
-            "Bagian yang ingin dicetak ditentukan.",
-            "Berbagai parameter pencetakan diimplementasikan sesuai dengan kebutuhan pengguna.",
-            "Fitur-fitur pencetakan  diimplementasikan berdasarkan kebutuhan pengguna."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Tepat Formula Fungsi yaitu memilih dan menggunakan Formula dan Fungsi secara benar sesuai  dengan Formula  Fungsi tersebut.",
-        "Tepat Fitur yaitu memilih dan menggunakan berbagai fitur spreadsheet secara tepat dan benar sesuai kaidah fitur.",
-        "Tepat Parameter yaitu memilih dan menggunakan parameter secara benar sesuai dengan Fungsi yang digunakan.",
-        "Fitur-fitur pengubahan (editing) sederhana adalah mengetik huruf / kata / kalimat / angka, memformat huruf (font), text alignment, format data (text, date, number) dan presisi (tanda ribuan dan pecahan).",
-        "Fitur-fitur kolom dan baris  adalah seperti: menentukan lebar kolom, menentukan tinggi baris, membuat garis (border) dan arsiran atau warna (shading).",
-        "Fitur-fitur copy, cut dan paste adalah isi (value), format, formula atau semuanya.",
-        "Formula sederhana adalah +, -, *, /, sum, avg.",
-        "Parameter pencetakan adalah seluruhnya, area tertentu saja, area yang sedang diedit, urutan pencetakan.",
-        "Fitur-fitur pencetakan adalah page setup, printer setup, header dan footer, print preview."
-      ],
-      "hasPRP": [
-        "Perangkat keras komputer yang digunakan untuk membuat dan mengupdate file spreadsheet",
-        "Perangkat lunak spreadsheet yang dipilih untuk digunakan",
-        "Software Spreadsheet sudah tersedia"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "Legalitas dan etika yang terkait dengan profesi bidang teknologi informasi",
-        "SNI open dokumen format no ISO/IEC 26300:2011"
-      ],
-      "hasContextEval": [
-        "Kompetensi ini diujikan secara praktik di tempat kerja atau laboratorim komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian.",
-        "Penilaian secara holistic dengan unit lain yang relevan dengan peran sektor industri, tempat kerja dan pekerjaan yang sesuai dianjurkan.",
-        "Proses penilaian dan teknik harus sesuai dengan budaya dan sesuai dengan tingkat keterampilan komunikasi, dan bahasa, kapasitas calon dan pekerjaan yang dilakukan.",
-        "Dalam kasus di mana penilaian praktis digunakan, harus dikombinasikan dengan pertanyaan yang ditargetkan untuk menilai pengetahuan yang diperlukan."
-      ],
-      "hasComReq": [],
-      "hasKnowledge": [
-        "Jenis dan fungsi aplikasi spreadsheet"
-      ],
-      "hasSkill": [
-        "Menjalankan dan mengoperasikan aplikasi spreadsheet",
-        "Mengelola data, folder dan file"
-      ],
-      "hasAtittude": [
-        "Berintegritas",
-        "Selalu mengikuti kode etik",
-        "Verbal communication",
-        "Dokumentation skills"
-      ],
-      "hasAspect": [
-        "Ketepatan penggunaan menu-menu yang disediakan beserta shortcut-nya sesuai dengan formatnya"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.002.01", "kom:TIK.OP02.003.01"]
     },
     {
-      "@id": "kom:J.63OPR00.006.2",
-      "title": "Menggunakan Perangkat Lunak Presentasi – Tingkat Dasar",
-      "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap yang dibutuhkan untuk menggunakan perangkat lunak presentasi tingkat dasar.",
+      "@id": "kom:TIK.OP02.005.01",
+      "title": "Mengoperasikan piranti lunak lembar sebar (spreadsheet) – tingkat dasar",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian pada perangkat komputer pada kondisi normal sesuai dengan Petunjuk penggunaan (user manual). Pada tingkat dasar ini dibatasi pada kemampuan mengenali menu, membuat, membuka, menyimpan file, melakukan editing isi sel dan membuat formula sederhana pada lembar kerja serta mencetak ke printer dengan berbagai parameter.",
       "hasElement":[
         {
-          "element": "Mempersiapkan Perangkat lunak Presentasi",
-          "hasKUK": [
-            "Perangkat lunak Presentasi dipastikan telah terinstalasi dan dapat berjalan normal.",
-            "Petunjuk penggunaan perangkat lunak Presentasi sudah disediakan.",
-            "Perangkat komputer sudah dinyalakan, dengan sistem operasi dan persyaratan sesuai dengan Manual Instalasi.",
-            "Perangkat lunak Presentasi dijalankan."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Membuat file presentasi.",
-          "hasKUK": [
-            "Menu-menu yang tersediakan beserta shortcutnya dikenali.",
-            "Fitur-fitur pengelolaan file presentasi dapat digunakan, seperti: create/new, save, open, save as, insert, edit dan delete.",
-            "File presentasi dapat disimpan dengan berbagai format standar."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Melakukan editing sederhana.",
-          "hasKUK": [
-            "Fitur-fitur editing sederhana digunakan untuk mengolah file presentasi.",
-            "Fitur-fitur lay-out (tata letak) diaplikasikan untuk file presentasi.",
-            "Fitur-fitur isian berulang disetting, seperti: header, footer, page numbering."
-          ]
-        },
-        {
-          "element": "Menggunakan template presentasi.",
-          "hasKUK": [
-            "Template yang sudah tersedia dapat dipilih sesuai dengan kebutuhan pengguna.",
-            "Paragraph styles digunakan sesuai dengan kebutuhan pengguna.",
-            "Font Style dipilih sesuai dengan kebutuhan pengguna.",
-            "Styles dimodifikasi sesuai dengan kebutuhan pengguna."
-          ]
-        },
-        {
-          "element": "Menggunakan gambar untuk presentasi.",
-          "hasKUK": [
-            "Obyek gambar pada dokumen dibuat berdasarkan kebutuhan pengguna.",
-            "Obyek gambar dipilih sesuai dengan kebutuhan pengguna.",
-            "Obyek gambar diatur sesuai dengan kebutuhan pengguna.",
-            "Obyek gambar dihapus sesuai dengan kebutuhan pengguna.",
-            "Gambar dari file dapat dimasukkan sesuai dengan kebutuhan pengguna.",
-            "Posisi obyek gambar dalam dokumen dipindah sesuai dengan kebutuhan pengguna."
-          ]
-        },
-        {
-          "element": "Mencetak file presentasi.",
-          "hasKUK": [
-            "File presentasi dicetak sebagai slide dengan berbagai ukuran serta parameter pencetakan.",
-            "Fitur-fitur dasar pencetakan dapat digunakan, seperti: page setup, printer setup, print preview."
-          ]
-        },
-        {
-          "element": "Menjalankan presentasi.",
-          "hasKUK": [
-            "File presentasi dijalankan secara slide show.",
-            "Navigasi dilakukan dari satu slide ke slide lain."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Format standar seperti Power Point Presentation (pptx), pdf, jpeg, png, gif.",
-        "Fitur-fitur editing, seperti: mengetik huruf/kata/kalimat, memformat huruf/font, penjajaran teks (text alignment), penomoran(numbering), dan bullet.",
-        "Fitur-fitur layout, seperti: tata letak judul dan isi dengan berbagai variasi yang tersedia terhadap setiap slide, pemilihan disain  warna dan gambar latar belakang yang telah disediakan dan efek transisi antar slide.",
-        "Berbagai ukuran, seperti: seluruhnya, halaman tertentu saja, halaman yang sedang diedit, urutan pencetakan.",
-        "Parameter pencetakan, seperti :Grayscale, color, Pure black & white, Full Page Slide."
-      ],
-      "hasPRP": [
-        "Perangkat keras komputer dan kelengkapannya atau mesin sejenis yang digunakan untuk membuat dan mengupdate file perangkat lunak presentasi",
-        "Perangkat lunak presentasi yang dipilih untuk digunakan",
-        "Perangkat lunak presentasi sudah tersedia",
-        "Perlengkapan sesuai kebutuhan dan lingkungan yaitu koneksi internet dengan dan tanpa kabel.",
-        "Perlengkapan untuk peserta yang berkebutuhan khusus.",
-        "Dokumen Scope of Work (SOW)"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "SNI open dokumen format no ISO/IEC 26300:2011"
-      ],
-      "hasContextEval": [
-        "Kompetensi ini diujikan secara tertulis dan praktek di tempat kerja atau tempat lain yang memungkinkan untuk dilakukan penilaian."
-      ],
-      "hasComReq": [],
-      "hasKnowledge": [
-        "Jenis dan Fungsi aplikasi presentasi"
-      ],
-      "hasSkill": [
-        "Metode analisis dan perancangan perangkat  lunak"
-      ],
-      "hasAtittude": [
-        "Objektif",
-        "Cermat",
-        "Disiplin",
-        "Tanggung jawab"
-      ],
-      "hasAspect": [
-        "Ketelitian memastikan perangkat lunak presentasi telah terinstalasi dan dapat berjalan normal"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.002.01", "kom:TIK.OP02.003.01"]
     },
     {
-      "@id": "kom:J.63OPR00.007.2",
-      "title": "Menggunakan Penelusur Situs Web (Web Browser)",
-      "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam penggunaan penelusur situs web pada perangkat komputer sesuai dengan petunjuk penggunaan (user manual).",
+      "@id": "kom:TIK.OP02.006.01",
+      "title": "Mengoperasikan Penelusur Web (Web Browser)",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian Penelusur Web (Web Browser) pada perangkat komputer pada kondisi normal sesuai dengan petunjuk penggunaan (user manual). Web Browser adalah piranti lunak yang digunakan untuk mengakses situs web baik pada lingkungan internet maupun intranet. Web browser berkomunikasi dengan protokol HTTP (HyperText Transfer Protocol) dan dapat menampilkan file hiperteks dengan bahasa HTML (HyperText Markup Language). Pada unit ini dibatasi pada kemampuan mengenali menu, mengenali format dasar URL, mengakses situs tertentu, mencari informasi spesifik pada halaman web, memanfaatkan mesin pencari (search engine), menggunakan email berbasis web, menyimpan file, mencetak ke printer dengan berbagai parameter. Pengoperasian selanjutnya tergantung pada isi/ content dari web site yang diaskes.",
       "hasElement":[
         {
-          "element": "Mempersiapkan perangkat lunak Penelusur Situs Web",
-          "hasKUK": [
-            "Ikon dan/atau shortcut link Penelusur situs web pada layar perangkat komputer dikenali sesuai dengan user manual.",
-            "Penelusur situs web dijalankan dengan mengklik Ikon pada layar dan tampilan muncul pada layar.",
-            "Menu dan perintah shortcut penelusur situs web dikenali sesuai dengan user manual."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Mengakses internet melalui URL (Uniform Resource Locator).",
-          "hasKUK": [
-            "Pranala (Hyperlink) pada situs internet dijelajahi sesuai URL yang tersedia.",
-            "Halaman situs web hasil penelusuran (browsing) disimpan pada media penyimpanan sesuai lokasi penyimpanan yang tersedia.",
-            "Halaman situs web hasil penelusuran (browsing) dicetak ke printer.",
-            "Berkas pada halaman situs web di unduh sesuai dengan petunjuk situs."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Memanfaatkan mesin pencari informasi di internet (Search Engine)",
-          "hasKUK": [
-            "Penelusuran dengan mempergunakan kata kunci dilakukan sesuai dengan topik yang tersedia.",
-            "Penelusuran dengan mempergunakan search operator dilakukan sesuai dengan topik yang tersedia."
-          ]
-        },
-        {
-          "element": "Menggunakan markah buku (bookmark)",
-          "hasKUK": [
-            "URL situs web disimpan pada bookmark sesuai lokasi bookmark yang telah ada.",
-            "Bookmark dapat dikelola, seperti dengan menambahkan folder dan mengatur isi dari tiap folder.",
-            "Situs web diakses dengan mempergunakan alamat yang terdapat pada bookmark."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Perangkat Komputer adalah Komputer Personal, Laptop/Notebook, Tablet, Smartphone yang terhubungkan internet (jaringan komputer).",
-        "Pranala (dalam bahasa Inggris disebut hyperlink) adalah sebuah sistem acuan dalam halaman web hiperteks ke halaman web yang lain atau sumber lain. Klik pada ikon atau kata/penggalan kalimat sebuah halaman web, komputer akan menampilkan halaman terkait.",
-        "Uniform Resource Locator (URL) adalah alamat universal dan tunggal untuk mengakses sebuah situs web di internet.",
-        "Search operator atau search parameter adalah karakter atau kata yang diberikan ke mesin pencari. Parameter dapat berupa operator boolean antar kata kunci atau kata tertentu antara lain site:, filetype:, inurl:, intex: yang diikuti dengan kata kunci yang diberikan.",
-        "Bookmark adalah sebuah fungsi yang terdapat pada penelusur situs web yang berguna untuk mengumpulkan dan menyusun alamat situs web yang akan diakses lagi kedalam struktur pohon."
-      ],
-      "hasPRP": [
-        "Perangkat keras komputer yang digunakan untuk mengakses situs web",
-        "Daftar alamat situs web yang sering diakses"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "SNI open dokumen format no ISO/IEC 26300:2011"
-      ],
-      "hasContextEval": [
-        "Kompetensi ini diujikan secara praktek di laboratorim komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian."
-      ],
-      "hasComReq": ["J.63OPR00.001.2"],
-      "hasKnowledge": [
-        "Susunan antar muka perangkat keras komputer",
-        "Internet"
-      ],
-      "hasSkill": [
-        "Menjalankan perangkat keras komputer"
-      ],
-      "hasAtittude": [
-        "Cekatan",
-        "Cermat",
-        "Disiplin",
-        "Tanggung jawab"
-      ],
-      "hasAspect": [
-        "Ketepatan menjalankan Penelusur Situs Web dengan mengklik Ikon pada layar dan tampilan muncul pada layar"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.002.01", "kom:TIK.OP02.003.01"]
     },
     {
-      "@id": "kom:J.63OPR00.008.2",
-      "title": "Menggunakan Perangkat Lunak Pengakses Surat Elektronik (e-mail client)",
-      "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan untuk mengakses surat elektronik (e-mail client) pada perangkat komputer sesuai dengan petunjuk penggunaan (user manual).",
+      "@id": "kom:TIK.OP02.007.01",
+      "title": "Mengoperasikan piranti lunak klien e-mail (e-mail client)",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian piranti lunak Klien Email (Email Client) pada perangkat komputer pada kondisi normal sesuai dengan petunjuk penggunaan (user manual). Piranti lunak Email Client adalah piranti lunak yang digunakan untuk melakukan surat menyurat elektronik pada perangkat komputer. Pada unit ini dibatasi pada kemampuan mengenali menu, melakukan konfigurasi sederhana, mengenali format alamat email (surat elektronik), mengambil email, mengkomposisi dan mengirim email, menyimpan email ke file, mencetak ke printer.",
       "hasElement":[
         {
-          "element": "Mempersiapkan perangkat lunak pengakses surel",
-          "hasKUK": [
-            "Ikon dan/atau shortcut link pengakses surel pada layar perangkat komputer dikenali sesuai manual penggunaan (user manual).",
-            "Menu dan perintah shortcut pengakses surel dikenali sesuai petunjuk penggunaan (user manual).",
-            "Akun surel dan password pada pengakses surel dikonfigurasi sesuai server surel dan akun yang tersedia."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Membaca surel",
-          "hasKUK": [
-            "Surel diambil dari server surel yang tersedia.",
-            "Surel dibaca berdasarkan nama pengirim dan subyek.",
-            "Berkas lampiran surel dibaca sesuai program/piranti lunak pembuka lampiran."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Membuat surel",
-          "hasKUK": [
-            "Surel dibuat sesuai dengan alamat tujuan dan subjek.",
-            "Surel baru diteruskan (forward) ke beberapa tujuan sesuai alamat tujuan surel yang sesuai.",
-            "Surel baru dibalas (reply) ke beberapa tujuan sesuai alamat tujuan."
-          ]
-        },
-        {
-          "element": "Melakukan pengorganisasian surel",
-          "hasKUK": [
-            "Surel dikenali berdasarkan Atribut Surel.",
-            "Folder dibuat sesuai pengelompokan surel yang sesuai.",
-            "Surel dikelompokkan kedalam folder-folder berdasarkan pengelompokan yang sesuai.",
-            "Surel disaring berdasarkan paramaternya masuk secara otomatis ke folder yang telah ada."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Perangkat Komputer adalah Komputer Personal, Laptop/Notebook, Tablet, Smartphone yang terhubungkan internet (jaringan komputer).",
-        "Server Surel meliputi SMTP server, POP server (jika menggunakan POP) atau IMAP server (jika menggunakan IMAP).",
-        "Alamat tujuan adalah alamat yang dituju untuk pengiriman surel, menggunakan bentuk alamat seperti nama@contoh.com, Bagian sebelum tanda @ adalah bagian alamat lokal, dan setelah tanda @ merupakan alamat domain penyedia layanan surel, seperti gmail, yahoo.",
-        "Atribut Surel meliputi beberapa parameter, seperti: nama pengirim, judul (subject), tanggal pengiriman."
-      ],
-      "hasPRP": [
-        "Perangkat keras komputer yang digunakan untuk mengakses surel",
-        "Daftar alamat sever surel yang sering diakses"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "SNI open dokumen format no ISO/IEC 26300:2011"
-      ],
-      "hasContextEval": [
-        "Kompetensi ini diujikan secara praktek di laboratorim komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian."
-      ],
-      "hasComReq": ["J.63OPR00.001.2"],
-      "hasKnowledge": [
-        "Susunan antar muka perangkat keras komputer",
-        "Internet"
-      ],
-      "hasSkill": [
-        "Menjalankan perangkat keras komputer"
-      ],
-      "hasAtittude": [
-        "Cekatan",
-        "Cermat",
-        "Disiplin",
-        "Tanggung jawab"
-      ],
-      "hasAspect": [
-        "Ketepatan mengambil Surel dari server mengacu pada surel yang tersedia"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.002.01", "kom:TIK.OP02.003.01"]
     },
     {
-      "@id": "kom:J.63OPR00.009.2",
-      "title": "Menggunakan Aplikasi Berbasis Internet {Internet Based Applications Literacy}",
-      "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk menggunakan aplikasi berbasis Internet.",
+      "@id": "kom:TIK.OP01.002.01",
+      "title": "Mengidentifikasi aspek kode etik dan HAKI dibidang TIK",
+      "description": "Unit kompetensi ini berkaitan dengan pemahaman akan kode etik dan Hak atas Kekayaan Intelektual (HKI) yang berlaku di dunia Teknologi Informasi dan Komunikasi (TIK).",
       "hasElement":[
         {
-          "element": "Mengidentifikasi koneksi Internet telah tersambung",
-          "hasKUK": [
-            "Alternatif jaringan Internet yang tersedia diidentifikasi secara lengkap sesuai dengan kebutuhan pengguna.",
-            "Koneksi Internet disambung sesuai dengan jaringan yang tersedia.",
-            "Perangkat komputer dipastikan dapat terhubung ke Internet."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Mengidentifikasi aplikasi berbasis Internet",
-          "hasKUK": [
-            "Aplikasi berbasis Internet diketahui sesuai dengan kebutuhan pengguna.",
-            "Fungsi dari aplikasi berbasis Internet dijelaskan."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Menjalankan aplikasi berbasis Internet",
-          "hasKUK": [
-            "Panduan pemakaian aplikasi dikuasai.",
-            "Menu yang ada pada aplikasi diidentifikasi sesuai dengan fungsinya.",
-            "Menu dipilih sesuai dengan kebutuhan pengguna.",
-            "Form-form yang ada diisi secara lengkap sesuai batasan pengisian."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Koneksi internet adalah hubungan yang terjadi antara seperangkat komputer dengan internet.",
-        "Jaringan adalah jaringan komunikasi data yang memungkinkan antar komputer untuk saling berkomunikasi.",
-        "Perangkat Komputer adalah Komputer Personal, Laptop/Notebook, Tablet, Smartphone yang terhubungkan internet(jaringan komputer).",
-        "Aplikasi berbasis internet adalah sebuah program aplikasi yang dapat dijalankan di internet. diantaranya Mobile Applications & Web Applications."
-      ],
-      "hasPRP": [
-        "Perangkat keras komputer atau mesin sejenis yang digunakan terkoneksi internet dengan dan tanpa kabel",
-        "Perangkat lunak web browser yang dipilih untuk digunakan",
-        "Software Web Browser sudah tersedia",
-        "Perlengkapan sesuai kebutuhan dan lingkungan yaitu koneksi internet dengan dan tanpa kabel",
-        "Perlengkapan untuk peserta yang berkebutuhan khusus",
-        "Alat Tulis"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "Etika Tidak menggunakan login orang lain",
-        "Etika Tidak menggunakan software bajakan",
-        "SOP dari aplikasi berbasis internet",
-        "Manual book dari aplikasi berbasis internet"
-      ],
-      "hasContextEval": [
-        "Lisan", "Wawancara", "Tes Tertulis", "Metoda lain yang relevan"
-      ],
-      "hasComReq": ["J.63OPR00.007.2"],
-      "hasKnowledge": [
-        "Jenis-jenis komputer"
-      ],
-      "hasSkill": [
-        "Mengoperasikan perangkat komputer",
-        "Menggunakan software"
-      ],
-      "hasAtittude": [
-        "Teliti",
-        "Cermat",
-        "Disiplin",
-        "Tanggung jawab"
-      ],
-      "hasAspect": [
-        "Ketepatan mengidentifikasi Alternatif jaringan Internet yang tersedia secara lengkap sesuai dengan kebutuhan pengguna"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.002.01", "kom:TIK.OP02.003.01"]
     },
     {
-      "@id": "kom:J.63OPR00.010.2",
-      "title": "Menggunakan Aplikasi Media Sosial",
-      "description": "Unit ini menentukan kompetensi, pengetahuan, dan sikap kerja yang diperlukan dalam menggunakan aplikasi media sosial secara umum.",
+      "@id": "kom:TIK.OP02.008.01",
+      "title": "Mengidentifikasi komponen sistem komputer tingkat dasar (PC)",
+      "description": "Unit kompetensi ini berkaitan dengan kemampuan mengidentifikasi komponen komputer pribadi (PC).",
       "hasElement":[
         {
-          "element": "Memilih Media sosial",
-          "hasKUK": [
-            "Kebutuhan media sosial diidentifikasi sebagai dasar kegiatan berikutnya.",
-            "Jenis Data yang akan digunakan dipilih sesuai dengan kebutuhan pengguna.",
-            "Aplikasi media sosial dipilih sesuai dengan kebutuhan pengguna."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Mengelola akun (account)  di media sosial",
-          "hasKUK": [
-            "Akun pada aplikasi dibuat sesuai dengan kebutuhan pengguna.",
-            "Jejaring Sosial dipelihara sesuai tujuan pengguna.",
-            "Tools dikelola sesuai dengan kebutuhan pengguna."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Mengirim Informasi",
-          "hasKUK": [
-            "Konten informasi diperiksa sesuai dengan kriteria pengguna.",
-            "Target Penerima ditentukan sesuai dengan kebutuhan pengguna.",
-            "Informasi di kirim sesuai dengan tujuan pengguna."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Media social adalah sebuah media online, dimana para penggunanya bisa dengan mudah berpartisipasi, berbagi, dan menciptakan isi meliputi: WA, Facebook, Google+, Twitter, Blogger, YouTube, Line, BBM, Path, Instagram, LinkedIn, Telegram dan lainnya.",
-        "Jenis Data adalah informasi yang akan ditampilkan dalam media social seperti Teks, Image, Audio, Video, animasi.",
-        "Dipelihara jejaring sosial adalah menambah, mengurangi dan memfilter pertemanan pada jejaring sosial.",
-        "Tools adalah aplikasi tambahan yang akan ditambahkan untuk keperluan khusus.",
-        "Konteks/informasi tersebut benar, baik dari sisi isi, sumber, waktu dan tempat, latar belakang serta konteks informasi disampaikan.",
-        "Bermanfaat, baik bagi diri penyebar maupun bagi orang atau kelompok yang akan menerima informasi tersebut.",
-        "Bersifat umum, yaitu informasi tersebut cocok dan layak diketahui oleh masyarakat dari seluruh lapisan sesuai dengan keragaman orang/khalayak yang akan menjadi target sebaran informasi.",
-        "Tepat waktu dan tempat, yaitu informasi yang akan disebar harus sesuai dengan waktu dan tempatnya karena informasi benar yang disampaikan pada waktu dan/atau tempat yang berbeda bisa memiliki perbedaan makna.",
-        "Tepat Konteks, informasi yang terkait dengan konteks tertentu tidak boleh dilepaskan dari konteksnya, terlebihditempatkan pada konteks yang berbeda yang memiliki kemungkinan pengertian yang berbeda.",
-        "Memiliki hak, orang tersebut memiliki hak untuk penyebaran tidak melanggar hak seperti hak kekayaan intelektual dan tidak melanggar hak privacy."
-      ],
-      "hasPRP": [
-        "Perangkat keras komputer atau mesin sejenis yang digunakan untuk melakukan komunikasi dengan media sosial",
-        "Perangkat lunak media sosial yang pilih untuk digunakan",
-        "Perlengkapan sesuai kebutuhan dan lingkungan yaitu koneksi internet dengan dan tanpa kabel",
-        "Perlengkapan untuk peserta yang berkebutuhan khusus"
-      ],
-      "hasRule": [
-        "Undang-undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik (KIP)",
-        "Undang-undang RI, no.19 tahun 2016, tentang perubahan atas undang-undang nomor 11 tahun 2008 tentang Informasi dan transaksi elektronik"
-      ],
-      "hasNS": [
-        "Etika yang terkait dengan profesi bidang teknologi informasi",
-        "SOP atau manual panduan teknis penggunaan media sosial"
-      ],
-      "hasContextEval": [
-        "Kompetensi ini diujikan secara praktik di tempat kerja atau laboratorium komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian.",
-        "Penilaian secara holistic dengan unit lain yang relevan dengan peran sektor industri, tempat kerja dan pekerjaan yang sesuai dianjurkan.",
-        "Proses penilaian dan teknik harus sesuai dengan budaya dan sesuai dengan tingkat keterampilan komunikasi, bahasa, membaca dan menghitung kapasitas calon dan pekerjaan yang dilakukan.",
-        "Dalam kasus dimana penilaian praktis digunakan, harus dikombinasikan dengan pertanyaan yang ditargetkan untuk menilai pengetahuan yang diperlukan."
-      ],
-      "hasComReq": [],
-      "hasKnowledge": [
-        "Penggunaan media social"
-      ],
-      "hasSkill": [
-        "Mengumpulkan dan menganalisa kebutuhan pengguna",
-        "Berhubungan dengan pertemanan di jejaring sosial"
-      ],
-      "hasAtittude": [
-        "Berintegritas",
-        "Selalu mengikuti kode etik",
-        "Mau belajar",
-        "Dokumentation skills",
-        "Verbal communication"
-      ],
-      "hasAspect": [
-        "Ketelitian memeriksa Konten informasi sesuai dengan kriteria"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01"]
     },
     {
-      "@id": "kom:J.63OPR00.011.2",
-      "title": "Menggunakan Perangkat Lunak Pengolah Kata Tingkat Lanjut",
-      "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan untuk pengolah kata tingkat lanjut pada perangkat komputer pada kondisi normal sesuai dengan Petunjuk Penggunaan(user manual).",
+      "@id": "kom:TIK.OP02.009.01",
+      "title": "Mengoperasikan komputer/PC yang tersambung ke Jaringan Komputer Lokal",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian PC yang tersambung ke jaringan (network).",
       "hasElement":[
         {
-          "element": "Menggunakan Template pengolah kata",
-          "hasKUK": [
-            "Template dokumen yang sudah tersedia pada aplikasi pengolah kata dipilih sesuai kebutuhan pengguna.",
-            "Template dokumen baru dibuat sesuai kebutuhan pengguna.",
-            "Template dokumen dimodifikasi sesuai kebutuhan pengguna."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Membuat Mail Merge",
-          "hasKUK": [
-            "Perbedaan antara dokumen surat dan dokumen data dapat diketahui oleh pengguna.",
-            "Dokumen data dikelola sesuai dengan kebutuhan pengguna.",
-            "Dokumen surat dibuat sesuai kebutuhan pengguna.",
-            "Fungsi mail merge digunakan sesuai kebutuhan pengguna."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Membuat Style and Themes",
-          "hasKUK": [
-            "Teks yang ingin diformat dipilih sesuai kebutuhan pengguna.",
-            "Menu Style dipilih sesuai dengan keinginan pengguna.",
-            "Style dimodifikasi sesuai kebutuhan pengguna."
-          ]
-        },
-        {
-          "element": "Membuat Daftar isi otomatis",
-          "hasKUK": [
-            "Judul daftar isi dituliskan sesuai kebutuhan pengguna.",
-            "Kalimat dimasukan sesuai heading.",
-            "Kalimat diubah sesuai heading.",
-            "Dokumen awal dan akhir dibuat berdasarkan jenis penomoran."
-          ]
-        },
-        {
-          "element": "Membuat format kolom",
-          "hasKUK": [
-            "Jumlah kolom dipilih sesuai kebutuhan pengguna.",
-            "Modifikasi awal dan akhir kolom dibuat."
-          ]
-        },
-        {
-          "element": "Membuat Referensi dokumen",
-          "hasKUK": [
-            "Indek footnote dimasukan sesuai dengan posisi.",
-            "Keterangn footnote dituliskan sesuai kebutuhan pengguna.",
-            "Indek sitasi dimasukan sesuai posisi dokumen.",
-            "Keterangan pustaka ditambahkan."
-          ]
-        },
-        {
-          "element": "Mengelola Objek",
-          "hasKUK": [
-            "Jenis objek ditentukan sesuai kebutuhan pengguna.",
-            "Objek dikelola sesuai kebutuhan pengguna."
-          ]
-        },
-        {
-          "element": "Melacak dokumen",
-          "hasKUK": [
-            "Dokumen original disiapkan.",
-            "Menu pelacakan dokumen dikelola sesuai kebutuhan pengguna."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Aplikasi Pengolah kata adalah suatu aplikasi komputer yang digunakan untuk produksi (termasuk penyusunan, penyuntingan, pemformatan, dan kadang pencetakan) segala jenis bahan yang dapat dicetak. Contoh perangkat lunak pengolah kata adalah google doc, Microsoft Word, Libre Office dan Open Office.",
-        "Dokumen data adalah catatan original dari data.",
-        "Dimodifikasi adalah cara merubah bentuk sebuah barang dari yang kurang menarik menjadi lebih menarik tanpa menghilangkan fungsi aslinya."
-      ],
-      "hasPRP": [
-        "Satu set perangkat keras komputer",
-        "Perangkat lunak pengolah kata",
-        "Dokumen untuk uji coba sudah disiapkan",
-        "Perlengkapan untuk peserta yang berkebutuhan khusus"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "SNI open dokumen format no ISO/IEC 26300:2011"
-      ],
-      "hasContextEval": [
-        "Kompetensi ini diujikan secara praktik di tempat kerja atau laboratorium komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian.",
-        "Penilaian secara holistic dengan unit lain yang relevan dengan peran sektor industry, tempat kerja dan pekerjaan yang sesuai dianjurkan.",
-        "Proses penilaian dan teknik harus sesuai dengan budaya dan sesuai dengan tingkat keterampilan komunikasi, dan bahasa, kapasitas calon dan pekerjaan yang dilakukan.",
-        "Dalam kasus di mana penilaian praktis digunakan, harus dikombinasikan dengan pertanyaan yang ditargetkan untuk menilai pengetahuan yang diperlukan."
-      ],
-      "hasComReq": ["J.63OPR00.004.2"],
-      "hasKnowledge": [
-        "Mengoperasikan komputer"
-      ],
-      "hasSkill": [
-        "Menginterpretasikan informasi spesifik untuk menentukan dan menyelesaikan pekerjaan yang dibutuhkan",
-        "Korespondensi sederhana yang menggabungkan informasi penting dalam format dan gaya yang sesuai dengan persyaratan"
-      ],
-      "hasAtittude": [
-        "Poblem solving",
-        "Selalu mengikuti kode etik",
-        "Dokumentation skills"
-      ],
-      "hasAspect": [
-        "Ketepatan menggunakan Template yang sudah tersedia pada aplikasi pengolah"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.008.01", "kom:TIK.OP02.003.01"]
     },
     {
-      "@id": "kom:J.63OPR00.012.2",
-      "title": "Menggunakan Perangkat lunak Lembar kerja  Tingkat Lanjut",
-      "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam menggunakan perangkat lunak lembar kerja tingkat lanjut pada perangkat komputer pada kondisi normal sesuai dengan Petunjuk penggunaan (user manual).",
+      "@id": "kom:TIK.OP02.010.01",
+      "title": "Melakukan instalasi untuk koneksi Internet",
+      "description": "Unit kompetensi ini berhubungan dengan kompetensi untuk melakukan instalasi/pemasangan koneksi internet.",
       "hasElement":[
         {
-          "element": "Mengidentifikasi cell yang akan diolah",
-          "hasKUK": [
-            "Cell dan cell range dipilih sesuai dengan kebutuhan pengguna.",
-            "Kesalahan pemilihan cell dan cell range diperbaiki sesuai dengan kebutuhan pengguna."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Menggunakan Formula pada lembar kerja",
-          "hasKUK": [
-            "Fungsi formula diimplementasikan sesuai dengan Kriteria.",
-            "Formula yang salah (error) diperbaiki sesuai dengan kebutuhan pengguna."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Menggunakan Fungsi",
-          "hasKUK": [
-            "Fungsi-fungsi built-in yang tersedia pada aplikasi lembar sebar diidentifikasi sesuai dengan kebutuhan fungsi.",
-            "Sintak fungsi diidentifikasi sesuai dengan fungsi yang digunakan.",
-            "Fungsi-fungsi tertentu diaplikasikan sesuai dengan fungsi.",
-            "Kesalahan penulisan sintak diperbaiki sesuai dengan ketentuan penulisan sintak."
-          ]
-        },
-        {
-          "element": "Menggunakan Filter",
-          "hasKUK": [
-            "Langkah-langkah pengurutan data (sorting) diidentifikasi sesuai dengan kaidahnya.",
-            "Pengurutan data dilakukan sesuai dengan sasaran pengurutan.",
-            "Filter diaplikasikan sesuai dengan target data yang digunakan.",
-            "Auto filter diaplikasikan sesuai dengan kebutuhan pengelompokan data."
-          ]
-        },
-        {
-          "element": "Menggunakan Grafik (Chart)",
-          "hasKUK": [
-            "Jenis-jenis grafik/chart diidentifikasi sesuai dengan formatnya masing-masing.",
-            "Grafik diimplementasikan dalam spreadsheet sesuai dengan data.",
-            "Obyek dalam grafik diatur sesuai dengan parameter yang diinginkan",
-            "Sumber data diubah sesuai kebutuhan.",
-            "Paramater chart ditambahkan sesuai kebutuhan."
-          ]
-        },
-        {
-          "element": "Mengintegrasikan berkas spreadsheet",
-          "hasKUK": [
-            "Fitur ekspor  diimplementasikan sesuai format fitur tersebut.",
-            "Fitur import/insert diimplementasikan sesuai format fitur tersebut",
-            "Berkas atau sheet lainnya diintegrasikan sesuai dengan kebutuhan pengguna."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Fungsi formula adalah rumus yang sudah disediakan oleh perangkat lunak lembar kerja, yang akan membantu dalam proses perhitungan. Umumnya penulisan Fungsi harus dilengkapi dengan argumen, baik berupa angka, label, rumus, alamat sel atau range. Argumen ini harus ditulis dengan diapit tanda kurung ().",
-        "Fungsi built-in adalah fungsi yang masuk dalam kategori datetime, matematika, logika.",
-        "Sintaks fungsi  adalah penulisan fungsi sesuai dengan ketentuan dari fungsi yang bersangkutan.",
-        "Fungsi-fungsi tertentu adalah fungsi yang masuk dalam kategori statistik dan finansial.",
-        "Jenis-jenis chart/grafik adalah visualisasi dari data, contohnya : pie, bar, line, area, scatter, bubble, net, stock column dan line.",
-        "Parameter Chart seperti Judul, legend dan gridline.",
-        "Tepat Chart yaitu memilih dan menggunakan chart sesuai dengan kaidan Chart tersebut.",
-        "Tepat Fungsi Formula yaitu memilih dan menggunakan Fungsi Formula secara benar sesuai kaidah Fungsi Formula tersebut.",
-        "Tepat Sintaks yaitu mengimplementasikan sintaks fungsi secara benar sesuai dengan kaidah fungsi tersebut.",
-        "Tepat Filter yaitu memilih dan menggunakan Ffilter sesuai kaidah filter tersebut."
-      ],
-      "hasPRP": [
-        "Perangkat keras komputer atau mesin sejenis yang digunakan untuk membuat dan mengupdate file spreadsheet",
-        "Perangkat lunak spreadsheet yang pilih untuk digunakan",
-        "Perlengkapan sesuai kebutuhan dan lingkungan yaitu koneksi internet dengan dan tanpa kabel",
-        "Perlengkapan untuk peserta yang berkebutuhan khusus"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "Legalitas dan etika yang terkait dengan profesi bidang teknologi informasi",
-        "SNI open dokumen format no ISO/IEC 26300:2011"
-      ],
-      "hasContextEval": [
-        "Kompetensi ini diujikan secara praktik di tempat kerja atau laboratorium komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian.",
-        "Penilaian secara holistik dengan unit lain yang relevan dengan peran sektor industri, tempat kerja dan pekerjaan yang sesuai dianjurkan.",
-        "Proses penilaian dan teknik harus sesuai dengan budaya dan sesuai dengan tingkat keterampilan komunikasi, Bahasa, membaca dan menghitung kapasitas calon dan pekerjaan yang dilakukan.",
-        "Dalam kasus dimana penilaian praktis digunakan, harus dikombinasikan dengan pertanyaan yang ditargetkan untuk menilai pengetahuan yang diperlukan."
-      ],
-      "hasComReq": ["J.63OPR00.005.2"],
-      "hasKnowledge": [
-        "Jenis dan fungsi aplikasi lembar sebar"
-      ],
-      "hasSkill": [
-        "Mengelola folder dan file"
-      ],
-      "hasAtittude": [
-        "Teliti",
-        "Selalu mengikuti kode etik"
-      ],
-      "hasAspect": [
-        "Ketepatan memilih Cell dan cell range sesuai dengan kebutuhan pengguna"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.008.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.006.01"]
     },
     {
-      "@id": "kom:J.63OPR00.013.1",
-      "title": "Menggunakan Perangkat lunak Presentasi Tingkat Lanjut",
-      "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap yang dibutuhkan untuk mengukur kemampuan dalam mengklasifikasikan dan mengalokasikan kebutuhan perangkat lunak tingkat lanjut.",
+      "@id": "kom:TIK.OP02.011.01",
+      "title": "Mengoperasikan Piranti lunak Presentasi",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian piranti lunak Presentasi pada perangkat komputer pada kondisi normal sesuai dengan petunjuk penggunaan (user manual). Pada tingkat dasar ini dibatasi pada kemampuan mengenali menu, membuat, membuka, menyimpan, melakukan editing sederhana, mencetak ke printer dengan berbagai parameter dan melakukan presentasi sederhana.",
       "hasElement":[
         {
-          "element": "Menggunakan Tabels dalam slide.",
-          "hasKUK": [
-            "Tabel dibuat dari menu yang tersedia dengan perangkat lunak presentasi.",
-            "Banyaknya kolom dan baris  dipilih sesuai kebutuhan pengguna.",
-            "Kolom dan baris dihapus sesuai kebutuhan pengguna.",
-            "Kolom dan baris disisipkan sesuai kebutuhan pengguna.",
-            "Tinggi dan lebar kolom dimodifikasi sesuai kebutuhan pengguna."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Menggunakan Grafik (Charts) dalam slide.",
-          "hasKUK": [
-            "Grafik dibuat dengan input data dari file lain.",
-            "Bentuk grafik dipilih dari menu yang tersedia.",
-            "Bentuk grafik diubah sesuai kebutuhan pengguna.",
-            "Judul grafik dibuat sesuai kebutuhan pengguna.",
-            "Judul grafik diubah sesuai kebutuhan pengguna.",
-            "Label data dari grafik dibuat sesuai kebutuhan pengguna.",
-            "Background warna dimodifikasi sesuai kebutuhan pengguna."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Menampilkan slide dengan animasi.",
-          "hasKUK": [
-            "Animasi dipilih dari fasilitas yang tersedia.",
-            "Waktu untuk animasi diatur sesuai kebutuhan pengguna.",
-            "Urutan animasinya diubah."
-          ]
-        },
-        {
-          "element": "Melengkapi slide dengan fitur tambahan.",
-          "hasKUK": [
-            "Slide dilengkapi dengan hyperlinks.",
-            "Slide ditampilkan dengan fasilitas view modes."
-          ]
-        },
-        {
-          "element": "Merancang template presentasi",
-          "hasKUK": [
-            "View modes dipilih sesuai kebutuhan pengguna.",
-            "Posisi elemen template ditentukan sesuai dengan rancangan.",
-            "Template diimplementasikan sesuai dengan kebutuhan pengguna."
-          ]
-        },
-        {
-          "element": "Mengelola objek",
-          "hasKUK": [
-            "Objek diidentifikasi.",
-            "Slide dilengkapi dengan fasilitas video dan audio.",
-            "Slide dapat dibuat video secara otomatis."
-          ]
-        },
-        {
-          "element": "Menyesuaikan jenis berkas slide",
-          "hasKUK": [
-            "Fitur ekspor  diimplementasikan sesuai format fitur tersebut.",
-            "Fitur import/insert diimplementasikan sesuai format fitur tersebut",
-            "Berkas atau slide lainnya diintegrasikan sesuai dengan kebutuhan pengguna."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Perangkat lunak presentasi adalah aplikasi komputer yang digunakan untuk membuat file presentasi seperti powerpoint, google slide.",
-        "Animasi adalah gambar begerak berbentuk dari sekumpulan objek (gambar) yang disusun secara beraturan mengikuti alur pergerakan yang telah ditentukan pada setiap pertambahan hitungan waktu yang terjadi yang animasi dalam hal ini adalah transisi antar slide.",
-        "Hyperlinks  digunakan untuk menghubungkan kepada slide yang lain atau file lain, seperti email, alamat internet.",
-        "View modes, seperti normal view, Slide Sorter, Slide Master, View outline, Handout Master."
-      ],
-      "hasPRP": [
-        "Perangkat computer dan kelengkapannya atau mesin sejenis",
-        "Dokumen Scope of Work (SOW)"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "SNI open dokumen format no ISO/IEC 26300:2011"
-      ],
-      "hasContextEval": [
-        "Kompetensi ini diujikan secara tertulis dan praktek di tempat kerja atau tempat lain yang memungkinkan untuk dilakukan penilaian.",
-        "Untuk UK ini, kepada operator perangkat lunak diberikan studi kasus/permasalahan untuk membuat presentasi dengan perangkat lunak presentasi tertentu."
-      ],
-      "hasComReq": ["J.63OPR00.006.2"],
-      "hasKnowledge": [
-        "Proses pembuatan perangkat lunak presentasi",
-        "Teknik-teknik design dan animasi perangkat lunak presentasi",
-        "Standar design dan animasi perangkat lunak presentasi"
-      ],
-      "hasSkill": [
-        "Menggunakan metode design dan animasi perangkat lunak presentasi"
-      ],
-      "hasAtittude": [
-        "Teliti",
-        "Cermat",
-        "Disiplin",
-        "Tanggung jawab"
-      ],
-      "hasAspect": [
-        "Fasilitas perangkat lunak presentasi untuk fitur tingkat lanjut dapat digunakan"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.004.01", "kom:TIK.OP02.005.01"]
     },
     {
-      "@id": "kom:J.63OPR00.014.1",
-      "title": "Melakukan Pemasukan Data",
-      "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk  memasukan data menggunakan perangkat komputer.",
+      "@id": "kom:TIK.OP02.012.01",
+      "title": "Mengoperasikan Piranti Lunak Pengolah Kata – Tingkat Maju",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian piranti lunak pengolah kata pada perangkat komputer pada kondisi normal sesuai dengan Petunjuk penggunaan (user manual) . Pada tingkat maju difokuskan pada kemampuan bekerja dengan template dan styles, bekerja dengan gambar, membuat surat masal, dan ke printer dengan parameter standar.",
       "hasElement":[
         {
-          "element": "Mempersiapkan data yang akan dimasukkan",
-          "hasKUK": [
-            "Perlakuan Persiapan Data sesuai dengan aplikasi yang digunakan.",
-            "Jumlah data diperiksa kelengkapannya sesuai dengan borang.",
-            "Jenis  data pada tiap isian diperiksa sesuai dengan borang."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Memasukkan data dengan perangkat komputer",
-          "hasKUK": [
-            "Data dimasukkan dengan menggunakan aplikasi komputer sesuai dengan yang ditentukan.",
-            "Data disimpan pada aplikasi sesuai dengan lokasi penyimpanan.",
-            "Data yang wajib dimasukkan secara lengkap sesuai dengan aplikasi.",
-            "Dokumen fisik dipindai menjadi format elektronis sesuai dengan dokumen fisik aslinya.",
-            "Pekerjaan pemasukan data dicatat pada logbook secara lengkap sesuai dengan standard pada organisasi tersebut."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Mengimport data dari sumber elektronis",
-          "hasKUK": [
-            "Jenis file diidentifikasi dengan tepat sesuai aplikasi yang dapat membacanya.",
-            "Jenis file dapat disimpan dengan tepat sesuai dengan aplikasi yang akan menggunakannya.",
-            "Berkas yang diimport dibaca ke program sesuai dengan berkas aslinya.",
-            "Pekerjaan pengimportan data dicatat pada logbook secara lengkap sesuai dengan standard pada organisasi tersebut."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Persiapan data adalah proses  mengumpulkan, mensortir dan menyiapkan data yang akan dimasukkan.",
-        "Aplikasi yang digunakan adalah perangkat lunak aplikasi yang digunakan untuk memasukkan data.",
-        "Borang adalah formulir isian dengan format data sesuai kebutuhan bagian/unit dari perusahaan/organisasi yang akan dimasukkan dengan perangkat komputer.",
-        "Jenis data adalah format data yang sesuai tipe data, seperti string/character, numerik bilangan bulat, bilangan pecahan.",
-        "Lokasi penyimpanan adalah tempat media penyimpan data, bisa di harddisk, microsd, flashdisk, CD, DVD.",
-        "Logbook adalah aktifitas yang mesti dilakukan operator komputer setiap memasukkan data."
-      ],
-      "hasPRP": [
-        "ATK",
-        "Perangkat Komputer",
-        "Perangkat lunak bantu"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "Standard Operating Procedure (SOP)",
-        "Kebijakan Organisasi"
-      ],
-      "hasContextEval": [
-        "Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.",
-        "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.",
-        "Metode-metode lain yang relevan."
-      ],
-      "hasComReq": ["J.63OPR00.001.2", "J.63OPR00.002.2"],
-      "hasKnowledge": [
-        "Jenis-jenis file",
-        "Manajemen file"
-      ],
-      "hasSkill": [
-        "Mengetik pada keyboard"
-      ],
-      "hasAtittude": [
-        "Teliti",
-        "Kerja sama dalam tim",
-        "Disiplin",
-        "Tanggung jawab"
-      ],
-      "hasAspect": [
-        "Ketepatan memperlakukan Persiapan Data sesuai dengan aplikasi yang digunakan"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.004.01", "kom:TIK.OP02.005.01"]
     },
     {
-      "@id": "kom:J.63OPR00.015.1",
-      "title": "Memastikan Validitas Data",
-      "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk  memastikan validitas data yang dimasukkan dengan perangkat komputer.",
+      "@id": "kom:TIK.OP02.013.01",
+      "title": "Mengoperasikan Piranti Lunak Lembar Sebar – Tingkat Maju",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian piranti lunak pengolah kata pada perangkat komputer pada kondisi normal sesuai dengan Petunjuk penggunaan (user manual) . Pada tingkat maju difokuskan pada kemampuan membuat chart/grafik, mengoperasikan formula, bekerja dengan fungsi dan menggunakan filter.",
       "hasElement":[
         {
-          "element": "Mengidentifikasi substansi data yang dimasukkan",
-          "hasKUK": [
-            "Data dipastikan sesuai dengan keperluan data pada proses bisnis organisasi tersebut.",
-            "Jenis data yang dimasukkan sesuai dengan kebutuhan jenis data pada aplikasi tersebut."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Mengidentifikasi referensi dari data yang dimasukkan",
-          "hasKUK": [
-            "Pemasukan berdasarkan Jenis data diidentifikasi sesuai dengan Penggunaan Referensi data.",
-            "Data yang dimasukkan sesuai dengan kodifikasi dari data tersebut."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Memeriksa validitas data",
-          "hasKUK": [
-            "Akurasi sumber data diperiksa sesuai dengan kebutuhan organisasi.",
-            "Memeriksa data yang dimasukkan yang sesuai dengan akurasi yang ditentukan.",
-            "Data yang dimasukkan sesuai dengan aspek  keamanan informasi."
-          ]
-        },
-        {
-          "element": "Melakukan pemutakhiran data",
-          "hasKUK": [
-            "Data diperbaiki sesuai dengan kriteria validitas data.",
-            "Data pada dokumen yang tidak lengkap,  dilengkapi sesuai dengan yang kebutuhan dari aplikasi pengolah data.",
-            "Data dilakukan pemutakhiran sesuai dengan data terbaru yang ada."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Proses Bisnis Organisasi adalah suatu kumpulan aktivitas atau pekerjaan terstruktur yang saling terkait untuk menyelesaikan masalah tertentu di organisasi.",
-        "Referensi Data adalah data yang digunakan berdasarkan seperti tipe, object dan classnya.",
-        "Kodifikasi dari data adalah aturan/proses/cara standarisasi mengodifikasi data yang digunakan.",
-        "Kebutuhan organisasi adalah bisa kebutuhan fisik, financial, maupun sumberdaya manusia yang dibutuhkan untuk menjamin validasi  data.",
-        "Aspek keamanan informasi adalah authentication, integrity, non repudition, authority, confidentiality, privacy, availability dan acces control.",
-        "Kriteria Validitas data adalah derajat ketepatan antara data yang terdapat di lapangan dan data yang dilaporkan dengan kriteria: valid, reliable dan objektif."
-      ],
-      "hasPRP": [
-        "ATK",
-        "Perangkat Komputer",
-        "Perangkat lunak bantu"
-      ],
-      "hasRule": [],
-      "hasNS": [
-        "Standard Operating Procedure (SOP)",
-        "Kebijakan Organisasi",
-        "Kebijakaan pengguna"
-      ],
-      "hasContextEval": [
-        "Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.",
-        "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.",
-        "Metode-metode lain yang relevan."
-      ],
-      "hasComReq": ["J.63OPR00.001.2", "J.63OPR00.014.1"],
-      "hasKnowledge": [
-        "Konsep Jenis Data",
-        "Konsep Kualitas Data"
-      ],
-      "hasSkill": [
-        "Mengetik pada keyboard"
-      ],
-      "hasAtittude": [
-        "Teliti",
-        "Kerja sama dalam tim",
-        "Disiplin",
-        "Tanggung jawab"
-      ],
-      "hasAspect": [
-        "Ketepatan memastikan Data sesuai dengan keperluan data pada proses bisnis organisasi"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.004.01", "kom:TIK.OP02.005.01"]
     },
     {
-      "@id": "kom:J.63OPR00.016.1",
-      "title": "Mengidentifikasi Aspek Keamanan Informasi Pengguna",
-      "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk  mengidentifikasi aspek keamanan informasi pengguna.",
+      "@id": "kom:TIK.OP01.003.01",
+      "title": "Mendeskripsikan Kewaspadaan Terhadap Keamanan Informasi",
+      "description": "Unit kompetensi ini berhubungan dengan pemahaman prinsip keamanan informasi guna meningkatkan kewaspadaan atas keamanan informasi.",
       "hasElement":[
         {
-          "element": "Mengidentifikasi ancaman keamanan informasi pengguna",
-          "hasKUK": [
-            "Ancaman-ancaman keamanan informasi diklasifikasi sesuai dengan sumber ancaman keamanan informasi bagi pengguna.",
-            "Ancaman-ancaman keamanan informasi diklasifikasikan sesuai dengan target ancaman keamanan informasi.",
-            "Jenis serangan keamanan informasi melalui jaringan didentifikasi sesuai dengan jenis malware.",
-            "Jenis serangan keamanan informasi melalui social engineering didentifikasi sesuai dengan lingkungan pengguna."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Mengidentifikasi aspek confidentiality",
-          "hasKUK": [
-            "Data dan dokumen diklasifikasi sesuai tingkat keterbukaan informasi.",
-            "Data dan dokumen disimpan sesuai dengan tingkat keterbukaan informasinya.",
-            "Informasi pribadi digunakan sesuai dengan kebutuhan personal organisasi.",
-            "Proses Autentikasi dilaksanakan secara benar sesuai dengan sistem pada organisasi tersebut.",
-            "Teknologi enkripsi digunakan sesuai dengan kerahasiaan informasi."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Mengidentifikasi aspek integrity",
-          "hasKUK": [
-            "Akses kontrol diikuti sesuai dengan keperluan system.",
-            "Meta data digunakan untuk menjamin integritas data sesuai dengan sumber data asli.",
-            "Informasi yang bertentangan diperiksa dan kebutuhan yang tepat ditetapkan."
-          ]
-        },
-        {
-          "element": "Mengidentifikasi aspek availability",
-          "hasKUK": [
-            "Data dan software yang perlu di backup diidentifikasi sesuai dengan tingkat kekritisan data dan software bagi pengguna.",
-            "Kapasitas dan media backup dikalkulasi sesuai kebutuhan pengguna.",
-            "Prosedur backup ke media backup dilakukan sesuai dengan skedule.",
-            "Prosedur Restorasi dari media backup dilakukan sesuai dengan kebutuhan."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Sumber ancaman keamanan informasi adalah acaman keamanan informasi bisa berasal dari orang, organisasi, mekanisme, atau peristiwa yang memiliki potensi membahayakan sumber daya informasi perusahaan ( lingkungan pengguna).",
-        "Target ancaman keamanan informasi adalah kejahatan/ kriminilitas di dunia maya(cyber crime) berupa pencurian data terhadap berbagai situs baik milik pemerintah, maupun situs-situs komersial dan perbankan, kebocoran informasi pribadi atau rahasia perusahaan yang digunakan untuk menyerang server, penipuan dengan satu kali klik gambar atau video dapat menyebabkan penagihan, serangan terhadap surat elektronik(e-mail) dengan lampiran yang terinfeksi virus, password yang dicuri atau terinfeksi virus, dll.",
-        "Jenis Malware diantaranya adalah trojan house, virus komputer,  worm, Dialer, Wabbit, Bots, Browser Hijacker, spyware, Backdoor, adware, keylogger, rootkit, phishing dan sebagainya.",
-        "Social engineering adalah Manipulasi psikologis seseorang dengan tujuan untuk mendapatkan informasi tertentu atau melakukan hal tertentu dengan cara menipunya secara halus dan tidak dia sadari. Manipulasi psikologis dilakukan dengan berbagai media yang tujuannya untuk mempengaruhi pikiran korban, misalnya menggunakan suara (berbicara untuk menyakinkan korban), gambar (memasang gambar yang erotis agar di klik), tulisan (menulis artikel yang persuasif dan menyakinkan misal menulis tutorial cara hack akun facebook, tapi palsu).",
-        "Tingkat keterbukaan informasi adalah tingkat kesiapan pengamanan informasi penyelenggara layanan public dan pengamanan unit data strategis dengan teknik keamanan, sistem manajemen keamanan informasi dengan standarisasi SNI ISO/IEC 27001 teknologi informasi.",
-        "Kebutuhan personal organisasi adalah kebutuhan untuk mengamankan sumber daya informasi organisasi, melindungi baik peralatan komputer atau non komputer, fasilitas, data dan informasi dari penyalahgunaan pihak-pihak yang tidak berwewenang.",
-        "Proses Autentifikasi  Password dipilih  sesuai dengan kebijakan password pada organisasi (kompleksitas, panjang Proses), Password digunakan secara aman sesuai dengan panduan  pada organisasi tersebut.",
-        "Teknologi enkripsi adalah salah satu solusi/cara yang paling efektif untuk mengamankan data, melindungi dari penjahat siber, dengan metode: enkripsi File, enkripsi folder, Enkripsi Full Disk, Shredder, atau Enkripsi E-mail.",
-        "Akses kontrol adalah akses pembatasan selektif ke suatu tempat atau sumber daya lainnya, pembatasan pintu masuk ke suatu property, bangunan, atau ruangan yang menyimpan informasi hanya untuk orang yang berwenang.",
-        "Metadata adalah informasi terstruktur yang mendeskripsikan, menjelaskan, menemukan, atau setidaknya menjadikan suatu informasi mudah untuk ditemukan kembali, digunakan, atau dikelola.",
-        "Tingkat kekritisan adalah aksi yang terjadi  baik dari dalam sistem atau dari luar sistem yang dapat mengganggu keseimbangan  sistem informasi (ancaman) seperti: ancaman alam (banjir, gempa, tsunami, longsor), ancaman manusia (hacking, cracking, DDOS, backdoor, social engineering), ancaman lingkungan (kebocoran A/C, atap bocor, penurunan/kenaikan tegangan listrik), cacat atau kelemahan dari suatu sistem yang mungkin timbul saat mendesain, menetapkan prosedur, mengimplementasikan maupun kelemahan atas sistem kontrol yang ada, dan setting firewall.",
-        "Prosedur backup adalah Siapkan media penyimpanan hasil backup(harddisk, flashdisk, atau dvd), hidupkan computer, masuk desktop atau start klik kanan this PC, pilih Manage, klik disk management, klik kanan partisi sistem operasi pilih properties, memulai proses backup, masuk control panel, klik file history, klik system image backup, pemilihan media penyimpanan backup lalu klik next, pemilihan partisi yang akan dibackup lalu pilih next, konfirmasi konfigurasi backup yang telah diset lalu klik Start backup, proses pembuatan image backup dimulai, cek hasilnya pada file eksplorer bila sudah selesai proses backup.",
-        "Prosedur restorasi  adalah siapkan dvd bootable sistem operasi, masukan dvd tersebut ke dvd ROM, lalu restart computer, pilih booting dari dvd ROM, tekan sembarang tombol untuk masuk menu instalasi, proses setup dimulai lalu klik next, pilih repair your computer."
-      ],
-      "hasPRP": [
-        "ATK",
-        "Komputer",
-        "Perangkat lunak bantu"
-      ],
-      "hasRule": ["Undang-undang RI, no.19 tahun 2016, tentang perubahan atas undang-undang nomor 11 tahun 2008 tentang Informasi dan transaksi elektronik"],
-      "hasNS": [],
-      "hasContextEval": [
-        "Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.",
-        "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.",
-        "Metode-metode lain yang relevan."
-      ],
-      "hasComReq": ["J.63OPR00.001.2", "J.63OPR00.002.2"],
-      "hasKnowledge": [
-        "Sumber ancaman keamanan informasi",
-        "Target ancaman keamanan informasi",
-        "Jenis Malware",
-        "Tingkat keterbukaan informasi",
-        "Teknologi enkripsi",
-        "Akses control dan Check sum",
-        "Konsep Tingkat kekritisan",
-        "Konsep dan metode backup dan recovery"
-      ],
-      "hasSkill": [
-        "Mengidentifikasi ancaman keamanan informasi pengguna, Mengidentifikasi aspek confidentiality, aspek integrity dan aspek availability",
-        "Melakukan backup dan restore"
-      ],
-      "hasAtittude": [
-        "Teliti",
-        "Kerja sama dalam tim",
-        "Disiplin",
-        "Tanggung jawab"
-      ],
-      "hasAspect": [
-        "Ketepatan melakukan klasifikasi keamanan informasi sesuai dengan target ancaman keamanan informasi"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.006.01", "kom:TIK.OP02.007.01", "kom:TIK.OP01.001.01"]
     },
     {
-      "@id": "kom:J.63OPR00.017.1",
-      "title": "Memastikan Keamanan Informasi Pengguna",
-      "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk  memastikan keamanan informasi pengguna.",
+      "@id": "kom:TIK.OP02.014.01",
+      "title": "Mempergunakan Piranti lunak Anti Virus",
+      "description": "Unit kompetensi ini berkaitan dengan penggunaan piranti lunak anti virus yang umum digunakan dengan tujuan agar dapat melindungi komputer dari berbagai jenis virus standard yang dapat menyebar di komputer kita.",
       "hasElement":[
         {
-          "element": "Mengidentifikasi perangkat lunak bantu untuk memastikan keamanan informasi",
-          "hasKUK": [
-            "Berbagai perangkat lunak untuk keamanan informasi diidentifikasn sesuai fungsi perlindungannya.",
-            "Tingkat keamanan informasi diidentifikasi sesuai  kebijakan keamanan informasi organisasi tersebut."
-          ]
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
         },
         {
-          "element": "Melakukan tindakan perlindungan terhadap ancaman",
-          "hasKUK": [
-            "Perangkat lunak untuk keamanan informasi dipilih sesuai dengan tingkat keamanan informasi yang ditentukan.",
-            "Konfigurasi perangkat lunak untuk keamanan informasi diaktifkan sesuai dengan tingkat keamanan informasi yang ditentukan.",
-            "Perangkat lunak untuk keamanan informasi diperbaharui sesuai dengan  informasi dari penyedia perangkat lunak tersebut."
-          ]
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
         },
         {
-          "element": "Melakukan tindakan penanganan kejadian keamanan informasi",
-          "hasKUK": [
-            "Insiden keamanan informasi dilaporkan sesuai dengan panduan.",
-            "Anomali penggunaan komputer dan jaringan dicatat secara lengkap sesuai dengan panduan pada organisasi tersebut"
-          ]
-        },
-        {
-          "element": "Melakukan tindakan pemulihan keamanan informasi",
-          "hasKUK": [
-            "Sistem dipulihkan dari backup sesuai dengan ketersediaan backup.",
-            "Sistem setelah restore dipastikan sama dengan sistem sebelum insiden."
-          ]
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
         }
       ],
-      "hasContextVar": [
-        "Perangkat lunak untuk keamanan informasi, misal anti virus, anti spam, anti spyware.",
-        "Tingkat keamanan informasi adalah tingkatan keamanan yang disusun seperti piramida, yaitu: keamanan level 0(keamanan fisik), keamanan level 1(database security, data security, device security), keamanan level 2 (keamanan jaringan), keamanan level 3(information security) dan keamanan level 4(keamanan dari level 1 hingga level 3, bila salah satu keamanan level tidak terpenuhi).",
-        "Kebijakan keamanan informasi pada organisasi adalah harus mendefinisikan pribadi atau bagian dari mekanisme otentikasi penggunaan sandi(password) menjamin akuntabilitas setiap tindakan yang dilakukan oleh account pengguna dan pemilik account pengguna serta organisasi untuk memastikan bahwa password kuat dan mengikuti praktek terbaik.",
-        "Konfigurasi Perangkat Lunak adalah Fitur keamanan email digunakan  sesuai dengan tingkat keamanan informasi, Fitur keamanan browser digunakan sesuai dengan tingkat keamanan informasi.",
-        "Insiden keamanan informasi adalah suatu aktivitas atau pelanggaran atau ancaman terhadap keamanan sistem informasi secara langsung pada jaringan computer, berupa: probe, scan, account Compromise, root compromise, packet sniffer, Denial Of Service(Dos), Exploitation of trust, malicious code dan infrastructure attacts.",
-        "Ketersediaan backup adalah fasilitas yang disediakan untuk melindungan data/informasi penting dengan menyediakan: more space for your team, 120 hari versioning and recovery, akses files backup kapanpun dan dimanapun, memudahkan admin dan manajamen backup serta tingkat pengamanan bisnis."
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.006.01", "kom:TIK.OP02.007.01", "kom:TIK.OP01.001.01"]
+    },
+    {
+      "@id": "kom:TIK.OP02.016.01",
+      "title": "Melakukan konversi data dari berbagai aplikasi perkantoran",
+      "description": "Unit kompetensi ini berhubungan dengan keterkaitan yang dapat dilakukan berbagai aplikasi perkantoran baik itu aplikasi pengolah kata, lembar sebar maupun presentasi.",
+      "hasElement":[
+        {
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
+        },
+        {
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
+        },
+        {
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
+        }
       ],
-      "hasPRP": [
-        "ATK",
-        "Perangkat Komputer",
-        "Perangkat lunak bantu"
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.004.01", "kom:TIK.OP02.005.01"]
+    },
+    {
+      "@id": "kom:TIK.OP02.017.01",
+      "title": "Melakukan penanganan awal (Troubleshooting) atas masalah pada PC",
+      "description": "Unit kompetensi ini berhubungan dengan pemahaman tentang cara kerja komputer (PC) dan penanganannya apabila komputer tersebut tidak bisa bekerja.",
+      "hasElement":[
+        {
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
+        },
+        {
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
+        },
+        {
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
+        }
       ],
-      "hasRule": ["Undang-undang RI, no.19 tahun 2016, tentang perubahan atas undang-undang nomor 11 tahun 2008 tentang Informasi dan transaksi elektronik"],
-      "hasNS": [],
-      "hasContextEval": [
-        "Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.",
-        "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.",
-        "Metode-metode lain yang relevan."
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.008.01", "kom:TIK.OP02.009.01", "kom:TIK.OP02.010.01"]
+    },
+    {
+      "@id": "kom:TIK.OP02.018.01",
+      "title": "Mengoperasikan utilitas dasar untuk Backup, Restore, Data Recovery",
+      "description": "Unit kompetensi ini berkaitan dengan langkah-langkah dasar dalam melakukan pengamanan terhadap data-data elektronik dalam komputer yang dimiliki.",
+      "hasElement":[
+        {
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
+        },
+        {
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
+        },
+        {
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
+        }
       ],
-      "hasComReq": ["J.63OPR00.002.2", "J.63OPR00.016.1"],
-      "hasKnowledge": [
-        "Konsep penanggulangan gangguan dan ancaman sistem",
-        "Konsep keamanan sistem dan informasi",
-        "Konsep dan metode backup dan recovery"
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.008.01", "kom:TIK.OP02.009.01", "kom:TIK.OP02.010.01"]
+    },
+    {
+      "@id": "kom:TIK.OP03.001.01",
+      "title": "Mampu menjelaskan konsep dan teknik dasar pemrograman",
+      "description": "Unit kompetensi ini berkaitan dengan mempelajari algoritma pemrograman yang akan diterapkan namun independen terhadap bahasa pemrograman yang akan dipakai. Pada tingkat ini dibatasi pada kemampuan penguasaan algoritma dengan struktur data sederhana.",
+      "hasElement":[
+        {
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
+        },
+        {
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
+        },
+        {
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
+        }
       ],
-      "hasSkill": [
-        "Mengimplementasikan strategi pemulihan."
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.006.01"]
+    },
+    {
+      "@id": "kom:TIK.OP01.004.01",
+      "title": "Mengidentifikasi sistem dan prosedur pengelolaan infrastruktur komputer",
+      "description": "Unit kompetensi ini berkaitan dengan pemahaman akan bagaimana menjalankan sistem dan prosedur dalam pengelolaan infrastruktur komputer dalam suatu lingkungan kerja tertentu.",
+      "hasElement":[
+        {
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
+        },
+        {
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
+        },
+        {
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
+        }
       ],
-      "hasAtittude": [
-        "Teliti",
-        "Kerja sama dalam tim",
-        "Disiplin",
-        "Tanggung jawab"
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.002.01", "kom:TIK.OP02.008.01", "kom:TIK.OP02.009.01", "kom:TIK.OP02.010.01"]
+    },
+    {
+      "@id": "kom:TIK.OP01.005.01",
+      "title": "Mengimplementasikan sistem keamanan dan keselamatan pada pengoperasian komputer",
+      "description": "Unit kompetensi ini berhubungan dengan penguasaan konsep dasar keamanan sistem komputer yang harus dibuat untuk menjamin kemanan sistem komputer yang digunakan.",
+      "hasElement":[
+        {
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
+        },
+        {
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
+        },
+        {
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
+        }
       ],
-      "hasAspect": [
-        "Ketepatan memulihkan Ancaman-ancaman keamanan informasi dan melakukan tindakan sesuai dengan target ancaman keamanan informasi",
-        "Ketelitian dalam mengidentifikasi gangguan dan ancaman terhadap keamanan sistem informasi"
-      ]
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.008.01", "kom:TIK.OP02.009.01", "kom:TIK.OP02.014.01", "kom:TIK.OP01.003.01"]
+    },
+    {
+      "@id": "kom:TIK.OP02.019.01",
+      "title": "Mengoperasikan Piranti Lunak Pengolah Gambar Vektor",
+      "description": "Unit kompetensi ini berkaitan dengan pengoperasian piranti lunak pengolah gambar pada perangkat komputer pada kondisi normal sesuai dengan Petunjuk Penggunaan. Pada unit dibatasi pada kemampuan mengenali menu, membuat, membuka, menyimpan, mengenali objek-objek vektor, melakukan editing sederhana, mencetak ke printer dengan berbagai parameter standar.",
+      "hasElement":[
+        {
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
+        },
+        {
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
+        },
+        {
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
+        }
+      ],
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.015.01"]
+    },
+    {
+      "@id": "kom:TIK.OP03.002.01",
+      "title": "Mengoperasikan dasar-dasar basis data (database)",
+      "description": "Unit ini berhubungan dengan pemahaman konsep dasar data base dan penggunaan database di PC. Dibatasi pada perancangan data base sederhana dengan menggunakan paket yang ada serta menampilkan informasi dari data base dengan menggunakan query dan report.",
+      "hasElement":[
+        {
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
+        },
+        {
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
+        },
+        {
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
+        }
+      ],
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP03.001.01"]
+    },
+    {
+      "@id": "kom:TIK.OP03.003.01",
+      "title": "Membuat halaman web menggunakan bahasa web (HTML) tingkat dasar",
+      "description": "Unit kompetensi ini berhubungan dengan penguasaan dasar-dasar pembuatan website dengan Hypertext Markup Language (HTML) dengan dibatasi pada pengenalan tag-tag dasar.",
+      "hasElement":[
+        {
+          "element": "Menggunakan keyboard komputer",
+          "hasKUK": ["Komponen keyboard komputer standar dapat diidentifikasi", "Penggunaan tombol huruf/angka dan tombol-tombol fungsi pada keyboard dapat dideskripsikan", "Pengetikan menggunakan keyboard dapat dilakukan"]
+        },
+        {
+          "element": "Posisi Jari Tangan",
+          "hasKUK": ["Posisi jari tangan pada keyboard dapat dideskripsikan", "Teknik pengetikan dengan 10 jari dapat diidentifikasi", "Pengetikan dengan 10 jari dapat dipraktekkan"]
+        },
+        {
+          "element": "Mengoperasikan fungsi lanjut pengetikan",
+          "hasKUK": ["Pengetikan huruf besar (kapitalisasi) dan huruf kecil dapat dilakukan", "Pengetikan tanda baca dapat dilakukan", "Pengetikan simbol dapat dilakukan", "Mengetik cepat dapat dilakukan"]
+        }
+      ],
+      "hasPKP": ["Pengenalan jenis-jenis sistem operasi", "Kemampuan bekerja dalam lingkungan desktop", "Kemampuan pengelolaan folder dan file"],
+      "hasAPP": ["Kemampuan untuk melakukan proses pengoperasian komputer dari mulai mempersiapkan, menyalakan, dan mematikan.", "Kemampuan untuk menggunakan perangkat PC seperti keyboard dan mouse."],
+      "hasReq": ["kom:TIK.OP02.001.01", "kom:TIK.OP02.003.01", "kom:TIK.OP02.006.01", "kom:TIK.OP03.001.01"]
     }
   ]
 }
+
