@@ -23,7 +23,10 @@ def fetchCom():
 	selDomList = [x for x in jobs]
 	comps = getCompetencies(json.dumps(jobs))
 
-	return simplejson.dumps({"Kompetensi": comps["Kompetensi"], "hasKnowledge": comps["hasKnowledge"], "hasAspect": comps["hasAspect"], "hasSkill": comps["hasSkill"], })
+	if "hasKnowledge" in comps:
+		return simplejson.dumps({"Kompetensi": comps["Kompetensi"], "hasKnowledge": comps["hasKnowledge"], "hasAspect": comps["hasAspect"], "hasSkill": comps["hasSkill"]})
+	else:
+		return simplejson.dumps({"Kompetensi": [], "hasKnowledge": [], "hasAspect": [], "hasSkill": []})
 
 @app.route('/fetchJob', methods=['POST'])
 def fetchJob():
@@ -40,5 +43,9 @@ def fetchJob():
 	return json.dumps({"Okupasi": jobs})
 
 
-if __name__ == '__main__':
-	app.run(debug = True)
+#if __name__ == '__main__':
+#	app.run(debug = False)
+def application(env, start_response):
+    #start_response('200 OK', [('Content-Type','text/html')])
+    app.run(debug=False)
+#    return [b"Hello World"]

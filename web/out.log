@@ -1,0 +1,18 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Mon May  7 02:19:50 2018] ***
+compiled with version: 5.4.0 20160609 on 07 May 2018 02:08:43
+os: Linux-4.13.0-1013-gcp #17-Ubuntu SMP Fri Apr 6 08:30:45 UTC 2018
+nodename: instance-1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ryosagisu/web-data/web
+detected binary path: /home/ryosagisu/.local/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 2245
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:9090).
+bind(): Address already in use [core/socket.c line 769]

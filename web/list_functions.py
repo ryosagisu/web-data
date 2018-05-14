@@ -49,7 +49,7 @@ def showNode(x, root, param):
 		return listKomp
 
 def getJob(codes):
-	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server/repositories/skripsi")
+	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/data")
 	query = """
 		PREFIX ok: <http://localhost:5000/okupasi/>
 		SELECT ?name
@@ -61,7 +61,7 @@ def getJob(codes):
 			FILTER(SUBSTR(?id, 1, 4) IN({c})) .
 		}}""".format(c=codes[1:-1])
 
-	# pprint.pprint(query)
+	pprint.pprint(query)
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
@@ -102,7 +102,7 @@ def getJob(codes):
 # 	return jobs
 
 def getCompetencies(codes):
-	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server/repositories/skripsi")
+	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server/repositories/data")
 	query = """
 	PREFIX ok: <http://localhost:5000/okupasi/>
 	PREFIX kom: <http://localhost:5000/kompetensi/>
@@ -126,14 +126,14 @@ def getCompetencies(codes):
 	    }}
 	  }}
 	}}""".format(c=codes[1:-1])
-
+        print(query)
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
 	keys = results['head']['vars']
 	bind = results['results']['bindings']
 	comps = []
-	# print results
+	print results
 	for x in bind:
 		for key in keys:
 			comps.append(x[key]['value'])
@@ -147,8 +147,8 @@ def getCompetencies(codes):
 	    (kom:hasKnowledge|kom:hasSkill|kom:hasAspect) ?content .
 	    filter(?s in({c}))
 	}}""".format(c=json.dumps(comps).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1]).replace('"', '')
-	# print query
-	pprint.pprint(query)
+	print query
+	#pprint.pprint(query)
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
@@ -166,6 +166,6 @@ def getCompetencies(codes):
 		new_key = key.rsplit('/', 1)[-1]
 		com[new_key] = com.pop(key)
 	com["Kompetensi"] = comps
-	pprint.pprint(com)
+	#pprint.pprint(com)
 
 	return com
