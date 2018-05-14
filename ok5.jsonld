@@ -1,13 +1,13 @@
 {
   "@context": {
-    "ok": "http://127.0.0.1:5000/okupasi/",
+    "ok": "http://localhost:5000/okupasi/",
     "id": "ok:id",
     "name": "ok:name",
     "hasCompetencies": {
       "@id": "ok:hasCompetencies",
       "@container": "@set"
     },
-    "kom": "http://127.0.0.1:5000/kompetensi/"
+    "kom": "http://localhost:5000/kompetensi/"
   },
   "@graph": [
     {
