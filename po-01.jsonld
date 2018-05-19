@@ -1,0 +1,632 @@
+{
+  "@context": {
+    "ok": "http://localhost:5000/okupasi/",
+    "id": "ok:id",
+    "name": "ok:name",
+    "hasCompetencies": {
+      "@id": "ok:hasCompetencies",
+      "@container": "@set"
+    },
+    "kom": "http://localhost:5000/kompetensi/"
+  },
+  "@graph": [
+    {
+      "@id": "ok:K010901",
+      "id": "010901",
+      "name": "CHIEF OF KNOWLEDGE OFFICER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.62SQA00.011.1"
+        },
+        {
+          "@id": "kom:J.62SQA00.012.1"
+        },
+        {
+          "@id": "kom:J.631120.010.01"
+        },
+        {
+          "@id": "kom:J.631120.012.01"
+        },
+        {
+          "@id": "kom:TIK.DG03.001.01"
+        },
+        {
+          "@id": "kom:TIK.SM02.005.01"
+        },
+        {
+          "@id": "kom:TIK.SM02.009.01"
+        },
+        {
+          "@id": "kom:TIK.SM03.007.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010801",
+      "id": "010801",
+      "name": "DATA WAREHOUSE DIRECTOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620200.003.01"
+        },
+        {
+          "@id": "kom:J.620200.004.01"
+        },
+        {
+          "@id": "kom:J.620200.005.01"
+        },
+        {
+          "@id": "kom:J.620200.007.01"
+        },
+        {
+          "@id": "kom:J.620200.013.01"
+        },
+        {
+          "@id": "kom:J.62090.034"
+        },
+        {
+          "@id": "kom:J.62090.035"
+        },
+        {
+          "@id": "kom:M.702000.014.0"
+        },
+        {
+          "@id": "kom:TIK.SM02.001.01"
+        },
+        {
+          "@id": "kom:TIK.SM02.005.01"
+        },
+        {
+          "@id": "kom:TIK.SM03.005.01"
+        },
+        {
+          "@id": "kom:TIK.SM03.006.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010701",
+      "id": "010701",
+      "name": "BIG DATA SCIENTIST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:ICTDBS501"
+        },
+        {
+          "@id": "kom:ICTDBS601"
+        },
+        {
+          "@id": "kom:ICTDBS602"
+        },
+        {
+          "@id": "kom:ICTSAD601"
+        },
+        {
+          "@id": "kom:ICTSAD603"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010702",
+      "id": "010702",
+      "name": "DATA WAREHOUSE MANAGER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.612000.003"
+        },
+        {
+          "@id": "kom:J.620200.007.01"
+        },
+        {
+          "@id": "kom:J.620200.007.01"
+        },
+        {
+          "@id": "kom:J.620200.008.01"
+        },
+        {
+          "@id": "kom:M.702090.005.0"
+        },
+        {
+          "@id": "kom:M.702090.009.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010703",
+      "id": "050901",
+      "name": "DATA AND SYSTEMS ENGINEERING MANAGER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:TIK.SM02.001.01"
+        },
+        {
+          "@id": "kom:TIK.SM02.005.01"
+        },
+        {
+          "@id": "kom:TIK.SM02.008.01"
+        },
+        {
+          "@id": "kom:TIK.SM02.011.01"
+        },
+        {
+          "@id": "kom:TIK.SM02.015.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010704",
+      "id": "010704",
+      "name": "HELP DESK SUPPORT MANAGER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620100.044.01"
+        },
+        {
+          "@id": "kom:J.620100.045.01"
+        },
+        {
+          "@id": "kom:J.62SAD00.001.1"
+        },
+        {
+          "@id": "kom:J.62SAD00.002.1"
+        },
+        {
+          "@id": "kom:J.62SAD00.008.1"
+        },
+        {
+          "@id": "kom:J.631100.013.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010705",
+      "id": "050901",
+      "name": "RECORD ADMINISTRATOR MANAGER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.612000.003"
+        },
+        {
+          "@id": "kom:J.620100.046.01"
+        },
+        {
+          "@id": "kom:J.620200.007.01"
+        },
+        {
+          "@id": "kom:J.63SAM00.024.1"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010601",
+      "id": "010601",
+      "name": "DATA MODEL ADMINISTRATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.631100.013.01"
+        },
+        {
+          "@id": "kom:J.631100.017.01"
+        },
+        {
+          "@id": "kom:J.631120.002.01"
+        },
+        {
+          "@id": "kom:J.631120.004.01"
+        },
+        {
+          "@id": "kom:J.631120.017.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010602",
+      "id": "010602",
+      "name": "SENIOR SYSTEMS ANALYST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.612000.003"
+        },
+        {
+          "@id": "kom:J.620200.009.01"
+        },
+        {
+          "@id": "kom:J.62SAD00.001.1"
+        },
+        {
+          "@id": "kom:J.62SAD00.002.1"
+        },
+        {
+          "@id": "kom:J.62SAD00.008.1"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010603",
+      "id": "010603",
+      "name": "DATA ARCHITECT",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.612000.003"
+        },
+        {
+          "@id": "kom:J.620200.007.01"
+        },
+        {
+          "@id": "kom:J.620200.008.01"
+        },
+        {
+          "@id": "kom:J.620200.009.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010604",
+      "id": "010604",
+      "name": "DATABASE ADMINISTRATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620100.003.01"
+        },
+        {
+          "@id": "kom:J.620100.004.02"
+        },
+        {
+          "@id": "kom:J.620100.007.01"
+        },
+        {
+          "@id": "kom:J.620100.009.01"
+        },
+        {
+          "@id": "kom:J.620100.020.02"
+        },
+        {
+          "@id": "kom:J.62090.047"
+        },
+        {
+          "@id": "kom:J.631100.005.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010605",
+      "id": "010605",
+      "name": "SENIOR OPERATIONS ANALYST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.63SAM00.019.1"
+        },
+        {
+          "@id": "kom:J.63SAM00.024.1"
+        },
+        {
+          "@id": "kom:M.702000.002.0"
+        },
+        {
+          "@id": "kom:M.702000.003.0"
+        },
+        {
+          "@id": "kom:M.702000.006.0"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010501",
+      "id": "010501",
+      "name": "DATA ANALYST",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620900.004.02"
+        },
+        {
+          "@id": "kom:J.620900.033.02"
+        },
+        {
+          "@id": "kom:J.631100.001.01"
+        },
+        {
+          "@id": "kom:J.631100.002.01"
+        },
+        {
+          "@id": "kom:J.63OPR00.009.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.015.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.016.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.017.1"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010502",
+      "id": "010502",
+      "name": "DATA MANAGEMENT SUPERVISOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620900.033.02"
+        },
+        {
+          "@id": "kom:J.631100.001.01"
+        },
+        {
+          "@id": "kom:J.631100.002.01"
+        },
+        {
+          "@id": "kom:J.631100.005.01"
+        },
+        {
+          "@id": "kom:J.63OPR00.007.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.008.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.009.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.015.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.016.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.017.1"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010503",
+      "id": "010503",
+      "name": "DATA ENTRY SUPERVISOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.620900.033.02"
+        },
+        {
+          "@id": "kom:J.631100.001.01"
+        },
+        {
+          "@id": "kom:J.631100.002.01"
+        },
+        {
+          "@id": "kom:J.631100.006.01"
+        },
+        {
+          "@id": "kom:J.631100.011.01"
+        },
+        {
+          "@id": "kom:J.63OPR00.015.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.016.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.017.1"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010504",
+      "id": "010504",
+      "name": "TECHNICAL ENGINEER",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.631100.001.01"
+        },
+        {
+          "@id": "kom:J.631100.002.01"
+        },
+        {
+          "@id": "kom:J.631100.004.01"
+        },
+        {
+          "@id": "kom:J.631100.005.01"
+        },
+        {
+          "@id": "kom:J.631100.006.01"
+        },
+        {
+          "@id": "kom:J.631100.007.01"
+        },
+        {
+          "@id": "kom:J.631100.011.01"
+        },
+        {
+          "@id": "kom:J.631100.013.01"
+        },
+        {
+          "@id": "kom:J.631100.014.01"
+        },
+        {
+          "@id": "kom:J.631100.016.01"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010505",
+      "id": "010505",
+      "name": "SYSTEMS INTEGRATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.611000.011.02"
+        },
+        {
+          "@id": "kom:J.611000.017.01"
+        },
+        {
+          "@id": "kom:J.611000.018.01"
+        },
+        {
+          "@id": "kom:J.620900.033.02"
+        },
+        {
+          "@id": "kom:J.631120.002.01"
+        },
+        {
+          "@id": "kom:J.631120.010.01"
+        },
+        {
+          "@id": "kom:J.631120.013.01"
+        },
+        {
+          "@id": "kom:J.631120.016.01"
+        },
+        {
+          "@id": "kom:J.63OPR00.009.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.016.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.017.1"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010401",
+      "id": "010401",
+      "name": "DATA ENTRY COORDINATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.63OPR00.001.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.002.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.007.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.008.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.009.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.010.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.013.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.015.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.016.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.017.1"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010301",
+      "id": "010301",
+      "name": "DATA MANAGEMENT STAFF",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.63OPR00.001.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.002.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.003.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.006.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.007.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.008.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.010.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.011.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.012.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.014.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.016.1"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010201",
+      "id": "010201",
+      "name": "DATA ENTRY OPERATOR",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.63OPR00.001.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.002.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.003.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.006.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.007.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.008.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.010.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.011.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.012.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.014.1"
+        },
+        {
+          "@id": "kom:J.63OPR00.016.1"
+        }
+      ]
+    },
+    {
+      "@id": "ok:K010101",
+      "id": "010101",
+      "name": "DATA ENTRY CLERK",
+      "hasCompetencies": [
+        {
+          "@id": "kom:J.63OPR00.001.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.002.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.003.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.004.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.005.2"
+        },
+        {
+          "@id": "kom:J.63OPR00.016.1"
+        }
+      ]
+    }
+  ]
+}
