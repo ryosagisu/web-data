@@ -8,47 +8,8 @@ import pprint
 from collections import Counter
 import itertools
 
-def validate(xml_path, xsd_path):
-
-    xmlschema_doc = etree.parse(xsd_path)
-    xmlschema = etree.XMLSchema(xmlschema_doc)
-
-    xml_doc = etree.parse(xml_path)
-    result = xmlschema.validate(xml_doc)
-
-    return result
-
-
-def validNode(domNode, tagName, value):
-	nodeVal = domNode.find(tagName).text
-	if isinstance(value, list):
-		if nodeVal in value or nodeVal[:4] in value:
-			return True
-	else:
-		if nodeVal == value:
-			return True
-	return False
-
-
-def showNode(x, root, param):
-	if root == 'KKNI':
-		jenjang = x.findall('Jenjang')
-		for jen in jenjang:
-			if jen.find('level').text == param:
-				return xmltodict.parse(ET.tostring(jen, 'us-ascii', 'xml'))
-	elif root == 'SKKNI':
-		listUK = x.find('FungsiKunci').find('FungsiUtama').findall('UnitKompetensi')
-		listKomp = []
-		for uk in listUK:
-			if uk.find('kodeUnit').text in param:
-				listKomp.append(xmltodict.parse(ET.tostring(uk, 'us-ascii', 'xml')))
-		return listKomp
-	elif root == 'PetaOkupasi':
-		listK = x.findall('Kompetensi')
-		listKomp = []
-		for k in listK:
-			listKomp.append(xmltodict.parse(ET.tostring(k, 'us-ascii', 'xml')))
-		return listKomp
+def get_occupation(codes):
+	print ""
 
 def getJob(codes):
 	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
@@ -144,26 +105,17 @@ def getDesc(codes):
 	if len(reqs) > 0:
 		comps.extend(getCompetencies(reqs))
 	comps = list(set(itertools.chain.from_iterable(comps)))
-	# query = """
-	# PREFIX ok: <http://localhost:5000/okupasi/>
-	# PREFIX kom: <http://localhost:5000/kompetensi/>
-	# select ?key ?content
-	# where {{
-	#   ?s ?key ?content ;
-	#     (kom:hasKnowledge|kom:hasSkill|kom:hasAspect) ?content .
-	#     filter(?s in({c}))
-	# }}""".format(c=json.dumps(comps).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1]).replace('"', '')
 
 	query = """
 	PREFIX ok: <http://localhost:5000/okupasi/>
 	PREFIX kom: <http://localhost:5000/kompetensi/>
-	select ?key ?content
+	select ?ID ?key ?content
 	where {{
-	  ?s ?key ?content ;
-	    (kom:hasAspect|kom:hasContextEval|kom:hasContextVar|kom:hasKnowledge|kom:hasNS|kom:hasPRP|kom:hasSkill|kom:hasAttitude) ?content .
-	    filter(?s in({c}))
+	  ?ID ?key ?content ;
+	    (kom:title|kom:description|kom:hasAspect|kom:hasContextEval|kom:hasContextVar|kom:hasKnowledge|kom:hasNS|kom:hasPRP|kom:hasSkill|kom:hasAttitude) ?content .
+	    filter(?ID in({c}))
 	}}""".format(c=json.dumps(comps).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1]).replace('"', '')
-	# print query
+
 	print query
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
@@ -172,16 +124,50 @@ def getDesc(codes):
 	bind = results['results']['bindings']
 	com = {}
 	for x in bind:
-		currKey = x["key"]["value"]
-		if currKey not in com:
-			com[currKey] = []
+		ID = x['ID']['value'].rsplit('/', 1)[-1]
+		if ID not in com:
+			com[ID] = {}
 
-		com[currKey].append(x["content"]["value"])
+		key = x['key']['value'].rsplit('/', 1)[-1]
 
-	for key in com:
-		new_key = key.rsplit('/', 1)[-1]
-		com[new_key] = list(set(com.pop(key)))
-	com["Kompetensi"] = comps
-	# pprint.pprint(com)
+		if key not in com[ID]:
+			com[ID][key] = []
+
+		com[ID][key].append(x["content"]["value"])
+
+	# for key in com:
+	# 	new_key = key.rsplit('/', 1)[-1]
+	# 	com[new_key] = list(set(com.pop(key)))
+	# com["Kompetensi"] = comps
+	pprint.pprint(com)
 
 	return com
+
+def getAcm(codes):
+	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+	query = """
+	PREFIX acm: <http://localhost:5000/acm/>
+	select ?code ?title ?entity
+	where {{
+		acm:{c} acm:hasDomains _:blankNode .
+		_:blankNode acm:code ?code ;
+			acm:title ?title;
+			acm:hasEntities ?entity;   
+	}}
+	""".format(c=codes)
+
+	print query
+	sparql.setQuery(query)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+
+	acm = {}
+	for x in results['results']['bindings']:
+		ID = x['code']['value']
+		if ID not in acm:
+			acm[ID] = {}
+			acm[ID]["title"] = x['title']['value']
+			acm[ID]["entity"] = []
+		acm[ID]["entity"].append(x['entity']['value'])
+	return acm
+

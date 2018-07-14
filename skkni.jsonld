@@ -51,42 +51,86 @@
       "@container": "@set"
     }
   },
-
   "@graph": [
     {
       "@id": "kom:J.63OPR00.001.2",
       "title": "Menggunakan  Perangkat  Komputer",
       "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk menggunakan perangkat komputer dalam kondisi normal.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Menyalakan perangkat komputer dan mengamati proses aktifasi sistem (booting) hingga selesai.",
-          "hasKUK": ["Indikator penyalaan perangkat komputer dapat dilihat sesuai dengan petunjuk penggunaan.", "Proses proses aktivasi sistem operasi dapat dijalankan sesuai dengan petunjuk penggunaan."]
+          "hasKUK": [
+            "Indikator penyalaan perangkat komputer dapat dilihat sesuai dengan petunjuk penggunaan.",
+            "Proses proses aktivasi sistem operasi dapat dijalankan sesuai dengan petunjuk penggunaan."
+          ]
         },
         {
           "element": "Menjalankan perangkat komputer",
-          "hasKUK": ["Antar muka pengguna yang tersedia dapat dijalankan dengan Peripheral yang tersedia sesuai dengan petunjuk penggunaan komputer.", "Program aplikasi dijalankan sesuai dengan petunjuk penggunaan komputer."]
+          "hasKUK": [
+            "Antar muka pengguna yang tersedia dapat dijalankan dengan Peripheral yang tersedia sesuai dengan petunjuk penggunaan komputer.",
+            "Program aplikasi dijalankan sesuai dengan petunjuk penggunaan komputer."
+          ]
         },
         {
           "element": "Mematikan perangkat komputer",
-          "hasKUK": ["Semua program aplikasi ditutup sesuai dengan petunjuk penggunaan komputer.", "Antrian data dari atau menuju peripheral dipastikan sudah tidak ada lagi sesuai dengan petunjuk penggunaan komputer.", "Tampilan yang muncul pada layar monitor diidentifikasi  merupakan tampilan yang menandakan proses penghentian secara normal sesuai dengan petunjuk penggunaan komputer."]
+          "hasKUK": [
+            "Semua program aplikasi ditutup sesuai dengan petunjuk penggunaan komputer.",
+            "Antrian data dari atau menuju peripheral dipastikan sudah tidak ada lagi sesuai dengan petunjuk penggunaan komputer.",
+            "Tampilan yang muncul pada layar monitor diidentifikasi  merupakan tampilan yang menandakan proses penghentian secara normal sesuai dengan petunjuk penggunaan komputer."
+          ]
         }
       ],
-      "hasContextVar": ["Perangkat Komputer adalah Komputer Personal, Laptop/Notebook, Tablet, Smartphone yang terhubung atau tidak dengan jaringan internet (jaringan komputer). Komputer yang dimaksud komputer dalam bentuk digunakan sehari-hari.", "Aktivasi adalah proses untuk mendapatkan verifikasi atas account yang sah.", "Antar Muka Pengguna (user Interface) adalah fasilitas yang dimanfaatkan berupa Graphical User Interface (GUI), seperti windows, menu pilihan, icon dan teks perintah (command entry).", "Peripheral adalah peralatan tambahan (baik berupa peralatan masukan dan keluaran) yang dipasang pada komputer  seperti alat cetak (printer) , alat pemindai (scanner), mouse, touch pad, layar sentuh ( touch screen), stylus pen dan light pen.", "Program Aplikasi adalah perangkat lunak yang sudah terpasang/terinstal di perangkat komputer."],
-      "hasPRP": ["ATK", "Perangkat Komputer", "Petunjuk penggunaan perangkat komputer"],
+      "hasContextVar": [
+        "Perangkat Komputer adalah Komputer Personal, Laptop/Notebook, Tablet, Smartphone yang terhubung atau tidak dengan jaringan internet (jaringan komputer). Komputer yang dimaksud komputer dalam bentuk digunakan sehari-hari.",
+        "Aktivasi adalah proses untuk mendapatkan verifikasi atas account yang sah.",
+        "Antar Muka Pengguna (user Interface) adalah fasilitas yang dimanfaatkan berupa Graphical User Interface (GUI), seperti windows, menu pilihan, icon dan teks perintah (command entry).",
+        "Peripheral adalah peralatan tambahan (baik berupa peralatan masukan dan keluaran) yang dipasang pada komputer  seperti alat cetak (printer) , alat pemindai (scanner), mouse, touch pad, layar sentuh ( touch screen), stylus pen dan light pen.",
+        "Program Aplikasi adalah perangkat lunak yang sudah terpasang/terinstal di perangkat komputer."
+      ],
+      "hasPRP": [
+        "ATK",
+        "Perangkat Komputer",
+        "Petunjuk penggunaan perangkat komputer"
+      ],
       "hasRule": [],
-      "hasNS": ["Legalitas dan etika yang terkait dengan profesi bidang teknologi informasi", "Standard Operating Procedure (SOP)", "Kebijakan Organisasi", "Kebijakan penggunaan komputer"],
-      "hasContextEval": ["Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.", "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.", "Metode-metode lain yang relevan."],
+      "hasNS": [
+        "Legalitas dan etika yang terkait dengan profesi bidang teknologi informasi",
+        "Standard Operating Procedure (SOP)",
+        "Kebijakan Organisasi",
+        "Kebijakan penggunaan komputer"
+      ],
+      "hasContextEval": [
+        "Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.",
+        "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.",
+        "Metode-metode lain yang relevan."
+      ],
       "hasComReq": [],
-      "hasKnowledge": ["Perangkat komputer", "Petunjuk Penggunaan komputer", "Antar muka pengguna", "Peripheral", "Program aplikasi"],
-      "hasSkill": ["Mengetik pada keyboard", "Menggunakan mouse/touch pad/layar sentuh (touch screen)/pen light/stylus pen"],
-      "hasAttitude": ["Disiplin", "Teliti", "Tanggung jawab", "Kerjasama dalam tim"],
-      "hasAspect": ["Ketelitian dalam melihat indikator penyalaan komputer sesuai dengan petunjuk penggunaan"]
+      "hasKnowledge": [
+        "Perangkat komputer",
+        "Petunjuk Penggunaan komputer",
+        "Antar muka pengguna",
+        "Peripheral",
+        "Program aplikasi"
+      ],
+      "hasSkill": [
+        "Mengetik pada keyboard",
+        "Menggunakan mouse/touch pad/layar sentuh (touch screen)/pen light/stylus pen"
+      ],
+      "hasAttitude": [
+        "Disiplin",
+        "Teliti",
+        "Tanggung jawab",
+        "Kerjasama dalam tim"
+      ],
+      "hasAspect": [
+        "Ketelitian dalam melihat indikator penyalaan komputer sesuai dengan petunjuk penggunaan"
+      ]
     },
     {
       "@id": "kom:J.63OPR00.002.2",
       "title": "Menggunakan Sistem Operasi",
       "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan untuk menggunakan sistem operasi pada perangkat komputer dalam kondisi normal.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mengenali perintah dan GUI windows/ menu/ ikon (icon)/  kursor yang berasosiasi dengannya.",
           "hasKUK": [
@@ -152,7 +196,7 @@
       "@id": "kom:J.63OPR00.003.2",
       "title": "Menggunakan Peralatan Peripheral",
       "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam menggunakan peralatan peripheral.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mempersiapkan peralatan peripheral.",
           "hasKUK": [
@@ -229,7 +273,7 @@
       "@id": "kom:J.63OPR00.004.2",
       "title": "Menggunakan Perangkat Lunak Pengolah Kata tingkat dasar",
       "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam penggunaan perangkat lunak pengolah kata tingkat dasar untuk perangkat komputer pada kondisi normal sesuai dengan petunjuk penggunaan.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Membuat Dokumen",
           "hasKUK": [
@@ -324,7 +368,7 @@
       "@id": "kom:J.63OPR00.005.2",
       "title": "Menggunakan Perangkat Lunak Lembar Sebar (Spreadsheet) – Tingkat Dasar",
       "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam penggunaan perangkat lunak lembar sebar tingkat dasar pada perangkat komputer pada kondisi normal sesuai dengan Petunjuk penggunaan (user manual).",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Membuat Dokumen",
           "hasKUK": [
@@ -403,7 +447,7 @@
       "@id": "kom:J.63OPR00.006.2",
       "title": "Menggunakan Perangkat Lunak Presentasi – Tingkat Dasar",
       "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap yang dibutuhkan untuk menggunakan perangkat lunak presentasi tingkat dasar.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mempersiapkan Perangkat lunak Presentasi",
           "hasKUK": [
@@ -507,7 +551,7 @@
       "@id": "kom:J.63OPR00.007.2",
       "title": "Menggunakan Penelusur Situs Web (Web Browser)",
       "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam penggunaan penelusur situs web pada perangkat komputer sesuai dengan petunjuk penggunaan (user manual).",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mempersiapkan perangkat lunak Penelusur Situs Web",
           "hasKUK": [
@@ -559,7 +603,9 @@
       "hasContextEval": [
         "Kompetensi ini diujikan secara praktek di laboratorim komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian."
       ],
-      "hasComReq": ["J.63OPR00.001.2"],
+      "hasComReq": [
+        "J.63OPR00.001.2"
+      ],
       "hasKnowledge": [
         "Susunan antar muka perangkat keras komputer",
         "Internet"
@@ -581,7 +627,7 @@
       "@id": "kom:J.63OPR00.008.2",
       "title": "Menggunakan Perangkat Lunak Pengakses Surat Elektronik (e-mail client)",
       "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan untuk mengakses surat elektronik (e-mail client) pada perangkat komputer sesuai dengan petunjuk penggunaan (user manual).",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mempersiapkan perangkat lunak pengakses surel",
           "hasKUK": [
@@ -633,7 +679,9 @@
       "hasContextEval": [
         "Kompetensi ini diujikan secara praktek di laboratorim komputer atau tempat lain yang memungkinkan untuk dilakukan penilaian."
       ],
-      "hasComReq": ["J.63OPR00.001.2"],
+      "hasComReq": [
+        "J.63OPR00.001.2"
+      ],
       "hasKnowledge": [
         "Susunan antar muka perangkat keras komputer",
         "Internet"
@@ -655,7 +703,7 @@
       "@id": "kom:J.63OPR00.009.2",
       "title": "Menggunakan Aplikasi Berbasis Internet {Internet Based Applications Literacy}",
       "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk menggunakan aplikasi berbasis Internet.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mengidentifikasi koneksi Internet telah tersambung",
           "hasKUK": [
@@ -703,9 +751,14 @@
         "Manual book dari aplikasi berbasis internet"
       ],
       "hasContextEval": [
-        "Lisan", "Wawancara", "Tes Tertulis", "Metoda lain yang relevan"
+        "Lisan",
+        "Wawancara",
+        "Tes Tertulis",
+        "Metoda lain yang relevan"
       ],
-      "hasComReq": ["J.63OPR00.007.2"],
+      "hasComReq": [
+        "J.63OPR00.007.2"
+      ],
       "hasKnowledge": [
         "Jenis-jenis komputer"
       ],
@@ -727,7 +780,7 @@
       "@id": "kom:J.63OPR00.010.2",
       "title": "Menggunakan Aplikasi Media Sosial",
       "description": "Unit ini menentukan kompetensi, pengetahuan, dan sikap kerja yang diperlukan dalam menggunakan aplikasi media sosial secara umum.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Memilih Media sosial",
           "hasKUK": [
@@ -808,7 +861,7 @@
       "@id": "kom:J.63OPR00.011.2",
       "title": "Menggunakan Perangkat Lunak Pengolah Kata Tingkat Lanjut",
       "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan untuk pengolah kata tingkat lanjut pada perangkat komputer pada kondisi normal sesuai dengan Petunjuk Penggunaan(user manual).",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Menggunakan Template pengolah kata",
           "hasKUK": [
@@ -895,7 +948,9 @@
         "Proses penilaian dan teknik harus sesuai dengan budaya dan sesuai dengan tingkat keterampilan komunikasi, dan bahasa, kapasitas calon dan pekerjaan yang dilakukan.",
         "Dalam kasus di mana penilaian praktis digunakan, harus dikombinasikan dengan pertanyaan yang ditargetkan untuk menilai pengetahuan yang diperlukan."
       ],
-      "hasComReq": ["J.63OPR00.004.2"],
+      "hasComReq": [
+        "J.63OPR00.004.2"
+      ],
       "hasKnowledge": [
         "Mengoperasikan komputer"
       ],
@@ -916,7 +971,7 @@
       "@id": "kom:J.63OPR00.012.2",
       "title": "Menggunakan Perangkat lunak Lembar kerja  Tingkat Lanjut",
       "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap kerja yang dibutuhkan dalam menggunakan perangkat lunak lembar kerja tingkat lanjut pada perangkat komputer pada kondisi normal sesuai dengan Petunjuk penggunaan (user manual).",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mengidentifikasi cell yang akan diolah",
           "hasKUK": [
@@ -997,7 +1052,9 @@
         "Proses penilaian dan teknik harus sesuai dengan budaya dan sesuai dengan tingkat keterampilan komunikasi, Bahasa, membaca dan menghitung kapasitas calon dan pekerjaan yang dilakukan.",
         "Dalam kasus dimana penilaian praktis digunakan, harus dikombinasikan dengan pertanyaan yang ditargetkan untuk menilai pengetahuan yang diperlukan."
       ],
-      "hasComReq": ["J.63OPR00.005.2"],
+      "hasComReq": [
+        "J.63OPR00.005.2"
+      ],
       "hasKnowledge": [
         "Jenis dan fungsi aplikasi lembar sebar"
       ],
@@ -1016,7 +1073,7 @@
       "@id": "kom:J.63OPR00.013.1",
       "title": "Menggunakan Perangkat lunak Presentasi Tingkat Lanjut",
       "description": "Unit kompetensi ini berhubungan dengan pengetahuan, keterampilan, dan sikap yang dibutuhkan untuk mengukur kemampuan dalam mengklasifikasikan dan mengalokasikan kebutuhan perangkat lunak tingkat lanjut.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Menggunakan Tabels dalam slide.",
           "hasKUK": [
@@ -1097,7 +1154,9 @@
         "Kompetensi ini diujikan secara tertulis dan praktek di tempat kerja atau tempat lain yang memungkinkan untuk dilakukan penilaian.",
         "Untuk UK ini, kepada operator perangkat lunak diberikan studi kasus/permasalahan untuk membuat presentasi dengan perangkat lunak presentasi tertentu."
       ],
-      "hasComReq": ["J.63OPR00.006.2"],
+      "hasComReq": [
+        "J.63OPR00.006.2"
+      ],
       "hasKnowledge": [
         "Proses pembuatan perangkat lunak presentasi",
         "Teknik-teknik design dan animasi perangkat lunak presentasi",
@@ -1120,7 +1179,7 @@
       "@id": "kom:J.63OPR00.014.1",
       "title": "Melakukan Pemasukan Data",
       "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk  memasukan data menggunakan perangkat komputer.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mempersiapkan data yang akan dimasukkan",
           "hasKUK": [
@@ -1172,7 +1231,10 @@
         "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.",
         "Metode-metode lain yang relevan."
       ],
-      "hasComReq": ["J.63OPR00.001.2", "J.63OPR00.002.2"],
+      "hasComReq": [
+        "J.63OPR00.001.2",
+        "J.63OPR00.002.2"
+      ],
       "hasKnowledge": [
         "Jenis-jenis file",
         "Manajemen file"
@@ -1194,7 +1256,7 @@
       "@id": "kom:J.63OPR00.015.1",
       "title": "Memastikan Validitas Data",
       "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk  memastikan validitas data yang dimasukkan dengan perangkat komputer.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mengidentifikasi substansi data yang dimasukkan",
           "hasKUK": [
@@ -1250,7 +1312,10 @@
         "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.",
         "Metode-metode lain yang relevan."
       ],
-      "hasComReq": ["J.63OPR00.001.2", "J.63OPR00.014.1"],
+      "hasComReq": [
+        "J.63OPR00.001.2",
+        "J.63OPR00.014.1"
+      ],
       "hasKnowledge": [
         "Konsep Jenis Data",
         "Konsep Kualitas Data"
@@ -1272,7 +1337,7 @@
       "@id": "kom:J.63OPR00.016.1",
       "title": "Mengidentifikasi Aspek Keamanan Informasi Pengguna",
       "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk  mengidentifikasi aspek keamanan informasi pengguna.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mengidentifikasi ancaman keamanan informasi pengguna",
           "hasKUK": [
@@ -1330,14 +1395,19 @@
         "Komputer",
         "Perangkat lunak bantu"
       ],
-      "hasRule": ["Undang-undang RI, no.19 tahun 2016, tentang perubahan atas undang-undang nomor 11 tahun 2008 tentang Informasi dan transaksi elektronik"],
+      "hasRule": [
+        "Undang-undang RI, no.19 tahun 2016, tentang perubahan atas undang-undang nomor 11 tahun 2008 tentang Informasi dan transaksi elektronik"
+      ],
       "hasNS": [],
       "hasContextEval": [
         "Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.",
         "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.",
         "Metode-metode lain yang relevan."
       ],
-      "hasComReq": ["J.63OPR00.001.2", "J.63OPR00.002.2"],
+      "hasComReq": [
+        "J.63OPR00.001.2",
+        "J.63OPR00.002.2"
+      ],
       "hasKnowledge": [
         "Sumber ancaman keamanan informasi",
         "Target ancaman keamanan informasi",
@@ -1366,7 +1436,7 @@
       "@id": "kom:J.63OPR00.017.1",
       "title": "Memastikan Keamanan Informasi Pengguna",
       "description": "Unit kompetensi ini berkaitan dengan pengetahuan keterampilan dan sikap kerja yang dibutuhkan untuk  memastikan keamanan informasi pengguna.",
-      "hasElement":[
+      "hasElement": [
         {
           "element": "Mengidentifikasi perangkat lunak bantu untuk memastikan keamanan informasi",
           "hasKUK": [
@@ -1410,14 +1480,19 @@
         "Perangkat Komputer",
         "Perangkat lunak bantu"
       ],
-      "hasRule": ["Undang-undang RI, no.19 tahun 2016, tentang perubahan atas undang-undang nomor 11 tahun 2008 tentang Informasi dan transaksi elektronik"],
+      "hasRule": [
+        "Undang-undang RI, no.19 tahun 2016, tentang perubahan atas undang-undang nomor 11 tahun 2008 tentang Informasi dan transaksi elektronik"
+      ],
       "hasNS": [],
       "hasContextEval": [
         "Wawancara menggunakan Bahasa Indonesia yang mengacu kepada Kriteria Unjuk Kerja.",
         "Demonstrasi secara konseptual disampaikan dengan menggunakan Bahasa Indonesia dalam rangka aktualisasi pelaksanaan pekerjaan.",
         "Metode-metode lain yang relevan."
       ],
-      "hasComReq": ["J.63OPR00.002.2", "J.63OPR00.016.1"],
+      "hasComReq": [
+        "J.63OPR00.002.2",
+        "J.63OPR00.016.1"
+      ],
       "hasKnowledge": [
         "Konsep penanggulangan gangguan dan ancaman sistem",
         "Konsep keamanan sistem dan informasi",

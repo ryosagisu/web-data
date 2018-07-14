@@ -1,0 +1,9 @@
+---
+sparql:
+  endpoint: localhost
+  port: 8080
+  route: rdf4j-server-2.3.0
+  repo: sample
+---
+rdf:
+  uri: http://localhost:5000
