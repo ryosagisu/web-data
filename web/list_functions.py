@@ -51,7 +51,8 @@ def showNode(x, root, param):
 		return listKomp
 
 def getJob(codes):
-	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+	# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
 	query = """
 		PREFIX ok: <http://localhost:5000/okupasi/>
 		SELECT ?name
@@ -79,18 +80,9 @@ def getJob(codes):
 
 def getCompetencies(codes, index=1, comps=[]):
 	comps.append(codes)
-	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
-	query = """
-	PREFIX ok: <http://localhost:5000/okupasi/>
-	PREFIX kom: <http://localhost:5000/kompetensi/>
-
-	select distinct ?reqs
-	where
-	{{
-		?kompetensi kom:hasComReq ?reqs .
-		filter(?kompetensi in({c}))
-	}}
-	""".format(c=json.dumps(codes).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1].replace('"', ''))
+	# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
+	query = """PREFIX ok: <http://localhost:5000/okupasi/> PREFIX kom: <http://localhost:5000/kompetensi/> select distinct ?reqs where {{ ?kompetensi kom:hasComReq ?reqs . filter(?kompetensi in({c})) }} """.format(c=json.dumps(codes).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1].replace('"', '').replace("file://C:/fakepath/", "kom:"))
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
@@ -110,24 +102,9 @@ def getCompetencies(codes, index=1, comps=[]):
 def getDesc(codes):
 	comps = []
 	comps.append([])
-	sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
-	query = """
-	PREFIX ok: <http://localhost:5000/okupasi/>
-	PREFIX kom: <http://localhost:5000/kompetensi/>
-
-	select ?competencies ?reqs
-	where
-	{{
-		?okupasi ok:id ?id ;
-			ok:name ?name ;
-			ok:hasCompetencies ?competencies .
-		filter(?name in({c}))
-		optional{{
-    		?kompetensi kom:hasComReq ?reqs .
-    		filter(?kompetensi in(?competencies))
-  		}}
-	}}
-	""".format(c=codes[1:-1])
+	# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
+	query = """PREFIX ok: <http://localhost:5000/okupasi/> PREFIX kom: <http://localhost:5000/kompetensi/> select ?competencies ?reqs where {{ ?okupasi ok:id ?id ; ok:name ?name ; ok:hasCompetencies ?competencies . filter(?name in({c})) optional{{ ?kompetensi kom:hasComReq ?reqs . filter(?kompetensi in(?competencies)) }} }} """.format(c=codes[1:-1])
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
@@ -154,17 +131,8 @@ def getDesc(codes):
 	#     filter(?s in({c}))
 	# }}""".format(c=json.dumps(comps).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1]).replace('"', '')
 
-	query = """
-	PREFIX ok: <http://localhost:5000/okupasi/>
-	PREFIX kom: <http://localhost:5000/kompetensi/>
-	select ?key ?content
-	where {{
-	  ?s ?key ?content ;
-	    (kom:hasAspect|kom:hasContextEval|kom:hasContextVar|kom:hasKnowledge|kom:hasNS|kom:hasPRP|kom:hasSkill|kom:hasAttitude) ?content .
-	    filter(?s in({c}))
-	}}""".format(c=json.dumps(comps).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1]).replace('"', '')
-	# print query
-	print query
+	query = """PREFIX ok: <http://localhost:5000/okupasi/> PREFIX kom: <http://localhost:5000/kompetensi/> select ?key ?content where {{ ?s ?key ?content ; (kom:hasAspect|kom:hasContextEval|kom:hasContextVar|kom:hasKnowledge|kom:hasNS|kom:hasPRP|kom:hasSkill|kom:hasAttitude) ?content . filter(?s in({c})) }}""".format(c=json.dumps(comps).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1]).replace('"', '').replace("file://C:/fakepath/", "kom:")
+	pprint.pprint(query)
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()

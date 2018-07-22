@@ -250,7 +250,7 @@ $(document).ready(function(){
 
         json = $.parseJSON(data);
         for (i = 0; i < json.Kompetensi.length; i++) {
-            $("#hasilUK").append("<li>" + json.Kompetensi[i] + "</li>")
+            $("#hasilUK").append("<li>" + json.Kompetensi[i].replace("http://localhost:5000/kompetensi/", "").replace("file://C:/fakepath/", "") + "</li>")
         }
 
         for (i = 0; i < json.hasKnowledge.length; i++) {
