@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  var debug = true;
 
   $("#jenjang, #domain, #okupasi, #acm").on('click', '.custom-checkbox', function() {
     // GET THE INPUT
@@ -20,7 +20,17 @@ $(document).ready(function(){
     }
   });
 
-  $("#list-ok").click(function(){
+  $("#jenjang-button").click(function(){
+    $("#jenjang-selector").css("display", "none");
+    $("#domain-selector").css("display", "block");
+  });
+
+  $("#domain-button-prev").click(function(){
+    $("#jenjang-selector").css("display", "block");
+    $("#domain-selector").css("display", "none");
+  });
+
+  $("#domain-button-next").click(function(){
     var selected = [], level;
     $("#hasilJenjang").text("Jenjang: ");
     $("#hasilDomain").text("Domain: ");
@@ -66,85 +76,114 @@ $(document).ready(function(){
             '<span class="box">' + data[i]["http://localhost:5000/okupasi/name"][0]["@value"] + '</span>' +
             '</div>' );
         }
+        $("#domain-selector").css("display", "none");
+        $("#okupasi-selector").css("display", "block");
       }
     });
   });
 
-  $("#cekPL").click(function(){
-    var selected = [], level;
-    $("#hasilOkupasi").text("Okupasi: ");
+  $("#okupasi-button-prev").click(function(){
+    $("#domain-selector").css("display", "block");
+    $("#okupasi-selector").css("display", "none");
+  });
 
-    $("#okupasi div").each(function(){
+  $("#okupasi-button-next").click(function(){
+    var level;
+    $("#jenjang div").each(function(){
       if ($(this).find("input").prop("checked")) {
-        selected.push($(this).find("input").attr('value'));
-        $("#hasilOkupasi").append($(this).find("span").text() + ", ");
+        level = $(this).find("input").attr('value');
       }
     });
 
-    var data = {
-        'occupation': selected,
-        'req': "competency",
-        'ajax': true,
-      }
+    // Strata-1
+    if (parseInt(level) >= 6 || debug) {
+      $("#okupasi-selector").css("display", "none");
+      $("#acm-selector").css("display", "block");
+    } else {
+      var selected = [], acm = [];
+      $("#hasilOkupasi").text("Okupasi: ");
 
-    $.ajax({
-      type: 'POST',
-      contentType: "application/json; charset=utf-8",
-      url: '/ajax',
-      data: JSON.stringify(data),
-      success: function(data){
-        console.log(data);
-        // $("#hasilUK").html('');
-        // $("#hasilPengetahuan").html('');
-        // $("#hasilSkill").html('');
-        // $("#hasilSikap").html('');
+      $("#okupasi div").each(function(){
+        if ($(this).find("input").prop("checked")) {
+          selected.push($(this).find("input").attr('value'));
+          $("#hasilOkupasi").append($(this).find("span").text() + ", ");
+        }
+      });
 
-        // json = $.parseJSON(data);
-        // knowledge = [];
-        // skill = [];
-        // aspect = [];
-        // Object.keys(json).forEach(function(k){
-        //   $("#hasilUK").append("<li>" + k + "</li>");
-        //   Object.keys(json[k]).forEach(function(l){
-        //     if (l == "hasKnowledge") {
-        //       Array.prototype.push.apply(knowledge, json[k][l]);
-        //     }
-        //   });
+      var data = {
+          'occupation': selected,
+          'acm': acm,
+          'req': "compare",
+          'ajax': true,
+        }
 
-        //   Object.keys(json[k]).forEach(function(l){
-        //     if (l == "hasSkill") {
-        //       Array.prototype.push.apply(skill, json[k][l]);
-        //     }
-        //   });
+      $.ajax({
+        type: 'POST',
+        contentType: "application/json; charset=utf-8",
+        url: '/ajax',
+        data: JSON.stringify(data),
+        success: function(d){
+          $("#competencyResult").html("");
+          $("#skillResult").html("");
+          $("#knowledgeResult").html("");
+          $("#attitudeResult").html("");
+          $("#unassigned").html("");
+          // $("#acmInfo input").each(function(){
+          //   if ($(this).val() == "") {
+          //     console.log($(this).attr("id"));
+          //   }
+          // });
 
-        //   Object.keys(json[k]).forEach(function(l){
-        //     if (l == "hasAspect") {
-        //       Array.prototype.push.apply(aspect, json[k][l]);
-        //     }
-        //   });
-        // });
-        // // for (i = 0; i < json.Kompetensi.length; i++) {
-        // //     $("#hasilUK").append("<li>" + json.Kompetensi[i] + "</li>")
-        // // }
-        // knowledge = unique(knowledge);
-        // for (i = 0; i < knowledge.length; i++) {
-        //     $("#hasilPengetahuan").append("<li>" + knowledge[i] + "</li>")
-        // }
+          competency = d['data']['competency']['element'];
+          var key, i, parts, id, elements;
+          for (key in competency) {
+            parts = key.split('/');
+            id = parts.pop() || parts.pop();
 
-        // skill = unique(skill);
-        // for (i = 0; i < skill.length; i++) {
-        //     $("#hasilSkill").append("<li>" + skill[i] + "</li>")
-        // }
+            elements = competency[key];
+            for (i = 0; i < elements.length; i++) {
+              $( "#competencyResult" ).append('<div>' + 
+                id + '.' + zeroFill(i+1, 2) + ": " + 
+                elements[i]);
+            }
+          }
 
-        // aspect = unique(aspect);
-        // for (i = 0; i < aspect.length; i++) {
-        //     $("#hasilSikap").append("<li>" + aspect[i] + "</li>")
-        // }
-      }
-    });
+          $( "#skill" ).html('');
+          skill = d['data']['competency']['skill'];
+          for (i = 0; i < skill.length; i++) {
+            $( "#skillResult" ).append('<div>' + 
+              id + '.' + zeroFill(i+1, 2) + ": " + 
+              skill[i]);
+          }
+
+          $( "#knowledge" ).html('');
+          knowledge = d['data']['competency']['knowledge'];
+          for (i = 0; i < knowledge.length; i++) {
+            $( "#knowledgeResult" ).append('<div>' + 
+              id + '.' + zeroFill(i+1, 2) + ": " + 
+              knowledge[i]);
+          }
+
+          $( "#attitude" ).html('');
+          attitude = d['data']['competency']['attitude'];
+          for (i = 0; i < attitude.length; i++) {
+            $( "#attitudeResult" ).append('<div>' + 
+              id + '.' + zeroFill(i+1, 2) + ": " + 
+              attitude[i]);
+          }
+        }
+      });
+      $("#okupasi-selector").css("display", "none");
+      $("#result").css("display", "block");
+    }
   });
 
-  $("#listAcm").click(function(){
+  $("#acm-button-prev").click(function(){
+    $("#okupasi-selector").css("display", "block");
+    $("#acm-selector").css("display", "none");
+  });
+
+  $("#acm-button-next").click(function(){
     var selected = [], acm = [];
     $("#hasilOkupasi").text("Okupasi: ");
 
@@ -217,6 +256,15 @@ $(document).ready(function(){
               '<span>' + knowledge[i] + '</span></div>');
         }
 
+        $( "#attitude" ).html('');
+        attitude = d['data']['competency']['attitude'];
+        for (i = 0; i < attitude.length; i++) {
+          // $( "#attitude" ).append('<div><input type="text" name="attitude-' + i + '" class="competency" list="acmList"/>' + attitude[i] + '</div>');
+          $( "#attitude" ).append('<div>' +
+              '<select class="competency" id="Attitude.' + zeroFill(i+1, 2) + '"><option value=""></option></select>' + 
+              '<span>' + attitude[i] + '</span></div>');
+        }
+
         acmList = {};
         acm = d['data']['acm'];
         $( "#acmInfo" ).html('');
@@ -276,14 +324,22 @@ $(document).ready(function(){
           currSelector = $("input[id='" + curr + "']");
           currSelector.val((currSelector.val() + "," + selector).replace(/(^,)|(,$)/g, ""));
         });
+        $("#acm-selector").css("display", "none");
+        $("#compare-selector").css("display", "block");
       }
     });
   });
 
-  $("#listCompetency").click(function(){
+  $("#compare-button-prev").click(function(){
+    $("#acm-selector").css("display", "block");
+    $("#compare-selector").css("display", "none");
+  });
+
+  $("#compare-button-next").click(function(){
     $("#competencyResult").html("");
     $("#skillResult").html("");
     $("#knowledgeResult").html("");
+    $("#attitudeResult").html("");
     $("#unassigned").html("");
     // $("#acmInfo input").each(function(){
     //   if ($(this).val() == "") {
@@ -313,11 +369,37 @@ $(document).ready(function(){
         $(this).val());
     });
 
+    $("#attitude select").each(function(){
+      $( "#attitudeResult" ).append('<div>' + 
+        $(this).attr('id') + ": " + 
+        $(this).siblings().text() + ", Reference: " + 
+        $(this).val());
+    });
+
     $("#acmInfo span").each(function(){
       if ($(this).siblings().val() == "") {
         $( "#unassigned" ).append('<div>' + $(this).text() + '</div>');
       }
     });
+    $("#compare-selector").css("display", "none");
+    $("#result").css("display", "block");
+  });
+
+  $("#result-button-prev").click(function(){
+    var level;
+    $("#jenjang div").each(function(){
+      if ($(this).find("input").prop("checked")) {
+        level = $(this).find("input").attr('value');
+      }
+    });
+
+    if (parseInt(level) >= 6) {
+      $("#compare-selector").css("display", "block");
+      $("#result").css("display", "none");
+    } else {
+      $("#okupasi-selector").css("display", "block");
+      $("#result").css("display", "none");
+    }
   });
 });
 

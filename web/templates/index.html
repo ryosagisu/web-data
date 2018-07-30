@@ -12,82 +12,84 @@
 </head>
 <body>
   <div class="container">
-    <h2 class="text-center">PROFIL LULUSAN GENERATOR</h2>
-    <h4 class="text-center">Pilih Jenjang</h4>
-    <div class="d-flex justify-content-between" style="height: 60px;"  id="jenjang">
-      {% for i, val in enumerate(grade) %}
-      <div class="p-2 custom-checkbox">
-        <input type="radio" name="jenjang" value="{{ "%02d" % (i+1) }}"/>
-        <span class="box">{{ escape(val) }}</span>
+    <div id="jenjang-selector">
+      <h4 class="text-center">Pilih Jenjang</h4>
+      <div class="d-flex justify-content-between" style="height: 60px;"  id="jenjang">
+        {% for i, val in enumerate(grade) %}
+        <div class="p-2 custom-checkbox">
+          <input type="radio" name="jenjang" value="{{ "%02d" % (i+1) }}"/>
+          <span class="box">{{ escape(val) }}</span>
+        </div>
+        {% end %}
       </div>
-      {% end %}
+      <button type="button" class="btn btn-primary ctrl" style="float: right;" id="jenjang-button">Next</button>
     </div>
 
-    <br/><br/><br/>
-
-    <h4 class="text-center">Pilih Domain</h4>
-    <div class="d-flex justify-content-between flex-wrap" id="domain">
-      {% for i, val in enumerate(domain) %}
-      <div class="p-2 custom-checkbox">
-        <input type="checkbox" name="domain" value="{{ "%02d" % (i+1) }}"/>
-        <span class="box">{{ escape(val) }}</span>
+    <div id="domain-selector">
+      <h4 class="text-center">Pilih Domain</h4>
+      <div class="d-flex justify-content-between flex-wrap" id="domain">
+        {% for i, val in enumerate(domain) %}
+        <div class="p-2 custom-checkbox">
+          <input type="checkbox" name="domain" value="{{ "%02d" % (i+1) }}"/>
+          <span class="box">{{ escape(val) }}</span>
+        </div>
+        {% end %}
       </div>
-      {% end %}
+      <button type="button" class="btn btn-primary ctrl" style="float: left;" id="domain-button-prev">Prev</button>
+      <button type="button" class="btn btn-primary ctrl" style="float: right;" id="domain-button-next">Next</button>
     </div>
 
-    <br/><br/><br/>
-    <button type="button" class="btn btn-primary" style="margin-top: 30px;" id="list-ok">List Okupasi</button>
-    <br/><br/><br/>
+    <div id="okupasi-selector">
+      <h4 class="text-center">Pilih Okupasi</h4>
+      <div class="d-flex justify-content-between flex-wrap" id="okupasi"></div>
+      <button type="button" class="btn btn-primary ctrl" style="float: left;" id="okupasi-button-prev">Prev</button>
+      <button type="button" class="btn btn-primary ctrl" style="float: right;" id="okupasi-button-next">Next</button>
+    </div>
 
-    <h4 class="text-center">Pilih Okupasi</h4>
-    <div class="d-flex justify-content-between flex-wrap" id="okupasi"></div>
-
-    <br/><br/><br/>
-
-    <h4 class="text-center">Pilih ACM</h4>
-    <div class="d-flex justify-content-between flex-wrap" id="acm">
-      {% for k, v in acm.items() %}
-      <div class="p-2 custom-checkbox">
-        <input type="checkbox" name="acm" value="{{ k }}"/>
-        <span class="box">{{ v }}</span>
+    <div id="acm-selector">
+      <h4 class="text-center">Pilih ACM</h4>
+      <div class="d-flex justify-content-between flex-wrap" id="acm">
+        {% for k, v in acm.items() %}
+        <div class="p-2 custom-checkbox">
+          <input type="checkbox" name="acm" value="{{ k }}"/>
+          <span class="box">{{ v }}</span>
+        </div>
+        {% end %}
       </div>
-      {% end %}
+      <button type="button" class="btn btn-primary ctrl" style="float: left;" id="acm-button-prev">Prev</button>
+      <button type="button" class="btn btn-primary ctrl" style="float: right;" id="acm-button-next">Next</button>
     </div>
 
-    <br/><br/><br/>
-    <button type="button" class="btn btn-primary" style="margin-top: 30px;" id="listAcm">Get ACM</button>
-    <br/><br/><br/>
+    <div class="row" id="compare-selector">
+      <div style="display: flex; flex-flow: row; justify-content:space-between;">
+        <form>
+          <h4 class="text-center">Kompetensi</h4>
+          <br/>
+          <div id="competency"></div>
+          <br/><br/>
 
-    <div class="row">
-      <form class="col-md-6">
-        <h4 class="text-center">Kompetensi</h4>
-        <br/>
-        <div id="competency"></div>
-        <br/><br/>
+          <h4 class="text-center">Skill</h4>
+          <br/>
+          <div id="skill"></div>
+          <br/><br/>
+          
+          <h4 class="text-center">Knowledge</h4>
+          <br/>
+          <div id="knowledge"></div>
 
-        <h4 class="text-center">Skill</h4>
-        <br/>
-        <div id="skill"></div>
-        <br/><br/>
-        
-        <h4 class="text-center">Knowledge</h4>
-        <br/>
-        <div id="knowledge"></div>
-      </form>
-      <form class="col-md-6" id="acmInfo"></form>
+          <br/><br/>
+          <h4 class="text-center">Attitude</h4>
+          <br/>
+          <div id="attitude"></div>
+        </form>
+        <form id="acmInfo"></form>
+      </div>
+      <button type="button" class="btn btn-primary ctrl" style="float: left;" id="compare-button-prev">Prev</button>
+      <button type="button" class="btn btn-primary ctrl" style="float: right;" id="compare-button-next">Next</button>
     </div>
 
-    <br/><br/><br/>
-    <button type="button" class="btn btn-primary" style="margin-top: 30px;" id="listCompetency">Get Competency</button>
-    <br/><br/><br/>
-  </div>
-
-  <datalist id="competencyList"></datalist>
-  <datalist id="acmList"></datalist>
-    
-    <br/><br/><br/>
-    <h4 class="text-center">Hasil</h4>
-    <div class="container">
+    <div id="result">
+      <h4 class="text-center">Hasil</h4>
       <h5 id="hasilJenjang">Jenjang: </h5>
       <h5 id="hasilDomain">Domain: </h5>
       <h5 id="hasilOkupasi">Okupasi: </h5>
@@ -97,12 +99,16 @@
       <ol id="skillResult"></ol>
       <h5>Knowledge: </h5>
       <ol id="knowledgeResult"></ol>
+      <h5>Attitude: </h5>
+      <ol id="attitudeResult"></ol>
       <h5>Unassigned: </h5>
       <ol id="unassigned"></ol>
+      <button type="button" class="btn btn-primary ctrl" style="float: left;" id="result-button-prev">Prev</button>
     </div>
-    <div ></div>
+  </div>
 </body>
-
+<datalist id="competencyList"></datalist>
+<datalist id="acmList"></datalist>
 <script src="{{ static_url('jquery.min.js') }}"></script>
 <script src="{{ static_url('scripts/scripts.js') }}"></script>
 </html>

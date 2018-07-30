@@ -247,7 +247,7 @@ class AjaxHandler(RequestHandler):
 				  {{
 					SELECT ?s ?p ?o 
 					WHERE {{
-					  VALUES ?p {{ kom:hasKnowledge kom:hasSkill kom:hasComReq }}
+					  VALUES ?p {{ kom:hasKnowledge kom:hasSkill kom:hasAttitude kom:hasComReq }}
 					  ?s ?p ?o .
 					  FILTER(?s IN({c}))
 					}}
@@ -280,6 +280,7 @@ class AjaxHandler(RequestHandler):
 
 		skill = set()
 		knowledge = set()
+		attitude = set()
 		element = {}
 		for k in res:
 			if self.kom + 'hasSkill' in k:
@@ -287,6 +288,9 @@ class AjaxHandler(RequestHandler):
 
 			if self.kom + 'hasKnowledge' in k:
 				knowledge.update(set(self.get_value(k[self.kom + 'hasKnowledge'], "@value")))
+
+			if self.kom + 'hasAttitude' in k:
+				attitude.update(set(self.get_value(k[self.kom + 'hasAttitude'], "@value")))
 			element[k['@id']] = self.get_value(k[self.kom + 'element'], "@value")
 
 		codes = []
@@ -347,7 +351,7 @@ class AjaxHandler(RequestHandler):
 		# 	acm[msg['acm']]['http://localhost:5000/acm/hasDomains'][k] = temp[v['@id']]
 
 		# print json.dumps({'dom': dom, 'ent': 'ent'}, indent=2)
-		return {'competency': {'skill': list(skill), 'knowledge': list(knowledge), 'element': element}, 'acm': dom}
+		return {'competency': {'skill': list(skill), 'knowledge': list(knowledge), 'attitude': list(attitude), 'element': element}, 'acm': dom}
 
 	def get_value(self, l, key):
 		return [d[key] for d in l]
