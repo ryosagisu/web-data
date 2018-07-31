@@ -23,6 +23,10 @@
     "hasOutcomesCT2": {
       "@id": "acm:hasOutcomesCT2",
       "@container": "@set"
+   },
+    "hasComp": {
+      "@id": "acm:hasComp",
+      "@container": "@set"
    }
   },
   "@graph": [
@@ -66,6 +70,9 @@
                       "Explain the use of big omega, big theta, and little o notation to describe the amount of work done by an algorithm",
                       "Use recurrence relations to determine the time complexity of recursively defined algorithms",
                       "Solve elementary recurrence relations, e.g., using some form of a Master Theorem"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -98,6 +105,9 @@
                       "Use a heuristic approach to solve an appropriate problem",
                       "Describe the trade-offs between brute force and heuristic strategies",
                       "Describe how a branch-and-bound approach may be used to improve the performance of a heuristic method"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -136,6 +146,9 @@
                       "Describe the heap property and the use of heaps as an implementation of priority queues",
                       "Solve problems using graph algorithms, including single-source and all-pairs shortest paths, and at least one minimum spanning tree algorithm",
                       "Trace and/or implement a string-matching algorithm"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -163,6 +176,9 @@
                       "Design a context-free grammar to represent a specified language",
                       "Define the classes P and NP",
                       "Explain the significance of NP-completeness"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -187,6 +203,9 @@
                   "hasOutcomesCT2": [
                       "Provide examples of classic NP-complete problems",
                       "Prove that a problem is NP-complete by reducing a classic known NP-complete problem to it"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -225,6 +244,9 @@
                       "Explain Rice’s Theorem and its significance",
                       "Provide examples of uncomputable functions",
                       "Prove that a problem is uncomputable by reducing a classic known uncomputable problem to it"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -256,6 +278,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Select and apply advanced analysis techniques (e.g., amortized, probabilistic, etc.) to algorithms"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -288,6 +313,9 @@
                       "Design the basic building blocks of a computer: arithmetic-logic unit (gate-level), registers (gate-level), central processing unit (register transfer-level), memory (register transfer-level)",
                       "Use CAD tools for capture, synthesis, and simulation to evaluate simple building blocks (e.g., arithmetic-logic unit, registers, movement between registers) of a simple computer design",
                       "Evaluate the functional and timing diagram behavior of a simple processor implemented at the logic circuit level"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -313,6 +341,9 @@
                       "Describe the internal representation of non-numeric data, such as characters, strings, records, and arrays",
                       "Convert numerical data from one format to another",
                       "Write simple programs at the assembly/machine level for string processing and manipulation"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -346,6 +377,9 @@
                       "Explain the basic concepts of interrupts and I/O operations",
                       "Write simple assembly language program segments",
                       "Show how fundamental high-level programming constructs are implemented at the machine-language level"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -373,6 +407,9 @@
                       "Describe the principles of memory management",
                       "Explain the workings of a system with virtual memory management",
                       "Compute Average Memory Access Time under a variety of cache and memory configurations and mixes of instruction and data references"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -398,6 +435,10 @@
                       "Compare common network organizations, such as ethernet/bus, ring, switched vs. routed",
                       "Identify the cross-layer interfaces needed for multimedia access and presentation, from image fetch from remote storage, through transport over a communications network, to staging into local memory, and final presentation to a graphical display",
                       "Describe the advantages and limitations of RAID architectures"
+                  ],
+                  "hasComp": [
+                      "ICTICT106"
+
                   ]
               },
               {
@@ -421,6 +462,10 @@
                   "hasOutcomesCT2": [
                       "Design and implement a complete processor, including datapath and control",
                       "Determine, for a given processor and memory system implementation, the average cycles per instruction"
+                  ],
+                  "hasComp": [
+                      "TIK.PR06.003.01",
+                      "TIK.CS02.020.01"
                   ]
               },
               {
@@ -445,6 +490,9 @@
                   "hasOutcomesCT2": [
                       "Discuss the special concerns that multiprocessing systems present with respect to memory management and describe how these are addressed",
                       "Describe the differences between memory backplane, processor memory interconnect, and remote memory via networks, their implications for access latency and impact on program performance"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -472,6 +520,9 @@
                       "Explain speculative execution and identify the conditions that justify it",
                       "Discuss the performance advantages that multithreading offered in an architecture along with the factors that make it difficult to derive maximum benefits from this approach",
                       "Describe the relevance of scalability to performance"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -502,7 +553,10 @@
                       "Describe several approaches to validating models",
                       "Create a simple display of the results of a simulation"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "CN/Modeling and Simulation",
@@ -534,6 +588,9 @@
                       "Compare results from different simulations of the same situation and explain any differences",
                       "Infer the behavior of a system from the results of a simulation of the system",
                       "Extend or adapt an existing model to a new situation"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -580,6 +637,9 @@
                       "Compare and contrast parallel programming paradigms recognizing the strengths and weaknesses of each",
                       "Identify the issues impacting correctness and efficiency of a computation",
                       "Design, code, test and debug programs for a parallel computation"
+                  ],
+                  "hasComp": [
+                      "JANCO644"
                   ]
               },
               {
@@ -604,6 +664,9 @@
                       "Extract useful information from a dataset",
                       "Analyze and select visualization techniques for specific problems",
                       "Describe issues related to scaling data analysis from small to large data sets"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -634,6 +697,10 @@
                       "List and describe the reports, transactions, and other processing needed for a computational science application",
                       "Compare and contrast database management, information retrieval, and digital library systems with regard to handling typical computational science applications",
                       "Design a digital library for some computational science users/societies, with appropriate content and services"
+                  ],
+                  "hasComp": [
+                      "JANCO265",
+                      "J.6202000.017.01"
                   ]
               },
               {
@@ -656,6 +723,9 @@
                   "hasOutcomesCT2": [
                       "Implement algorithms for differentiation and integration",
                       "Implement algorithms for solving differential equations"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -663,7 +733,7 @@
       {
           "@id": "DS",
           "name": "Discrete Structures",
-          "id": "CN",
+          "id": "DS",
           "hasChild": [
               {
                   "code": "DS/Sets, Relations, and Functions",
@@ -688,7 +758,10 @@
                       "Perform the operations associated with sets, functions, and relations",
                       "Relate practical examples to the appropriate set, function, or relation model, and interpret the associated operations and terminology in context"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      "ICTDBS601"
+                  ]
               },
               {
                   "code": "DS/Basic Logic",
@@ -714,7 +787,10 @@
                       "Apply formal logic proofs and/or informal, but rigorous, logical reasoning to real problems, such as predicting the behavior of software or solving problems such as puzzles",
                       "Describe the strengths and limitations of propositional and predicate logic"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "DS/Proof Techniques",
@@ -745,6 +821,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "State the well-ordering principle and its relationship to mathematical induction"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -769,7 +848,10 @@
                       "Analyze a problem to determine underlying recurrence relations",
                       "Perform computations involving modular arithmetic"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "DS/Graphs and Trees",
@@ -796,6 +878,9 @@
                   "hasOutcomesCT2": [
                       "Explain how to construct a spanning tree of a graph",
                       "Determine if two graphs are isomorphic"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -825,6 +910,9 @@
                   "hasOutcomesCT2": [
                       "Compute the variance for a given probability distribution",
                       "Explain how events that are independent can be conditionally dependent (and vice-versa). Identify real- world examples of such cases"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -860,6 +948,12 @@
                   "hasOutcomesCT2": [
                       "Describe color models and their use in graphics display devices",
                       "Describe the tradeoffs between storing information vs. storing enough information to reproduce the information, as in the difference between vector and raster rendering"
+                  ],
+                  "hasComp": [
+                      "TIK.MM02.028.0",
+                      "TIK.OP02.015.01",
+                      "TIK.MM02.011.0"
+
                   ]
               },
               {
@@ -902,6 +996,9 @@
                       "Compare and contrast the different rendering techniques",
                       "Compute space requirements based on resolution and color coding",
                       "Compute time requirements based on refresh rates, rasterization techniques."
+                  ],
+                  "hasComp": [
+                      "ICAGAM416A"
                   ]
               },
               {
@@ -937,6 +1034,9 @@
                       "Generate a mesh from data points acquired with a laser scanner",
                       "Construct CSG models from simple primitives, such as cubes and quadric surfaces",
                       "Contrast modeling approaches with respect to space and time complexity and quality of image"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -971,6 +1071,9 @@
                       "Explain how to recognize the graphics techniques used to create a particular image",
                       "Implement any of the specified graphics techniques using a primitive graphics system at the individual pixel level",
                       "Implement a ray tracer for scenes using a simple (e.g., Phong model) BRDF plus reflection and refraction"
+                  ],
+                  "hasComp": [
+                      "TIK.MM02.017.0"
                   ]
               },
               {
@@ -1002,6 +1105,16 @@
                       "Implement algorithms for physical modeling of particle dynamics using simple Newtonian mechanics, for example Witkin & Kass, snakes and worms, symplectic Euler, Stormer/Verlet, or midpoint Euler methods",
                       "Discuss the basic ideas behind some methods for fluid dynamics for modeling ballistic trajectories, for example for splashes, dust, fire, or smoke",
                       "Use common animation software to construct simple organic forms using metaball and skeleton"
+                  ],
+                  "hasComp": [
+                      "TIK.MM02.012.0",
+                      "TIK.MM02.045.0",
+                      "TIK.MM02.047.0",
+                      "TIK.MM02.050.0",
+                      "TIK.MM02.051.0",
+                      "TIK.MM02.052.0",
+                      "TIK.MM02.055.0",
+                      "ICAGAM519A"
                   ]
               },
               {
@@ -1032,6 +1145,9 @@
                       "Analyze the effectiveness of a given visualization for a particular task",
                       "Design a process to evaluate the utility of a visualization algorithm or system",
                       "Recognize a variety of applications of visualization including representations of scientific, medical, and mathematical data; flow visualization; and spatial analysis"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -1066,7 +1182,10 @@
                       "Define a user-centered design process that explicitly takes account of the fact that the user is not like the developer or their acquaintances",
                       "Create and conduct a simple usability test for an existing software application"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      "TIK.CS02.001.01"
+                  ]
               },
               {
                   "code": "HCI/Designing Interaction",
@@ -1090,6 +1209,9 @@
                       "Create a simple application, together with help and documentation, that supports a graphical user interface",
                       "Conduct a quantitative evaluation and discuss/report the results",
                       "Discuss at least one national or international user interface design standard"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1121,6 +1243,9 @@
                   "hasOutcomesCT2": [
                       "Identify commonalities and differences in UIs across different platforms",
                       "Explain and use GUI programming concepts: event handling, constraint-based layout management, etc"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1150,6 +1275,9 @@
                   "hasOutcomesCT2": [
                       "Use a variety of techniques to evaluate a given UI",
                       "Compare the constraints and benefits of different evaluative methods"
+                  ],
+                  "hasComp": [
+                      "TIK.JK03.005.01"
                   ]
               },
               {
@@ -1170,6 +1298,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Discuss the advantages (and disadvantages) of non-mouse interfaces"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1195,6 +1326,9 @@
                   "hasOutcomesCT2": [
                       "Discuss several issues of social concern raised by collaborative software",
                       "Discuss the HCI issues in software that embodies human intention"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1220,6 +1354,9 @@
                   "hasOutcomesCT2": [
                       "Design a user study that will yield quantitative results",
                       "Conduct and report on a study that utilizes both qualitative and quantitative evaluation"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1248,6 +1385,9 @@
                   "hasOutcomesCT2": [
                       "Explain the concept of identity management and its importance",
                       "Analyze a security policy and/or procedures to show where they consider, or fail to consider, human factors"
+                  ],
+                  "hasComp": [
+                      "J.62090.010"
                   ]
               },
               {
@@ -1269,6 +1409,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Apply a variety of design methods to a given problem"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1301,6 +1444,9 @@
                       "Describe the issues of user action synchronization and data consistency in a networked environment",
                       "Determine the basic requirements on interface, hardware, and software configurations of a VR system for a specified application",
                       "Describe several possible uses for games engines, including their potential and their limitations"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -1330,7 +1476,14 @@
                       "Explain the concept of trust and trustworthiness",
                       "Describe important ethical issues to consider in computer security, including ethical issues associated with fixing or not fixing vulnerabilities and disclosing or not disclosing vulnerabilities"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      "J.62090.042",
+                      "J.62090.045",
+                      "J.62090.039",
+                      "TIK.SM02.007.01",
+                      "ICANWK503A"
+                  ]
               },
               {
                   "code": "IAS/Principles of Secure Design",
@@ -1370,6 +1523,9 @@
                       "Discuss the importance of usability in security mechanism design",
                       "Describe security issues that arise at boundaries between multiple components",
                       "Identify the different roles of prevention mechanisms and detection/deterrence mechanisms"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1398,6 +1554,9 @@
                   "hasOutcomesCT2": [
                       "Explain the risks with misusing interfaces with third-party code and how to correctly use third-party code",
                       "Discuss the need to update software to fix security vulnerabilities and the lifecycle management of the fix"
+                  ],
+                  "hasComp": [
+                      "ICTSUS8238A"
                   ]
               },
               {
@@ -1418,6 +1577,9 @@
                       "Discuss the limitations of malware countermeasures (e.g., signature-based detection, behavioral detection)",
                       "Identify instances of social engineering attacks and Denial of Service attacks",
                       "Discuss how Denial of Service attacks can be identified and mitigated"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1438,6 +1600,12 @@
                       "Describe the architecture for public and private key cryptography and how public key infrastructure (PKI) supports network security",
                       "Describe virtues and limitations of security technologies at each layer of the network stack",
                       "Identify the appropriate defense mechanism(s) and its limitations given a network threat"
+                  ],
+                  "hasComp": [
+                      "TIK.JK05.012.01",
+                      "TIK.JK02.004.01",
+                      "ICTICT103",
+                      "TIK.JK04.011.01"
                   ]
               },
               {
@@ -1457,6 +1625,9 @@
                       "Define the following terms: cipher, cryptanalysis, cryptographic algorithm, and cryptology, and describe the two basic methods (ciphers) for transforming plain text in cipher text",
                       "Discuss the importance of prime numbers in cryptography and explain their use in cryptographic algorithms",
                       "Explain how public key infrastructure supports digital signing and encryption and discuss the limitations/vulnerabilities"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1480,6 +1651,10 @@
                   "hasOutcomesCT2": [
                       "Describe common types of vulnerabilities and attacks in web applications, and defenses against them",
                       "Use client-side security capabilities in an application"
+                  ],
+                  "hasComp": [
+                      "TIK.PR04.001.01",
+                      "TIK.JK04.017.01"
                   ]
               },
               {
@@ -1510,6 +1685,9 @@
                       "Identify physical attacks and countermeasures",
                       "Identify attacks on non-PC hardware platforms",
                       "Discuss the concept and importance of trusted path"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1538,6 +1716,9 @@
                       "Describe the consequences of data retention policies",
                       "Identify the risks of relying on outsourced manufacturing",
                       "Identify the risks and benefits of outsourcing to the cloud"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1582,6 +1763,9 @@
                       "Inspect a system (network, computer, or application) for the presence of malware or malicious activity",
                       "Apply forensics tools to investigate security breaches",
                       "Identify anti-forensic methods"
+                  ],
+                  "hasComp": [
+                      "J.612000.014"
                   ]
               },
               {
@@ -1607,6 +1791,9 @@
                   "hasOutcomesCT2": [
                       "Describe software development best practices for minimizing vulnerabilities in programming code",
                       "Conduct a security verification and assessment (static and dynamic) of a software application"
+                  ],
+                  "hasComp": [
+                      "J.62090.031"
                   ]
               }
           ]
@@ -1649,6 +1836,9 @@
                       "Explain measures of efficiency (throughput, response time) and effectiveness (recall, precision)",
                       "Describe approaches to scale up information systems",
                       "Identify vulnerabilities and failure scenarios in common forms of information systems"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1675,6 +1865,11 @@
                       "Explain the concept of data independence and its importance in a database system",
                       "Use a declarative query language to elicit information from a database",
                       "Describe facilities that datatbases provide supporting structures and/or stream (sequence) data, e.g., text"
+                  ],
+                  "hasComp": [
+                      "TIK.PR03.002.01",
+                      "TIK.OP03.002.0",
+                      "TIK.OP03.002.01"
                   ]
               },
               {
@@ -1701,6 +1896,9 @@
                       "Describe the main concepts of the OO model such as object identity, type constructors, encapsulation, inheritance, polymorphism, and versioning",
                       "Describe the differences between relational and semi-structured data models",
                       "Give a semi-structured equivalent (e.g., in DTD or XML Schema) for a given relational schema"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1727,6 +1925,9 @@
                       "Identify appropriate indices for given relational schema and query set",
                       "Estimate time to retrieve information, when indices are used compared to when they are not used",
                       "Describe key challenges in web crawling, e.g., detecting duplicate documents, determining the crawling frontier"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1765,6 +1966,9 @@
                       "Describe the properties of BCNF, PJNF, 5NF",
                       "Explain the impact of normalization on the efficiency of database operations especially query optimization",
                       "Describe what is a multi-valued dependency and what type of constraints it specifies"
+                  ],
+                  "hasComp": [
+                      "JANCO660"
                   ]
               },
               {
@@ -1796,6 +2000,10 @@
                       "Create a non-procedural query by filling in templates of relations to construct an example of the desired query result",
                       "Embed object-oriented queries into a stand-alone language such as C++ or Java",
                       "Write a stored procedure that deals with parameters and has some control flow, to provide a given functionality"
+                  ],
+                  "hasComp": [
+                      "J.6202000.021.01",
+                      "ICADBS503B"
                   ]
               },
               {
@@ -1821,6 +2029,9 @@
                       "Explain the effect of different isolation levels on the concurrency control mechanisms",
                       "Choose the proper isolation level for implementing a specified transaction protocol",
                       "Identify appropriate transaction boundaries in application programs"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1842,6 +2053,9 @@
                   "hasOutcomesCT2": [
                       "Describe distributed concurrency control based on the distinguished copy techniques and the voting method",
                       "Describe the three levels of software in the client-server model"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1873,6 +2087,9 @@
                       "Describe the relationships among hashing, compression, and efficient database searches",
                       "Evaluate costs and benefits of various hashing schemes",
                       "Explain how physical database design affects database transaction efficiency"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1902,6 +2119,9 @@
                       "Identify and characterize sources of noise, redundancy, and outliers in presented data",
                       "Identify mechanisms (on-line aggregation, anytime behavior, interactive visualization) to close the loop in the data mining process",
                       "Describe why the various close-the-loop processes improve the effectiveness of data mining"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1942,6 +2162,9 @@
                   "hasOutcomesCT2": [
                       "Design and implement a small to medium size information storage and retrieval system, or digital library",
                       "Describe some of the technical solutions to the problems related to archiving and preserving information in a digital library"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -1969,6 +2192,14 @@
                       "Implement a multimedia application using an authoring system",
                       "For each of several media or multimedia standards, describe in non-technical language what the standard calls for, and explain how aspects of human perception might be sensitive to the limitations of that standard",
                       "Describe the characteristics of a computer system (including identification of support tools and appropriate standards) that has to host the implementation of one of a range of possible multimedia applications"
+                  ],
+                  "hasComp": [
+                      "TIK.MM02.031.0",
+                      "TIK.MM02.053.0",
+                      "TIK.MM02.063.0",
+                      "TIK.MM02.066.0",
+                      "J.LSPK.MM003.0",
+                      "TIK.AVT3.01.2016"                      
                   ]
               }
           ]
@@ -1995,6 +2226,9 @@
                       "Describe Turing test and the “Chinese Room” thought experiment",
                       "Differentiate between the concepts of optimal reasoning/behavior and human-like reasoning/behavior",
                       "Determine the characteristics of a given problem that an intelligent system must solve"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2022,6 +2256,9 @@
                       "Evaluate whether a heuristic for a given problem is admissible/can guarantee optimal solution",
                       "Formulate a problem specified in natural language (e.g., English) as a constraint satisfaction problem and implement it using a chronological backtracking algorithm or stochastic local search",
                       "Compare and contrast basic search issues with game playing issues"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2042,6 +2279,9 @@
                       "Convert a logic statement into clause form",
                       "Apply resolution to a set of logic statements to answer a query",
                       "Make a probabilistic inference in a real-world problem using Bayes theorem to determine the probability of a hypothesis given evidence"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2064,6 +2304,9 @@
                       "Explain the difference between inductive and deductive learning",
                       "Describe over-fitting in the context of a problem",
                       "Apply the simple statistical learning algorithm such as Naive Bayesian Classifier to a classification task and measure the classifiers accuracy"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2089,6 +2332,9 @@
                       "Apply minimax search with alpha-beta pruning to prune search space in a two-player game",
                       "Compare and contrast genetic algorithms with classic search techniques",
                       "Compare and contrast various heuristic searches vis-a-vis applicability to a given problem"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2126,6 +2372,9 @@
                       "Define the concept of a planning system and how it differs from classical search techniques",
                       "Describe the differences between planning as search, operator-based planning, and propositional planning, providing examples of domains where each is most applicable",
                       "Explain the distinction between monotonic and non-monotonic inference"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2155,6 +2404,9 @@
                       "Design and implement an HMM as one example of a temporal probabilistic system",
                       "Describe the relationship between preferences and utility functions",
                       "Explain how utility functions and probabilistic reasoning can be combined to make rational decisions"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2181,6 +2433,9 @@
                   "hasOutcomesCT2": [
                       "Describe the primary paradigms used by learning agents",
                       "Demonstrate using appropriate examples how multi-agent systems support agent interaction"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2211,6 +2466,9 @@
                   "hasOutcomesCT2": [
                       "List the advantages of using standard corpora. Identify examples of current corpora for a variety of NLP tasks",
                       "Identify techniques for information retrieval, language translation, and text classification"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2246,6 +2504,9 @@
                       "Evaluate the performance of a simple learning system on a real-world dataset",
                       "Characterize the state of the art in learning theory, including its achievements and its shortcomings",
                       "Explain the problem of overfitting, along with techniques for detecting and managing the problem"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2278,6 +2539,9 @@
                       "List the differences among robots' representations of their external environment, including their strengths and shortcomings",
                       "Compare and contrast at least three strategies for robot navigation within known and/or unknown environments, including their strengths and shortcomings",
                       "Describe at least one approach for coordinating the actions and sensing of several robots to accomplish a single task"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2309,6 +2573,9 @@
                       "Implement a classification algorithm that segments input percepts into output categories and quantitatively evaluates the resulting classification",
                       "Evaluate the performance of the underlying feature-extraction, relative to at least one alternative possible approach (whether implemented or not) in its contribution to the classification task (8), above",
                       "Describe at least three classification approaches, their prerequisites for applicability, their strengths, and their shortcomings"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -2337,7 +2604,10 @@
                       "Describe the layered structure of a typical networked architecture",
                       "Identify the different types of complexity in a network (edges, core, etc.)"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "NC/Networked Applications",
@@ -2357,7 +2627,10 @@
                       "Define the principles behind naming schemes and resource location",
                       "Implement a simple client-server socket-based application"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "NC/Reliable Data Delivery",
@@ -2376,6 +2649,9 @@
                       "Describe the operation of reliable delivery protocols",
                       "List the factors that affect the performance of reliable delivery protocols",
                       "Design and implement a simple reliable protocol"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2395,6 +2671,9 @@
                       "Describe the organization of the network layer",
                       "Describe how packets are forwarded in an IP network",
                       "List the scalability benefits of hierarchical addressing"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2416,6 +2695,12 @@
                       "Describe the differences between IP and Ethernet",
                       "Describe the interrelations between IP and Ethernet",
                       "Describe the steps used in one common approach to the multiple access problem"
+                  ],
+                  "hasComp": [
+                      "TIK.FO02.012.01",
+                      "TIK.OP02.009.01",
+                      "TIK.JK02.001.01",
+                      "TIK.JK04.002.01"
                   ]
               },
               {
@@ -2438,6 +2723,9 @@
                       "Describe the congestion problem in a large network",
                       "Compare and contrast fixed and dynamic allocation techniques",
                       "Compare and contrast current approaches to congestion"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2455,6 +2743,9 @@
                   "hasOutcomesCT2": [
                       "Describe the organization of a wireless network",
                       "Describe how wireless networks support mobile users"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2478,6 +2769,9 @@
                   "hasOutcomesCT2": [
                       "Analyze a social network to determine who the key people are",
                       "Evaluate a given interpretation of a social network question with associated data"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -2507,7 +2801,12 @@
                       "Discuss networked, client-server, distributed operating systems and how they differ from single user operating systems",
                       "Identify potential threats to operating systems and the security features design to guard against them"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      "TIK.CS02.017.01",
+                      "TIK.OP02.003.01",
+                      "ICASAS425A"
+                  ]
               },
               {
                   "code": "OS/Operating System Principles",
@@ -2533,7 +2832,10 @@
                       "Discuss the advantages and disadvantages of using interrupt processing",
                       "Explain the use of a device list and driver I/O queue"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "OS/Concurrency",
@@ -2559,6 +2861,9 @@
                       "Summarize techniques for achieving synchronization in an operating system (e.g., describe how to implement a semaphore using OS primitives)",
                       "Describe reasons for using interrupts, dispatching, and context switching to support concurrency in an operating system",
                       "Create state and transition diagrams for simple problem domains"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2582,6 +2887,9 @@
                       "Compare and contrast static and dynamic approaches to real-time scheduling",
                       "Discuss the need for preemption and deadline scheduling",
                       "Identify ways that the logic embodied in scheduling algorithms are applicable to other domains, such as disk I/O, network scheduling, project scheduling, and problems beyond computing"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2603,6 +2911,9 @@
                       "Defend the different ways of allocating memory to tasks, citing the relative merits of each",
                       "Describe the reason for and use of cache memory (performance and proximity, different dimension of how caches complicate isolation and VM abstraction)",
                       "Discuss the concept of thrashing, both in terms of the reasons it occurs and the techniques used to recognize and manage the problem"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2624,6 +2935,10 @@
                       "Summarize the features and limitations of an operating system used to provide protection and security",
                       "Explain the mechanisms available in an OS to control access to resources",
                       "Carry out simple system administration tasks according to a security policy, for example creating accounts, setting permissions, applying patches, and arranging for regular backups"
+                  ],
+                  "hasComp": [
+                      "J.62090.044",
+                      "J.62090.033"
                   ]
               },
               {
@@ -2648,6 +2963,9 @@
                   "hasOutcomesCT2": [
                       "Evaluate virtualization trade-offs",
                       "Discuss hypervisors and the need for them in conjunction with different types of hypervisors"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2674,6 +2992,9 @@
                       "Describe the advantages and disadvantages of direct memory access and discuss the circumstances in which its use is warranted",
                       "Identify the requirements for failure recovery",
                       "Implement a simple device driver for a range of possible devices"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2700,6 +3021,9 @@
                   "hasOutcomesCT2": [
                       "Summarize how hardware developments have led to changes in the priorities for the design and the management of file systems",
                       "Summarize the use of journaling and how log-structured file systems enhance fault tolerance"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2721,6 +3045,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Summarize special concerns that real-time systems present, including risk, and how these concerns are addressed"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2742,6 +3069,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Explain how an operating system can continue functioning after a fault occurs"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2763,6 +3093,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Explain the main evaluation models used to evaluate a system"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -2792,6 +3125,9 @@
                   "hasOutcomesCT2": [
                       "Write and execute a simple platform-based program",
                       "List the advantages and disadvantages of programming with platform constraints"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2816,6 +3152,15 @@
                       "Describe the differences between Software-as-a-Service and traditional software products",
                       "Discuss how web standards impact software development",
                       "Review an existing web application against a current web standard"
+                  ],
+                  "hasComp": [
+                      "TIK.OP02.006.01",
+                      "ICTWEB414",
+                      "ICTWEB501",
+                      "ICTWEB516",
+                      "ICTWEB515",
+                      "TIK.OP03.003.01",
+                      "TIK.MM02.059.0"
                   ]
               },
               {
@@ -2840,6 +3185,9 @@
                   "hasOutcomesCT2": [
                       "Discuss the performance vs. power tradeoff",
                       "Compare and contrast mobile programming with general purpose programming"
+                  ],
+                  "hasComp": [
+                      "J.612000.018"
                   ]
               },
               {
@@ -2861,6 +3209,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Discuss the constraints that a given industrial platforms impose on developers"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2881,6 +3232,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Compare and contrast game programming with general purpose programming"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -2907,7 +3261,10 @@
                       "Distinguish multiple sufficient programming constructs for synchronization that may be inter-implementable but have complementary advantages",
                       "Distinguish data races from higher level races"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "PD/Parallel Decomposition",
@@ -2933,6 +3290,9 @@
                       "Parallelize an algorithm by applying task-based decomposition",
                       "Parallelize an algorithm by applying data-parallel decomposition",
                       "Write a program using actors and/or reactive processes"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2962,6 +3322,9 @@
                       "Describe at least one design technique for avoiding liveness failures in programs using multiple locks or semaphores",
                       "Describe the relative merits of optimistic versus conservative concurrency control under different rates of contention among updates",
                       "Give an example of a scenario in which an attempted optimistic update may never complete"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -2985,6 +3348,9 @@
                       "Characterize features of a workload that allow or prevent it from being naturally parallelized",
                       "Implement a parallel divide-and-conquer (and/or graph algorithm) and empirically measure its performance relative to its sequential analog",
                       "Decompose a problem (e.g., counting the number of occurrences of some word in a document) via map and reduce operations"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3006,6 +3372,9 @@
                   "hasOutcomesCT2": [
                       "Describe the SMP architecture and note its key features",
                       "Characterize the kinds of tasks that are a natural match for SIMD machines"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3033,6 +3402,9 @@
                       "Explain the impact of scheduling on parallel performance",
                       "Explain performance impacts of data locality",
                       "Explain the impact and trade-off related to power usage on parallel performance"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3062,6 +3434,9 @@
                       "Explain the tradeoffs among overhead, scalability, and fault tolerance when choosing a stateful v. stateless design for a given service",
                       "Describe the scalability challenges associated with a service growing to accommodate many clients, as well as those associated with a service only transiently having many clients",
                       "Give examples of problems for which consensus algorithms such as leader election are required"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3085,6 +3460,9 @@
                   "hasOutcomesCT2": [
                       "Deploy an application that uses cloud infrastructure for computing and/or data resources",
                       "Appropriately partition an application between a client and resources"
+                  ],
+                  "hasComp": [
+                      "J.631120.007.01"
                   ]
               },
               {
@@ -3112,6 +3490,9 @@
                       "Use a model to show progress guarantees in a parallel algorithm",
                       "Use formal techniques to show that a parallel algorithm is correct with respect to a safety or liveness property",
                       "Decide if a specific execution is linearizable or not"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -3149,6 +3530,9 @@
                       "Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping (the idea of a subtype being usable in a context that expects the supertype)",
                       "Use object-oriented encapsulation mechanisms such as interfaces and private members",
                       "Define and use iterators and other operations on aggregates, including operations that take functions as arguments, in multiple programming languages, selecting the most natural idioms for each language"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3181,6 +3565,9 @@
                       "Correctly reason about variables and lexical scope in a program using function closures",
                       "Use functional encapsulation mechanisms such as closures and modular interfaces",
                       "Define and use iterators and other operations on aggregates, including operations that take functions as arguments, in multiple programming languages, selecting the most natural idioms for each language"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3201,6 +3588,9 @@
                       "Write event handlers for use in reactive systems, such as GUIs",
                       "Explain why an event-driven programming style is natural in domains where programs react to external events",
                       "Describe an interactive system in terms of a model, a view, and a controller"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3237,6 +3627,9 @@
                       "Define and use program pieces (such as functions, classes, methods) that use generic types, including for collections",
                       "Discuss the differences among generics, subtyping, and overloading",
                       "Explain multiple benefits and limitations of static typing in writing, maintaining, and debugging software"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3256,6 +3649,9 @@
                       "Describe an abstract syntax tree for a small language",
                       "Describe the benefits of having program representations other than strings of source code",
                       "Write a program to process some representation of code for some purpose, such as an interpreter, an expression optimizer, or a documentation generator"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3279,6 +3675,9 @@
                       "Explain how programming language implementations typically organize memory into global data, text, heap, and stack sections and how features such as recursion and memory management map to this memory model",
                       "Identify and fix memory leaks and dangling-pointer dereferences",
                       "Discuss the benefits and limitations of garbage collection, including the notion of reachability"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3299,6 +3698,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Identify key issues in syntax definitions: ambiguity, associativity, precedence"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3319,6 +3721,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Describe semantic analyses using an attribute grammar"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3344,6 +3749,9 @@
                   "hasOutcomesCT2": [
                       "Discuss why separate compilation limits optimization because of unknown effects of calls",
                       "Discuss opportunities for optimization introduced by naive translation and approaches for achieving optimization, such as instruction selection, instruction scheduling, register allocation, and peephole optimization"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3367,6 +3775,9 @@
                   "hasOutcomesCT2": [
                       "Discuss advantages, disadvantages, and difficulties of just-in-time and dynamic recompilation",
                       "Identify the services provided by modern language run-time systems"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3395,6 +3806,9 @@
                       "Distinguish may and must analyses",
                       "Explain why potential aliasing limits sound program analysis and how alias analysis can help",
                       "Use the results of a static analysis for program optimization and/or partial program correctness"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3420,6 +3834,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Discuss how various advanced programming constructs interact with the definition and implementation of other language features"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3443,6 +3860,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Explain why programming languages do not guarantee sequential consistency in the presence of data races and what programmers must do as a result"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3468,6 +3888,10 @@
                       "Prove type safety for a simple language in terms of preservation and progress theorems",
                       "Implement a unification-based type-inference algorithm for a simple language",
                       "Explain how static overloading and associated resolution algorithms influence the dynamic behavior of programs"
+                  ],
+                  "hasComp": [
+                      "",
+                      ""
                   ]
               },
               {
@@ -3496,6 +3920,9 @@
                       "Use induction to prove properties of all programs in a language that are well-typed according to a formally defined type system",
                       "Use parametricity to establish the behavior of code given only its type",
                       "Use formal semantics to build a formal model of a software system other than a programming language"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3520,6 +3947,9 @@
                   "hasOutcomesCT2": [
                       "Show uses of delayed evaluation, such as user-defined control abstractions",
                       "Discuss the need for allowing calls to external calls and system libraries and the consequences for language implementation"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3540,6 +3970,9 @@
                   ],
                   "hasOutcomesCT2": [
                       "Use a logic language to implement an algorithm employing implicit search using clauses, relations, and cuts"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -3574,7 +4007,11 @@
                       "Implement a coherent abstract data type, with loose coupling between components and behaviors",
                       "Identify the relative strengths and weaknesses among multiple designs or implementations for a problem"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      "JANCO408",
+                      "ICTDBS602"
+                  ]
               },
               {
                   "code": "SDF/Fundamental Programming Concepts",
@@ -3602,7 +4039,10 @@
                       "Describe the concept of recursion and give examples of its use",
                       "Identify the base case and the general case of a recursively-defined problem"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "SDF/Fundamental Data Structures",
@@ -3628,7 +4068,10 @@
                       "Compare and contrast the costs and benefits of dynamic and static data structure implementations",
                       "Choose the appropriate data structure for modeling a given problem"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "SDF/Development Methods",
@@ -3658,7 +4101,10 @@
                       "Analyze the extent to which another programmer’s code meets documentation and programming style standards",
                       "Apply consistent documentation and program style standards that contribute to the readability and maintainability of software"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               }
           ]
       },
@@ -3690,6 +4136,9 @@
                   "hasOutcomesCT2": [
                       "Explain the concept of a software lifecycle and provide an example, illustrating its phases including the deliverables that are produced",
                       "Compare several common process models with respect to their value for development of particular classes of software systems taking into account issues such as requirement stability, size, and non-functional characteristics"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3714,6 +4163,26 @@
                       "List several examples of software risks",
                       "Describe the impact of risk in a software development lifecycle",
                       "Describe different categories of risk in software systems"
+                  ],
+                  "hasComp": [
+                      "J.62SQA00.011.1",
+                      "J.62SQA00.012.1",
+                      "M.741000.007.0",
+                      "TIK.2017.030",
+                      "JANCO567",
+                      "JANCO211",
+                      "BSBSMB407",
+                      "ICTICT412",
+                      "TIK.2017.023",
+                      "TIK.2017.039",
+                      "TIK.2017.022",
+                      "TIK.DG03.001.01",
+                      "TIK.SM02.005.01",
+                      "J.620200.003.01",
+                      "J.620200.004.01",
+                      "TIK.SM02.001.01",
+                      "TIK.SM03.005.01",
+                      "TIK.SM03.006.01"
                   ]
               },
               {
@@ -3738,6 +4207,13 @@
                       "Describe how available static and dynamic test tools can be integrated into the software development environment",
                       "Describe the issues that are important in selecting a set of tools for the development of a particular software system, including tools for requirements tracking, design modeling, implementation, build automation, and testing",
                       "Demonstrate the capability to use software tools in support of the development of a software product of medium size"
+                  ],
+                  "hasComp": [
+                      "J.631120.010.01",
+                      "TIK.MM01.003.0",
+                      "TIK.CS01.006.01",
+                      "J.631120.012.01",
+                      "TIK.SM03.007.01"
                   ]
               },
               {
@@ -3765,6 +4241,9 @@
                       "List the key components of a data model (e.g., class diagrams or ER diagrams)",
                       "Identify both functional and non-functional requirements in a given requirements specification for a software system",
                       "Conduct a review of a set of software requirements to determine the quality of the requirements with respect to the characteristics of good requirements"
+                  ],
+                  "hasComp": [
+                      "ICTPRG419"
                   ]
               },
               {
@@ -3802,6 +4281,9 @@
                       "Select suitable components for use in the design of a software product",
                       "Explain how suitable components might need to be adapted for use in the design of a software product",
                       "Design a contract for a typical small software component for use in a given system"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3825,6 +4307,9 @@
                       "Compare and contrast integration strategies including top-down, bottom-up, and sandwich integration",
                       "Describe the process of analyzing and implementing changes to code base developed for a specific project",
                       "Describe the process of analyzing and implementing changes to a large existing code base"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3852,6 +4337,9 @@
                       "Describe how to select good regression tests and automate them",
                       "Use a defect tracking tool to manage software defects in a small software project",
                       "Discuss the limitations of testing in a particular domain"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -3875,6 +4363,9 @@
                       "Discuss the challenges of evolving systems in a changing environment",
                       "Outline the process of regression testing and its role in release management",
                       "Discuss the advantages and disadvantages of different types of software reuse"
+                  ],
+                  "hasComp": [
+                      "J.620200.005.01"
                   ]
               },
               {
@@ -3893,6 +4384,9 @@
                       "Explain the problems that exist in achieving very high levels of reliability",
                       "Describe how software reliability contributes to system reliability",
                       "List approaches to minimizing faults that can be applied at each stage of the software lifecycle"
+                  ],
+                  "hasComp": [
+                      "ICTDBS501"
                   ]
               },
               {
@@ -3916,6 +4410,9 @@
                   "hasOutcomesCT2": [
                       "Create and evaluate program assertions for a variety of behaviors ranging from simple through complex",
                       "Using a common formal specification language, formulate the specification of a simple software system and derive examples of test cases from the specification"
+                  ],
+                  "hasComp": [
+                      "TIK.SM02.009.01"
                   ]
               }
           ]
@@ -3949,7 +4446,11 @@
                       "Write a simple sequential problem and a simple parallel version of the same program",
                       "Evaluate performance of simple sequential and parallel versions of a program with different problem sizes, and be able to describe the speed-ups achieved"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      "J.620200.007.01",
+                      "J.620200.013.01"
+                  ]
               },
               {
                   "code": "SF/Cross-Layer Communications",
@@ -3970,7 +4471,10 @@
                       "Construct a simple program using methods of layering, error detection and recovery, and reflection of error status across layers",
                       "Find bugs in a layered program by using tools for program tracing, single stepping, and debugging"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "SF/State and State Machines",
@@ -3993,7 +4497,10 @@
                       "Develop state machine descriptions for simple problem statement solutions (e.g., traffic light sequencing, pattern recognizers)",
                       "Derive time-series behavior of a state machine from its state machine representation"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "SF/Parallelism",
@@ -4016,7 +4523,10 @@
                       "Write more than one parallel program (e.g., one simple parallel program in more than one parallel programming paradigm; a simple parallel program that manages shared resources through synchronization primitives; a simple parallel program that performs simultaneous operation on partitioned data through task parallel (e.g., parallel search terms; a simple parallel program that performs step-by-step pipeline processing through message passing)",
                       "Use performance tools to measure speed-up achieved by parallel programs in terms of both problem size and number of resources"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "SF/Evaluation",
@@ -4036,7 +4546,11 @@
                       "Design and conduct a performance-oriented experiment",
                       "Use software tools to profile and measure program performance"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      "J.62090.034",
+                      "M.702000.014.0"
+                  ]
               },
               {
                   "code": "SF/Resource Allocation and Scheduling",
@@ -4055,6 +4569,9 @@
                       "Describe the scheduling algorithms by which resources are allocated to competing entities, and the figures of merit by which these algorithms are evaluated, such as fairness",
                       "Implement simple schedule algorithms",
                       "Use figures of merit of alternative scheduler implementations"
+                  ],
+                  "hasComp": [
+                      "J.62090.035"
                   ]
               },
               {
@@ -4075,6 +4592,9 @@
                       "Explain the importance of locality in determining performance",
                       "Describe why things that are close in space take less time to access",
                       "Calculate average memory access time and describe the tradeoffs in memory hierarchy performance in terms of capacity, miss/hit rate, and access time"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -4093,6 +4613,9 @@
                       "Explain why it is important to isolate and protect the execution of individual programs and environments that share common underlying resources",
                       "Describe how the concept of indirection can create the illusion of a dedicated machine and its resources even when physically shared among multiple programs and environments",
                       "Measure the performance of two application instances running on separate virtual machines, and determine the effect of performance isolation"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -4115,6 +4638,9 @@
                       "Describe the role of error correcting codes in providing error checking and correction techniques in memories, storage, and networks",
                       "Apply simple algorithms for exploiting redundant information for the purposes of data correction",
                       "Compare different error detection and correction methods for their data overhead, implementation complexity, and relative execution time for encoding, detecting, and correcting errors"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -4139,6 +4665,9 @@
                   "hasOutcomesCT2": [
                       "Use limit studies or simple calculations to produce order-of-magnitude estimates for a given performance metric in a given context",
                       "Conduct a performance experiment on a layered system to determine the effect of a system parameter on figure of system performance"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]
@@ -4175,6 +4704,9 @@
                       "Analyze the pros and cons of reliance on computing in the implementation of democracy (e.g. delivery of social services, electronic voting)",
                       "Describe the impact of the under-representation of diverse populations in the computing profession (e.g., industry culture, product diversity)",
                       "Explain the implications of context awareness in ubiquitous computing systems"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -4195,7 +4727,10 @@
                       "Illustrate the use of example and analogy in ethical argument",
                       "Evaluate ethical/social tradeoffs in technical decisions"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "SP/Professional Ethics",
@@ -4238,6 +4773,9 @@
                       "Explain the relationship between ergonomics in computing environments and people’s health",
                       "Develop a computer usage/acceptable use policy with enforcement measures",
                       "Describe issues associated with industries’ push to focus on time to market versus enforcing quality professional standards"
+                  ],
+                  "hasComp": [
+                      "TIK.SM01.005.01"
                   ]
               },
               {
@@ -4267,7 +4805,10 @@
                       "Discuss the issues involved in securing software patents",
                       "Characterize and contrast the concepts of copyright, patenting and trademarks"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "SP/Privacy and Civil Liberties",
@@ -4289,7 +4830,10 @@
                       "Describe the ramifications of differential privacy",
                       "Investigate the impact of technological solutions to privacy problems"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      ""
+                  ]
               },
               {
                   "code": "SP/Professional Communication",
@@ -4313,7 +4857,16 @@
                       "Examine appropriate measures used to communicate with stakeholders involved in a project",
                       "Compare and contrast various collaboration tools"
                   ],
-                  "hasOutcomesCT2": []
+                  "hasOutcomesCT2": [],
+                  "hasComp": [
+                      "ICTICT209",
+                      "M.741000.026.0",
+                      "M.711000.009.0",
+                      "ICAICT209A",
+                      "TIK.TS01.002.01",
+                      "TIK.TS01.004.01",
+                      "ICAICT408A"
+                  ]
               },
               {
                   "code": "SP/Sustainability",
@@ -4334,6 +4887,9 @@
                   "hasOutcomesCT2": [
                       "Describe the environmental impacts of design choices within the field of computing that relate to algorithm design, operating system design, networking design, database design, etc",
                       "Investigate the social and environmental impacts of new system designs through projects"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -4356,6 +4912,9 @@
                   "hasOutcomesCT2": [
                       "Discuss the historical context for several programming language paradigms",
                       "Compare daily life before and after the advent of personal computers and the Internet"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               },
               {
@@ -4387,6 +4946,14 @@
                       "Discuss the benefits, the drawbacks and the implications of off-shoring and outsourcing",
                       "Investigate and defend ways to address limitations on access to computing",
                       "Describe the economic benefits of network effects"
+                  ],
+                  "hasComp": [
+                      "M.692000.018.0",
+                      "TIK.2017.026",
+                      "TIK.2017.024",
+                      "TIK.2017.001",
+                      "M.741000.006.0",
+                      "TIK.2017.045"                     
                   ]
               },
               {
@@ -4415,6 +4982,9 @@
                       "Discuss the professional's role in security and the trade-offs involved",
                       "Investigate measures that can be taken by both individuals and organizations including governments to prevent or mitigate the undesirable effects of computer crimes and identity theft",
                       "Write a company-wide security policy, which includes procedures for managing passwords and employee monitoring"
+                  ],
+                  "hasComp": [
+                      ""
                   ]
               }
           ]

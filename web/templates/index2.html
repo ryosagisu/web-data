@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style2.css') }}" type="text/css">
+    <title>Skripsi Saya</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center">Skripsi saya</h2>
+        <div class="stepwizard">
+            <div class="stepwizard-row setup-panel">
+                <div class="stepwizard-step">
+                    <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                    <p>Mata Kuliah</p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                    <p>Pekerjaan</p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                    <p>Hasil</p>
+                </div>
+            </div>
+        </div>
+
+        <form role="form" action="" method="post">
+            <div class="row setup-content" id="step-1">
+                <div class="col-md-12">
+                    <h3>Input mata kuliah</h3>
+                    <br />
+                    <table id="myTable" class=" table order-list">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center; vertical-align: middle" rowspan="2">Nama</th>
+                                <th style="text-align: center" colspan="2">Jumlah SKS</th>
+                                <th style="text-align: center; vertical-align: middle" rowspan="2">Kerangka Pengetahuan</th>
+                                <th style="text-align: center; vertical-align: middle" rowspan="2">Sub Kerangka Pengetahuan</th>
+                            </tr>
+                            <tr>
+                                <th style="text-align: center">Level 1</th>
+                                <th style="text-align: center">Level 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-sm-3">
+                                    <div class="form-group" style="margin-bottom: 0px;">
+                                        <input type="text" name="subject-name1" class="form-control" required/>
+                                    </div>
+                                </td>
+                                <td class="col-sm-1">
+                                    <input type="number" name="sks1-1" class="form-control" value="0" />
+                                </td>
+                                <td class="col-sm-1">
+                                    <input type="number" name="sks2-1" class="form-control" value="0" />
+                                </td>
+                                <td class="col-sm-3">
+                                    <select class="form-control" id="bok1" name="bok1">
+                                        <option></option>
+                                    </select>
+                                </td>
+                                <td class="col-sm-3">
+                                    <select class="form-control" id="subbok1" name="subbok1">
+                                        <option></option>
+                                    </select>
+                                </td>
+                                <td class="col-sm-1">
+                                    <a class="deleteRow"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" style="text-align: left;">
+                                    <input type="button" class="btn btn-lg btn-block " id="addrow" value="Add Row" />
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
+                </div>
+            </div>
+            <div class="row setup-content" id="step-2">
+                <div class="col-md-12">
+                    <h3>Input Level and Domain</h3>
+                    <br>
+                    <div class="form-group">
+                        <label class="control-label">Level</label>
+                        <br>
+                        <select id="level" name="level" class="form-control" style="width: 70%; margin-left: 20px;">
+                            <option></option>
+                            <option value="01">SMP</option>
+                            <option value="02">SMA</option>
+                            <option value="03">Diploma I</option>
+                            <option value="04">Diploma II</option>
+                            <option value="05">Diploma III</option>
+                            <option value="06">Strata-1</option>
+                            <option value="07">Professional</option>
+                            <option value="08">Strata-2</option>
+                            <option value="09">Strata-3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Domain</label>
+                        <br>
+                        <select class="form-control" id="domain" name="domain[]" multiple="multiple" style="width: 70%; margin-left: 15px;">
+                            <option value="01">DATA MANAGEMENT SYSTEM</option>
+                            <option value="02">PROGRAMMING AND SOFTWARE DEVELOPMENT</option>
+                            <option value="03">HARDWARE AND DIGITAL PERIPHERALS</option>
+                            <option value="04">NETWORK AND INFRASTRUCTURE</option>
+                            <option value="05">OPERATION AND SYSTEM TOOLS</option>
+                            <option value="06">INFORMATION SYSTEM AND TECHNOLOGY DEVELOPMENT</option>
+                            <option value="07">IT GOVERNANCE AND MANAGEMENT</option>
+                            <option value="08">IT PROJECT MANAGEMENT</option>
+                            <option value="09">IT ENTERPRISE ARCHITECTURE</option>
+                            <option value="10">IT SECURITY AND COMPLIANCE</option>
+                            <option value="11">IT SERVICES MANAGEMENT SYSTEM</option>
+                            <option value="12">IT AND COMPUTING FACILITIES MANAGEMENT</option>
+                            <option value="13">IT MULTEMEDIA</option>
+                            <option value="14">IT MOBILITY AND INTERNET OF THINGS</option>
+                            <option value="15">INTEGRATION APPLICATION SYSTEM</option>
+                            <option value="16">IT CONSULTANCY AND ADVISORY</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Okupasi</label>
+                        <br>
+                        <select class="form-control" id="okupasi" name="okupasi[]" multiple="multiple" style="width: 70%; margin-left: 15px;">
+                            <option></option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
+                </div>
+            </div>
+            <div class="row setup-content" id="step-3">
+                <div class="col-md-12">
+                    <h3> Step 3</h3>
+                    <button class="btn btn-success btn-lg pull-right" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        //Load view
+        var navListItems = $('div.setup-panel div a'),
+            allWells = $('.setup-content'),
+            allNextBtn = $('.nextBtn');
+
+        allWells.hide();
+        $("#small-warning1").hide();
+
+        navListItems.click(function (e) {
+            e.preventDefault();
+            var $target = $($(this).attr('href')),
+                $item = $(this);
+
+            if (!$item.hasClass('disabled')) {
+                navListItems.removeClass('btn-primary').addClass('btn-default');
+                $item.addClass('btn-primary');
+                allWells.hide();
+                $target.show();
+                $target.find('input:eq(0)').focus();
+            }
+        });
+
+        allNextBtn.click(function () {
+            var curStep = $(this).closest(".setup-content"),
+                curStepBtn = curStep.attr("id"),
+                nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next()
+                .children("a"),
+                curInputs = curStep.find("input[type='text']"),
+                isValid = true;
+
+            $(".form-group").removeClass("has-error");
+            for (var i = 0; i < curInputs.length; i++) {
+                if (!curInputs[i].validity.valid) {
+                    isValid = false;
+                    $(curInputs[i]).closest(".form-group").addClass("has-error");
+                }
+            }
+
+            if (isValid)
+                nextStepWizard.removeAttr('disabled').trigger('click');
+        });
+
+        $('div.setup-panel div a.btn-primary').trigger('click');
+
+        //=============================================================================================================
+        //Step-1
+        //Dynamicall add subject
+        var counter = 2;
+
+        $("#addrow").on("click", function () {
+            var newRow = $("<tr>");
+            var cols = "";
+
+            cols +=
+                '<td><div class="form-group" style="margin-bottom: 0px;"><input type="text" name="subject-name' +
+                counter + '" class="form-control" required/></div></td>';
+            cols += '<td><input type="number" class="form-control" name="sks1-' + counter +
+                '" value="0" /></td>';
+            cols += '<td><input type="number" class="form-control" name="sks2-' + counter +
+                '" value="0" /></td>';
+            cols += '<td><select class="form-control" id="bok' + counter + '" name="bok' + counter +
+                '"><option></option></select></td>';
+            cols += '<td><select class="form-control" id="subbok' + counter + '" name="subbok' +
+                counter +
+                '"><option></option></select></td>';
+            cols +=
+                '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+            newRow.append(cols);
+            $("table.order-list").append(newRow);
+            //Select2
+            $.ajax({
+                type: 'GET',
+                url: '/fetchBoK'
+            }).done(function (data) {
+                $("#bok" + counter).select2({
+                    placeholder: 'Pilih Kerangka Pengetahuan',
+                    data: JSON.parse(data).BoK
+                });
+                //Init sub bok
+                $("#subbok" + counter).select2({
+                    placeholder: "Pilih sub kerangka pengetahuan",
+                    data: []
+                });
+                $("#bok" + counter).change(function () {
+                    var iterate = $(this).attr('id').substring(3);
+                    $("#subbok" + iterate).empty().trigger('change');
+                    var choosenType = $(this).val();
+                    if (choosenType !== null && choosenType !== '') {
+                        $.ajax({
+                            type: 'POST',
+                            url: '/fetchsubBoK',
+                            data: {
+                                'name': choosenType,
+                                'ajax': true
+                            },
+                            success: function (data2) {
+                                $("#subbok" + iterate).select2({
+                                    placeholder: "Pilih sub kerangka pengetahuan",
+                                    data: JSON.parse(data2).subBoK
+                                });
+                            }
+                        });
+                    }
+                });
+                counter++;
+            });
+        });
+
+        //Init sub bok
+        $("#subbok1").select2({
+            placeholder: "Pilih sub kerangka pengetahuan",
+            data: []
+        });
+
+        //Ajax get bok
+        $.ajax({
+            type: 'GET',
+            url: '/fetchBoK'
+        }).done(function (data) {
+            $("#bok1").select2({
+                placeholder: "Pilih kerangka pengetahuan",
+                data: JSON.parse(data).BoK
+            });
+            // menampilkan list sub bok berdasarkan bok nya
+            $('#bok1').change(function () {
+                $('#subbok1').empty().trigger('change');
+                var choosenType = $(this).val();
+                if (choosenType !== null && choosenType !== '') {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/fetchsubBoK',
+                        data: {
+                            'name': choosenType,
+                            'ajax': true
+                        },
+                        success: function (data2) {
+                            $("#subbok1").select2({
+                                placeholder: "Pilih sub kerangka pengetahuan",
+                                data: JSON.parse(data2).subBoK
+                            });
+                        }
+                    });
+                }
+            });
+        });
+
+        $("table.order-list").on("click", ".ibtnDel", function (event) {
+            $(this).closest("tr").remove();
+            counter -= 1
+        });
+
+        //=============================================================================================================
+        //Step-2
+        //Choose level and domain
+
+        //Init level
+        $("#level").select2({
+            placeholder: "Pilih level"
+        });
+        //Init domain
+        $("#domain").select2({
+            placeholder: "Pilih domain"
+        });
+        //Init okupasi
+        $("#okupasi").select2({
+            placeholder: "Pilih okupasi"
+        });
+        $("#level").change(function () {
+            var choosenType = $(this).val();
+            if (choosenType !== null && choosenType !== '') {
+                var domain = $("#domain").val();
+                if(domain !== null && domain !== 'undefined' && domain.length > 0){
+                    $.ajax({
+                        type: 'POST',
+                        url: '/fetchJob',
+                        data: {
+                            'level': choosenType,
+                            'domain': domain,
+                            'ajax': true
+                        },
+                        success: function (data2) {
+                            $('#okupasi').empty().trigger('change');
+                            $("#okupasi").select2({
+                                placeholder: "Pilih okupasi",
+                                data: JSON.parse(data2).Okupasi
+                            });
+                        }
+                    });
+                }
+            }
+        });
+        $("#domain").change(function () {
+            var choosenType = $(this).val();
+            if (choosenType !== null && choosenType !== 'undefined' && choosenType.length > 0) {
+                var level = $("#level").val();
+                if(level !== null && level !== 'undefined' && level !== ''){
+                    $.ajax({
+                        type: 'POST',
+                        url: '/fetchJob',
+                        data: {
+                            'level': level,
+                            'domain': choosenType,
+                            'ajax': true
+                        },
+                        success: function (data2) {
+                            $('#okupasi').empty().trigger('change');
+                            $("#okupasi").select2({
+                                placeholder: "Pilih okupasi",
+                                data: JSON.parse(data2).Okupasi
+                            });
+                        }
+                    });
+                }
+            }
+        });
+    });
+</script>
+
+</html>

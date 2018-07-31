@@ -1,24 +1,20 @@
 from flask import Flask, render_template, request, json
 import os
 import json
-import xmltodict
-from xml.etree import ElementTree as ET
-from list_functions import validate, validNode, showNode, getJob, getDesc, getCompetencies
+from list_functions import getJob, getDesc, getCompetencies, getBoK, getSubBoK
 import simplejson
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return render_template('index.html')
+	return render_template('index2.html')
 
 @app.route('/fetchCom', methods=['POST'])
 def fetchCom():
 
 	#Get data from post ajax
-	# level =  '0' + request.form['level']
 	jobs = request.form.getlist('jobs[]')
-	# domainList = ['DATA MANAGEMENT SYSTEM',	'PROGRAMMING AND SOFTWARE DEVELOPMENT',	'HARDWARE AND DIGITAL PERIPHERALS',	'NETWORK AND INFRASTRUCTURE', 'OPERATION AND SYSTEM TOOLS', 'INFORMATION SYSTEM AND TECHNOLOGY DEVELOPMENT', 'IT GOVERNANCE AND MANAGEMENT', 'IT PROJECT MANAGEMENT', 'IT ENTERPRISE ARCHITECTURE', 'IT SECURITY AND COMPLIANCE', 'IT SERVICES MANAGEMENT SYSTEM', 'IT AND COMPUTING FACILITIES MANAGEMENT', 'IT MULTEMEDIA', 'IT MOBILITY AND INTERNET OF THINGS', 'INTEGRATION APPLICATION SYSTEM', 'IT CONSULTANCY AND ADVISORY']
 	selDomList = [x for x in jobs]
 	comps = getDesc(json.dumps(jobs))
 
@@ -27,16 +23,27 @@ def fetchCom():
 @app.route('/fetchJob', methods=['POST'])
 def fetchJob():
 	#Get data from post ajax
-	level =  '0' + request.form['level']
+	level =  request.form['level']
 	domain = request.form.getlist('domain[]')
-	domainList = ['DATA MANAGEMENT SYSTEM',	'PROGRAMMING AND SOFTWARE DEVELOPMENT',	'HARDWARE AND DIGITAL PERIPHERALS',	'NETWORK AND INFRASTRUCTURE', 'OPERATION AND SYSTEM TOOLS', 'INFORMATION SYSTEM AND TECHNOLOGY DEVELOPMENT', 'IT GOVERNANCE AND MANAGEMENT', 'IT PROJECT MANAGEMENT', 'IT ENTERPRISE ARCHITECTURE', 'IT SECURITY AND COMPLIANCE', 'IT SERVICES MANAGEMENT SYSTEM', 'IT AND COMPUTING FACILITIES MANAGEMENT', 'IT MULTEMEDIA', 'IT MOBILITY AND INTERNET OF THINGS', 'INTEGRATION APPLICATION SYSTEM', 'IT CONSULTANCY AND ADVISORY']
-	selDomList = [str(str(domainList.index(x) + 1).zfill(2) + level) for x in domain]
-
-	print json.dumps(selDomList)[1:-1]
-
-	jobs = getJob(json.dumps(selDomList))
+	domainlevel = [ x+level for x in domain]
+	jobs = getJob(json.dumps(domainlevel))
 
 	return json.dumps({"Okupasi": jobs})
+
+@app.route('/fetchBoK', methods=['GET'])
+def fetchBoK():
+	#Get data from post ajax
+	BoK = getBoK()
+
+	return json.dumps({"BoK": BoK})
+
+@app.route('/fetchsubBoK', methods=['POST'])
+def fetchsubBoK():
+	#Get data from post ajax 2
+	name =  request.form['name']
+	subBoK = getSubBoK(name)
+
+	return json.dumps({"subBoK": subBoK})
 
 
 def application(env, start_response):

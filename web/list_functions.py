@@ -1,74 +1,41 @@
-from lxml import etree
-from xml.etree import ElementTree as ET
-import xmltodict
 import json
-import rdflib
 from SPARQLWrapper import SPARQLWrapper, JSON
 import pprint
 from collections import Counter
 import itertools
 
-def validate(xml_path, xsd_path):
+def getBoK():
+	# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
+	query = """PREFIX acm: <http://localhost:5000/acm/> SELECT ?name WHERE {{ ?acm acm:id ?id . ?acm acm:name ?name . }}"""
+	sparql.setQuery(query)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+	keys = results['head']['vars']
+	r = results['results']['bindings']
+	bok = [x['name']['value'] for x in r]
+	return bok
 
-    xmlschema_doc = etree.parse(xsd_path)
-    xmlschema = etree.XMLSchema(xmlschema_doc)
-
-    xml_doc = etree.parse(xml_path)
-    result = xmlschema.validate(xml_doc)
-
-    return result
-
-
-def validNode(domNode, tagName, value):
-	nodeVal = domNode.find(tagName).text
-	if isinstance(value, list):
-		if nodeVal in value or nodeVal[:4] in value:
-			return True
-	else:
-		if nodeVal == value:
-			return True
-	return False
-
-
-def showNode(x, root, param):
-	if root == 'KKNI':
-		jenjang = x.findall('Jenjang')
-		for jen in jenjang:
-			if jen.find('level').text == param:
-				return xmltodict.parse(ET.tostring(jen, 'us-ascii', 'xml'))
-	elif root == 'SKKNI':
-		listUK = x.find('FungsiKunci').find('FungsiUtama').findall('UnitKompetensi')
-		listKomp = []
-		for uk in listUK:
-			if uk.find('kodeUnit').text in param:
-				listKomp.append(xmltodict.parse(ET.tostring(uk, 'us-ascii', 'xml')))
-		return listKomp
-	elif root == 'PetaOkupasi':
-		listK = x.findall('Kompetensi')
-		listKomp = []
-		for k in listK:
-			listKomp.append(xmltodict.parse(ET.tostring(k, 'us-ascii', 'xml')))
-		return listKomp
+def getSubBoK(name):
+	# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
+	query = "PREFIX acm: <http://localhost:5000/acm/> SELECT ?code WHERE {{ ?acm acm:name '"+name+"' . ?acm acm:hasChild ?hasChild . ?hasChild acm:code ?code . }}"
+	#PREFIX acm: <http://localhost:5000/acm/> SELECT ?hasComp WHERE {{ ?acm acm:name 'Software Engineering' . ?acm acm:hasChild ?hasChild . ?hasChild acm:code 'SE/Software Project Management' . ?hasChild acm:hasComp ?hasComp }}
+	sparql.setQuery(query)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+	keys = results['head']['vars']
+	r = results['results']['bindings']
+	subbok = [x['code']['value'] for x in r]
+	return subbok
 
 def getJob(codes):
 	# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
 	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
-	query = """
-		PREFIX ok: <http://localhost:5000/okupasi/>
-		SELECT ?name
-		WHERE
-		{{
-			?okupasi ok:id ?id ;
-				ok:name ?name .
-
-			FILTER(SUBSTR(?id, 1, 4) IN({c})) .
-		}}""".format(c=codes[1:-1])
-
-	pprint.pprint(query)
+	query = """PREFIX ok: <http://localhost:5000/okupasi/> SELECT ?name WHERE {{ ?okupasi ok:id ?id ; ok:name ?name . FILTER(SUBSTR(?id, 1, 4) IN({c})) . }}""".format(c=codes[1:-1])
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
-	# pprint.pprint(results)
 	keys = results['head']['vars']
 	r = results['results']['bindings']
 	jobs = []
