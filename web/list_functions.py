@@ -29,6 +29,18 @@ def getSubBoK(name):
 	subbok = [x['code']['value'] for x in r]
 	return subbok
 
+def getComp1(bok, subbok):
+	# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
+	query = "PREFIX acm: <http://localhost:5000/acm/> SELECT ?hasComp WHERE {{ ?acm acm:name '" + bok + "' . ?acm acm:hasChild ?hasChild . ?hasChild acm:code '" + subbok + "' . ?hasChild acm:hasComp ?hasComp }}"
+	sparql.setQuery(query)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+	keys = results['head']['vars']
+	r = results['results']['bindings']
+	comp = [x['hasComp']['value'] for x in r]
+	return comp
+
 def getJob(codes):
 	# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
 	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
@@ -58,10 +70,8 @@ def getCompetencies(codes, index=1, comps=[]):
 	for x in results['results']['bindings']:
 		if "reqs" in x:
 			reqs.append(x['reqs']['value'])
-	print query
 	intersection = Counter(codes) & Counter(reqs)
 	reqs = list(Counter(reqs) - intersection)
-	print reqs
 	if len(reqs) == 0:
 		return comps
 	return getCompetencies(reqs, index+1, comps)
@@ -88,18 +98,7 @@ def getDesc(codes):
 	if len(reqs) > 0:
 		comps.extend(getCompetencies(reqs))
 	comps = list(set(itertools.chain.from_iterable(comps)))
-	# query = """
-	# PREFIX ok: <http://localhost:5000/okupasi/>
-	# PREFIX kom: <http://localhost:5000/kompetensi/>
-	# select ?key ?content
-	# where {{
-	#   ?s ?key ?content ;
-	#     (kom:hasKnowledge|kom:hasSkill|kom:hasAspect) ?content .
-	#     filter(?s in({c}))
-	# }}""".format(c=json.dumps(comps).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1]).replace('"', '')
-
 	query = """PREFIX ok: <http://localhost:5000/okupasi/> PREFIX kom: <http://localhost:5000/kompetensi/> select ?key ?content where {{ ?s ?key ?content ; (kom:hasAspect|kom:hasContextEval|kom:hasContextVar|kom:hasKnowledge|kom:hasNS|kom:hasPRP|kom:hasSkill|kom:hasAttitude) ?content . filter(?s in({c})) }}""".format(c=json.dumps(comps).replace("http://localhost:5000/kompetensi/", "kom:")[1:-1]).replace('"', '').replace("file://C:/fakepath/", "kom:")
-	pprint.pprint(query)
 	sparql.setQuery(query)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
@@ -117,6 +116,5 @@ def getDesc(codes):
 		new_key = key.rsplit('/', 1)[-1]
 		com[new_key] = list(set(com.pop(key)))
 	com["Kompetensi"] = comps
-	# pprint.pprint(com)
 
 	return com
