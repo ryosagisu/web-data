@@ -1,6 +1,5 @@
 import json
 from SPARQLWrapper import SPARQLWrapper, JSON
-import pprint
 from collections import Counter
 import itertools
 
