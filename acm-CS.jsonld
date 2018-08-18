@@ -72,7 +72,17 @@
                       "Solve elementary recurrence relations, e.g., using some form of a Master Theorem"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.CS03.011.01",
+                      "J.631120.014.01",
+                      "ICTSUS602",
+                      "J.620900.023.02",
+                      "J.620900.021.02",
+                      "J.620900.010.02",
+                      "ICTTEN201",
+                      "J.620900.017.02",
+                      "ICTSUS6234A",
+                      "JANCO409",
+                      "TIK.2017.022"
                   ]
               },
               {
@@ -107,7 +117,27 @@
                       "Describe how a branch-and-bound approach may be used to improve the performance of a heuristic method"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.JK05.001.01",
+                      "ICTICT510",
+                      "ICTSUS803",
+                      "ICTSUS7235A",
+                      "JANCO385",
+                      "JANCO428",
+                      "ICTSUS804",
+                      "BSBINN801",
+                      "ICTNWK302",
+                      "ICAICT510A",
+                      "J.62SAD00.003.1",
+                      "ICAICT603A",
+                      "JANCO117",
+                      "J.63OPR00.003.2",
+                      "J.63OPR00.008.2",
+                      "J.63OPR00.007.2",
+                      "J.620100.020.02",
+                      "JANCO288",
+                      "JANCO166",
+                      "ICASUS703A",
+                      "TIK.JK05.003.01"
                   ]
               },
               {
@@ -148,7 +178,27 @@
                       "Trace and/or implement a string-matching algorithm"
                   ],
                   "hasComp": [
-                      ""
+                      "ICTWEB511",
+                      "KOM.PR02.040.0",
+                      "JANCO416",
+                      "JANCO539",
+                      "KOM.PR01.009.0",
+                      "ICASAS403A",
+                      "KOM.PR01.008.0",
+                      "ICASAS208A",
+                      "J.631120.008.01",
+                      "J.62SQA00.004.1",
+                      "JANCO101",
+                      "ICASAS601A",
+                      "ICAICT604A",
+                      "J.620100.022.02",
+                      "J.620100.005.02",
+                      "J.620100.046.01",
+                      "J.62SQA00.012.1",
+                      "JANCO223",
+                      "TIK.2017.019",
+                      "TIK.DG01.009.01",
+                      "M.74100.004.02"
                   ]
               },
               {
@@ -315,7 +365,24 @@
                       "Evaluate the functional and timing diagram behavior of a simple processor implemented at the logic circuit level"
                   ],
                   "hasComp": [
-                      ""
+                      "ICTWEB501",
+                      "ICAICT207A",
+                      "J.6202000.014.01",
+                      "JANCO424",
+                      "JANCO121",
+                      "J.620900.029.02",
+                      "J.620900.012.02",
+                      "J.591200.006.01",
+                      "ICANWK525B",
+                      "TIK.CS02.036.01",
+                      "J.620200.013.01",
+                      "JANCO093",
+                      "ICANWK527B",
+                      "TIK.2017.004",
+                      "JANCO008",
+                      "JANCO055",
+                      "ICANWK534A",
+                      "JANCO596"
                   ]
               },
               {
@@ -379,7 +446,15 @@
                       "Show how fundamental high-level programming constructs are implemented at the machine-language level"
                   ],
                   "hasComp": [
-                      ""
+                      "ICTICT608",
+                      "ICAICT415A",
+                      "ICAICT608A",
+                      "J.620100.039.02",
+                      "JANCO071",
+                      "TIK.CS01.010.01",
+                      "TIK.SM01.009.01",
+                      "TIK.JK01.007.01",
+                      "TIK.CS01.004.01"
                   ]
               },
               {
@@ -409,7 +484,14 @@
                       "Compute Average Memory Access Time under a variety of cache and memory configurations and mixes of instruction and data references"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO561",
+                      "J.620900.011.02",
+                      "J.63SAM00.016.1",
+                      "ICTWOR201",
+                      "TIK.CS02.046.01",
+                      "J.631100.009.01",
+                      "TIK.MM03.004.0",
+                      "TIK.CS02.011.01"
                   ]
               },
               {
@@ -437,8 +519,8 @@
                       "Describe the advantages and limitations of RAID architectures"
                   ],
                   "hasComp": [
+                      "TIK.CS03.010.01",
                       "ICTICT106"
-
                   ]
               },
               {
@@ -464,8 +546,7 @@
                       "Determine, for a given processor and memory system implementation, the average cycles per instruction"
                   ],
                   "hasComp": [
-                      "TIK.PR06.003.01",
-                      "TIK.CS02.020.01"
+                      "TIK.PR06.003.01"
                   ]
               },
               {
@@ -590,7 +671,12 @@
                       "Extend or adapt an existing model to a new situation"
                   ],
                   "hasComp": [
-                      ""
+                      "J.591100.014.01",
+                      "TIK.TS01.003.01",
+                      "ICAICT306A",
+                      "J.620100.024.02",
+                      "JANCO657",
+                      "KOM.PR02.043.0"
                   ]
               },
               {
@@ -639,7 +725,16 @@
                       "Design, code, test and debug programs for a parallel computation"
                   ],
                   "hasComp": [
-                      "JANCO644"
+                      "J.6202000.001.01",
+                      "J.6202000.006.01",
+                      "J.6202000.018.01",
+                      "TIK.JK04.005.01",
+                      "JANCO063",
+                      "JANCO132",
+                      "J.6202000.002.01",
+                      "JANCO049",
+                      "JANCO593",
+                      "ICANWK503A"
                   ]
               },
               {
@@ -699,8 +794,26 @@
                       "Design a digital library for some computational science users/societies, with appropriate content and services"
                   ],
                   "hasComp": [
+                      "ICTICT808",
+                      "JANCO433",
+                      "JANCO444",
+                      "JANCO381",
+                      "ICADBS602A",
+                      "JANCO545",
+                      "TIK.JK04.016.01",
+                      "ICADBS501A",
+                      "ICAICT708A",
+                      "ICAICT605A",
+                      "ICASAD602A",
+                      "JANCO088",
+                      "ICTDBS602",
+                      "ICTDBS501",
                       "JANCO265",
-                      "J.6202000.017.01"
+                      "JANCO345",
+                      "J.6202000.017.01",
+                      "JANCO341",
+                      "JANCO056",
+                      "JANCO313"
                   ]
               },
               {
@@ -760,7 +873,9 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      "ICTDBS601"
+                      "TIK.MM02.010.0",
+                      "ICTSS00082",
+                      "ICTSS00083"
                   ]
               },
               {
@@ -823,7 +938,13 @@
                       "State the well-ordering principle and its relationship to mathematical induction"
                   ],
                   "hasComp": [
-                      ""
+                      "M.741000.026.0",
+                      "ICTICT511",
+                      "ICTICT807",
+                      "ICAICT705A",
+                      "ICAICT704A",
+                      "ICAICT511A",
+                      "ICAICT707A"
                   ]
               },
               {
@@ -850,7 +971,11 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
+                      "M.741000.007.0",
+                      "M.741000.008.0",
+                      "J.62SQA00.001.1",
+                      "TIK.CS02.020.01",
+                      "M.701001.042.0"
                   ]
               },
               {
@@ -912,7 +1037,7 @@
                       "Explain how events that are independent can be conditionally dependent (and vice-versa). Identify real- world examples of such cases"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO604"
                   ]
               }
           ]
@@ -929,8 +1054,8 @@
                   "isElectives": "N",
                   "hasTopicsCT1": [
                       "Media applications including user interfaces, audio and video editing, game engines, cad, visualization, virtual reality",
-                      "Digitization of analog data, resolution, and the limits of human perception, e.g., pixels for visual display, dots for laser printers, and samples for audio (HCI/Foundations)",
-                      "Use of standard APIs for the construction of UIs and display of standard media formats (see HCI/GUI construction)",
+                      "Digitization of analog data, resolution, and the limits of human perception, e.g., pixels for visual display, dots for laser printers, and samples for audio",
+                      "Use of standard APIs for the construction of UIs and display of standard media formats",
                       "Standard media formats, including lossless and lossy formats"
                   ],
                   "hasTopicsCT2": [
@@ -950,10 +1075,12 @@
                       "Describe the tradeoffs between storing information vs. storing enough information to reproduce the information, as in the difference between vector and raster rendering"
                   ],
                   "hasComp": [
+                      "ICADMT403A",
                       "TIK.MM02.028.0",
-                      "TIK.OP02.015.01",
-                      "TIK.MM02.011.0"
-
+                      "TIK.MM02.053.0",
+                      "TIK.OP02.011.01",
+                      "TIK.MM02.012.0",
+                      "CUVPHI519A"
                   ]
               },
               {
@@ -998,6 +1125,9 @@
                       "Compute time requirements based on refresh rates, rasterization techniques."
                   ],
                   "hasComp": [
+                      "JANCO443",
+                      "JANCO377",
+                      "J.62090.032",
                       "ICAGAM416A"
                   ]
               },
@@ -1036,7 +1166,7 @@
                       "Contrast modeling approaches with respect to space and time complexity and quality of image"
                   ],
                   "hasComp": [
-                      ""
+                      "J.620900.022.02"
                   ]
               },
               {
@@ -1107,14 +1237,12 @@
                       "Use common animation software to construct simple organic forms using metaball and skeleton"
                   ],
                   "hasComp": [
-                      "TIK.MM02.012.0",
-                      "TIK.MM02.045.0",
-                      "TIK.MM02.047.0",
+                      "BSBCRT401",
                       "TIK.MM02.050.0",
                       "TIK.MM02.051.0",
                       "TIK.MM02.052.0",
                       "TIK.MM02.055.0",
-                      "ICAGAM519A"
+                      "JANCO470"
                   ]
               },
               {
@@ -1147,7 +1275,8 @@
                       "Recognize a variety of applications of visualization including representations of scientific, medical, and mathematical data; flow visualization; and spatial analysis"
                   ],
                   "hasComp": [
-                      ""
+                      "CUFANM402A",
+                      "J.590000.017.02"
                   ]
               }
           ]
@@ -1184,7 +1313,7 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      "TIK.CS02.001.01"
+                      "CUADIG201"
                   ]
               },
               {
@@ -1211,7 +1340,16 @@
                       "Discuss at least one national or international user interface design standard"
                   ],
                   "hasComp": [
-                      ""
+                      "ICTICT301",
+                      "JANCO089",
+                      "ICASAS421A",
+                      "J.63SAM00.001.2",
+                      "J.620900.003.02",
+                      "BSBDES403",
+                      "JANCO321",
+                      "JANCO344",
+                      "JANCO119",
+                      "JANCO328"
                   ]
               },
               {
@@ -1277,7 +1415,7 @@
                       "Compare the constraints and benefits of different evaluative methods"
                   ],
                   "hasComp": [
-                      "TIK.JK03.005.01"
+                      ""
                   ]
               },
               {
@@ -1300,7 +1438,7 @@
                       "Discuss the advantages (and disadvantages) of non-mouse interfaces"
                   ],
                   "hasComp": [
-                      ""
+                      "J.620900.008.02"
                   ]
               },
               {
@@ -1328,7 +1466,7 @@
                       "Discuss the HCI issues in software that embodies human intention"
                   ],
                   "hasComp": [
-                      ""
+                      "KOM.PR02.039.0"
                   ]
               },
               {
@@ -1356,7 +1494,17 @@
                       "Conduct and report on a study that utilizes both qualitative and quantitative evaluation"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO456",
+                      "JANCO501",
+                      "JANCO112",
+                      "ICASUS702A",
+                      "TIK.SM01.008.01",
+                      "JANCO128",
+                      "TIK.2017.052",
+                      "TIK.2017.011",
+                      "TIK.2017.006",
+                      "JANCO111",
+                      "TIK.FO01.009.01"
                   ]
               },
               {
@@ -1387,7 +1535,7 @@
                       "Analyze a security policy and/or procedures to show where they consider, or fail to consider, human factors"
                   ],
                   "hasComp": [
-                      "J.62090.010"
+                      ""
                   ]
               },
               {
@@ -1446,7 +1594,7 @@
                       "Describe several possible uses for games engines, including their potential and their limitations"
                   ],
                   "hasComp": [
-                      ""
+                      "J.620900.013.02"
                   ]
               }
           ]
@@ -1478,11 +1626,9 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      "J.62090.042",
-                      "J.62090.045",
-                      "J.62090.039",
-                      "TIK.SM02.007.01",
-                      "ICANWK503A"
+                      "J.620900.019.02",
+                      "J.620900.018.02",
+                      "TIK.CS02.040.01"
                   ]
               },
               {
@@ -1525,7 +1671,50 @@
                       "Identify the different roles of prevention mechanisms and detection/deterrence mechanisms"
                   ],
                   "hasComp": [
-                      ""
+                      "J.612000.010",
+                      "TIK.JK04.004.01",
+                      "ICTWEB423",
+                      "ICTNWK406",
+                      "ICAICT103A",
+                      "J.6202000.029.01",
+                      "ICTICT103",
+                      "JANCO402",
+                      "JANCO477",
+                      "ICAWEB423A",
+                      "ICASAS418A",
+                      "ICANWK406A",
+                      "ICASAS307A",
+                      "ICAICT402A",
+                      "J.62090.004",
+                      "JANCO038",
+                      "J.631100.010.01",
+                      "J.63SAM00.021.2",
+                      "J.63SAM00.018.2",
+                      "ICTNWK511",
+                      "ICANWK614A",
+                      "ICANWK606A",
+                      "ICANWK602A",
+                      "ICTTEN205",
+                      "J.611000.015.01",
+                      "J.62090.038",
+                      "J.62090.037",
+                      "J.62090.029",
+                      "J.62090.026",
+                      "J.62SQA00.010.1",
+                      "J.612000.008",
+                      "JANCO164",
+                      "ICANWK511A",
+                      "ICANWK513A",
+                      "TIK.JK05.012.01",
+                      "J.62090.044",
+                      "TIK.SM01.002.01",
+                      "J.62090.023",
+                      "J.62090.003",
+                      "TIK.JK05.011.01",
+                      "TIK.PR04.001.01",
+                      "TIK.OP01.005.01",
+                      "M.74100.002.02",
+                      "J.590000.004.02"
                   ]
               },
               {
@@ -1556,7 +1745,9 @@
                       "Discuss the need to update software to fix security vulnerabilities and the lifecycle management of the fix"
                   ],
                   "hasComp": [
-                      "ICTSUS8238A"
+                      "JANCO432",
+                      "ICTSAD607",
+                      "ICASAD607A"
                   ]
               },
               {
@@ -1579,7 +1770,7 @@
                       "Discuss how Denial of Service attacks can be identified and mitigated"
                   ],
                   "hasComp": [
-                      ""
+                      "J.62090.033"
                   ]
               },
               {
@@ -1602,7 +1793,6 @@
                       "Identify the appropriate defense mechanism(s) and its limitations given a network threat"
                   ],
                   "hasComp": [
-                      "TIK.JK05.012.01",
                       "TIK.JK02.004.01",
                       "ICTICT103",
                       "TIK.JK04.011.01"
@@ -1687,7 +1877,7 @@
                       "Discuss the concept and importance of trusted path"
                   ],
                   "hasComp": [
-                      ""
+                      "ICASAS203A"
                   ]
               },
               {
@@ -1718,7 +1908,19 @@
                       "Identify the risks and benefits of outsourcing to the cloud"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO486",
+                      "JANCO356",
+                      "JANCO003",
+                      "JANCO067",
+                      "ICANWK616A",
+                      "BSBSUS501A",
+                      "JANCO266",
+                      "JANCO198",
+                      "JANCO275",
+                      "JANCO214",
+                      "TIK.2017.013",
+                      "JANCO329",
+                      "JANCO629"
                   ]
               },
               {
@@ -1765,7 +1967,18 @@
                       "Identify anti-forensic methods"
                   ],
                   "hasComp": [
-                      "J.612000.014"
+                      "J.612000.014",
+                      "JANCO365",
+                      "J.620900.009.02",
+                      "J.612000.037.01",
+                      "ICTTEN810",
+                      "J.611000.002.01",
+                      "J.611000.018.01",
+                      "J.611000.017.01",
+                      "J.612000.014",
+                      "JANCO069",
+                      "TIK.CS02.016.01",
+                      "TIK.CS02.041.01"
                   ]
               },
               {
@@ -1793,7 +2006,25 @@
                       "Conduct a security verification and assessment (static and dynamic) of a software application"
                   ],
                   "hasComp": [
-                      "J.62090.031"
+                      "J.612000.012",
+                      "ICTPMG502",
+                      "ICTICT812",
+                      "JANCO390",
+                      "JANCO441",
+                      "JANCO386",
+                      "BSBLDR803",
+                      "ICTNPL405",
+                      "BSBWOR301B",
+                      "ICAICT712A",
+                      "ICAPRG403A",
+                      "ICAICT606A",
+                      "JANCO311",
+                      "JANCO334",
+                      "TIK.2017.037",
+                      "BSBREL701A",
+                      "ICANWK510A",
+                      "BSBWOR404B",
+                      "M.701001.043.0"
                   ]
               }
           ]
@@ -1838,7 +2069,136 @@
                       "Identify vulnerabilities and failure scenarios in common forms of information systems"
                   ],
                   "hasComp": [
-                      ""
+                      "J.6202000.017.01",
+                      "J.62090.002",
+                      "J.62090.001",
+                      "JANCO232",
+                      "ICAICT711A",
+                      "ICTICT811",
+                      "JANCO436",
+                      "JANCO448",
+                      "JANCO423",
+                      "JANCO462",
+                      "JANCO397",
+                      "JANCO415",
+                      "JANCO413",
+                      "JANCO552",
+                      "JANCO476",
+                      "JANCO396",
+                      "J.63OPR00.017.2",
+                      "LSPK.OPDS01.01",
+                      "TIK.PR01.010.01",
+                      "ICAWEB419A",
+                      "JANCO113",
+                      "JANCO124",
+                      "JANCO585",
+                      "ICAPRG511A",
+                      "J.631100.015.01",
+                      "J.631100.012.01",
+                      "J.631100.003.01",
+                      "ICASAS207A",
+                      "J.62090.043",
+                      "J.62090.036",
+                      "J.62090.025",
+                      "J.62090.006",
+                      "J.62090.005",
+                      "J.611000.001.01",
+                      "TIK.SM03.008.01",
+                      "TIK.SM01.010.01",
+                      "TIK.CS02.029.01",
+                      "J.62090.018",
+                      "J.63OPR00.014.1",
+                      "J.631100.014.01",
+                      "J.631100.007.01",
+                      "J.631100.004.01",
+                      "J.631100.006.01",
+                      "J.63OPR00.017.1",
+                      "J.63OPR00.016.1",
+                      "J.63OPR00.015.1",
+                      "J.631100.001.01",
+                      "M.702000.006.0",
+                      "M.702000.003.0",
+                      "M.702000.002.0",
+                      "J.631100.005.01",
+                      "J.620200.009.01",
+                      "J.62SAD00.002.1",
+                      "ICTDBS601",
+                      "J.631120.012.01",
+                      "TIK.SM02.009.01",
+                      "TIK.SM03.007.01",
+                      "M.702000.014.0",
+                      "JANCO174",
+                      "J.62090.031",
+                      "J.62090.039",
+                      "J.62090.040",
+                      "J.62090.045",
+                      "TIK.SM02.007.01",
+                      "JANCO263",
+                      "JANCO250",
+                      "JANCO251",
+                      "JANCO255",
+                      "JANCO256",
+                      "JANCO259",
+                      "JANCO196",
+                      "JANCO208",
+                      "JANCO289",
+                      "JANCO308",
+                      "JANCO316",
+                      "JANCO323",
+                      "JANCO354",
+                      "JANCO336",
+                      "JANCO338",
+                      "JANCO404",
+                      "TIK.2017.032",
+                      "TIK.2017.050",
+                      "JANCO644",
+                      "JANCO647",
+                      "JANCO650",
+                      "TIK.SM02.010.01",
+                      "JANCO419",
+                      "JANCO427",
+                      "J.62090.007",
+                      "J.62090.008",
+                      "J.62090.009",
+                      "J.62090.013",
+                      "J.62090.015",
+                      "J.62090.016",
+                      "J.62090.017",
+                      "J.62090.019",
+                      "J.62090.021",
+                      "J.62090.022",
+                      "J.62090.028",
+                      "M.702000.001.0",
+                      "M.702000.010.0",
+                      "M.702000.011.0",
+                      "M.702000.015.0",
+                      "M.702000.012.0",
+                      "M.702000.013.0",
+                      "J.62090.010",
+                      "J.62090.027",
+                      "M.702000.008.0",
+                      "M.702000.009.0",
+                      "JANCO054",
+                      "M.702000.004.0",
+                      "M.702000.005.0",
+                      "M.702000.007.0",
+                      "JANCO013",
+                      "JANCO151",
+                      "ICADBS503B",
+                      "JANCO029",
+                      "JANCO575",
+                      "JANCO495",
+                      "JANCO508",
+                      "JANCO511",
+                      "JANCO588",
+                      "JANCO624",
+                      "JANCO557",
+                      "JANCO544",
+                      "JANCO549",
+                      "JANCO570",
+                      "TIK.SM01.007.01",
+                      "JANCO553",
+                      "M.701001.006.0"
                   ]
               },
               {
@@ -1867,9 +2227,25 @@
                       "Describe facilities that datatbases provide supporting structures and/or stream (sequence) data, e.g., text"
                   ],
                   "hasComp": [
+                      "TIK.JK04.015.01",
+                      "TIK.PR04.006.01",
+                      "J.6202000.015.01",
+                      "TIK.PR03.002.01",
+                      "ICTDBS409",
+                      "HLTAID002",
+                      "ICAICT210A",
+                      "ICADBS407A",
+                      "J.620100.021.02",
+                      "JANCO075",
                       "TIK.PR03.002.01",
                       "TIK.OP03.002.0",
-                      "TIK.OP03.002.01"
+                      "TIK.OP03.002.01",
+                      "JANCO319",
+                      "JANCO320",
+                      "JANCO439",
+                      "JANCO346",  
+                      "JANCO658", 
+                      "ICADBS404A"
                   ]
               },
               {
@@ -1898,7 +2274,11 @@
                       "Give a semi-structured equivalent (e.g., in DTD or XML Schema) for a given relational schema"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.MM02.051.0",
+                      "LSPK.OPDS02.01",
+                      "ICASAD502A",
+                      "JANCO489",
+                      "JANCO522"
                   ]
               },
               {
@@ -1968,7 +2348,33 @@
                       "Describe what is a multi-valued dependency and what type of constraints it specifies"
                   ],
                   "hasComp": [
-                      "JANCO660"
+                      "KOM.PR02.048.0",
+                      "ICTPMG503",
+                      "ICTICT413",
+                      "FNSORG506",
+                      "ICAICT413A",
+                      "JANCO261",
+                      "JANCO201",
+                      "JANCO210",
+                      "JANCO296",
+                      "JANCO216",
+                      "JANCO221",
+                      "JANCO372",
+                      "JANCO235",
+                      "JANCO236",
+                      "TIK.2017.039",
+                      "TIK.2017.028",
+                      "TIK.2017.015",
+                      "TIK.2017.051",
+                      "JANCO642",
+                      "JANCO654",
+                      "JANCO016",
+                      "JANCO144",
+                      "JANCO179",
+                      "JANCO617",
+                      "JANCO616",
+                      "M.692000.018.0",
+                      "TIK.MM02.047.0"
                   ]
               },
               {
@@ -2002,8 +2408,9 @@
                       "Write a stored procedure that deals with parameters and has some control flow, to provide a given functionality"
                   ],
                   "hasComp": [
-                      "J.6202000.021.01",
-                      "ICADBS503B"
+                      "TIK.MM02.008.0",
+                      "ICAPRG402A",
+                      "J.6202000.021.01"
                   ]
               },
               {
@@ -2031,7 +2438,8 @@
                       "Identify appropriate transaction boundaries in application programs"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO114",
+                      "JANCO523"
                   ]
               },
               {
@@ -2089,7 +2497,15 @@
                       "Explain how physical database design affects database transaction efficiency"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.MM02.052.0",
+                      "JANCO403",
+                      "JANCO426",
+                      "JANCO467",
+                      "JANCO373",
+                      "CUSSOU302A",
+                      "J.62090.024",
+                      "JANCO398",
+                      "TIK.2017.003"
                   ]
               },
               {
@@ -2121,7 +2537,9 @@
                       "Describe why the various close-the-loop processes improve the effectiveness of data mining"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO265",
+                      "JANCO370",
+                      "TIK.OP02.016.01"
                   ]
               },
               {
@@ -2164,7 +2582,8 @@
                       "Describe some of the technical solutions to the problems related to archiving and preserving information in a digital library"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO359",
+                      "ICAICT423A"
                   ]
               },
               {
@@ -2194,12 +2613,46 @@
                       "Describe the characteristics of a computer system (including identification of support tools and appropriate standards) that has to host the implementation of one of a range of possible multimedia applications"
                   ],
                   "hasComp": [
-                      "TIK.MM02.031.0",
-                      "TIK.MM02.053.0",
+                      "TIK.MM02.058.0",
+                      "TIK.MM01.004.0",
+                      "TIK.MM02.027.0",
+                      "TIK.MM02.071.0",
+                      "TIK.MM02.073.0",
+                      "J.LSPK.MM003.0",
+                      "TIK.AVT3.01.2016",
+                      "TIK.MM02.069.0",
+                      "TIK.MM02.070.0",
+                      "TIK.MM02.072.0",
+                      "TIK.PR04.005.01",
+                      "TIK.PR05.002.01",
+                      "J.612000.004",
+                      "JANCO551",
+                      "JANCO143",
+                      "TIK.SM03.004.01",
+                      "ICASAS420A",
+                      "TIK.MM01.005.0",
+                      "J.620100.030.02",
+                      "J.62090.011",
+                      "J.631100.002.01",
                       "TIK.MM02.063.0",
                       "TIK.MM02.066.0",
+                      "TIK.MM02.053.0",
                       "J.LSPK.MM003.0",
-                      "TIK.AVT3.01.2016"                      
+                      "TIK.AVT3.01.2016",
+                      "JANCO217",
+                      "JANCO399",  
+                      "J.62090.046", 
+                      "ICASAS507A", 
+                      "CUFPOS402A",  
+                      "JANCO576",  
+                      "JANCO615",
+                      "JANCO589", 
+                      "JANCO533",
+                      "JANCO564",
+                      "J.590000.002.02",    
+                      "J.590000.003.02",   
+                      "J.590000.001.02",     
+                      "TIK.MM02.076.0"             
                   ]
               }
           ]
@@ -2258,7 +2711,30 @@
                       "Compare and contrast basic search issues with game playing issues"
                   ],
                   "hasComp": [
-                      ""
+                      "ICTWEB413",
+                      "ICTSAS410",
+                      "JANCO362",
+                      "ICASAS410A",
+                      "TIK.JK05.006.01",
+                      "ICANWK532A",
+                      "TIK.SM02.011.01",
+                      "TIK.SM03.005.01",
+                      "TIK.JK05.005.01",
+                      "JANCO252",
+                      "JANCO283",
+                      "JANCO290",
+                      "JANCO292",
+                      "JANCO293",
+                      "JANCO215",
+                      "JANCO408",
+                      "ICANWK302A",
+                      "JANCO513",
+                      "JANCO530",
+                      "JANCO303",
+                      "JANCO536",
+                      "JANCO603",
+                      "JANCO554",
+                      "TIK.OP02.017.01"
                   ]
               },
               {
@@ -2374,7 +2850,39 @@
                       "Explain the distinction between monotonic and non-monotonic inference"
                   ],
                   "hasComp": [
-                      ""
+                      "M.702090.020.0",
+                      "J.6202000.009.01",
+                      "M.711000.009.0",
+                      "M.741000.016.0",
+                      "ICTSUS801",
+                      "ICASUS701A",
+                      "BSBFIM501",
+                      "JANCO455",
+                      "ICTPMG609",
+                      "ICTPMG603",
+                      "ICTICT601",
+                      "ICAICT416A",
+                      "JANCO487",
+                      "ICAICT703A",
+                      "ICASAS202A",
+                      "ICANWK604A",
+                      "ICANWK613A",
+                      "ICTNPL401",
+                      "ICAICT512A",
+                      "ICAPMG603A",
+                      "ICAPMG609A",
+                      "ICAICT601A",
+                      "J.612000.019.01",
+                      "JANCO309",
+                      "JANCO169",
+                      "ICASAS505A",
+                      "ICTSAS417",
+                      "TIK.2017.036",
+                      "TIK.2017.044",
+                      "JANCO108",
+                      "JANCO449",
+                      "JANCO246",
+                      "TAN.SY02.040.01"
                   ]
               },
               {
@@ -2406,7 +2914,7 @@
                       "Explain how utility functions and probabilistic reasoning can be combined to make rational decisions"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO268"
                   ]
               },
               {
@@ -2506,7 +3014,13 @@
                       "Explain the problem of overfitting, along with techniques for detecting and managing the problem"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO420",
+                      "ICAICT404A",
+                      "JANCO173",
+                      "JANCO212",
+                      "JANCO249",
+                      "JANCO613",
+                      "JANCO612"
                   ]
               },
               {
@@ -2541,7 +3055,15 @@
                       "Describe at least one approach for coordinating the actions and sensing of several robots to accomplish a single task"
                   ],
                   "hasComp": [
-                      ""
+                      "J.612000.028",
+                      "JANCO379",
+                      "JANCO471",
+                      "ICTNWK609",
+                      "TIK.2017.047",
+                      "JANCO154",
+                      "ICAICT212A",
+                      "KOM.PR01.007.0",
+                      "TIK.MM02.065.0"
                   ]
               },
               {
@@ -2575,7 +3097,11 @@
                       "Describe at least three classification approaches, their prerequisites for applicability, their strengths, and their shortcomings"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.MM02.032.0",
+                      "ICAICT514A",
+                      "ICAICT609A",
+                      "J.620100.041.01",
+                      "JANCO528"
                   ]
               }
           ]
@@ -2606,7 +3132,7 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
+                      "ICTICT108"
                   ]
               },
               {
@@ -2725,7 +3251,7 @@
                       "Compare and contrast current approaches to congestion"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.2017.045"
                   ]
               },
               {
@@ -2745,7 +3271,7 @@
                       "Describe how wireless networks support mobile users"
                   ],
                   "hasComp": [
-                      ""
+                      "J.612000.030"
                   ]
               },
               {
@@ -2771,7 +3297,48 @@
                       "Evaluate a given interpretation of a social network question with associated data"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.JK04.002.01",
+                      "J.612000.027.01",
+                      "JANCO382",
+                      "ICTTEN5217A",
+                      "ICANWK403A",
+                      "J.612000.041.01",
+                      "ICTTEN302",
+                      "ICTTEN204",
+                      "ICTNWK529",
+                      "TIK.JK02.015.01",
+                      "TIK.JK02.014.01",
+                      "TIK.JK02.007.01",
+                      "ICTTEN807",
+                      "TIK.JK02.009.01",
+                      "TIK.JK02.008.01",
+                      "J.611000.008.02",
+                      "ICASAS209A",
+                      "ICANWK529A",
+                      "ICANWK611A",
+                      "ICANWK612A",
+                      "J.611000.016.02",
+                      "J.631120.009.01",
+                      "ICTNWK403",
+                      "ICTNPL407",
+                      "ICTNPL406",
+                      "ICTNPL403",
+                      "ICANWK608A",
+                      "J.611000.009.02",
+                      "ICTCBL320",
+                      "ICTCBL318",
+                      "ICTCBL317",
+                      "ICTCBL316",
+                      "ICTNPL410",
+                      "J.611000.010.02",
+                      "J.611000.012.02",
+                      "J.611000.021.02",
+                      "TIK.CS02.034.01",
+                      "J.612000.025",
+                      "J.611000.011.02",
+                      "ICTPMG8149A",
+                      "J.612000.029.01",
+                      "ICTTEN4213A"
                   ]
               }
           ]
@@ -2803,9 +3370,48 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
+                      "R.900030.005.01",
+                      "TIK.MM02.040.0",
+                      "TIK.AVT1.01.2016",
+                      "TIK.AVT2.01.2016",
+                      "TIK.MM02.039.0",
+                      "TIK.OP02.006.01",
+                      "TIK.OP02.009.01",
+                      "BSBSMB405",
+                      "ICTICT204",
+                      "ICTICT102",
+                      "ICTICT105",
+                      "ICTICT106",
+                      "ICTSMB402",
+                      "JANCO431",
+                      "JANCO410",
+                      "JANCO361",
+                      "JANCO587",
+                      "ICANWK404A",
+                      "ICTNWK303",
+                      "ICANWK507A",
+                      "ICTRFN305",
+                      "J.63SAM00.006.1",
+                      "J.620900.032.02",
+                      "J.620900.031.02",
+                      "J.620900.025.02",
+                      "ICAICT204A",
+                      "JANCO001",
                       "TIK.CS02.017.01",
                       "TIK.OP02.003.01",
-                      "ICASAS425A"
+                      "JANCO264",
+                      "JANCO286",
+                      "JANCO298",
+                      "JANCO306",
+                      "JANCO310",
+                      "TIK.FO02.012.01",
+                      "JANCO045",
+                      "ICAICT208A",
+                      "TIK.CS02.050.01",
+                      "TIK.CS03.003.01",
+                      "TIK.OP02.002.01",
+                      "TIK.MM02.063.0",
+                      "TIK.CS03.006.01"
                   ]
               },
               {
@@ -2863,7 +3469,12 @@
                       "Create state and transition diagrams for simple problem domains"
                   ],
                   "hasComp": [
-                      ""
+                      "J.6202000.012.01",
+                      "TIK.SM03.003.01",
+                      "ICANWK508A",
+                      "J.631100.011.01",
+                      "JANCO304",
+                      "J.62090.014"
                   ]
               },
               {
@@ -2889,7 +3500,26 @@
                       "Identify ways that the logic embodied in scheduling algorithms are applicable to other domains, such as disk I/O, network scheduling, project scheduling, and problems beyond computing"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO387",
+                      "JANCO137",
+                      "M.702090.003.0",
+                      "M.741000.016.0",
+                      "JANCO280",
+                      "JANCO322",
+                      "JANCO163",
+                      "JANCO170",
+                      "JANCO182",
+                      "JANCO186",
+                      "JANCO218",
+                      "TIK.2017.002",
+                      "TIK.2017.049",
+                      "TIK.2017.053",
+                      "TIK.2017.030",
+                      "JANCO066",
+                      "ICTWOR303",
+                      "JANCO494",
+                      "ICTWOR402",
+                      "TIK.CS02.031.01"
                   ]
               },
               {
@@ -2937,8 +3567,9 @@
                       "Carry out simple system administration tasks according to a security policy, for example creating accounts, setting permissions, applying patches, and arranging for regular backups"
                   ],
                   "hasComp": [
-                      "J.62090.044",
-                      "J.62090.033"
+                      "TIK.JK05.002.01",
+                      "J.620900.006.01",
+                      "J.6202000.023.01"
                   ]
               },
               {
@@ -2994,7 +3625,25 @@
                       "Implement a simple device driver for a range of possible devices"
                   ],
                   "hasComp": [
-                      ""
+                      "ICTICT104",
+                      "ICANWK524A",
+                      "ICAICT104A",
+                      "J.611000.023.01",
+                      "J.611000.022.01",
+                      "J.611000.005.02",
+                      "ICTRFN304",
+                      "J.620900.005.02",
+                      "J.611000.014.02",
+                      "J.611000.013.02",
+                      "J.611000.019.01",
+                      "J.620900.002.02",
+                      "J.620900.001.02",
+                      "J.63OPR00.001.2",
+                      "J.631100.013.01",
+                      "JANCO291",
+                      "JANCO072",
+                      "TIK.CS01.006.01",
+                      "TIK.CS02.048.01"
                   ]
               },
               {
@@ -3023,7 +3672,7 @@
                       "Summarize the use of journaling and how log-structured file systems enhance fault tolerance"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.JK04.012.01"
                   ]
               },
               {
@@ -3047,7 +3696,7 @@
                       "Summarize special concerns that real-time systems present, including risk, and how these concerns are addressed"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.MM03.001.0"
                   ]
               },
               {
@@ -3154,6 +3803,15 @@
                       "Review an existing web application against a current web standard"
                   ],
                   "hasComp": [
+                      "TIK.MM02.059.0",
+                      "TIK.JK04.008.01",
+                      "TIK.OP03.003.01",
+                      "ICTWEB424",
+                      "ICTWEB515",
+                      "ICTWEB516",
+                      "TIK.PR04.004.01",
+                      "JANCO358",
+                      "ICAWEB424A",
                       "TIK.OP02.006.01",
                       "ICTWEB414",
                       "ICTWEB501",
@@ -3187,6 +3845,15 @@
                       "Compare and contrast mobile programming with general purpose programming"
                   ],
                   "hasComp": [
+                      "J.612000.015",
+                      "J.612000.016",
+                      "J.612000.027",
+                      "J.612000.021",
+                      "J.612000.017",
+                      "J.612000.023",
+                      "J.612000.022",
+                      "J.612000.006",
+                      "ICAPRG601A",
                       "J.612000.018"
                   ]
               },
@@ -3324,7 +3991,16 @@
                       "Give an example of a scenario in which an attempted optimistic update may never complete"
                   ],
                   "hasComp": [
-                      ""
+                      "J.6202000.021.01",
+                      "JANCO422",
+                      "JANCO366",
+                      "JANCO129",
+                      "J.631120.013.01",
+                      "J.62090.048",
+                      "JANCO199",
+                      "JANCO305",
+                      "JANCO653",
+                      "J.62090.042"
                   ]
               },
               {
@@ -3350,7 +4026,13 @@
                       "Decompose a problem (e.g., counting the number of occurrences of some word in a document) via map and reduce operations"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.SM01.004.0",
+                      "TIK.SM01.004.01",
+                      "TIK.SM01.003.01",
+                      "JANCO002",
+                      "JANCO567",
+                      "JANCO656",
+                      "TIK.DG02.003.01"
                   ]
               },
               {
@@ -3404,7 +4086,7 @@
                       "Explain the impact and trade-off related to power usage on parallel performance"
                   ],
                   "hasComp": [
-                      ""
+                      "M.741000.006.0"
                   ]
               },
               {
@@ -3436,7 +4118,57 @@
                       "Give examples of problems for which consensus algorithms such as leader election are required"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.MM01.011.0",
+                      "J.612000.031",
+                      "ICAICT209A",
+                      "TIK.TS01.001.01",
+                      "ICTSAS305",
+                      "ICTICT209",
+                      "ICTICT813",
+                      "JANCO360",
+                      "JANCO374",
+                      "ICTICT802",
+                      "JANCO103",
+                      "J.591200.005.01",
+                      "JANCO014",
+                      "JANCO148",
+                      "JANCO461",
+                      "JANCO028",
+                      "J.63SAM00.015.2",
+                      "J.63SAM00.012.2",
+                      "ICANWK506A",
+                      "ICASAS512A",
+                      "ICASAS509A",
+                      "ICAICT422A",
+                      "ICAICT713A",
+                      "J.63SAM00.014.2",
+                      "J.63SAM00.013.1",
+                      "J.63SAM00.011.2",
+                      "ICTNWK506",
+                      "TIK.SM02.002.01",
+                      "TIK.SM02.004.01",
+                      "TIK.SM02.003.01",
+                      "ICAICT706A",
+                      "JANCO047",
+                      "ICAICT702A",
+                      "TIK.SM02.015.01",
+                      "TIK.SM02.005.01",
+                      "TIK.SM03.006.01",
+                      "JANCO352",
+                      "JANCO340",
+                      "TIK.2017.025",
+                      "TIK.2017.016",
+                      "JANCO025",
+                      "JANCO076",
+                      "JANCO493",
+                      "JANCO519",
+                      "JANCO571",
+                      "ICASAS305A",
+                      "JANCO550",
+                      "JANCO618",
+                      "JANCO619",
+                      "ICTSAS509",
+                      "TIK.DG02.004.01"
                   ]
               },
               {
@@ -3462,7 +4194,16 @@
                       "Appropriately partition an application between a client and resources"
                   ],
                   "hasComp": [
-                      "J.631120.007.01"
+                      "JANCO017",
+                      "ICTWHS203",
+                      "M.702090.006.0",
+                      "J.620100.045.01",
+                      "J.631120.010.01",
+                      "J.631120.007.01",
+                      "TIK.2017.038",
+                      "TIK.2017.042",
+                      "TIK.2017.008",
+                      "JANCO646"
                   ]
               },
               {
@@ -3492,7 +4233,7 @@
                       "Decide if a specific execution is linearizable or not"
                   ],
                   "hasComp": [
-                      ""
+                      "J.612000.024"
                   ]
               }
           ]
@@ -3532,7 +4273,13 @@
                       "Define and use iterators and other operations on aggregates, including operations that take functions as arguments, in multiple programming languages, selecting the most natural idioms for each language"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO569",
+                      "JANCO465",
+                      "HLTAID003",
+                      "J.62SQA00.005.1",
+                      "ICTPRG415",
+                      "JANCO270",
+                      "JANCO337"
                   ]
               },
               {
@@ -3567,7 +4314,19 @@
                       "Define and use iterators and other operations on aggregates, including operations that take functions as arguments, in multiple programming languages, selecting the most natural idioms for each language"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.OP02.018.0",
+                      "JANCO460",
+                      "JANCO483",
+                      "JANCO482",
+                      "JANCO490",
+                      "J.620900.015.02",
+                      "J.620900.014.02",
+                      "TIK.SM02.001.01",
+                      "JANCO405",
+                      "JANCO407",
+                      "JANCO584",
+                      "TIK.TS03.024.01",
+                      "JANCO591"
                   ]
               },
               {
@@ -3629,7 +4388,41 @@
                       "Explain multiple benefits and limitations of static typing in writing, maintaining, and debugging software"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.MM02.007.0",
+                      "J.631120.007.01",
+                      "TIK.OP01.001.01",
+                      "M.741000.005.0",
+                      "JANCO401",
+                      "JANCO110",
+                      "JANCO087",
+                      "J.620900.028.02",
+                      "ICTCBL2137A",
+                      "J.631120.003.01",
+                      "ICTCBL236",
+                      "J.620900.016.02",
+                      "ICAICT501A",
+                      "JANCO043",
+                      "JANCO007",
+                      "J.620100.014.01",
+                      "JANCO123",
+                      "J.631120.004.01",
+                      "J.62SQA00.011.1",
+                      "JANCO260",
+                      "JANCO193",
+                      "JANCO194",
+                      "JANCO287",
+                      "JANCO400",
+                      "JANCO491",
+                      "JANCO335",
+                      "JANCO239",
+                      "ICTSUS8238A",
+                      "JANCO651",
+                      "TIK.MM01.003.0",
+                      "JANCO518",
+                      "JANCO611",
+                      "TIK.MM02.011.0",
+                      "TIK.MM02.061.0",
+                      "TIK.MM03.002.0"
                   ]
               },
               {
@@ -3677,7 +4470,7 @@
                       "Discuss the benefits and limitations of garbage collection, including the notion of reachability"
                   ],
                   "hasComp": [
-                      ""
+                      "LSPK.OPDRB01.0"
                   ]
               },
               {
@@ -3700,7 +4493,7 @@
                       "Identify key issues in syntax definitions: ambiguity, associativity, precedence"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.MM02.066.0"
                   ]
               },
               {
@@ -3808,7 +4601,17 @@
                       "Use the results of a static analysis for program optimization and/or partial program correctness"
                   ],
                   "hasComp": [
-                      ""
+                      "KOM.PR02.053.0",
+                      "J.6202000.008.01",
+                      "J.6202000.007.01",
+                      "TIK.JK03.009.01",
+                      "ICAICT709A",
+                      "ICASAD603A",
+                      "ICASAD601A",
+                      "ICTSAD601",
+                      "ICTSAD603",
+                      "JANCO297",
+                      "JANCO583"
                   ]
               },
               {
@@ -3949,7 +4752,7 @@
                       "Discuss the need for allowing calls to external calls and system libraries and the consequences for language implementation"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.JK03.004.01"
                   ]
               },
               {
@@ -4009,8 +4812,12 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
+                      "ICANWK501A",
+                      "JANCO061",
+                      "J.620100.013.01",
                       "JANCO408",
-                      "ICTDBS602"
+                      "TIK.2017.012",
+                      "ICTNWK501"
                   ]
               },
               {
@@ -4041,7 +4848,14 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
+                      "ICANWK419A",
+                      "TIK.PR03.005.01",
+                      "ICTCBL213",
+                      "J.620100.017.02",
+                      "J.620100.015.01",
+                      "TIK.OP01.001.01",
+                      "JANCO181",
+                      "ICAICT211A"
                   ]
               },
               {
@@ -4070,7 +4884,9 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
+                      "M.741000.011.0",
+                      "J.620100.004.02",
+                      "TIK.2017.035"
                   ]
               },
               {
@@ -4103,7 +4919,70 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
+                      "TIK.PR02.012.01",
+                      "J.6202000.023.01",
+                      "MET.PL.00.003.0",
+                      "TIK.OP03.001.01",
+                      "JANCO430",
+                      "JANCO464",
+                      "JANCO391",
+                      "JANCO368",
+                      "ICAWEB421A",
+                      "ICTSUS806",
+                      "ICTICT801",
+                      "JANCO023",
+                      "JANCO125",
+                      "JANCO120",
+                      "JANCO064",
+                      "JANCO041",
+                      "JANCO037",
+                      "JANCO027",
+                      "ICAICT303A",
+                      "J.63SAM00.017.2",
+                      "BSBEBU401",
+                      "ICAPRG401A",
+                      "ICAPRG414A",
+                      "J.620100.033.01",
+                      "J.620100.033.02",
+                      "J.620100.012.01",
+                      "J.620100.011.01",
+                      "J.620100.010.01",
+                      "J.620100.027.01",
+                      "J.620100.036.02",
+                      "J.620100.028.02",
+                      "J.620100.035.02",
+                      "J.620100.034.02",
+                      "J.620100.032.01",
+                      "J.620100.031.01",
+                      "J.620100.025.02",
+                      "J.620100.023.02",
+                      "J.620100.019.02",
+                      "J.620100.018.02",
+                      "ICAICT701A",
+                      "J.620100.009.01",
+                      "J.620100.003.01",
+                      "J.620100.044.01",
+                      "J.62090.034",
+                      "JANCO257",
+                      "JANCO269",
+                      "JANCO282",
+                      "JANCO317",
+                      "JANCO185",
+                      "JANCO429",
+                      "JANCO349",
+                      "JANCO333",
+                      "JANCO343",
+                      "JANCO227",
+                      "JANCO237",
+                      "ICAPRG526A",
+                      "ICASAS510A",
+                      "JANCO652",
+                      "JANCO074",
+                      "JANCO026",
+                      "JANCO024",
+                      "JANCO60",
+                      "ICAICT421A",
+                      "KOM.PR02.020.0"
                   ]
               }
           ]
@@ -4138,7 +5017,14 @@
                       "Compare several common process models with respect to their value for development of particular classes of software systems taking into account issues such as requirement stability, size, and non-functional characteristics"
                   ],
                   "hasComp": [
-                      ""
+                      "J.6202000.004.01",
+                      "JANCO484",
+                      "ICTPRG426",
+                      "JANCO496",
+                      "BSBWHS304A",
+                      "JANCO622",
+                      "JANCO627",
+                      "M.74100.014.01"
                   ]
               },
               {
@@ -4165,24 +5051,29 @@
                       "Describe different categories of risk in software systems"
                   ],
                   "hasComp": [
-                      "J.62SQA00.011.1",
-                      "J.62SQA00.012.1",
-                      "M.741000.007.0",
-                      "TIK.2017.030",
-                      "JANCO567",
-                      "JANCO211",
+                      "K.64.0000.003.01",
                       "BSBSMB407",
                       "ICTICT412",
-                      "TIK.2017.023",
-                      "TIK.2017.039",
+                      "KOM.PR03.005.0",
+                      "ICAICT412A",
+                      "TIK.SM01.001.01",
+                      "BSBWOR502B",
+                      "J.612000.006.01",
+                      "JANCO152",
+                      "TIK.SM02.008.01",
                       "TIK.2017.022",
-                      "TIK.DG03.001.01",
-                      "TIK.SM02.005.01",
-                      "J.620200.003.01",
-                      "J.620200.004.01",
-                      "TIK.SM02.001.01",
-                      "TIK.SM03.005.01",
-                      "TIK.SM03.006.01"
+                      "J.62SQA00.011.1",
+                      "J.62SQA00.012.1",
+                      "M.741000.007.0",                                                                
+                      "BSBSMB407",
+                      "ICTICT412",
+                      "TIK.2017.023",                      
+                      "JANCO204",
+                      "JANCO355",
+                      "ICASAD503A",
+                      "TIK.2017.029",
+                      "JANCO473",
+                      "TIK.TS01.004.01"
                   ]
               },
               {
@@ -4209,11 +5100,60 @@
                       "Demonstrate the capability to use software tools in support of the development of a software product of medium size"
                   ],
                   "hasComp": [
-                      "J.631120.010.01",
+                      "BSBPMG517",
+                      "BSBPMG521",
+                      "ICTPMG501",
+                      "TIK.SM01.006.01",
+                      "JANCO435",
+                      "ICTSUS805",
+                      "TIK.SM02.012.01",
+                      "ICTTEN202",
+                      "TIK.JK01.005.01",
+                      "TIK.JK02.011.01",
+                      "ICAPMG606A",
+                      "ICAPMG501A",
+                      "M.702090.008.0",
+                      "M.702090.007.0",
+                      "M.702090.004.0",
+                      "ICAPMG607A",
+                      "ICASAD604A",
+                      "ICAICT602A",
+                      "BSBMGT608C",
+                      "M.702090.002.0",
+                      "M.702090.001.0",
+                      "J.620100.001.01",
+                      "M.702090.009.0",
+                      "M.702090.005.0",
                       "TIK.MM01.003.0",
                       "TIK.CS01.006.01",
-                      "J.631120.012.01",
-                      "TIK.SM03.007.01"
+                      "J.631120.010.01",
+                      "BSBSMB407",
+                      "JANCO273",
+                      "JANCO162",
+                      "JANCO331",
+                      "JANCO242",
+                      "M.702090.010.0",
+                      "ICAPMG602A",
+                      "ICAPMG604A",
+                      "ICAPMG605A",
+                      "ICAPRG502A",
+                      "ICAGAM519A",
+                      "TIK.2017.027",
+                      "TIK.2017.001",
+                      "TIK.2017.009",
+                      "TIK.2017.026",
+                      "TIK.2017.024",
+                      "TIK.2017.040",
+                      "TIK.2017.041",
+                      "ICTPMG8143A",
+                      "ICTSUS7236A",
+                      "JANCO005",
+                      "JANCO086",
+                      "J.62090.020",
+                      "ICANWK515A",
+                      "J.631100.008.01",
+                      "M.701001.040.0",
+                      "S.941000.034.02"
                   ]
               },
               {
@@ -4243,7 +5183,68 @@
                       "Conduct a review of a set of software requirements to determine the quality of the requirements with respect to the characteristics of good requirements"
                   ],
                   "hasComp": [
-                      "ICTPRG419"
+                      "J.6202000.005.01",
+                      "J.62090.012",
+                      "JANCO468",
+                      "JANCO371",
+                      "JANCO369",
+                      "JANCO500",
+                      "JANCO421",
+                      "JANCO535",
+                      "J.62SAD00.007.1",
+                      "JANCO445",
+                      "ICTSAD606",
+                      "JANCO053",
+                      "JANCO080",
+                      "BSBIPR301A",
+                      "JANCO059",
+                      "JANCO010",
+                      "J.6202000.013.01",
+                      "JANCO118",
+                      "JANCO417",
+                      "JANCO131",
+                      "JANCO051",
+                      "ICTSAS204",
+                      "ICASAS204A",
+                      "ICTNPL404",
+                      "ICTNPL411",
+                      "ICADBS401A",
+                      "ICASAD505A",
+                      "ICAICT401A",
+                      "ICAICT515A",
+                      "ICAICT509A",
+                      "J.62SAD00.009.1",
+                      "J.62SAD00.006.1",
+                      "JANCO136",
+                      "JANCO046",
+                      "ICASAD606A",
+                      "ICASAD605A",
+                      "J.620200.002.01",
+                      "ICTPRG419",
+                      "JANCO188",
+                      "JANCO488",
+                      "JANCO568",
+                      "JANCO195",
+                      "JANCO197",
+                      "JANCO276",
+                      "JANCO160",
+                      "JANCO219",
+                      "JANCO220",
+                      "JANCO332",
+                      "JANCO238",
+                      "JANCO240",
+                      "JANCO241",
+                      "JANCO395",
+                      "JANCO469",
+                      "TIK.2017.017",
+                      "JANCO463",
+                      "JANCO659",
+                      "JANCO661",
+                      "JANCO068",
+                      "JANCO009",
+                      "JANCO520",    
+                      "TIK.CS02.001.01",    
+                      "JANCO595"
                   ]
               },
               {
@@ -4283,7 +5284,338 @@
                       "Design a contract for a typical small software component for use in a given system"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.CS03.007.01",
+                      "TIK.MM02.028.0",
+                      "TIK.OP02.019.01",
+                      "ICADMT401A",
+                      "ICAGAM416A",
+                      "TIK.OP02.004.0",
+                      "TIK.MM02.017.0",
+                      "J.612000.011",
+                      "J.612000.026",
+                      "J.612000.029",
+                      "J.612000.013",
+                      "J.612000.019",
+                      "J.612000.033",
+                      "J.612000.034",
+                      "TIK.JK02.001.01",
+                      "TIK.JK02.002.01",
+                      "ICTWEB414",
+                      "J.612000.005",
+                      "J.612000.018",
+                      "J.6202000.003.01",
+                      "J.6202000.011.01",
+                      "J.6202000.010.01",
+                      "J.6202000.016.01",
+                      "J.6202000.026.01",
+                      "J.6202000.024.01",
+                      "MET.PL.00.001.0",
+                      "TIK.PR06.003.01",
+                      "TIK.OP02.011.01",
+                      "TIK.OP02.012.01",
+                      "TIK.OP02.013.01",
+                      "TIK.OP02.014.01",
+                      "ICTICT815",
+                      "ICTSUS601",
+                      "ICTPRG512",
+                      "ICTPRG513",
+                      "ICTPRG516",
+                      "BSBDES403",
+                      "ICTSAS409",
+                      "ICTPRG415",
+                      "ICTPRG416",
+                      "ICTPRG419",
+                      "ICTPRG426",
+                      "ICTTEN426",
+                      "ICTWEB416",
+                      "ICTSAS306",
+                      "ICTICT107",
+                      "J.612000.031.01",
+                      "J.620200.015.01",
+                      "J.620200.014.01",
+                      "J.620200.012.01",
+                      "J.620200.010.01",
+                      "J.620200.001.01",
+                      "J.620200.006.01",
+                      "JANCO485",
+                      "JANCO502",
+                      "JANCO434",
+                      "JANCO393",
+                      "JANCO384",
+                      "JANCO376",
+                      "JANCO414",
+                      "JANCO474",
+                      "JANCO437",
+                      "JANCO378",
+                      "JANCO601",
+                      "JANCO578",
+                      "JANCO563",
+                      "JANCO418",
+                      "JANCO466",
+                      "JANCO442",
+                      "JANCO481",
+                      "JANCO176",
+                      "JANCO452",
+                      "JANCO440",
+                      "ICASAS414A",
+                      "ICAICT403A",
+                      "TIK.JK03.012.01",
+                      "ICTTEN5203A",
+                      "ICTTEN805",
+                      "ICTTEN804",
+                      "ICTSUS802",
+                      "TIK.DG01.004.01",
+                      "LSPK.OPDS03.01",
+                      "LSPK.OPDRB03.0",
+                      "LSPK.OPDRB02.0",
+                      "ICAICT405A",
+                      "TIK.DG01.002.01",
+                      "PAR.UJ03.025.01",
+                      "ICAICT307A",
+                      "ICASAS206A",
+                      "JANCO020",
+                      "ICAICT411A",
+                      "KOM.PR02.031.0",
+                      "ICASAS306A",
+                      "JANCO090",
+                      "JANCO135",
+                      "JANCO106",
+                      "JANCO033",
+                      "JANCO150",
+                      "JANCO081",
+                      "JANCO058",
+                      "JANCO004",
+                      "JANCO039",
+                      "JANCO018",
+                      "TIK.SM02.013.01",
+                      "JANCO392",
+                      "ICASAS205A",
+                      "ICASAS201A",
+                      "ICAICT410A",
+                      "J.620900.030.02",
+                      "ICAICT107A",
+                      "ICAICT206A",
+                      "TIK.JK04.003.01",
+                      "TIK.JK02.025.01",
+                      "ICTSUS5187A",
+                      "J.631120.006.01",
+                      "J.631120.005.01",
+                      "J.63SAM00.025.2",
+                      "ICTSAS304",
+                      "TIK.JK03.011.01",
+                      "ICTCBL2139A",
+                      "ICANWK505A",
+                      "ICAICT201A",
+                      "ICTTEN5168A",
+                      "ICAICT508A",
+                      "ICTTEN6172A",
+                      "ICANWK601A",
+                      "ICANWK605A",
+                      "ICTTEN6206A",
+                      "ICANWK607A",
+                      "ICTTCR201",
+                      "ICTNWK301",
+                      "J.612000.002",
+                      "J.611000.007.02",
+                      "J.631120.011.01",
+                      "ICTICT205",
+                      "ICTDRE304",
+                      "BSBDES401",
+                      "J.611000.006.01",
+                      "J.620900.007.02",
+                      "J.63SAM00.023.1",
+                      "J.63SAM00.022.1",
+                      "ICTTEN308",
+                      "ICAPRG513A",
+                      "ICAPRG512A",
+                      "ICTNPL409",
+                      "J.6202000.030.01",
+                      "ICTICT411",
+                      "J.611000.004.01",
+                      "J.611000.003.02",
+                      "J.63SAM00.005.1",
+                      "J.63SAM00.004.2",
+                      "J.63SAM00.003.2",
+                      "J.63SAM00.002.2",
+                      "TIK.MM01.007.0",
+                      "TIK.CS02.043.01",
+                      "TIK.CS02.037.01",
+                      "TIK.CS02.028.01",
+                      "J.620900.026.02",
+                      "ICAICT203A",
+                      "J.62SQA00.009.1",
+                      "J.62SQA00.008.1",
+                      "J.62SQA00.007.1",
+                      "J.62SQA00.006.1",
+                      "J.62SQA00.003.1",
+                      "J.62SQA00.002.1",
+                      "TIK.SM02.006.01",
+                      "J.62090.030",
+                      "ICTSAS419",
+                      "ICTICT304",
+                      "ICTICT302",
+                      "TIK.MM02.029.0",
+                      "ICAICT409A",
+                      "ICAICT507A",
+                      "ICAPRG419A",
+                      "TIK.PR07.001.01",
+                      "ICAPRG520A",
+                      "ICAPRG515A",
+                      "J.62SAD00.013.1",
+                      "J.62SAD00.012.1",
+                      "J.62SAD00.011.1",
+                      "J.62SAD00.005.1",
+                      "J.62SAD00.004.1",
+                      "TIK.DG02.005.01",
+                      "JANCO155",
+                      "ICANWK615A",
+                      "ICAPMG608A",
+                      "ICTSUS6233A",
+                      "J.612000.007",
+                      "J.612000.001",
+                      "J.620100.047.01",
+                      "TIK.SM03.002.01",
+                      "TIK.SM03.001.01",
+                      "J.620200.011.01",
+                      "J.620100.008.01",
+                      "J.620100.002.01",
+                      "J.620100.042.01",
+                      "J.620100.040.01",
+                      "J.620100.006.01",
+                      "JANCO126",
+                      "TIK.DG02.010.01",
+                      "J.63OPR00.005.2",
+                      "J.63OPR00.004.2",
+                      "J.63OPR00.012.2",
+                      "J.63OPR00.011.2",
+                      "J.63OPR00.006.2",
+                      "J.63OPR00.013.1",
+                      "J.63OPR00.002.2",
+                      "J.631120.016.01",
+                      "J.63OPR00.009.2",
+                      "J.620900.004.02",
+                      "J.63SAM00.019.1",
+                      "J.62090.047",
+                      "J.620100.007.01",
+                      "J.631120.017.01",
+                      "J.63SAM00.024.1",
+                      "J.62SAD00.008.1",
+                      "J.62SAD00.001.1",
+                      "J.620200.008.01",
+                      "J.612000.003",
+                      "TIK.DG03.001.01",
+                      "J.620200.003.01",
+                      "J.620200.004.01",
+                      "J.620200.005.01",
+                      "J.620200.007.01",
+                      "JANCO262",
+                      "JANCO254",
+                      "JANCO258",
+                      "JANCO200",
+                      "JANCO203",
+                      "JANCO277",
+                      "JANCO279",
+                      "JANCO281",
+                      "JANCO284",
+                      "JANCO285",
+                      "JANCO294 ",
+                      "JANCO295",
+                      "JANCO312",
+                      "JANCO324",
+                      "JANCO325",
+                      "JANCO158",
+                      "JANCO159",
+                      "JANCO165",
+                      "JANCO167",
+                      "JANCO171",
+                      "JANCO177",
+                      "JANCO180",
+                      "JANCO183",
+                      "JANCO187",
+                      "JANCO375",
+                      "JANCO350",
+                      "JANCO353",
+                      "JANCO330",
+                      "JANCO479",
+                      "TIK.OP02.005.01",
+                      "TIK.OP02.007.01",
+                      "TIK.OP02.015.01",
+                      "TIK.2017.010",
+                      "TIK.2017.043",
+                      "ICAGAM504A",
+                      "ICAPRG518A",
+                      "TIK.2017.005",
+                      "TIK.2017.034",
+                      "TIK.DG03.002.01",
+                      "JANCO643",
+                      "JANCO357",
+                      "JANCO380",
+                      "ICANWK509A",
+                      "J.62090.041",
+                      "JANCO012",
+                      "JANCO660",
+                      "ICANWK301A",
+                      "ICASAS304A",
+                      "TIK.JK02.004.01",
+                      "ICAPRG516A",
+                      "ICAPRG529A",
+                      "ICAICT503A",
+                      "ICTSUS4183A",
+                      "JANCO122",
+                      "JANCO035",
+                      "JANCO048",
+                      "JANCO065",
+                      "JANCO599",
+                      "JANCO107",
+                      "JANCO512",
+                      "JANCO602",
+                      "JANCO057",
+                      "JANCO083",
+                      "JANCO499",
+                      "JANCO560",
+                      "JANCO607",
+                      "TIK.JK02.023.01",
+                      "ICANWK610A",
+                      "TIK.MM02.060.0",
+                      "TIK.OP01.004.01",
+                      "JANCO498",
+                      "JANCO302",
+                      "JANCO529",
+                      "ICAICT205A",
+                      "TIK.MM02.026.0",
+                      "M.74100.001.02",
+                      "M.74100.005.02",
+                      "M.74100.007.01",
+                      "M.74100.008.02",
+                      "M.74100.009.02",
+                      "M.74100.010.01",
+                      "M.74100.012.02",
+                      "ICASAS425A",
+                      "ICASAS426A",
+                      "TIK.OP02.004.01",
+                      "TIK.MM01.008.0",
+                      "TIK.MM01.009.0",
+                      "TIK.MM02.031.0",
+                      "TIK.MM02.064.0",
+                      "M.74100.006.01",
+                      "M.74100.011.02",
+                      "M.74100.013.02",
+                      "M.74100.015.01",
+                      "M.74100.017.01",
+                      "M.74100.018.01",
+                      "TIK.DG02.008.01",
+                      "TIK.DG02.009.01",
+                      "M.74100.003.02",
+                      "M.74100.010.02",
+                      "TIK.DG01.010.01",
+                      "TIK.DG02.006.01",
+                      "TIK.DG02.007.01",
+                      "TIK.MM02.045.0",
+                      "TIK.MM02.003.0",
+                      "TIK.MM02.030.0",
+                      "TIK.MM03.003.0",
+                      "TIK.MM03.005.0",
+                      "TIK.CS03.007.01"
                   ]
               },
               {
@@ -4309,7 +5641,13 @@
                       "Describe the process of analyzing and implementing changes to a large existing code base"
                   ],
                   "hasComp": [
-                      ""
+                      "ICTICT810",
+                      "ICAICT710A",
+                      "ICAPMG601A",
+                      "J.620100.026.01",
+                      "J.620100.016.01",
+                      "TIK.OP03.001.01",
+                      "TIK.MM03.006.0"
                   ]
               },
               {
@@ -4339,7 +5677,25 @@
                       "Discuss the limitations of testing in a particular domain"
                   ],
                   "hasComp": [
-                      ""
+                      "J.6202000.019.01",
+                      "J.6202000.020.01",
+                      "JANCO480",
+                      "ICTOPN401",
+                      "ICTTEN5201A",
+                      "ICTTEN513",
+                      "ICANWK603A",
+                      "ICASAS515A",
+                      "ICASAS513A",
+                      "J.62SAD00.010.1",
+                      "J.620100.038.01",
+                      "J.620100.037.01",
+                      "ICTICT102",
+                      "TIK.JK03.005.0",
+                      "JANCO655",
+                      "ICASAS301A",
+                      "ICTTEN4198A",
+                      "JANCO085",
+                      "ICTTEN5200A"
                   ]
               },
               {
@@ -4365,7 +5721,12 @@
                       "Discuss the advantages and disadvantages of different types of software reuse"
                   ],
                   "hasComp": [
-                      "J.620200.005.01"
+                      "TIK.SM02.014.01",
+                      "BSBINN601B",
+                      "J.620100.043.01",
+                      "ICTPRG416",
+                      "ICASAS511A",
+                      "JANCO590"
                   ]
               },
               {
@@ -4386,7 +5747,7 @@
                       "List approaches to minimizing faults that can be applied at each stage of the software lifecycle"
                   ],
                   "hasComp": [
-                      "ICTDBS501"
+                      ""
                   ]
               },
               {
@@ -4412,7 +5773,12 @@
                       "Using a common formal specification language, formulate the specification of a simple software system and derive examples of test cases from the specification"
                   ],
                   "hasComp": [
-                      "TIK.SM02.009.01"
+                      "ICTPMG504",
+                      "ICTICT514",
+                      "ICAICT502A",
+                      "ICAPRG602A",
+                      "ICTTEN516",
+                      "ICTTEN5204A"
                   ]
               }
           ]
@@ -4448,8 +5814,18 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      "J.620200.007.01",
-                      "J.620200.013.01"
+                      "TIK.JK04.011.01",
+                      "TIK.JK04.014.01",
+                      "TIK.JK04.017.01",
+                      "TIK.JK04.009.01",
+                      "TIK.JK04.010.01",
+                      "ICTWEB512",
+                      "ICANWK401A",
+                      "ICTPMG401",
+                      "J.63SAM00.010.1",
+                      "J.63SAM00.009.1",
+                      "J.63SAM00.008.1",
+                      "TIK.JK04.013.01"
                   ]
               },
               {
@@ -4473,7 +5849,7 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
+                      "J.631120.015.01"
                   ]
               },
               {
@@ -4525,7 +5901,44 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
+                      "TIK.PR04.008.01",
+                      "J.612000.042.01",
+                      "M.741000.015.0",
+                      "JANCO478",
+                      "JANCO363",
+                      "JANCO454",
+                      "JANCO451",
+                      "JANCO450",
+                      "JANCO213",
+                      "KOM.PR03.006.0",
+                      "JANCO109",
+                      "JANCO105",
+                      "JANCO146",
+                      "JANCO042",
+                      "JANCO104",
+                      "J.620900.027.02",
+                      "J.620900.024.02",
+                      "TIK.CS02.052.01",
+                      "ICTWEB404",
+                      "TIK.CS02.044.01",
+                      "TIK.CS02.035.01",
+                      "TIK.CS02.033.01",
+                      "TIK.CS02.032.01",
+                      "J.620100.029.02",
+                      "J.631100.017.01",
+                      "JANCO505",
+                      "JANCO205",
+                      "JANCO206",
+                      "JANCO211",
+                      "JANCO274",
+                      "JANCO315",
+                      "JANCO192",
+                      "JANCO225",
+                      "TIK.2017.020",
+                      "JANCO517",
+                      "J.612000.033.01",
+                      "JANCO574",
+                      "TIK.MM03.007.0"
                   ]
               },
               {
@@ -4548,8 +5961,7 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      "J.62090.034",
-                      "M.702000.014.0"
+                      ""
                   ]
               },
               {
@@ -4571,7 +5983,7 @@
                       "Use figures of merit of alternative scheduler implementations"
                   ],
                   "hasComp": [
-                      "J.62090.035"
+                      ""
                   ]
               },
               {
@@ -4594,7 +6006,9 @@
                       "Calculate average memory access time and describe the tradeoffs in memory hierarchy performance in terms of capacity, miss/hit rate, and access time"
                   ],
                   "hasComp": [
-                      ""
+                      "ICTWEB422",
+                      "ICAWEB422A",
+                      "J.62090.035"
                   ]
               },
               {
@@ -4615,7 +6029,9 @@
                       "Measure the performance of two application instances running on separate virtual machines, and determine the effect of performance isolation"
                   ],
                   "hasComp": [
-                      ""
+                      "ICTICT202",
+                      "J.63SAM00.007.2",
+                      "TIK.JK01.002.01"
                   ]
               },
               {
@@ -4640,7 +6056,7 @@
                       "Compare different error detection and correction methods for their data overhead, implementation complexity, and relative execution time for encoding, detecting, and correcting errors"
                   ],
                   "hasComp": [
-                      ""
+                      "ICTTEN509"
                   ]
               },
               {
@@ -4667,7 +6083,15 @@
                       "Conduct a performance experiment on a layered system to determine the effect of a system parameter on figure of system performance"
                   ],
                   "hasComp": [
-                      ""
+                      "J.6202000.028.01",
+                      "J.6202000.027.01",
+                      "J.63SAM00.020.1",
+                      "J.611000.020.01",
+                      "J.620900.033.02",
+                      "JANCO207",
+                      "JANCO271",
+                      "JANCO272",
+                      "TIK.2017.033"
                   ]
               }
           ]
@@ -4706,7 +6130,25 @@
                       "Explain the implications of context awareness in ubiquitous computing systems"
                   ],
                   "hasComp": [
-                      ""
+                      "J.612000.035",
+                      "ICTICT101",
+                      "ICTICT108",
+                      "ICAICT101A",
+                      "J.631120.001.01",
+                      "ICTNWK306",
+                      "ICAPRG604A",
+                      "J.611000.024.01",
+                      "ICTPRG604",
+                      "ICANWK306A",
+                      "J.63OPR00.010.1",
+                      "J.631120.002.01",
+                      "JANCO253",
+                      "TIK.2017.007",
+                      "JANCO084",
+                      "JANCO556",
+                      "JANCO628",
+                      "TIK.OP02.001.01",
+                      "KOM.PR01.001.0"
                   ]
               },
               {
@@ -4729,7 +6171,8 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
+                      "ICTTEN501",
+                      "ICTTEN5024A"
                   ]
               },
               {
@@ -4775,7 +6218,23 @@
                       "Describe issues associated with industries’ push to focus on time to market versus enforcing quality professional standards"
                   ],
                   "hasComp": [
-                      "TIK.SM01.005.01"
+                      "JANCO438",
+                      "ICASAS411A",
+                      "ICTWHS204",
+                      "ICAICT418A",
+                      "TIK.OP01.002.01",
+                      "ICAICT610A",
+                      "TIK.SM01.005.01",
+                      "JANCO267",
+                      "JANCO202",
+                      "JANCO351",
+                      "BSBOHS509A",
+                      "JANCO645",  
+                      "JANCO648",  
+                      "JANCO243", 
+                      "TIK.MM01.012.0", 
+                      "BSBWHS501A",
+                      "ICTSAS405"
                   ]
               },
               {
@@ -4807,7 +6266,11 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
+                      "TIK.MM02.055.0",
+                      "TIK.MM02.054.0",
+                      "TIK.DG01.007.01",
+                      "M.74100.016.02",
+                      "ICADMT501A"
                   ]
               },
               {
@@ -4859,13 +6322,32 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
+                      "JANCO425",
+                      "JANCO503",
+                      "JANCO504",
+                      "JANCO457",
+                      "JANCO115",
+                      "JANCO078",
+                      "JANCO157",
+                      "JANCO538",
+                      "JANCO138",
+                      "J.631100.016.01",
                       "ICTICT209",
                       "M.741000.026.0",
                       "M.711000.009.0",
                       "ICAICT209A",
                       "TIK.TS01.002.01",
-                      "TIK.TS01.004.01",
-                      "ICAICT408A"
+                      "ICAICT408A",
+                      "JANCO234",
+                      "JANCO318",
+                      "JANCO168",
+                      "JANCO184",
+                      "JANCO222",
+                      "TIK.2017.031",  
+                      "JANCO649",  
+                      "JANCO610",    
+                      "TIK.MM02.062.0",  
+                      "J.612000.003.01"
                   ]
               },
               {
@@ -4889,7 +6371,9 @@
                       "Investigate the social and environmental impacts of new system designs through projects"
                   ],
                   "hasComp": [
-                      ""
+                      "BSBSUS401",
+                      "BSBSUS201A",
+                      "BSBSUS301A"
                   ]
               },
               {
@@ -4914,7 +6398,8 @@
                       "Compare daily life before and after the advent of personal computers and the Internet"
                   ],
                   "hasComp": [
-                      ""
+                      "TIK.MM02.050.0",
+                      "TIK.2017.048"
                   ]
               },
               {
@@ -4948,12 +6433,7 @@
                       "Describe the economic benefits of network effects"
                   ],
                   "hasComp": [
-                      "M.692000.018.0",
-                      "TIK.2017.026",
-                      "TIK.2017.024",
-                      "TIK.2017.001",
-                      "M.741000.006.0",
-                      "TIK.2017.045"                     
+                      "M.741000.006.0"        
                   ]
               },
               {
@@ -4984,7 +6464,8 @@
                       "Write a company-wide security policy, which includes procedures for managing passwords and employee monitoring"
                   ],
                   "hasComp": [
-                      ""
+                      "JANCO145",
+                      "J.620900.020.02"
                   ]
               }
           ]

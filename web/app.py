@@ -3,6 +3,7 @@ import os
 import json
 from list_functions import getJob, getDesc, getCompetencies, getBoK, getSubBoK, getComp1
 import simplejson
+import pprint
 
 app = Flask(__name__)
 
@@ -57,6 +58,9 @@ def fetchCompetencies1():
 
 	return json.dumps({"comp": comp})
 
+
+	# testFile  = open("../raw_outcome_acm.txt")
+	# pprint.pprint(testFile.read())
 
 def application(env, start_response):
 	#start_response('200 OK', [('Content-Type','text/html')])

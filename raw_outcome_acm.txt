@@ -1,0 +1,1177 @@
+
+document2 = """
+            #Explain what is meant by best, expected, and worst case behavior of an algorithm.
+            #In the context of specific algorithms, identify the characteristics of data and/or other conditions or assumptions that lead to different behaviors.
+            #Determine informally the time and space complexity of simple algorithms.
+            #State the formal definition of big O.
+            #List and contrast standard complexity classes.
+            #Perform empirical studies to validate hypotheses about runtime stemming from mathematical analysis.
+            #Run algorithms on input of various sizes and compare performance.
+            #Give examples that illustrate time-space trade-offs of algorithms.
+            #Use big O notation formally to give asymptotic upper bounds on time and space complexity of algorithms.
+            #Use big O notation formally to give expected case bounds on time complexity of algorithms.
+            #Explain the use of big omega, big theta, and little o notation to describe the amount of work done by an algorithm.
+            #Solve elementary recurrence relations,  using some form of a Master Theorem.
+            |
+            #For each of the strategies (brute-force, greedy, divide-and-conquer, recursive backtracking, and dynamic programming), identify a practical example to which it would apply.
+            #Use a greedy approach to solve an appropriate problem and determine if the greedy rule chosen leads to an optimal solution.
+            #Use a divide-and-conquer algorithm to solve an appropriate problem.
+            #Use recursive backtracking to solve a problem such as navigating a maze.
+            #Use dynamic programming to solve an appropriate problem.
+            #Determine an appropriate algorithmic approach to a problem.
+            #Describe various heuristic problem-solving methods.
+            #Use a heuristic approach to solve an appropriate problem.
+            #Describe the trade-offs between brute force and heuristic strategies.
+            #Describe how a branch-and-bound approach may be used to improve the performance of a heuristic method.
+            |
+            #Implement basic numerical algorithms.
+            #Implement simple search algorithms and explain the differences in their time complexities.
+            #Be able to implement common quadratic and O(N log N) sorting algorithms.
+            #Describe the implementation of hash tables, including collision avoidance and resolution.
+            #Discuss the runtime and memory efficiency of principal algorithms for sorting, searching, and hashing.
+            #Discuss factors other than computational efficiency that influence the choice of algorithms, such as programming time, maintainability, and the use of application-specific patterns in the input data.
+            #Explain how tree balance affects the efficiency of various binary search tree operations.
+            #Solve problems using fundamental graph algorithms, including depth-first and breadth-first search.
+            #Demonstrate the ability to evaluate algorithms, to select from a range of possible options, to provide justification for that selection, and to implement the algorithm in a particular context.
+            #Describe the heap property and the use of heaps as an implementation of priority queues.
+            #Solve problems using graph algorithms, including single-source and all-pairs shortest paths, and at least one minimum spanning tree algorithm.
+            #Trace and/or implement a string-matching algorithm.
+            |
+            #Discuss the concept of finite state machines.
+            #Design a deterministic finite state machine to accept a specified language.
+            #Generate a regular expression to represent a specified language.
+            #Explain why the halting problem has no algorithmic solution.
+            #Design a context-free grammar to represent a specified language.
+            #Define the classes P and NP.
+            #Explain the significance of NP-completeness.
+            |
+            #Define the classes P and NP.
+            #Define the P-space class and its relation to the EXP class.
+            #Explain the significance of NP-completeness.
+            #Provide examples of classic NP-complete problems.
+            #Prove that a problem is NP-complete by reducing a classic known NP-complete problem to it.
+            |
+            #Determine a language place in the Chomsky hierarchy (regular, context-free, recursively enumerable).
+            #Convert among equivalently powerful notations for a language, including among DFAs, NFAs, and regular expressions, and between PDAs and CFGs.
+            #Explain the Church-Turing thesis and its significance.
+            #Explain Rice Theorem and its significance.
+            #Provide examples of uncomputable functions.
+            #Prove that a problem is uncomputable by reducing a classic known uncomputable problem to it.
+            |
+            #Understand the mapping of real-world problems to algorithmic solutions ( as graph problems, linear programs, etc.).
+            #Select and apply advanced algorithmic techniques ( randomization, approximation) to solve real problems.
+            #Select and apply advanced analysis techniques ( amortized, probabilistic, etc.) to algorithms.
+            |
+            #Describe the progression of computer technology components from vacuum tubes to VLSI, from mainframe computer architectures to the organization of warehouse-scale computers
+            #Comprehend the trend of modern computer architectures towards multi-core and that parallelism is inherent in all hardware systems
+            #Explain the implications of the power wall in terms of further processor performance improvements and the drive towards harnessing parallelism
+            #Articulate that there are many equivalent representations of computer functionality, including logical expressions and gates, and be able to use mathematical expressions to describe the functions of simple combinational and sequential circuits
+            #Design the basic building blocks of a computer: arithmetic-logic unit (gate-level), registers (gate-level), central processing unit (register transfer-level), memory (register transfer-level)
+            #Use CAD tools for capture, synthesis, and simulation to evaluate simple building blocks ( arithmetic-logic unit, registers, movement between registers) of a simple computer design
+            #Evaluate the functional and timing diagram behavior of a simple processor implemented at the logic circuit level
+            |
+            #Explain why everything is data, including instructions, in computers
+            #Explain the reasons for using alternative formats to represent numerical data
+            #Describe how negative integers are stored in sign-magnitude and twos-complement representations
+            #Explain how fixed-length number representations affect accuracy and precision
+            #Describe the internal representation of non-numeric data, such as characters, strings, records, and arrays
+            #Convert numerical data from one format to another
+            #Write simple programs at the assembly/machine level for string processing and manipulation
+            |
+            #Explain the organization of the classical von Neumann machine and its major functional units
+            #Describe how an instruction is executed in a classical von Neumann machine, with extensions for threads, multiprocessor synchronization, and SIMD execution
+            #Describe instruction level parallelism and hazards, and how they are managed in typical processor pipelines
+            #Summarize how instructions are represented at both the machine level and in the context of a symbolic assembler
+            #Demonstrate how to map between high-level language patterns into assembly/machine language notations
+            #Explain different instruction formats, such as addresses per instruction and variable length vs. fixed length formats
+            #Explain how subroutine calls are handled at the assembly level
+            #Explain the basic concepts of interrupts and I/O operations
+            #Write simple assembly language program segments
+            #Show how fundamental high-level programming constructs are implemented at the machine-language level
+            |
+            #Identify the main types of memory technology ( SRAM, DRAM, Flash, magnetic disk) and their relative cost and performance
+            #Explain the effect of memory latency on running time
+            #Describe how the use of memory hierarchy (cache, virtual memory) is used to reduce the effective memory latency
+            #Describe the principles of memory management
+            #Explain the workings of a system with virtual memory management
+            #Compute Average Memory Access Time under a variety of cache and memory configurations and mixes of instruction and data references
+            |
+            #Explain how interrupts are used to implement I/O control and data transfers
+            #Identify various types of buses in a computer system
+            #Describe data access from a magnetic disk drive
+            #Compare common network organizations, such as ethernet/bus, ring, switched vs. routed
+            #Identify the cross-layer interfaces needed for multimedia access and presentation, from image fetch from remote storage, through transport over a communications network, to staging into local memory, and final presentation to a graphical display
+            #Describe the advantages and limitations of RAID architectures
+            |
+            #Compare alternative implementation of datapaths
+            #Discuss the concept of control points and the generation of control signals using hardwired or microprogrammed implementations
+            #Explain basic instruction level parallelism using pipelining and the major hazards that may occur
+            #Design and implement a complete processor, including datapath and control
+            #Determine, for a given processor and memory system implementation, the average cycles per instruction
+            |
+            #Discuss the concept of parallel processing beyond the classical von Neumann model
+            #Describe alternative parallel architectures such as SIMD and MIMD
+            #Explain the concept of interconnection networks and characterize different approaches
+            #Discuss the special concerns that multiprocessing systems present with respect to memory management and describe how these are addressed
+            #Describe the differences between memory backplane, processor memory interconnect, and remote memory via networks, their implications for access latency and impact on program performance
+            |
+            #Describe superscalar architectures and their advantages
+            #Explain the concept of branch prediction and its utility
+            #Characterize the costs and benefits of prefetching
+            #Explain speculative execution and identify the conditions that justify it
+            #Discuss the performance advantages that multithreading offered in an architecture along with the factors that make it difficult to derive maximum benefits from this approach
+            #Describe the relevance of scalability to performance
+            |
+            #Explain the concept of modeling and the use of abstraction that allows the use of a machine to solve a problem
+            #Describe the relationship between modeling and simulation, i.e., thinking of simulation as dynamic modeling
+            #Create a simple, formal mathematical model of a real-world situation and use that model in a simulation
+            #Differentiate among the different types of simulations, including physical simulations, human-guided simulations, and virtual reality
+            #Describe several approaches to validating models
+            #Create a simple display of the results of a simulation
+            |
+            #Explain and give examples of the benefits of simulation and modeling in a range of important application areas
+            #Demonstrate the ability to apply the techniques of modeling and simulation to a range of problem areas
+            #Explain the constructs and concepts of a particular modeling approach
+            #Explain the difference between validation and verification of a model; demonstrate the difference with specific examples
+            #Verify and validate the results of a simulation
+            #Evaluate a simulation, highlighting the benefits and the drawbacks
+            #Choose an appropriate modeling approach for a given problem or situation
+            #Compare results from different simulations of the same situation and explain any differences
+            #Infer the behavior of a system from the results of a simulation of the system
+            #Extend or adapt an existing model to a new situation
+            |
+            #Explain the characteristics and defining properties of algorithms and how they relate to machine processing
+            #Analyze simple problem statements to identify relevant information and select appropriate processing to solve the problem
+            #Identify or sketch a workflow for an existing computational process such as the creation of a graph based on experimental data
+            #Describe the process of converting an algorithm to machine-executable code
+            #Summarize the phases of software development and compare several common lifecycle models
+            #Explain how data is represented in a machine. Compare representations of integers to floating point numbers. Describe underflow, overflow, round off, and truncation errors in data representations
+            #Apply standard numerical algorithms to solve ODEs and PDEs. Use computing systems to solve systems of equations
+            #Describe the basic properties of bandwidth, latency, scalability and granularity
+            #Describe the levels of parallelism including task, data, and event parallelism
+            #Compare and contrast parallel programming paradigms recognizing the strengths and weaknesses of each
+            #Identify the issues impacting correctness and efficiency of a computation
+            #Design, code, test and debug programs for a parallel computation
+            |
+            #Compare common computer interface mechanisms with respect to ease-of-use, learnability, and cost
+            #Use standard APIs and tools to create visual displays of data, including graphs, charts, tables, and histograms
+            #Describe several approaches to using a computer as a means for interacting with and processing data
+            #Extract useful information from a dataset
+            #Analyze and select visualization techniques for specific problems
+            #Describe issues related to scaling data analysis from small to large data sets
+            |
+            #Identify all of the data, information, and knowledge elements and related organizations, for a computational science application
+            #Describe how to represent data and information for processing
+            #Describe typical user requirements regarding that data, information, and knowledge
+            #Select a suitable system or software implementation to manage data, information, and knowledge
+            #List and describe the reports, transactions, and other processing needed for a computational science application
+            #Compare and contrast database management, information retrieval, and digital library systems with regard to handling typical computational science applications
+            #Design a digital library for some computational science users/societies, with appropriate content and services
+            |
+            #Define error, stability, machine precision concepts and the inexactness of computational approximations
+            #Implement Taylor series, interpolation, extrapolation, and regression algorithms for approximating functions
+            #Implement algorithms for differentiation and integration
+            #Implement algorithms for solving differential equations
+            |
+            #Explain with examples the basic terminology of functions, relations, and sets
+            #Perform the operations associated with sets, functions, and relations
+            #Relate practical examples to the appropriate set, function, or relation model, and interpret the associated operations and terminology in context
+            |
+            #Convert logical statements from informal language to propositional and predicate logic expressions
+            #Apply formal methods of symbolic propositional and predicate logic, such as calculating validity of formulae and computing normal forms
+            #Use the rules of inference to construct proofs in propositional and predicate logic
+            #Describe how symbolic logic can be used to model real-life situations or applications, including those arising in computing contexts such as software analysis ( program correctness), database queries, and algorithms
+            #Apply formal logic proofs and/or informal, but rigorous, logical reasoning to real problems, such as predicting the behavior of software or solving problems such as puzzles
+            #Describe the strengths and limitations of propositional and predicate logic
+            |
+            #Identify the proof technique used in a given proof
+            #Outline the basic structure of each proof technique (direct proof, proof by contradiction, and induction) described in this unit
+            #Apply each of the proof techniques (direct proof, proof by contradiction, and induction) correctly in the construction of a sound argument
+            #Determine which type of proof is best for a given problem
+            #Explain the parallels between ideas of mathematical and/or structural induction to recursion and recursively defined structures
+            #Explain the relationship between weak and strong induction and give examples of the appropriate use of each
+            #State the well-ordering principle and its relationship to mathematical induction
+            |
+            #Apply counting arguments, including sum and product rules, inclusion-exclusion principle and arithmetic/geometric progressions
+            #Apply the pigeonhole principle in the context of a formal proof
+            #Compute permutations and combinations of a set, and interpret the meaning in the context of the particular application
+            #Map real-world applications to appropriate counting formalisms, such as determining the number of ways to arrange people around a table, subject to constraints on the seating arrangement, or the number of ways to determine certain hands in cards ( a full house)
+            #Solve a variety of basic recurrence relations
+            #Analyze a problem to determine underlying recurrence relations
+            #Perform computations involving modular arithmetic
+            |
+            #Illustrate by example the basic terminology of graph theory, as well as some of the properties and special cases of each type of graph/tree
+            #Demonstrate different traversal methods for trees and graphs, including pre-, post-, and in-order traversal of trees
+            #Model a variety of real-world problems in computer science using appropriate forms of graphs and trees, such as representing a network topology or the organization of a hierarchical file system
+            #Show how concepts from graphs and trees appear in data structures, algorithms, proof techniques (structural induction), and counting
+            #Explain how to construct a spanning tree of a graph
+            #Determine if two graphs are isomorphic
+            |
+            #Calculate probabilities of events and expectations of random variables for elementary problems such as games of chance
+            #Differentiate between dependent and independent events
+            #Identify a case of the binomial distribution and compute a probability using that distribution
+            #Apply Bayes theorem to determine conditional probabilities in a problem
+            #Apply the tools of probability to solve problems such as the average case analysis of algorithms or analyzing hashing
+            #Compute the variance for a given probability distribution
+            #Explain how events that are independent can be conditionally dependent (and vice-versa). Identify real- world examples of such cases
+            |
+            #Identify common uses of digital presentation to humans ( computer graphics, sound)
+            #Explain in general terms how analog signals can be reasonably represented by discrete samples, for example, how images can be represented by pixels
+            #Explain how the limits of human perception affect choices about the digital representation of analog signals
+            #Construct a simple user interface using a standard API
+            #Describe the differences between lossy and lossless image compression techniques, for example as reflected in common graphics image file formats such as JPG, PNG, MP3, MP4, and GIF
+            #Describe color models and their use in graphics display devices
+            #Describe the tradeoffs between storing information vs. storing enough information to reproduce the information, as in the difference between vector and raster rendering
+            |
+            #Discuss the light transport problem and its relation to numerical integration i.e., light is emitted, scatters around the scene, and is measured by the eye
+            #Describe the basic graphics pipeline and how forward and backward rendering factor in this
+            #Create a program to display 3D models of simple graphics images
+            #Derive linear perspective from similar triangles by converting points (x, y, z) to points (x/z, y/z, 1)
+            #Obtain 2-dimensional and 3-dimensional points by applying affine transformations
+            #Apply 3-dimensional coordinate system and the changes required to extend 2D transformation operations to handle transformations in 3D
+            #Contrast forward and backward rendering
+            #Explain the concept and applications of texture mapping, sampling, and anti-aliasing
+            #Explain the ray tracing/rasterization duality for the visibility problem
+            #Implement simple procedures that perform transformation and clipping operations on simple 2-dimensional images
+            #Implement a simple real-time renderer using a rasterization API ( OpenGL) using vertex buffers and shaders
+            #Compare and contrast the different rendering techniques
+            #Compute space requirements based on resolution and color coding
+            #Compute time requirements based on refresh rates, rasterization techniques
+            |
+            #Represent curves and surfaces using both implicit and parametric forms
+            #Create simple polyhedral models by surface tessellation
+            #Generate a mesh representation from an implicit surface
+            #Generate a fractal model or terrain using a procedural method
+            #Generate a mesh from data points acquired with a laser scanner
+            #Construct CSG models from simple primitives, such as cubes and quadric surfaces
+            #Contrast modeling approaches with respect to space and time complexity and quality of image
+            |
+            #Demonstrate how an algorithm estimates a solution to the rendering equation
+            #Prove the properties of a rendering algorithm,  complete, consistent, and unbiased
+            #Analyze the bandwidth and computation demands of a simple algorithm
+            #Implement a non-trivial shading algorithm ( toon shading, cascaded shadow maps) under a rasterization API
+            #Discuss how a particular artistic technique might be implemented in a renderer
+            #Explain how to recognize the graphics techniques used to create a particular image
+            #Implement any of the specified graphics techniques using a primitive graphics system at the individual pixel level
+            #Implement a ray tracer for scenes using a simple ( Phong model) BRDF plus reflection and refraction
+            |
+            #Compute the location and orientation of model parts using a forward kinematic approach
+            #Compute the orientation of articulated parts of a model from a location and orientation using an inverse kinematic approach
+            #Describe the tradeoffs in different representations of rotations
+            #Implement the spline interpolation method for producing in-between positions and orientations
+            #Implement algorithms for physical modeling of particle dynamics using simple Newtonian mechanics, for example Witkin & Kass, snakes and worms, symplectic Euler, Stormer/Verlet, or midpoint Euler methods
+            #Discuss the basic ideas behind some methods for fluid dynamics for modeling ballistic trajectories, for example for splashes, dust, fire, or smoke
+            #Use common animation software to construct simple organic forms using metaball and skeleton
+            |
+            #Describe the basic algorithms for scalar and vector visualization
+            #Describe the tradeoffs of visualization algorithms in terms of accuracy and performance
+            #Propose a suitable visualization design for a particular combination of data characteristics and application tasks
+            #Analyze the effectiveness of a given visualization for a particular task
+            #Design a process to evaluate the utility of a visualization algorithm or system
+            #Recognize a variety of applications of visualization including representations of scientific, medical, and mathematical data; flow visualization; and spatial analysis
+            |
+            #Discuss why human-centered software development is important
+            #Summarize the basic precepts of psychological and social interaction
+            #Develop and use a conceptual vocabulary for analyzing human interaction with software: affordance, conceptual model, feedback, and so forth
+            #Define a user-centered design process that explicitly takes account of the fact that the user is not like the developer or their acquaintances
+            #Create and conduct a simple usability test for an existing software application
+            |
+            #For an identified user group, undertake and document an analysis of their needs
+            #Create a simple application, together with help and documentation, that supports a graphical user interface
+            #Conduct a quantitative evaluation and discuss/report the results
+            #Discuss at least one national or international user interface design standard
+            |
+            #Explain the importance of Model-View controller to interface programming
+            #Create an application with a modern graphical user interface
+            #Identify commonalities and differences in UIs across different platforms
+            #Explain and use GUI programming concepts: event handling, constraint-based layout management, etc
+            |
+            #Explain how user-centered design complements other software process models
+            #Use lo-fi (low fidelity) prototyping techniques to gather, and report, user responses
+            #Choose appropriate methods to support the development of a specific UI
+            #Use a variety of techniques to evaluate a given UI
+            #Compare the constraints and benefits of different evaluative methods
+            |
+            #Describe when non-mouse interfaces are appropriate
+            #Understand the interaction possibilities beyond mouse-and-pointer interfaces
+            #Discuss the advantages (and disadvantages) of non-mouse interfaces
+            |
+            #Describe the difference between synchronous and asynchronous communication
+            #Compare the HCI issues in individual interaction with group interaction
+            #Discuss several issues of social concern raised by collaborative software
+            #Discuss the HCI issues in software that embodies human intention
+            |
+            #Explain basic statistical concepts and their areas of application
+            #Extract and articulate the statistical arguments used in papers that quantitatively report user studies
+            #Design a user study that will yield quantitative results
+            #Conduct and report on a study that utilizes both qualitative and quantitative evaluation
+            |
+            #Explain the concepts of phishing and spear phishing, and how to recognize them
+            #Describe the issues of trust in interface design with an example of a high and low trust system
+            #Design a user interface for a security mechanism
+            #Explain the concept of identity management and its importance
+            #Analyze a security policy and/or procedures to show where they consider, or fail to consider, human factors
+            |
+            #Explain what is meant by HCI is a design-oriented discipline
+            #Detail the processes of design appropriate to specific design orientations
+            #Apply a variety of design methods to a given problem
+            |
+            #Describe the optical model realized by a computer graphics system to synthesize stereoscopic view
+            #Describe the principles of different viewer tracking technologies
+            #Describe the differences between geometry- and image-based virtual reality
+            #Describe the issues of user action synchronization and data consistency in a networked environment
+            #Determine the basic requirements on interface, hardware, and software configurations of a VR system for a specified application
+            #Describe several possible uses for games engines, including their potential and their limitations
+            |
+            #Analyze the tradeoffs of balancing key security properties (Confidentiality, Integrity, and Availability)
+            #Describe the concepts of risk, threats, vulnerabilities and attack vectors (including the fact that there is no such thing as perfect security)
+            #Explain the concepts of authentication, authorization, access control
+            #Explain the concept of trust and trustworthiness
+            #Describe important ethical issues to consider in computer security, including ethical issues associated with fixing or not fixing vulnerabilities and disclosing or not disclosing vulnerabilities
+            |
+            #Describe the principle of least privilege and isolation as applied to system design
+            #Summarize the principle of fail-safe and deny-by-default
+            #Discuss the implications of relying on open design or the secrecy of design for security
+            #Explain the goals of end-to-end data security
+            #Discuss the benefits of having multiple layers of defenses
+            #For each stage in the lifecycle of a product, describe what security considerations should be evaluated
+            #Describe the cost and tradeoffs associated with designing security into a product
+            #Describe the concept of mediation and the principle of complete mediation
+            #Describe standard components for security operations, and explain the benefits of their use instead of re-inventing fundamentals operations
+            #Explain the concept of trusted computing including trusted computing base and attack surface and the principle of minimizing trusted computing base
+            #Discuss the importance of usability in security mechanism design
+            #Describe security issues that arise at boundaries between multiple components
+            #Identify the different roles of prevention mechanisms and detection/deterrence mechanisms
+            |
+            #Explain why input validation and data sanitization is necessary in the face of adversarial control of the input channel
+            #Explain why you might choose to develop a program in a type-safe language like Java, in contrast to an unsafe programming language like C/C++
+            #Classify common input validation errors, and write correct input validation code
+            #Demonstrate using a high-level programming language how to prevent a race condition from occurring and how to handle an exception
+            #Demonstrate the identification and graceful handling of error conditions
+            #Explain the risks with misusing interfaces with third-party code and how to correctly use third-party code
+            #Discuss the need to update software to fix security vulnerabilities and the lifecycle management of the fix
+            |
+            #Describe likely attacker types against a particular system
+            #Discuss the limitations of malware countermeasures ( signature-based detection, behavioral detection)
+            #Identify instances of social engineering attacks and Denial of Service attacks
+            #Discuss how Denial of Service attacks can be identified and mitigated
+            |
+            #Describe the different categories of network threats and attacks
+            #Describe the architecture for public and private key cryptography and how public key infrastructure (PKI) supports network security
+            #Describe virtues and limitations of security technologies at each layer of the network stack
+            #Identify the appropriate defense mechanism(s) and its limitations given a network threat
+            |
+            #Describe the purpose of cryptography and list ways it is used in data communications
+            #Define the following terms: cipher, cryptanalysis, cryptographic algorithm, and cryptology, and describe the two basic methods (ciphers) for transforming plain text in cipher text
+            #Discuss the importance of prime numbers in cryptography and explain their use in cryptographic algorithms
+            #Explain how public key infrastructure supports digital signing and encryption and discuss the limitations/vulnerabilities
+            |
+            #Describe the browser security model including same-origin policy and threat models in web security
+            #Discuss the concept of web sessions, secure communication channels such as TLS and importance of secure certificates, authentication including single sign-on such as OAuth and SAML
+            #Describe common types of vulnerabilities and attacks in web applications, and defenses against them
+            #Use client-side security capabilities in an application
+            |
+            #Explain the concept of code integrity and code signing and the scope it applies to
+            #Discuss the concept of root of trust and the process of secure boot and secure loading
+            #Describe the mechanism of remote attestation of system integrity
+            #Summarize the goals and key primitives of TPM
+            #Identify the threats of plugging peripherals into a device
+            #Identify physical attacks and countermeasures
+            #Identify attacks on non-PC hardware platforms
+            #Discuss the concept and importance of trusted path
+            |
+            #Describe the concept of privacy including personally private information, potential violations of privacy due to security mechanisms, and describe how privacy protection mechanisms run in conflict with security mechanisms
+            #Describe how an attacker can infer a secret by interacting with a database
+            #Explain how to set a data backup policy or password refresh policy
+            #Discuss how to set a breach disclosure policy
+            #Describe the consequences of data retention policies
+            #Identify the risks of relying on outsourced manufacturing
+            #Identify the risks and benefits of outsourcing to the cloud
+            |
+            #Describe what a digital investigation is, the sources of digital evidence, and the limitations of forensics
+            #Explain how to design software to support forensics
+            #Describe the legal requirements for use of seized data
+            #Describe the process of evidence seizure from the time when the requirement was identified to the disposition of the data
+            #Describe how data collection is accomplished and the proper storage of the original and forensics copy
+            #Conduct data collection on a hard drive
+            #Describe a person responsibility and liability while testifying as a forensics examiner
+            #Recover data based on a given search term from an imaged system
+            #Reconstruct application history from application artifacts
+            #Reconstruct web browsing history from web artifacts
+            #Capture and interpret network traffic
+            #Discuss the challenges associated with mobile device forensics
+            #Inspect a system (network, computer, or application) for the presence of malware or malicious activity
+            #Apply forensics tools to investigate security breaches
+            #Identify anti-forensic methods
+            |
+            #Describe the requirements for integrating security into the software development lifecycle
+            #Apply the concepts of the Design Principles for Protection Mechanisms, the Principles for Software Security [2], and the Principles for Secure Design [1] on a software development project
+            #Develop specifications for a software development effort that fully specify functional requirements and identifies the expected execution paths
+            #Describe software development best practices for minimizing vulnerabilities in programming code
+            #Conduct a security verification and assessment (static and dynamic) of a software application
+            |
+            #Describe how humans gain access to information and data to support their needs
+            #Describe the advantages and disadvantages of central organizational control over data
+            #Identify the careers/roles associated with information management ( database administrator, data modeler, application developer, end-user)
+            #Compare and contrast information with data and knowledge
+            #Demonstrate uses of explicitly stored metadata/schema associated with data
+            #Identify issues of data persistence for an organization
+            #Critique an information application with regard to satisfying user information needs
+            #Explain uses of declarative queries
+            #Give a declarative version for a navigational query
+            #Describe several technical solutions to the problems related to information privacy, integrity, security, and preservation
+            #Explain measures of efficiency (throughput, response time) and effectiveness (recall, precision)
+            #Describe approaches to scale up information systems
+            #Identify vulnerabilities and failure scenarios in common forms of information systems
+            |
+            #Explain the characteristics that distinguish the database approach from the approach of programming with data files
+            #Describe the most common designs for core database system components including the query optimizer, query executor, storage manager, access methods, and transaction processor
+            #Cite the basic goals, functions, and models of database systems
+            #Describe the components of a database system and give examples of their use
+            #Identify major DBMS functions and describe their role in a database system
+            #Explain the concept of data independence and its importance in a database system
+            #Use a declarative query language to elicit information from a database
+            #Describe facilities that datatbases provide supporting structures and/or stream (sequence) data,  text
+            |
+            #Compare and contrast appropriate data models, including internal structures, for different types of data
+            #Describe concepts in modeling notation ( Entity-Relation Diagrams or UML) and how they would be used
+            #Define the fundamental terminology used in the relational data model
+            #Describe the basic principles of the relational data model
+            #Apply the modeling concepts and notation of the relational data model
+            #Describe the main concepts of the OO model such as object identity, type constructors, encapsulation, inheritance, polymorphism, and versioning
+            #Describe the differences between relational and semi-structured data models
+            #Give a semi-structured equivalent ( in DTD or XML Schema) for a given relational schema
+            |
+            #Generate an index file for a collection of resources
+            #Explain the role of an inverted index in locating a document in a collection
+            #Explain how stemming and stop words affect indexing
+            #Identify appropriate indices for given relational schema and query set
+            #Estimate time to retrieve information, when indices are used compared to when they are not used
+            #Describe key challenges in web crawling,  detecting duplicate documents, determining the crawling frontier
+            |
+            #Prepare a relational schema from a conceptual model developed using the entity- relationship model
+            #Explain and demonstrate the concepts of entity integrity constraint and referential integrity constraint (including definition of the concept of a foreign key)
+            #Demonstrate use of the relational algebra operations from mathematical set theory (union, intersection, difference, and Cartesian product) and the relational algebra operations developed specifically for relational databases (select (restrict), project, join, and division)
+            #Write queries in the relational algebra
+            #Write queries in the tuple relational calculus
+            #Determine the functional dependency between two or more attributes that are a subset of a relation
+            #Connect constraints expressed as primary key and foreign key, with functional dependencies
+            #Compute the closure of a set of attributes under given functional dependencies
+            #Determine whether a set of attributes form a superkey and/or candidate key for a relation with given functional dependencies
+            #Evaluate a proposed decomposition, to say whether it has lossless-join and dependency-preservation
+            #Describe the properties of BCNF, PJNF, 5NF
+            #Explain the impact of normalization on the efficiency of database operations especially query optimization
+            #Describe what is a multi-valued dependency and what type of constraints it specifies
+            |
+            #Create a relational database schema in SQL that incorporates key, entity integrity, and referential integrity constraints
+            #Use SQL to create tables and retrieve (SELECT) information from a database
+            #Evaluate a set of query processing strategies and select the optimal strategy
+            #Create a non-procedural query by filling in templates of relations to construct an example of the desired query result
+            #Embed object-oriented queries into a stand-alone language such as C++ or Java
+            #Write a stored procedure that deals with parameters and has some control flow, to provide a given functionality
+            |
+            #Create a transaction by embedding SQL into an application program
+            #Explain the concept of implicit commits
+            #Describe the issues specific to efficient transaction execution
+            #Explain when and why rollback is needed and how logging assures proper rollback
+            #Explain the effect of different isolation levels on the concurrency control mechanisms
+            #Choose the proper isolation level for implementing a specified transaction protocol
+            #Identify appropriate transaction boundaries in application programs
+            |
+            #Explain the techniques used for data fragmentation, replication, and allocation during the distributed database design process
+            #Evaluate simple strategies for executing a distributed query to select the strategy that minimizes the amount of data transfer
+            #Explain how the two-phase commit protocol is used to deal with committing a transaction that accesses databases stored on multiple nodes
+            #Describe distributed concurrency control based on the distinguished copy techniques and the voting method
+            #Describe the three levels of software in the client-server model
+            |
+            #Explain the concepts of records, record types, and files, as well as the different techniques for placing file records on disk
+            #Give examples of the application of primary, secondary, and clustering indexes
+            #Distinguish between a non-dense index and a dense index
+            #Implement dynamic multilevel indexes using B-trees
+            #Explain the theory and application of internal and external hashing techniques
+            #Use hashing to facilitate dynamic file expansion
+            #Describe the relationships among hashing, compression, and efficient database searches
+            #Evaluate costs and benefits of various hashing schemes
+            #Explain how physical database design affects database transaction efficiency
+            |
+            #Compare and contrast different uses of data mining as evidenced in both research and application
+            #Explain the value of finding associations in market basket data
+            #Characterize the kinds of patterns that can be discovered by association rule mining
+            #Describe how to extend a relational system to find patterns using association rules
+            #Evaluate different methodologies for effective application of data mining
+            #Identify and characterize sources of noise, redundancy, and outliers in presented data
+            #Identify mechanisms (on-line aggregation, anytime behavior, interactive visualization) to close the loop in the data mining process
+            #Describe why the various close-the-loop processes improve the effectiveness of data mining
+            |
+            #Explain basic information storage and retrieval concepts
+            #Describe what issues are specific to efficient information retrieval
+            #Give applications of alternative search strategies and explain why the particular search strategy is appropriate for the application
+            #Design and implement a small to medium size information storage and retrieval system, or digital library
+            #Describe some of the technical solutions to the problems related to archiving and preserving information in a digital library
+            |
+            #Describe the media and supporting devices commonly associated with multimedia information and systems
+            #Demonstrate the use of content-based information analysis in a multimedia information system
+            #Critique multimedia presentations in terms of their appropriate use of audio, video, graphics, color, and other information presentation concepts
+            #Implement a multimedia application using an authoring system
+            #For each of several media or multimedia standards, describe in non-technical language what the standard calls for, and explain how aspects of human perception might be sensitive to the limitations of that standard
+            #Describe the characteristics of a computer system (including identification of support tools and appropriate standards) that has to host the implementation of one of a range of possible multimedia applications
+            |
+            #Describe Turing test and the Chinese Room thought experiment
+            #Differentiate between the concepts of optimal reasoning/behavior and human-like reasoning/behavior
+            #Determine the characteristics of a given problem that an intelligent system must solve
+            |
+            #Formulate an efficient problem space for a problem expressed in natural language ( English) in terms of initial and goal states, and operators
+            #Describe the role of heuristics and describe the trade-offs among completeness, optimality, time complexity, and space complexity
+            #Describe the problem of combinatorial explosion of search space and its consequences
+            #Select and implement an appropriate uninformed search algorithm for a problem, and characterize its time and space complexities
+            #Select and implement an appropriate informed search algorithm for a problem by designing the necessary heuristic evaluation function
+            #Evaluate whether a heuristic for a given problem is admissible/can guarantee optimal solution
+            #Formulate a problem specified in natural language ( English) as a constraint satisfaction problem and implement it using a chronological backtracking algorithm or stochastic local search
+            #Compare and contrast basic search issues with game playing issues
+            |
+            #Translate a natural language ( English) sentence into predicate logic statement
+            #Convert a logic statement into clause form
+            #Apply resolution to a set of logic statements to answer a query
+            #Make a probabilistic inference in a real-world problem using Bayes theorem to determine the probability of a hypothesis given evidence
+            |
+            #List the differences among the three main styles of learning: supervised, reinforcement, and unsupervised
+            #Identify examples of classification tasks, including the available input features and output to be predicted
+            #Explain the difference between inductive and deductive learning
+            #Describe over-fitting in the context of a problem
+            #Apply the simple statistical learning algorithm such as Naive Bayesian Classifier to a classification task and measure the classifiers accuracy
+            |
+            #Design and implement a genetic algorithm solution to a problem
+            #Design and implement a simulated annealing schedule to avoid local minima in a problem
+            #Design and implement A*/beam search to solve a problem
+            #Apply minimax search with alpha-beta pruning to prune search space in a two-player game
+            #Compare and contrast genetic algorithms with classic search techniques
+            #Compare and contrast various heuristic searches vis-a-vis applicability to a given problem
+            |
+            #Compare and contrast the most common models used for structured knowledge representation, highlighting their strengths and weaknesses
+            #Identify the components of non-monotonic reasoning and its usefulness as a representational mechanism for belief systems
+            #Compare and contrast the basic techniques for representing uncertainty
+            #Compare and contrast the basic techniques for qualitative representation
+            #Apply situation and event calculus to problems of action and change
+            #Explain the distinction between temporal and spatial reasoning, and how they interrelate
+            #Explain the difference between rule-based, case-based and model-based reasoning techniques
+            #Define the concept of a planning system and how it differs from classical search techniques
+            #Describe the differences between planning as search, operator-based planning, and propositional planning, providing examples of domains where each is most applicable
+            #Explain the distinction between monotonic and non-monotonic inference
+            |
+            #Apply Bayes rule to determine the probability of a hypothesis given evidence
+            #Explain how conditional independence assertions allow for greater efficiency of probabilistic systems
+            #Identify examples of knowledge representations for reasoning under uncertainty
+            #State the complexity of exact inference. Identify methods for approximate inference
+            #Design and implement at least one knowledge representation for reasoning under uncertainty
+            #Describe the complexities of temporal probabilistic reasoning
+            #Design and implement an HMM as one example of a temporal probabilistic system
+            #Describe the relationship between preferences and utility functions
+            #Explain how utility functions and probabilistic reasoning can be combined to make rational decisions
+            |
+            #List the defining characteristics of an intelligent agent
+            #Characterize and contrast the standard agent architectures
+            #Describe the applications of agent theory to domains such as software agents, personal assistants, and believable agents
+            #Describe the primary paradigms used by learning agents
+            #Demonstrate using appropriate examples how multi-agent systems support agent interaction
+            |
+            #Define and contrast deterministic and stochastic grammars, providing examples to show the adequacy of each
+            #Simulate, apply, or implement classic and stochastic algorithms for parsing natural language
+            #Identify the challenges of representing meaning
+            #List the advantages of using standard corpora. Identify examples of current corpora for a variety of NLP tasks
+            #Identify techniques for information retrieval, language translation, and text classification
+            |
+            #Explain the differences among the three main styles of learning: supervised, reinforcement, and unsupervised
+            #Implement simple algorithms for supervised learning, reinforcement learning, and unsupervised learning
+            #Determine which of the three learning styles is appropriate to a particular problem domain
+            #Compare and contrast each of the following techniques, providing examples of when each strategy is superior: decision trees, neural networks, and belief networks
+            #Evaluate the performance of a simple learning system on a real-world dataset
+            #Characterize the state of the art in learning theory, including its achievements and its shortcomings
+            #Explain the problem of overfitting, along with techniques for detecting and managing the problem
+            |
+            #List capabilities and limitations of todays state-of-the-art robot systems, including their sensors and the crucial sensor processing that informs those systems
+            #Integrate sensors, actuators, and software into a robot designed to undertake some task
+            #Program a robot to accomplish simple tasks using deliberative, reactive, and/or hybrid control architectures
+            #Implement fundamental motion planning algorithms within a robot configuration space
+            #Characterize the uncertainties associated with common robot sensors and actuators; articulate strategies for mitigating these uncertainties
+            #List the differences among robots' representations of their external environment, including their strengths and shortcomings
+            #Compare and contrast at least three strategies for robot navigation within known and/or unknown environments, including their strengths and shortcomings
+            #Describe at least one approach for coordinating the actions and sensing of several robots to accomplish a single task
+            |
+            #Summarize the importance of image and object recognition in AI and indicate several significant applications of this technology
+            #List at least three image-segmentation approaches, such as thresholding, edge-based and region-based algorithms, along with their defining characteristics, strengths, and weaknesses
+            #Implement 2d object recognition based on contour- and/or region-based shape representations
+            #Distinguish the goals of sound-recognition, speech-recognition, and speaker-recognition and identify how the raw audio signal will be handled differently in each of these cases
+            #Provide at least two examples of a transformation of a data source from one sensory domain to another,  tactile data interpreted as single-band 2d images
+            #Implement a feature-extraction algorithm on real data,  an edge or corner detector for images or vectors of Fourier coefficients describing a short slice of audio signal
+            #Implement an algorithm combining features into higher-level percepts,  a contour or polygon from visual primitives or phoneme hypotheses from an audio signal
+            #Implement a classification algorithm that segments input percepts into output categories and quantitatively evaluates the resulting classification
+            #Evaluate the performance of the underlying feature-extraction, relative to at least one alternative possible approach (whether implemented or not) in its contribution to the classification task (8), above
+            #Describe at least three classification approaches, their prerequisites for applicability, their strengths, and their shortcomings
+            |
+            #Articulate the organization of the Internet
+            #List and define the appropriate network terminology
+            #Describe the layered structure of a typical networked architecture
+            #Identify the different types of complexity in a network (edges, core, etc.)
+            |
+            #List the differences and the relations between names and addresses in a network
+            #Define the principles behind naming schemes and resource location
+            #Implement a simple client-server socket-based application
+            |
+            #Describe the operation of reliable delivery protocols
+            #List the factors that affect the performance of reliable delivery protocols
+            #Design and implement a simple reliable protocol
+            |
+            #Describe the organization of the network layer
+            #Describe how packets are forwarded in an IP network
+            #List the scalability benefits of hierarchical addressing
+            |
+            #Describe how frames are forwarded in an Ethernet network
+            #Describe the differences between IP and Ethernet
+            #Describe the interrelations between IP and Ethernet
+            #Describe the steps used in one common approach to the multiple access problem
+            |
+            #Describe how resources can be allocated in a network
+            #Describe the congestion problem in a large network
+            #Compare and contrast fixed and dynamic allocation techniques
+            #Compare and contrast current approaches to congestion
+            |
+            #Describe the organization of a wireless network
+            #Describe how wireless networks support mobile users
+            |
+            #Discuss the key principles (such as membership, trust) of social networking
+            #Describe how existing social networks operate
+            #Construct a social network graph from network data
+            #Analyze a social network to determine who the key people are
+            #Evaluate a given interpretation of a social network question with associated data
+            |
+            #Explain the objectives and functions of modern operating systems
+            #Analyze the tradeoffs inherent in operating system design
+            #Describe the functions of a contemporary operating system with respect to convenience, efficiency, and the ability to evolve
+            #Discuss networked, client-server, distributed operating systems and how they differ from single user operating systems
+            #Identify potential threats to operating systems and the security features design to guard against them
+            |
+            #Explain the concept of a logical layer
+            #Explain the benefits of building abstract layers in hierarchical fashion
+            #Describe the value of APIs and middleware
+            #Describe how computing resources are used by application software and managed by system software
+            #Contrast kernel and user mode in an operating system
+            #Discuss the advantages and disadvantages of using interrupt processing
+            #Explain the use of a device list and driver I/O queue
+            |
+            #Describe the need for concurrency within the framework of an operating system
+            #Demonstrate the potential run-time problems arising from the concurrent operation of many separate tasks
+            #Summarize the range of mechanisms that can be employed at the operating system level to realize concurrent systems and describe the benefits of each
+            #Explain the different states that a task may pass through and the data structures needed to support the management of many tasks
+            #Summarize techniques for achieving synchronization in an operating system ( describe how to implement a semaphore using OS primitives)
+            #Describe reasons for using interrupts, dispatching, and context switching to support concurrency in an operating system
+            #Create state and transition diagrams for simple problem domains
+            |
+            #Compare and contrast the common algorithms used for both preemptive and non-preemptive scheduling of tasks in operating systems, such as priority, performance comparison, and fair-share schemes
+            #Describe relationships between scheduling algorithms and application domains
+            #Discuss the types of processor scheduling such as short-term, medium-term, long-term, and I/O
+            #Describe the difference between processes and threads
+            #Compare and contrast static and dynamic approaches to real-time scheduling
+            #Discuss the need for preemption and deadline scheduling
+            #Identify ways that the logic embodied in scheduling algorithms are applicable to other domains, such as disk I/O, network scheduling, project scheduling, and problems beyond computing
+            |
+            #Explain memory hierarchy and cost-performance trade-offs
+            #Summarize the principles of virtual memory as applied to caching and paging
+            #Evaluate the trade-offs in terms of memory size (main memory, cache memory, auxiliary memory) and processor speed
+            #Defend the different ways of allocating memory to tasks, citing the relative merits of each
+            #Describe the reason for and use of cache memory (performance and proximity, different dimension of how caches complicate isolation and VM abstraction)
+            #Discuss the concept of thrashing, both in terms of the reasons it occurs and the techniques used to recognize and manage the problem
+            |
+            #Articulate the need for protection and security in an OS
+            #Summarize the features and limitations of an operating system used to provide protection and security
+            #Explain the mechanisms available in an OS to control access to resources
+            #Carry out simple system administration tasks according to a security policy, for example creating accounts, setting permissions, applying patches, and arranging for regular backups
+            |
+            #Explain the concept of virtual memory and how it is realized in hardware and software
+            #Differentiate emulation and isolation
+            #Evaluate virtualization trade-offs
+            #Discuss hypervisors and the need for them in conjunction with different types of hypervisors
+            |
+            #Explain the key difference between serial and parallel devices and identify the conditions in which each is appropriate
+            #Identify the relationship between the physical hardware and the virtual devices maintained by the operating system
+            #Explain buffering and describe strategies for implementing it
+            #Differentiate the mechanisms used in interfacing a range of devices (including hand-held devices, networks, multimedia) to a computer and explain the implications of these for the design of an operating system
+            #Describe the advantages and disadvantages of direct memory access and discuss the circumstances in which its use is warranted
+            #Identify the requirements for failure recovery
+            #Implement a simple device driver for a range of possible devices
+            |
+            #Describe the choices to be made in designing file systems
+            #Compare and contrast different approaches to file organization, recognizing the strengths and weaknesses of each
+            #Summarize how hardware developments have led to changes in the priorities for the design and the management of file systems
+            #Summarize the use of journaling and how log-structured file systems enhance fault tolerance
+            |
+            #Describe what makes a system a real-time system
+            #Explain the presence of and describe the characteristics of latency in real-time systems
+            #Summarize special concerns that real-time systems present, including risk, and how these concerns are addressed
+            |
+            #Explain the relevance of the terms fault tolerance, reliability, and availability
+            #Outline the range of methods for implementing fault tolerance in an operating system
+            #Explain how an operating system can continue functioning after a fault occurs
+            |
+            #Describe the performance measurements used to determine how a system performs
+            #Explain the main evaluation models used to evaluate a system
+            |
+            #Describe how platform-based development differs from general purpose programming
+            #List characteristics of platform languages
+            #Write and execute a simple platform-based program
+            #List the advantages and disadvantages of programming with platform constraints
+            |
+            #Design and Implement a simple web application
+            #Describe the constraints that the web puts on developers
+            #Compare and contrast web programming with general purpose programming
+            #Describe the differences between Software-as-a-Service and traditional software products
+            #Discuss how web standards impact software development
+            #Review an existing web application against a current web standard
+            |
+            #Design and implement a mobile application for a given mobile platform
+            #Discuss the constraints that mobile platforms put on developers
+            #Discuss the performance vs. power tradeoff
+            #Compare and contrast mobile programming with general purpose programming
+            |
+            #Design and implement an industrial application on a given platform ( using Lego Mindstorms or Matlab)
+            #Compare and contrast domain specific languages with general purpose programming languages
+            #Discuss the constraints that a given industrial platforms impose on developers
+            |
+            #Design and implement a simple application on a game platform
+            #Describe the constraints that game platforms impose on developers
+            #Compare and contrast game programming with general purpose programming
+            |
+            #Distinguish using computational resources for a faster answer from managing efficient access to a shared resource
+            #Distinguish multiple sufficient programming constructs for synchronization that may be inter-implementable but have complementary advantages
+            #Distinguish data races from higher level races
+            |
+            #Explain why synchronization is necessary in a specific parallel program
+            #Identify opportunities to partition a serial program into independent parallel modules
+            #Write a correct and scalable parallel algorithm
+            #Parallelize an algorithm by applying task-based decomposition
+            #Parallelize an algorithm by applying data-parallel decomposition
+            #Write a program using actors and/or reactive processes
+            |
+            #Use mutual exclusion to avoid a given race condition
+            #Give an example of an ordering of accesses among concurrent activities ( program with a data race) that is not sequentially consistent
+            #Give an example of a scenario in which blocking message sends can deadlock
+            #Explain when and why multicast or event-based messaging can be preferable to alternatives
+            #Write a program that correctly terminates when all of a set of concurrent tasks have completed
+            #Use a properly synchronized queue to buffer data passed among activities
+            #Explain why checks for preconditions, and actions based on these checks, must share the same unit of atomicity to be effective
+            #Write a test program that can reveal a concurrent programming error; for example, missing an update when two activities both try to increment a variable
+            #Describe at least one design technique for avoiding liveness failures in programs using multiple locks or semaphores
+            #Describe the relative merits of optimistic versus conservative concurrency control under different rates of contention among updates
+            #Give an example of a scenario in which an attempted optimistic update may never complete
+            |
+            #Define critical path, work, and span
+            #Compute the work and span, and determine the critical path with respect to a parallel execution diagram
+            #Define speed-up and explain the notion of an algorithm scalability in this regard
+            #Identify independent tasks in a program that may be parallelized
+            #Characterize features of a workload that allow or prevent it from being naturally parallelized
+            #Implement a parallel divide-and-conquer (and/or graph algorithm) and empirically measure its performance relative to its sequential analog
+            #Decompose a problem ( counting the number of occurrences of some word in a document) via map and reduce operations
+            |
+            #Explain the differences between shared and distributed memory
+            #Describe the SMP architecture and note its key features
+            #Characterize the kinds of tasks that are a natural match for SIMD machines
+            |
+            #Detect and correct a load imbalance
+            #Calculate the implications of Amdahl law for a particular parallel algorithm
+            #Describe how data distribution/layout can affect an algorithm communication costs
+            #Detect and correct an instance of false sharing
+            #Explain the impact of scheduling on parallel performance
+            #Explain performance impacts of data locality
+            #Explain the impact and trade-off related to power usage on parallel performance
+            |
+            #Distinguish network faults from other kinds of failures
+            #Explain why synchronization constructs such as simple locks are not useful in the presence of distributed faults
+            #Write a program that performs any required marshaling and conversion into message units, such as packets, to communicate interesting data between two hosts
+            #Measure the observed throughput and response latency across hosts in a given network
+            #Explain why no distributed system can be simultaneously consistent, available, and partition tolerant
+            #Implement a simple server -- for example, a spell checking service
+            #Explain the tradeoffs among overhead, scalability, and fault tolerance when choosing a stateful v. stateless design for a given service
+            #Describe the scalability challenges associated with a service growing to accommodate many clients, as well as those associated with a service only transiently having many clients
+            #Give examples of problems for which consensus algorithms such as leader election are required
+            |
+            #Discuss the importance of elasticity and resource management in cloud computing
+            #Explain strategies to synchronize a common view of shared data across a collection of devices
+            #Explain the advantages and disadvantages of using virtualized infrastructure
+            #Deploy an application that uses cloud infrastructure for computing and/or data resources
+            #Appropriately partition an application between a client and resources
+            |
+            #Model a concurrent process using a formal model, such as pi-calculus
+            #Explain the characteristics of a particular formal parallel model
+            #Formally model a shared memory system to show if it is consistent
+            #Use a model to show progress guarantees in a parallel algorithm
+            #Use formal techniques to show that a parallel algorithm is correct with respect to a safety or liveness property
+            #Decide if a specific execution is linearizable or not
+            |
+            #Design and implement a class
+            #Use subclassing to design simple class hierarchies that allow code to be reused for distinct subclasses
+            #Correctly reason about control flow in a program using dynamic dispatch
+            #Compare and contrast (1) the procedural/functional approach (defining a function for each operation with the function body providing a case for each data variant) and (2) the object-oriented approach (defining a class for each data variant with the class definition providing a method for each operation). Understand both as defining a matrix of operations and variants
+            #Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping (the idea of a subtype being usable in a context that expects the supertype)
+            #Use object-oriented encapsulation mechanisms such as interfaces and private members
+            #Define and use iterators and other operations on aggregates, including operations that take functions as arguments, in multiple programming languages, selecting the most natural idioms for each language
+            |
+            #Write basic algorithms that avoid assigning to mutable state or considering reference equality
+            #Write useful functions that take and return other functions
+            #Compare and contrast (1) the procedural/functional approach (defining a function for each operation with the function body providing a case for each data variant) and (2) the object-oriented approach (defining a class for each data variant with the class definition providing a method for each operation). Understand both as defining a matrix of operations and variants
+            #Correctly reason about variables and lexical scope in a program using function closures
+            #Use functional encapsulation mechanisms such as closures and modular interfaces
+            #Define and use iterators and other operations on aggregates, including operations that take functions as arguments, in multiple programming languages, selecting the most natural idioms for each language
+            |
+            #Write event handlers for use in reactive systems, such as GUIs
+            #Explain why an event-driven programming style is natural in domains where programs react to external events
+            #Describe an interactive system in terms of a model, a view, and a controller
+            |
+            #For both a primitive and a compound type, informally describe the values that have that type
+            #For a language with a static type system, describe the operations that are forbidden statically, such as passing the wrong type of value to a function or method
+            #Describe examples of program errors detected by a type system
+            #For multiple programming languages, identify program properties checked statically and program properties checked dynamically
+            #Give an example program that does not type-check in a particular language and yet would have no error if run
+            #Use types and type-error messages to write and debug programs
+            #Explain how typing rules define the set of operations that are legal for a type
+            #Write down the type rules governing the use of a particular compound type
+            #Explain why undecidability requires type systems to conservatively approximate program behavior
+            #Define and use program pieces (such as functions, classes, methods) that use generic types, including for collections
+            #Discuss the differences among generics, subtyping, and overloading
+            #Explain multiple benefits and limitations of static typing in writing, maintaining, and debugging software
+            |
+            #Explain how programs that process other programs treat the other programs as their input data
+            #Describe an abstract syntax tree for a small language
+            #Describe the benefits of having program representations other than strings of source code
+            #Write a program to process some representation of code for some purpose, such as an interpreter, an expression optimizer, or a documentation generator
+            |
+            #Distinguish a language definition (what constructs mean) from a particular language implementation (compiler vs. interpreter, run-time representation of data objects, etc.)
+            #Distinguish syntax and parsing from semantics and evaluation
+            #Sketch a low-level run-time representation of core language constructs, such as objects or closures
+            #Explain how programming language implementations typically organize memory into global data, text, heap, and stack sections and how features such as recursion and memory management map to this memory model
+            #Identify and fix memory leaks and dangling-pointer dereferences
+            #Discuss the benefits and limitations of garbage collection, including the notion of reachability
+            |
+            #Use formal grammars to specify the syntax of languages
+            #Use declarative tools to generate parsers and scanners
+            #Identify key issues in syntax definitions: ambiguity, associativity, precedence
+            |
+            #Implement context-sensitive, source-level static analyses such as type-checkers or resolving identifiers to identify their binding occurrences
+            #Describe semantic analyses using an attribute grammar
+            |
+            #Identify all essential steps for automatically converting source code into assembly or other low-level languages
+            #Generate the low-level code for calling functions/methods in modern languages
+            #Discuss why separate compilation requires uniform calling conventions
+            #Discuss why separate compilation limits optimization because of unknown effects of calls
+            #Discuss opportunities for optimization introduced by naive translation and approaches for achieving optimization, such as instruction selection, instruction scheduling, register allocation, and peephole optimization
+            |
+            #Compare the benefits of different memory-management schemes, using concepts such as fragmentation, locality, and memory overhead
+            #Discuss benefits and limitations of automatic memory management
+            #Explain the use of metadata in run-time representations of objects and activation records, such as class pointers, array lengths, return addresses, and frame pointers
+            #Discuss advantages, disadvantages, and difficulties of just-in-time and dynamic recompilation
+            #Identify the services provided by modern language run-time systems
+            |
+            #Define useful static analyses in terms of a conceptual framework such as dataflow analysis
+            #Explain why non-trivial sound static analyses must be approximate
+            #Communicate why an analysis is correct (sound and terminating)
+            #Distinguish may and must analyses
+            #Explain why potential aliasing limits sound program analysis and how alias analysis can help
+            #Use the results of a static analysis for program optimization and/or partial program correctness
+            |
+            #Use various advanced programming constructs and idioms correctly
+            #Discuss how various advanced programming constructs aim to improve program structure, software quality, and programmer productivity
+            #Discuss how various advanced programming constructs interact with the definition and implementation of other language features
+            |
+            #Write correct concurrent programs using multiple programming models, such as shared memory, actors, futures, and data-parallelism primitives
+            #Use a message-passing model to analyze a communication protocol
+            #Explain why programming languages do not guarantee sequential consistency in the presence of data races and what programmers must do as a result
+            |
+            #Define a type system precisely and compositionally
+            #For various foundational type constructors, identify the values they describe and the invariants they enforce
+            #Precisely specify the invariants preserved by a sound type system
+            #Prove type safety for a simple language in terms of preservation and progress theorems
+            #Implement a unification-based type-inference algorithm for a simple language
+            #Explain how static overloading and associated resolution algorithms influence the dynamic behavior of programs
+            |
+            #Give a formal semantics for a small language
+            #Write a lambda-calculus program and show its evaluation to a normal form
+            #Discuss the different approaches of operational, denotational, and axiomatic semantics
+            #Use induction to prove properties of all programs in a language
+            #Use induction to prove properties of all programs in a language that are well-typed according to a formally defined type system
+            #Use parametricity to establish the behavior of code given only its type
+            #Use formal semantics to build a formal model of a software system other than a programming language
+            |
+            #Discuss the role of concepts such as orthogonality and well-chosen defaults in language design
+            #Use crisp and objective criteria for evaluating language-design decisions
+            #Give an example program whose result can differ under different rules for evaluation order, precedence, or associativity
+            #Show uses of delayed evaluation, such as user-defined control abstractions
+            #Discuss the need for allowing calls to external calls and system libraries and the consequences for language implementation
+            |
+            #Use a logic language to implement a conventional algorithm
+            #Use a logic language to implement an algorithm employing implicit search using clauses, relations, and cuts
+            |
+            #Discuss the importance of algorithms in the problem-solving process
+            #Discuss how a problem may be solved by multiple algorithms, each with different properties
+            #Create algorithms for solving simple problems
+            #Use a programming language to implement, test, and debug algorithms for solving simple problems
+            #Implement, test, and debug simple recursive functions and procedures
+            #Determine whether a recursive or iterative solution is most appropriate for a problem
+            #Implement a divide-and-conquer algorithm for solving a problem
+            #Apply the techniques of decomposition to break a program into smaller pieces
+            #Identify the data components and behaviors of multiple abstract data types
+            #Implement a coherent abstract data type, with loose coupling between components and behaviors
+            #Identify the relative strengths and weaknesses among multiple designs or implementations for a problem
+            |
+            #Analyze and explain the behavior of simple programs involving the fundamental programming constructs variables, expressions, assignments, I/O, control constructs, functions, parameter passing, and recursion
+            #Identify and describe uses of primitive data types
+            #Write programs that use primitive data types
+            #Modify and expand short programs that use standard conditional and iterative control structures and functions
+            #Design, implement, test, and debug a program that uses each of the following fundamental programming constructs: basic computation, simple I/O, standard conditional and iterative structures, the definition of functions, and parameter passing
+            #Write a program that uses file I/O to provide persistence across multiple executions
+            #Choose appropriate conditional and iteration constructs for a given programming task
+            #Describe the concept of recursion and give examples of its use
+            #Identify the base case and the general case of a recursively-defined problem
+            |
+            #Discuss the appropriate use of built-in data structures
+            #Describe common applications for each of the following data structures: stack, queue, priority queue, set, and map
+            #Write programs that use each of the following data structures: arrays, records/structs, strings, linked lists, stacks, queues, sets, and maps
+            #Compare alternative implementations of data structures with respect to performance
+            #Describe how references allow for objects to be accessed in multiple ways
+            #Compare and contrast the costs and benefits of dynamic and static data structure implementations
+            #Choose the appropriate data structure for modeling a given problem
+            |
+            #Trace the execution of a variety of code segments and write summaries of their computations
+            #Explain why the creation of correct program components is important in the production of high-quality software
+            #Identify common coding errors that lead to insecure programs ( buffer overflows, memory leaks, malicious code) and apply strategies for avoiding such errors
+            #Conduct a personal code review (focused on common coding errors) on a program component using a provided checklist
+            #Contribute to a small-team code review focused on component correctness
+            #Describe how a contract can be used to specify the behavior of a program component
+            #Refactor a program by identifying opportunities to apply procedural abstraction
+            #Apply a variety of strategies to the testing and debugging of simple programs
+            #Construct, execute and debug programs using a modern IDE and associated tools such as unit testing tools and visual debuggers
+            #Construct and debug programs using the standard libraries available with a chosen programming language
+            #Analyze the extent to which another programmer code meets documentation and programming style standards
+            #Apply consistent documentation and program style standards that contribute to the readability and maintainability of software
+            |
+            #Describe how software can interact with and participate in various systems including information management, embedded, process control, and communications systems
+            #Describe the relative advantages and disadvantages among several major process models ( waterfall, iterative, and agile)
+            #Describe the different practices that are key components of various process models
+            #Differentiate among the phases of software development
+            #Describe how programming in the large differs from individual efforts with respect to understanding a large code base, code reading, understanding builds, and understanding context of changes
+            #Explain the concept of a software lifecycle and provide an example, illustrating its phases including the deliverables that are produced
+            #Compare several common process models with respect to their value for development of particular classes of software systems taking into account issues such as requirement stability, size, and non-functional characteristics
+            |
+            #Discuss common behaviors that contribute to the effective functioning of a team
+            #Create and follow an agenda for a team meeting
+            #Identify and justify necessary roles in a software development team
+            #Understand the sources, hazards, and potential benefits of team conflict
+            #Apply a conflict resolution strategy in a team setting
+            #Use an ad hoc method to estimate software development effort ( time) and compare to actual effort required
+            #List several examples of software risks
+            #Describe the impact of risk in a software development lifecycle
+            #Describe different categories of risk in software systems
+            |
+            #Describe the difference between centralized and distributed software configuration management
+            #Describe how version control can be used to help manage software release management
+            #Identify configuration items and use a source code control tool in a small team-based project
+            #Describe how available static and dynamic test tools can be integrated into the software development environment
+            #Describe the issues that are important in selecting a set of tools for the development of a particular software system, including tools for requirements tracking, design modeling, implementation, build automation, and testing
+            #Demonstrate the capability to use software tools in support of the development of a software product of medium size
+            |
+            #List the key components of a use case or similar description of some behavior that is required for a system
+            #Describe how the requirements engineering process supports the elicitation and validation of behavioral requirements
+            #Interpret a given requirements model for a simple software system
+            #Describe the fundamental challenges of and common techniques used for requirements elicitation
+            #List the key components of a data model ( class diagrams or ER diagrams)
+            #Identify both functional and non-functional requirements in a given requirements specification for a software system
+            #Conduct a review of a set of software requirements to determine the quality of the requirements with respect to the characteristics of good requirements
+            |
+            #Articulate design principles including separation of concerns, information hiding, coupling and cohesion, and encapsulation
+            #Use a design paradigm to design a simple software system, and explain how system design principles have been applied in this design
+            #Construct models of the design of a simple software system that are appropriate for the paradigm used to design it
+            #Within the context of a single design paradigm, describe one or more design patterns that could be applicable to the design of a simple software system
+            #For a simple system suitable for a given scenario, discuss and select an appropriate design paradigm
+            #Create appropriate models for the structure and behavior of software products from their requirements specifications
+            #Explain the relationships between the requirements for a software product and its design, using appropriate models
+            #For the design of a simple software system within the context of a single design paradigm, describe the software architecture of that system
+            #Given a high-level design, identify the software architecture by differentiating among common software architectures such as 3-tier, pipe-and-filter, and client-server
+            #Investigate the impact of software architectures selection on the design of a simple system
+            #Apply simple examples of patterns in a software design
+            #Describe a form of refactoring and discuss when it may be applicable
+            #Select suitable components for use in the design of a software product
+            #Explain how suitable components might need to be adapted for use in the design of a software product
+            #Design a contract for a typical small software component for use in a given system
+            |
+            #Describe techniques, coding idioms and mechanisms for implementing designs to achieve desired properties such as reliability, efficiency, and robustness
+            #Build robust code using exception handling mechanisms
+            #Describe secure coding and defensive coding practices
+            #Select and use a defined coding standard in a small software project
+            #Compare and contrast integration strategies including top-down, bottom-up, and sandwich integration
+            #Describe the process of analyzing and implementing changes to code base developed for a specific project
+            #Describe the process of analyzing and implementing changes to a large existing code base
+            |
+            #Distinguish between program validation and verification
+            #Describe the role that tools can play in the validation of software
+            #Undertake, as part of a team activity, an inspection of a medium-size code segment
+            #Describe and distinguish among the different types and levels of testing (unit, integration, systems, and acceptance)
+            #Describe techniques for identifying significant test cases for integration, regression and system testing
+            #Create and document a set of tests for a medium-size code segment
+            #Describe how to select good regression tests and automate them
+            #Use a defect tracking tool to manage software defects in a small software project
+            #Discuss the limitations of testing in a particular domain
+            |
+            #Identify the principal issues associated with software evolution and explain their impact on the software lifecycle
+            #Estimate the impact of a change request to an existing product of medium size
+            #Use refactoring in the process of modifying a software component
+            #Discuss the challenges of evolving systems in a changing environment
+            #Outline the process of regression testing and its role in release management
+            #Discuss the advantages and disadvantages of different types of software reuse
+            |
+            #Explain the problems that exist in achieving very high levels of reliability
+            #Describe how software reliability contributes to system reliability
+            #List approaches to minimizing faults that can be applied at each stage of the software lifecycle
+            |
+            #Describe the role formal specification and analysis techniques can play in the development of complex software and compare their use as validation and verification techniques with testing
+            #Apply formal specification and analysis techniques to software designs and programs with low complexity
+            #Explain the potential benefits and drawbacks of using formal specification languages
+            #Create and evaluate program assertions for a variety of behaviors ranging from simple through complex
+            #Using a common formal specification language, formulate the specification of a simple software system and derive examples of test cases from the specification
+            |
+            #List commonly encountered patterns of how computations are organized
+            #Describe the basic building blocks of computers and their role in the historical development of computer architecture
+            #Articulate the differences between single thread vs. multiple thread, single server vs. multiple server models, motivated by real world examples ( cooking recipes, lines for multiple teller machines and couples shopping for food)
+            #Articulate the concept of strong vs. weak scaling, i.e., how performance is affected by scale of problem vs. scale of resources to solve the problem. This can be motivated by the simple, real-world examples
+            #Design a simple logic circuit using the fundamental building blocks of logic design
+            #Use tools for capture, synthesis, and simulation to evaluate a logic design
+            #Write a simple sequential problem and a simple parallel version of the same program
+            #Evaluate performance of simple sequential and parallel versions of a program with different problem sizes, and be able to describe the speed-ups achieved
+            |
+            #Describe how computing systems are constructed of layers upon layers, based on separation of concerns, with well-defined interfaces, hiding details of low layers from the higher layers
+            #Describe how hardware, VM, OS, and applications are additional layers of interpretation/processing
+            #Describe the mechanisms of how errors are detected, signaled back, and handled through the layers
+            #Construct a simple program using methods of layering, error detection and recovery, and reflection of error status across layers
+            #Find bugs in a layered program by using tools for program tracing, single stepping, and debugging
+            |
+            #Describe computations as a system characyterized by a known set of configurations with transitions from one unique configuration (state) to another (state)
+            #Describe the distinction between systems whose output is only a function of their input (Combinational) and those with memory/history (Sequential)
+            #Describe a computer as a state machine that interprets machine instructions
+            #Explain how a program or network protocol can also be expressed as a state machine, and that alternative representations for the same computation can exist
+            #Develop state machine descriptions for simple problem statement solutions ( traffic light sequencing, pattern recognizers)
+            #Derive time-series behavior of a state machine from its state machine representation
+            |
+            #For a given program, distinguish between its sequential and parallel execution, and the performance implications thereof
+            #Demonstrate on an execution time line that parallelism events and operations can take place simultaneously (i.e., at the same time). Explain how work can be performed in less elapsed time if this can be exploited
+            #Explain other uses of parallelism, such as for reliability/redundancy of execution
+            #Define the differences between the concepts of Instruction Parallelism, Data Parallelism, Thread Parallelism/Multitasking, Task/Request Parallelism
+            #Write more than one parallel program ( one simple parallel program in more than one parallel programming paradigm; a simple parallel program that manages shared resources through synchronization primitives; a simple parallel program that performs simultaneous operation on partitioned data through task parallel ( parallel search terms; a simple parallel program that performs step-by-step pipeline processing through message passing)
+            #Use performance tools to measure speed-up achieved by parallel programs in terms of both problem size and number of resources
+            |
+            #Explain how the components of system architecture contribute to improving its performance
+            #Describe Amdahls law and discuss its limitations
+            #Design and conduct a performance-oriented experiment
+            #Use software tools to profile and measure program performance
+            |
+            #Define how finite computer resources ( processor share, memory, storage and network bandwidth) are managed by their careful allocation to existing entities
+            #Describe the scheduling algorithms by which resources are allocated to competing entities, and the figures of merit by which these algorithms are evaluated, such as fairness
+            #Implement simple schedule algorithms
+            #Use figures of merit of alternative scheduler implementations
+            |
+            #Explain the importance of locality in determining performance
+            #Describe why things that are close in space take less time to access
+            #Calculate average memory access time and describe the tradeoffs in memory hierarchy performance in terms of capacity, miss/hit rate, and access time
+            |
+            #Explain why it is important to isolate and protect the execution of individual programs and environments that share common underlying resources
+            #Describe how the concept of indirection can create the illusion of a dedicated machine and its resources even when physically shared among multiple programs and environments
+            #Measure the performance of two application instances running on separate virtual machines, and determine the effect of performance isolation
+            |
+            #Explain the distinction between program errors, system errors, and hardware faults ( bad memory) and exceptions ( attempt to divide by zero)
+            #Articulate the distinction between detecting, handling, and recovering from faults, and the methods for their implementation
+            #Describe the role of error correcting codes in providing error checking and correction techniques in memories, storage, and networks
+            #Apply simple algorithms for exploiting redundant information for the purposes of data correction
+            #Compare different error detection and correction methods for their data overhead, implementation complexity, and relative execution time for encoding, detecting, and correcting errors
+            |
+            #Explain the circumstances in which a given figure of system performance metric is useful
+            #Explain the inadequacies of benchmarks as a measure of system performance
+            #Use limit studies or simple calculations to produce order-of-magnitude estimates for a given performance metric in a given context
+            #Conduct a performance experiment on a layered system to determine the effect of a system parameter on figure of system performance
+            |
+            #Describe positive and negative ways in which computer technology (networks, mobile computing, cloud computing) alters modes of social interaction at the personal level
+            #Identify developers assumptions and values embedded in hardware and software design, especially as they pertain to usability for diverse populations including under-represented populations and the disabled
+            #Interpret the social context of a given design and its implementation
+            #Evaluate the efficacy of a given design and implementation using empirical data
+            #Summarize the implications of social media on individualism versus collectivism and culture
+            #Discuss how Internet access serves as a liberating force for people living under oppressive forms of government; explain how limits on Internet access are used as tools of political and social repression
+            #Analyze the pros and cons of reliance on computing in the implementation of democracy (e.g. delivery of social services, electronic voting)
+            #Describe the impact of the under-representation of diverse populations in the computing profession ( industry culture, product diversity)
+            #Explain the implications of context awareness in ubiquitous computing systems
+            |
+            #Evaluate stakeholder positions in a given situation
+            #Analyze basic logical fallacies in an argument
+            #Analyze an argument to identify premises and conclusion
+            #Illustrate the use of example and analogy in ethical argument
+            #Evaluate ethical/social tradeoffs in technical decisions
+            |
+            #Identify ethical issues that arise in software development and determine how to address them technically and ethically
+            #Explain the ethical responsibility of ensuring software correctness, reliability and safety
+            #Describe the mechanisms that typically exist for a professional to keep up-to-date
+            #Describe the strengths and weaknesses of relevant professional codes as expressions of professionalism and guides to decision-making
+            #Analyze a global computing issue, observing the role of professionals and government officials in managing this problem
+            #Evaluate the professional codes of ethics from the ACM, the IEEE Computer Society, and other organizations
+            #Describe ways in which professionals may contribute to public policy
+            #Describe the consequences of inappropriate professional behavior
+            #Identify progressive stages in a whistle-blowing incident
+            #Identify examples of how regional culture interplays with ethical dilemmas
+            #Investigate forms of harassment and discrimination and avenues of assistance
+            #Examine various forms of professional credentialing
+            #Explain the relationship between ergonomics in computing environments and people health
+            #Develop a computer usage/acceptable use policy with enforcement measures
+            #Describe issues associated with industries push to focus on time to market versus enforcing quality professional standards
+            |
+            #Discuss the philosophical bases of intellectual property
+            #Discuss the rationale for the legal protection of intellectual property
+            #Describe legislation aimed at digital copyright infringements
+            #Critique legislation aimed at digital copyright infringements
+            #Identify contemporary examples of intangible digital intellectual property
+            #Justify uses of copyrighted materials
+            #Evaluate the ethical issues inherent in various plagiarism detection mechanisms
+            #Interpret the intent and implementation of software licensing
+            #Discuss the issues involved in securing software patents
+            #Characterize and contrast the concepts of copyright, patenting and trademarks
+            |
+            #Discuss the philosophical basis for the legal protection of personal privacy
+            #Evaluate solutions to privacy threats in transactional databases and data warehouses
+            #Describe the role of data collection in the implementation of pervasive surveillance systems ( RFID, face recognition, toll collection, mobile computing)
+            #Describe the ramifications of differential privacy
+            #Investigate the impact of technological solutions to privacy problems
+            |
+            #Write clear, concise, and accurate technical documents following well-defined standards for format and for including appropriate tables, figures, and references
+            #Evaluate written technical documentation to detect problems of various kinds
+            #Develop and deliver a good quality formal presentation
+            #Plan interactions (e.g. virtual, face-to-face, shared documents) with others in which they are able to get their point across, and are also able to listen carefully and appreciate the points of others, even when they disagree, and are able to convey to others what they have heard
+            #Describe the strengths and weaknesses of various forms of communication (e.g. virtual, face-to-face, shared documents)
+            #Examine appropriate measures used to communicate with stakeholders involved in a project
+            #Compare and contrast various collaboration tools
+            |
+            #Identify ways to be a sustainable practitioner
+            #Illustrate global social and environmental impacts of computer use and disposal (e-waste)
+            #Describe the environmental impacts of design choices within the field of computing that relate to algorithm design, operating system design, networking design, database design, etc
+            #Investigate the social and environmental impacts of new system designs through projects
+            |
+            #Identify significant continuing trends in the history of the computing field
+            #Identify the contributions of several pioneers in the computing field
+            #Discuss the historical context for several programming language paradigms
+            #Compare daily life before and after the advent of personal computers and the Internet
+            |
+            #Summarize the rationale for antimonopoly efforts
+            #Identify several ways in which the information technology industry is affected by shortages in the labor supply
+            #Identify the evolution of pricing strategies for computing goods and services
+            #Discuss the benefits, the drawbacks and the implications of off-shoring and outsourcing
+            #Investigate and defend ways to address limitations on access to computing
+            #Describe the economic benefits of network effects
+            |
+            #List classic examples of computer crimes and social engineering incidents with societal impact
+            #Identify laws that apply to computer crimes
+            #Describe the motivation and ramifications of cyber terrorism and criminal hacking
+            #Examine the ethical and legal issues surrounding the misuse of access and various breaches in security
+            #Discuss the professional's role in security and the trade-offs involved
+            #Investigate measures that can be taken by both individuals and organizations including governments to prevent or mitigate the undesirable effects of computer crimes and identity theft
+            #Write a company-wide security policy, which includes procedures for managing passwords and employee monitoring
+            """
