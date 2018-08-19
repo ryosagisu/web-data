@@ -48,14 +48,8 @@
                     <table id="myTable" class=" table order-list">
                         <thead>
                             <tr>
-                                <th style="text-align: center; vertical-align: middle" rowspan="2">Name</th>
-                                <th style="text-align: center" colspan="2">Tier</th>
-                                <th style="text-align: center; vertical-align: middle" rowspan="2">Body of Knowledge</th>
-                                <th style="text-align: center; vertical-align: middle" rowspan="2">Sub Body of Knowledge</th>
-                            </tr>
-                            <tr>
-                                <th style="text-align: center">Level 1</th>
-                                <th style="text-align: center">Level 2</th>
+                                <th style="width: 25%; text-align: center">Name</th>
+                                <th style="width: 75%; text-align: center">Description</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -65,25 +59,10 @@
                                         <input type="text" id="subject-name1" name="subject-name1" class="form-control" required/>
                                     </div>
                                 </td>
-                                <td class="col-sm-1">
-                                    <input type="number" id="sks1-1" name="sks1-1" class="form-control" value="0" />
+                                <td class="col-sm-8">
+                                    <input type="text" id="description-1" name="description-1" class="form-control" placeholder="Desc your subject here..."/>
                                 </td>
-                                <td class="col-sm-1">
-                                    <input type="number" id="sks2-1" name="sks2-1" class="form-control" value="0" />
-                                </td>
-                                <td class="col-sm-3">
-                                    <select class="form-control" id="bok1" name="bok1">
-                                        <option></option>
-                                    </select>
-                                </td>
-                                <td class="col-sm-3">
-                                    <select class="form-control" id="subbok1" name="subbok1">
-                                        <option></option>
-                                    </select>
-                                </td>
-                                <td class="col-sm-1">
-                                    <a class="deleteRow"></a>
-                                </td>
+                                <td class="col-sm-1"><input type="button" class="ibtnDel btn btn-md btn-danger " value="Delete" disabled /></td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -179,9 +158,7 @@
 <script>
     //Global variables
     var arrName = [];
-    var arrTier1 = [];
-    var arrTier2 = [];
-    var arrBok = [];
+    var arrDesc = [];
     var arrsubBok = [];
     var arrComp = [];
     var arrComp2 = [];
@@ -234,31 +211,28 @@
             if (isValid) {
                 if (step == 1) {
                     arrName = [];
-                    arrTier1 = [];
-                    arrTier2 = [];
-                    arrBok = [];
+                    arrDesc = [];
                     arrsubBok = [];
                     arrComp = [];
                     for (var i = 1; i < counter; i++) {
                         arrName[i] = $("#subject-name" + i).val();
-                        arrTier1[i] = $("#sks1-" + i).val();
-                        arrTier2[i] = $("#sks2-" + i).val();
-                        arrBok[i] = $("#bok" + i).val();
-                        arrsubBok[i] = $("#subbok" + i).val();
+                        arrDesc[i] = $("#description-" + i).val();
                         $.ajax({
                             type: 'POST',
                             url: '/fetchCompetencies1',
                             data: {
-                                'bok': $("#bok" + i).val(),
-                                'subbok': $("#subbok" + i).val(),
+                                'description': $("#description-" + i).val().replace(/[^a-zA-Z0-9]/g,'_'),
+                                'index': i,
                                 'ajax': true
                             },
                             success: function (data2) {
+                                console.log(data2)
                                 if (arrComp.length > 0) {
                                     arrComp = arrComp.concat(JSON.parse(data2).comp);
                                 } else {
                                     arrComp = JSON.parse(data2).comp;
                                 }
+                                arrsubBok[JSON.parse(data2).index] = JSON.parse(data2).subbok
                             }
                         });
                     }
@@ -306,96 +280,12 @@
                 '<td><div class="form-group" style="margin-bottom: 0px;"><input type="text" id="subject-name' +
                 counter + '" name="subject-name' +
                 counter + '" class="form-control" required/></div></td>';
-            cols += '<td><input type="number" class="form-control" id="sks1-' + counter +
-                '" name="sks1-' + counter +
-                '" value="0" /></td>';
-            cols += '<td><input type="number" class="form-control" id="sks2-' + counter +
-                '" name="sks2-' + counter +
-                '" value="0" /></td>';
-            cols += '<td><select class="form-control" id="bok' + counter + '" name="bok' + counter +
-                '"><option></option></select></td>';
-            cols += '<td><select class="form-control" id="subbok' + counter + '" name="subbok' +
-                counter +
-                '"><option></option></select></td>';
+            cols += '<td><input type="text" id="description-' + counter + '" name="description-' + counter + '" class="form-control" placeholder="Desc your subject here..."/></td>';
             cols +=
                 '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
             newRow.append(cols);
             $("table.order-list").append(newRow);
-            //Select2
-            $.ajax({
-                type: 'GET',
-                url: '/fetchBoK'
-            }).done(function (data) {
-                $("#bok" + counter).select2({
-                    placeholder: 'Choose body of knowledge',
-                    data: JSON.parse(data).BoK
-                });
-                //Init sub bok
-                $("#subbok" + counter).select2({
-                    placeholder: "Choose sub body of knowledge",
-                    data: []
-                });
-                $("#bok" + counter).change(function () {
-                    var iterate = $(this).attr('id').substring(3);
-                    $("#subbok" + iterate).empty().trigger('change');
-                    var choosenType = $(this).val();
-                    if (choosenType !== null && choosenType !== '') {
-                        $.ajax({
-                            type: 'POST',
-                            url: '/fetchsubBoK',
-                            data: {
-                                'name': choosenType,
-                                'ajax': true
-                            },
-                            success: function (data2) {
-                                $("#subbok" + iterate).select2({
-                                    placeholder: "Choose sub body of knowledge",
-                                    data: JSON.parse(data2).subBoK
-                                });
-                            }
-                        });
-                    }
-                });
-                counter++;
-            });
-        });
-
-        //Init sub bok
-        $("#subbok1").select2({
-            placeholder: "Choose sub body of knowledge",
-            data: []
-        });
-
-        //Ajax get bok
-        $.ajax({
-            type: 'GET',
-            url: '/fetchBoK'
-        }).done(function (data) {
-            $("#bok1").select2({
-                placeholder: "Choose body of knowledge",
-                data: JSON.parse(data).BoK
-            });
-            // menampilkan list sub bok berdasarkan bok nya
-            $('#bok1').change(function () {
-                $('#subbok1').empty().trigger('change');
-                var choosenType = $(this).val();
-                if (choosenType !== null && choosenType !== '') {
-                    $.ajax({
-                        type: 'POST',
-                        url: '/fetchsubBoK',
-                        data: {
-                            'name': choosenType,
-                            'ajax': true
-                        },
-                        success: function (data2) {
-                            $("#subbok1").select2({
-                                placeholder: "Choose sub body of knowledge",
-                                data: JSON.parse(data2).subBoK
-                            });
-                        }
-                    });
-                }
-            });
+            counter++;
         });
 
         $("table.order-list").on("click", ".ibtnDel", function (event) {
@@ -552,8 +442,6 @@
     });
 
     function makeChart(hasil) {
-        // console.log(100 - (hasil * 100).toFixed(2));
-        // console.log(100 - ((1 - hasil) * 100).toFixed(2));
 
         //Set level
         switch($("#level").val()){

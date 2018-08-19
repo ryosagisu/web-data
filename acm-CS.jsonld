@@ -228,7 +228,6 @@
                       "Explain the significance of NP-completeness"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -255,7 +254,6 @@
                       "Prove that a problem is NP-complete by reducing a classic known NP-complete problem to it"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -296,7 +294,6 @@
                       "Prove that a problem is uncomputable by reducing a classic known uncomputable problem to it"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -330,7 +327,6 @@
                       "Select and apply advanced analysis techniques (e.g., amortized, probabilistic, etc.) to algorithms"
                   ],
                   "hasComp": [
-                      ""
                   ]
               }
           ]
@@ -410,7 +406,6 @@
                       "Write simple programs at the assembly/machine level for string processing and manipulation"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -573,7 +568,6 @@
                       "Describe the differences between memory backplane, processor memory interconnect, and remote memory via networks, their implications for access latency and impact on program performance"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -603,7 +597,6 @@
                       "Describe the relevance of scalability to performance"
                   ],
                   "hasComp": [
-                      ""
                   ]
               }
           ]
@@ -636,7 +629,6 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -761,7 +753,6 @@
                       "Describe issues related to scaling data analysis from small to large data sets"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -838,7 +829,6 @@
                       "Implement algorithms for solving differential equations"
                   ],
                   "hasComp": [
-                      ""
                   ]
               }
           ]
@@ -904,7 +894,6 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -1005,7 +994,6 @@
                       "Determine if two graphs are isomorphic"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -1383,7 +1371,6 @@
                       "Explain and use GUI programming concepts: event handling, constraint-based layout management, etc"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -1415,7 +1402,6 @@
                       "Compare the constraints and benefits of different evaluative methods"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -1535,7 +1521,6 @@
                       "Analyze a security policy and/or procedures to show where they consider, or fail to consider, human factors"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -1559,7 +1544,6 @@
                       "Apply a variety of design methods to a given problem"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -1817,7 +1801,6 @@
                       "Explain how public key infrastructure supports digital signing and encryption and discuss the limitations/vulnerabilities"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -2307,7 +2290,6 @@
                       "Describe key challenges in web crawling, e.g., detecting duplicate documents, determining the crawling frontier"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -2463,7 +2445,6 @@
                       "Describe the three levels of software in the client-server model"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -2681,7 +2662,6 @@
                       "Determine the characteristics of a given problem that an intelligent system must solve"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -2757,7 +2737,6 @@
                       "Make a probabilistic inference in a real-world problem using Bayes theorem to determine the probability of a hypothesis given evidence"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -2782,7 +2761,6 @@
                       "Apply the simple statistical learning algorithm such as Naive Bayesian Classifier to a classification task and measure the classifiers accuracy"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -2810,7 +2788,6 @@
                       "Compare and contrast various heuristic searches vis-a-vis applicability to a given problem"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -2943,7 +2920,6 @@
                       "Demonstrate using appropriate examples how multi-agent systems support agent interaction"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -2976,7 +2952,6 @@
                       "Identify techniques for information retrieval, language translation, and text classification"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3155,7 +3130,6 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3177,7 +3151,6 @@
                       "Design and implement a simple reliable protocol"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3199,7 +3172,6 @@
                       "List the scalability benefits of hierarchical addressing"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3440,7 +3412,6 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3543,7 +3514,6 @@
                       "Discuss the concept of thrashing, both in terms of the reasons it occurs and the techniques used to recognize and manage the problem"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3596,7 +3566,6 @@
                       "Discuss hypervisors and the need for them in conjunction with different types of hypervisors"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3720,7 +3689,6 @@
                       "Explain how an operating system can continue functioning after a fault occurs"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3744,7 +3712,6 @@
                       "Explain the main evaluation models used to evaluate a system"
                   ],
                   "hasComp": [
-                      ""
                   ]
               }
           ]
@@ -3776,7 +3743,6 @@
                       "List the advantages and disadvantages of programming with platform constraints"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3878,7 +3844,6 @@
                       "Discuss the constraints that a given industrial platforms impose on developers"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3901,7 +3866,6 @@
                       "Compare and contrast game programming with general purpose programming"
                   ],
                   "hasComp": [
-                      ""
                   ]
               }
           ]
@@ -3930,7 +3894,6 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -3959,7 +3922,6 @@
                       "Write a program using actors and/or reactive processes"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -4056,7 +4018,6 @@
                       "Characterize the kinds of tasks that are a natural match for SIMD machines"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -4349,7 +4310,6 @@
                       "Describe an interactive system in terms of a model, a view, and a controller"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -4444,7 +4404,6 @@
                       "Write a program to process some representation of code for some purpose, such as an interpreter, an expression optimizer, or a documentation generator"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -4516,7 +4475,6 @@
                       "Describe semantic analyses using an attribute grammar"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -4544,7 +4502,6 @@
                       "Discuss opportunities for optimization introduced by naive translation and approaches for achieving optimization, such as instruction selection, instruction scheduling, register allocation, and peephole optimization"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -4570,7 +4527,6 @@
                       "Identify the services provided by modern language run-time systems"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -4639,7 +4595,6 @@
                       "Discuss how various advanced programming constructs interact with the definition and implementation of other language features"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -4665,7 +4620,6 @@
                       "Explain why programming languages do not guarantee sequential consistency in the presence of data races and what programmers must do as a result"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -4693,8 +4647,6 @@
                       "Explain how static overloading and associated resolution algorithms influence the dynamic behavior of programs"
                   ],
                   "hasComp": [
-                      "",
-                      ""
                   ]
               },
               {
@@ -4725,7 +4677,6 @@
                       "Use formal semantics to build a formal model of a software system other than a programming language"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -4775,7 +4726,6 @@
                       "Use a logic language to implement an algorithm employing implicit search using clauses, relations, and cuts"
                   ],
                   "hasComp": [
-                      ""
                   ]
               }
           ]
@@ -5747,7 +5697,6 @@
                       "List approaches to minimizing faults that can be applied at each stage of the software lifecycle"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -5875,7 +5824,6 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -5961,7 +5909,6 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -5983,7 +5930,6 @@
                       "Use figures of merit of alternative scheduler implementations"
                   ],
                   "hasComp": [
-                      ""
                   ]
               },
               {
@@ -6295,7 +6241,6 @@
                   ],
                   "hasOutcomesCT2": [],
                   "hasComp": [
-                      ""
                   ]
               },
               {

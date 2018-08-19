@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, json
 import os
 import json
-from list_functions import getJob, getDesc, getCompetencies, getBoK, getSubBoK, getComp1
+from list_functions import getJob, getDesc, getCompetencies, getsubBokandComp
 import simplejson
 import pprint
 
@@ -34,33 +34,14 @@ def fetchJob():
 
 	return json.dumps({"Okupasi": jobs})
 
-@app.route('/fetchBoK', methods=['GET'])
-def fetchBoK():
-	#Get data from post ajax
-	BoK = getBoK()
-
-	return json.dumps({"BoK": BoK})
-
-@app.route('/fetchsubBoK', methods=['POST'])
-def fetchsubBoK():
-	#Get data from post ajax 2
-	name =  request.form['name']
-	subBoK = getSubBoK(name)
-
-	return json.dumps({"subBoK": subBoK})
-
 @app.route('/fetchCompetencies1', methods=['POST'])
-def fetchCompetencies1():
+def fetchCompetencies2():
 	#Get data from post ajax 3
-	bok =  request.form['bok']
-	subbok =  request.form['subbok']
-	comp = getComp1(bok, subbok)
+	description =  request.form['description']
+	index =  request.form['index']
+	subBokandComp = getsubBokandComp(description, index)
 
-	return json.dumps({"comp": comp})
-
-
-	# testFile  = open("../raw_outcome_acm.txt")
-	# pprint.pprint(testFile.read())
+	return json.dumps({"subbok": subBokandComp.get("subbok", ""), "comp": subBokandComp.get("comp", []), "index": subBokandComp.get("index", 0)})
 
 def application(env, start_response):
 	#start_response('200 OK', [('Content-Type','text/html')])
