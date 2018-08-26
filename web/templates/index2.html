@@ -247,7 +247,7 @@
                         if(sameCode) sliceArr.push(el);
                     });
                     arrNotInclude = removeDuplicates(arrCompUnique.concat(arrComp2), "code");
-                    res = sliceArr.length / arrNotInclude.length;
+                    res = sliceArr.length / (arrNotInclude.length + sliceArr.length)
                     console.log("Array 1: " + arrCompUnique.length);
                     console.log("Array 2: " + arrComp2.length);
                     console.log("Array 3: " + sliceArr.length);
