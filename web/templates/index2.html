@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <form role="form" action="" method="post">
+        <form role="form" action="" method="post" id="formCurriculumChecker">
             <div class="row setup-content" id="step-1">
                 <div class="col-md-12">
                     <h3>Insert your subjects</h3>
@@ -149,7 +149,7 @@
                       <h5>Sikap Kerja: </h5>
                       <ol id="hasilSikap"></ol>
                     </div>
-                    <button class="btn btn-success btn-lg pull-right" style="margin-bottom: 50px; margin-top: 30px;" type="submit">Submit</button>
+                    <button class="btn btn-success btn-lg pull-right" type="reset" style="margin-bottom: 50px; margin-top: 30px;" id="resetBtn" type="button">Reset</button>
                 </div>
             </div>
         </form>
@@ -226,7 +226,7 @@
                                 'ajax': true
                             },
                             success: function (data2) {
-                                console.log(data2)
+                                console.log(data2);
                                 if (arrComp.length > 0) {
                                     arrComp = arrComp.concat(JSON.parse(data2).comp);
                                 } else {
@@ -237,22 +237,21 @@
                         });
                     }
                 } else if (step == 2) {
-                    arrCompUnique = [];
-                    $.each(arrComp, function (i, el) {
-                        if ($.inArray(el, arrCompUnique) === -1) arrCompUnique.push(el);
-                    });
+                    arrCompUnique = removeDuplicates(arrComp, "code");
                     sliceArr = [];
-                    arrNotInclude = [];
                     $.each(arrCompUnique, function (i, el) {
-                        if ($.inArray(el, arrComp2) !== -1) sliceArr.push(el);
-                        else arrNotInclude.push(el);
+                        var codeArr1 = el['code'];
+                        var sameCode = arrComp2.some(function(el2){
+                            return el2.code === codeArr1;
+                        });
+                        if(sameCode) sliceArr.push(el);
                     });
-
-                    res = sliceArr.length / ((arrCompUnique.length + arrComp2.length) - sliceArr.length);
-                    console.log("Array 1: " + arrCompUnique);
-                    console.log("Array 2: " + arrComp2);
-                    console.log("Array 3: " + sliceArr);
-                    console.log("Array 4: " + arrNotInclude);
+                    arrNotInclude = removeDuplicates(arrCompUnique.concat(arrComp2), "code");
+                    res = sliceArr.length / arrNotInclude.length;
+                    console.log("Array 1: " + arrCompUnique.length);
+                    console.log("Array 2: " + arrComp2.length);
+                    console.log("Array 3: " + sliceArr.length);
+                    console.log("Array 4: " + arrNotInclude.length);
                     console.log("Percentage " + res);
                     makeChart(res);
                 }
@@ -347,22 +346,12 @@
                                             arrAspects = [];
 
                                             //Fill the value
-                                            for (var i = 0; i < JSON.parse(
-                                                    data2).Kompetensi.length; i++) {
-                                                arrComp2.push(JSON.parse(
-                                                    data2).Kompetensi[
-                                                    i].replace(
-                                                    "http://localhost:5000/kompetensi/",
-                                                    "").replace(
-                                                    "file://C:/fakepath/",
-                                                    ""));
+                                            for (var i = 0; i < JSON.parse(data2).Kompetensi.length; i++) {
+                                                arrComp2.push(JSON.parse(data2).Kompetensi[i]);
                                             }
-                                            arrKnowledges = JSON.parse(
-                                                data2).hasKnowledge;
-                                            arrSkills = JSON.parse(
-                                                data2).hasSkill;
-                                            arrAspects = JSON.parse(
-                                                data2).hasAspect;
+                                            arrKnowledges = JSON.parse(data2).hasKnowledge;
+                                            arrSkills = JSON.parse(data2).hasSkill;
+                                            arrAspects = JSON.parse(data2).hasAspect;
                                         }
                                     });
                                 }
@@ -410,22 +399,12 @@
                                             arrAspects = [];
 
                                             //Fill the value
-                                            for (var i = 0; i < JSON.parse(
-                                                    data2).Kompetensi.length; i++) {
-                                                arrComp2.push(JSON.parse(
-                                                    data2).Kompetensi[
-                                                    i].replace(
-                                                    "http://localhost:5000/kompetensi/",
-                                                    "").replace(
-                                                    "file://C:/fakepath/",
-                                                    ""));
+                                            for (var i = 0; i < JSON.parse(data2).Kompetensi.length; i++) {
+                                                arrComp2.push(JSON.parse(data2).Kompetensi[i]);
                                             }
-                                            arrKnowledges = JSON.parse(
-                                                data2).hasKnowledge;
-                                            arrSkills = JSON.parse(
-                                                data2).hasSkill;
-                                            arrAspects = JSON.parse(
-                                                data2).hasAspect;
+                                            arrKnowledges = JSON.parse(data2).hasKnowledge;
+                                            arrSkills = JSON.parse(data2).hasSkill;
+                                            arrAspects = JSON.parse(data2).hasAspect;
                                         }
                                     });
                                 }
@@ -439,8 +418,24 @@
         //=============================================================================================================
         //Step-3
         //Set result chart and datas
+        $("#resetBtn").on('click', function(){
+            location.reload();
+        });
     });
-
+    function removeDuplicates(myArr, prop) {
+        return myArr.filter((obj, pos, arr) => {
+            return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos;
+        });
+    }
+    function arrayUnique(array) {
+        var a = array.concat();
+        for(var i=0; i<a.length; ++i) {
+            for(var j=i+1; j<a.length; ++j) {
+                if(a[i] === a[j]) a.splice(j--, 1);
+            }
+        }
+        return a;
+    }
     function makeChart(hasil) {
 
         //Set level
@@ -492,10 +487,10 @@
         $("#hasilDomain").text("Domain: " + items);
         $("#hasilOkupasi").text("Okupasi: " + $("#okupasi").val());
         for (i = 0; i < sliceArr.length; i++) {
-            $("#hasilUK").append("<li>" + sliceArr[i] + "</li>")
+            $("#hasilUK").append("<li>" + sliceArr[i]['name'] + "</li>")
         }
         for (i = 0; i < arrNotInclude.length; i++) {
-            $("#hasilUK2").append("<li>" + arrNotInclude[i] + "</li>")
+            $("#hasilUK2").append("<li>" + arrNotInclude[i]['name'] + "</li>")
         }
         for (i = 0; i < arrKnowledges.length; i++) {
             $("#hasilPengetahuan").append("<li>" + arrKnowledges[i] + "</li>")

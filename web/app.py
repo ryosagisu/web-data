@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, json
 import os
 import json
-from list_functions import getJob, getDesc, getCompetencies, getsubBokandComp
+from list_functions import getJob, getDesc, getsubBokandComp
 import simplejson
 import pprint
 

@@ -95,7 +95,19 @@ def getsubBokandComp(description, index):
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
 	r = results['results']['bindings']
-	comp = [x['hasComp']['value'] for x in r]
+	comp = []
+	for x in r:
+		item = {}
+		# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+		sparql2 = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
+		query2 = "PREFIX compname: <http://localhost:5000/compname/> SELECT ?detail WHERE {{ ?compname compname:code '" + x['hasComp']['value'] + "' . ?compname compname:detail ?detail }}"
+		sparql2.setQuery(query2)
+		sparql2.setReturnFormat(JSON)
+		results2 = sparql2.query().convert()
+		r2 = results2['results']['bindings']
+		item['code'] = str(x['hasComp']['value'])
+		item['name'] = str(r2[0]['detail']['value'][1:])
+		comp.append(item)
 	resRet = dict()
 	resRet['subbok'] = res
 	resRet['comp'] = comp
@@ -176,6 +188,20 @@ def getDesc(codes):
 	for key in com:
 		new_key = key.rsplit('/', 1)[-1]
 		com[new_key] = list(set(com.pop(key)))
-	com["Kompetensi"] = comps
+	
+	compFull = []
+	for x in comps:
+		item = {}
+		# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+		sparql2 = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
+		query2 = "PREFIX compname: <http://localhost:5000/compname/> SELECT ?detail WHERE {{ ?compname compname:code '" + x.replace('http://localhost:5000/kompetensi/','').replace('file://C:/fakepath/','') + "' . ?compname compname:detail ?detail }}"
+		sparql2.setQuery(query2)
+		sparql2.setReturnFormat(JSON)
+		results2 = sparql2.query().convert()
+		r2 = results2['results']['bindings']
+		item['code'] = str(x.replace('http://localhost:5000/kompetensi/','').replace('file://C:/fakepath/',''))
+		item['name'] = str(r2[0]['detail']['value'][1:])
+		compFull.append(item)
+	com["Kompetensi"] = compFull
 
 	return com
