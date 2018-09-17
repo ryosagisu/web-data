@@ -215,29 +215,24 @@
                     arrsubBok = [];
                     arrComp = [];
                     for (var i = 1; i < counter; i++) {
-                        arrName[i] = $("#subject-name" + i).val();
-                        arrDesc[i] = $("#description-" + i).val();
-                        $.ajax({
-                            type: 'POST',
-                            url: '/fetchCompetencies1',
-                            data: {
-                                'description': $("#description-" + i).val().replace(/[^a-zA-Z0-9]/g,'_'),
-                                'index': i,
-                                'ajax': true
-                            },
-                            success: function (data2) {
-                                console.log(data2);
-                                if (arrComp.length > 0) {
-                                    arrComp = arrComp.concat(JSON.parse(data2).comp);
-                                } else {
-                                    arrComp = JSON.parse(data2).comp;
-                                }
-                                arrsubBok[JSON.parse(data2).index] = JSON.parse(data2).subbok
-                            }
-                        });
+                        var j = i - 1;
+                        arrName[j] = $("#subject-name" + i).val();
+                        arrDesc[j] = $("#description-" + i).val();
                     }
+                    $.ajax({
+                        type: 'POST',
+                        url: '/fetchCompetencies1',
+                        data: {
+                            'description': JSON.stringify(arrDesc),
+                            'ajax': true
+                        },
+                        success: function (data2) {
+                            console.log(data2);
+                            arrCompUnique = JSON.parse(data2).comp;
+                            arrsubBok = JSON.parse(data2).subbok;
+                        }
+                    });
                 } else if (step == 2) {
-                    arrCompUnique = removeDuplicates(arrComp, "code");
                     sliceArr = [];
                     $.each(arrCompUnique, function (i, el) {
                         var codeArr1 = el['code'];

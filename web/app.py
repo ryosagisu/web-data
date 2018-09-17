@@ -36,12 +36,11 @@ def fetchJob():
 
 @app.route('/fetchCompetencies1', methods=['POST'])
 def fetchCompetencies2():
-	#Get data from post ajax 3
+	#Get data from post ajax
 	description =  request.form['description']
-	index =  request.form['index']
-	subBokandComp = getsubBokandComp(description, index)
-
-	return json.dumps({"subbok": subBokandComp.get("subbok", ""), "comp": subBokandComp.get("comp", []), "index": subBokandComp.get("index", 0)})
+	subBokandComp = getsubBokandComp(description)
+	
+	return json.dumps({"subbok": subBokandComp.get("subbok", []), "comp": subBokandComp.get("comp", [])})
 
 def application(env, start_response):
 	#start_response('200 OK', [('Content-Type','text/html')])

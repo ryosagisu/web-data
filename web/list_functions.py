@@ -16,103 +16,116 @@ subBok = ["AL/Basic Analysis", "AL/Algorithmic Strategies", "AL/Fundamental Data
 openAcmFile  = open("../raw_topic_acm.txt")
 acmFile = openAcmFile.read()
 
-def getsubBokandComp(description, index):
+def getsubBokandComp(description):
 	#Preparation
-	tf = {}
-	df  = {}
-	idf = {}
-	weigth = {}
+	resSub = []
+	resComp = []
 
 	#Process
 	doc_parsed = acmFile.split("|")
 	D = len(doc_parsed)
-	words = [str(ps.stem(x.lower())) for x in word_tokenize(description)]
-	for word in words:
-		i = 0
-		df[word] = 0
-		for d in doc_parsed:
-			all_words  = [str(ps.stem(w.lower())) for w in word_tokenize(d) if w not in stop_words and w not in separators]
-			if word in all_words:
-				tf[word+"-"+str(i)] = all_words.count(word)
-				df[word] += 1
-			else:
-				tf[word+"-"+str(i)] = 0
-			i+=1
-		Dperdf = D/float(df[word]) if df[word] > 0 else float(0)
-		idf[word] = 1 + math.log10(Dperdf) if Dperdf > 0 else float(0)
-	j = 0
-	for d in doc_parsed:
-		weigth[j] = 0
+	arrDesc = json.loads(description)
+	for desc in arrDesc:
+		tf = {}
+		df  = {}
+		idf = {}
+		weigth = {}
+		highest = 0
+		res = ""
+		words = []
+		words = [str(ps.stem(x.lower())) for x in word_tokenize(desc) if is_ascii(desc)]
 		for word in words:
-			weigth[j] += tf.get(word+"-"+str(j), float(0)) * idf[word]
-		j+=1
-	
-	#Result
-	highest = max(weigth, key=weigth.get)
-	res = subBok[highest]
-	#7|8|6|6|6|10|11|12|12|8|12|5|9|17|4|10|10|10
-	if highest > 152:
-		bok = "Social Issues and Professional Practice"
-	elif highest > 142:
-		bok = "Systems Fundamentals"
-	elif highest > 132:
-		bok = "Software Engineering"
-	elif highest > 128:
-		bok = "Software Development Fundamentals"
-	elif highest > 111:
-		bok = "Programming Languages"
-	elif highest > 102:
-		bok = "Parallel and Distributed Computing"
-	elif highest > 97:
-		bok = "Platform-Based Development"
-	elif highest > 85:
-		bok = "Operating Systems"
-	elif highest > 77:
-		bok = "Networking and Communication"
-	elif highest > 65:
-		bok = "Intelligent Systems"
-	elif highest > 53:
-		bok = "Information Management"
-	elif highest > 42:
-		bok = "Information Assurance and Security"
-	elif highest > 32:
-		bok = "Human-Computer Interaction"
-	elif highest > 26:
-		bok = "Graphics and Visualization"
-	elif highest > 20:
-		bok = "Discrete Structures"
-	elif highest > 14:
-		bok = "Computational Science"
-	elif highest > 6:
-		bok = "Architecture and Organization"
-	else:
-		bok = "Algorithms and Complexity"
-	pprint.pprint(res)
-	# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
-	sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
-	query = "PREFIX acm: <http://localhost:5000/acm/> SELECT ?hasComp WHERE {{ ?acm acm:name '" + bok + "' . ?acm acm:hasChild ?hasChild . ?hasChild acm:code '" + res + "' . ?hasChild acm:hasComp ?hasComp }}"
-	sparql.setQuery(query)
-	sparql.setReturnFormat(JSON)
-	results = sparql.query().convert()
-	r = results['results']['bindings']
-	comp = []
-	for x in r:
-		item = {}
+			i = 0
+			df[word] = 0
+			for d in doc_parsed:
+				all_words  = [str(ps.stem(w.lower())) for w in word_tokenize(d) if w not in stop_words and w not in separators]
+				if word in all_words:
+					tf[word+"-"+str(i)] = all_words.count(word)
+					df[word] += 1
+				else:
+					tf[word+"-"+str(i)] = 0
+				i+=1
+			Dperdf = D/float(df[word]) if df[word] > 0 else float(0)
+			idf[word] = 1 + math.log10(Dperdf) if Dperdf > 0 else float(0)
+		j = 0
+		for d in doc_parsed:
+			weigth[j] = 0
+			for word in words:
+				weigth[j] += tf.get(word+"-"+str(j), float(0)) * idf[word]
+			j+=1
+		#Result
+		highest = max(weigth, key=weigth.get)
+		res = subBok[highest]
+		#7|8|6|6|6|10|11|12|12|8|12|5|9|17|4|10|10|10
+		if highest > 152:
+			bok = "Social Issues and Professional Practice"
+		elif highest > 142:
+			bok = "Systems Fundamentals"
+		elif highest > 132:
+			bok = "Software Engineering"
+		elif highest > 128:
+			bok = "Software Development Fundamentals"
+		elif highest > 111:
+			bok = "Programming Languages"
+		elif highest > 102:
+			bok = "Parallel and Distributed Computing"
+		elif highest > 97:
+			bok = "Platform-Based Development"
+		elif highest > 85:
+			bok = "Operating Systems"
+		elif highest > 77:
+			bok = "Networking and Communication"
+		elif highest > 65:
+			bok = "Intelligent Systems"
+		elif highest > 53:
+			bok = "Information Management"
+		elif highest > 42:
+			bok = "Information Assurance and Security"
+		elif highest > 32:
+			bok = "Human-Computer Interaction"
+		elif highest > 26:
+			bok = "Graphics and Visualization"
+		elif highest > 20:
+			bok = "Discrete Structures"
+		elif highest > 14:
+			bok = "Computational Science"
+		elif highest > 6:
+			bok = "Architecture and Organization"
+		else:
+			bok = "Algorithms and Complexity"
 		# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
-		sparql2 = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
-		query2 = "PREFIX compname: <http://localhost:5000/compname/> SELECT ?detail WHERE {{ ?compname compname:code '" + x['hasComp']['value'] + "' . ?compname compname:detail ?detail }}"
-		sparql2.setQuery(query2)
-		sparql2.setReturnFormat(JSON)
-		results2 = sparql2.query().convert()
-		r2 = results2['results']['bindings']
-		item['code'] = str(x['hasComp']['value'])
-		item['name'] = str(r2[0]['detail']['value'][1:])
-		comp.append(item)
+		sparql = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
+		query = "PREFIX acm: <http://localhost:5000/acm/> SELECT ?hasComp WHERE {{ ?acm acm:name '" + bok + "' . ?acm acm:hasChild ?hasChild . ?hasChild acm:code '" + res + "' . ?hasChild acm:hasComp ?hasComp }}"
+		sparql.setQuery(query)
+		sparql.setReturnFormat(JSON)
+		results = sparql.query().convert()
+		r = results['results']['bindings']
+		comp = []
+		for x in r:
+			item = {}
+			# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
+			sparql2 = SPARQLWrapper("http://localhost:4000/rdf4j-http-server-2.3.0/repositories/skripsi")
+			query2 = "PREFIX compname: <http://localhost:5000/compname/> SELECT ?detail WHERE {{ ?compname compname:code '" + x['hasComp']['value'] + "' . ?compname compname:detail ?detail }}"
+			sparql2.setQuery(query2)
+			sparql2.setReturnFormat(JSON)
+			results2 = sparql2.query().convert()
+			r2 = results2['results']['bindings']
+			item['code'] = str(x['hasComp']['value'])
+			try:
+				item['name'] = str(r2[0]['detail']['value'][1:])
+			except IndexError:
+				item['name'] = "-"
+			comp.append(item)
+		if res not in resSub:
+			resSub.append(res)
+			resComp += comp
 	resRet = dict()
-	resRet['subbok'] = res
-	resRet['comp'] = comp
-	resRet['index'] = index
+	resRet['subbok'] = resSub
+	resRet['comp'] = resComp
 	return resRet
+
+def is_ascii(s):
+    return all(ord(c) < 128 for c in s)
 
 def getJob(codes):
 	# sparql = SPARQLWrapper("http://localhost:8080/rdf4j-server-2.3.0/repositories/sample")
