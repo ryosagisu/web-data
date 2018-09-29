@@ -127,7 +127,7 @@
                             <option></option>
                         </select>
                     </div>
-                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
+                    <button class="btn btn-primary nextBtn btn-lg pull-right" id="btn2" type="button">Next</button>
                 </div>
             </div>
             <div class="row setup-content" id="step-3">
@@ -230,8 +230,12 @@
                             console.log(data2);
                             arrCompUnique = JSON.parse(data2).comp;
                             arrsubBok = JSON.parse(data2).subbok;
+                        },
+                        complete: function(){
+                            $('#btn2').prop('disabled', false);
                         }
                     });
+                    $('#btn2').prop('disabled', true);
                 } else if (step == 2) {
                     sliceArr = [];
                     $.each(arrCompUnique, function (i, el) {
